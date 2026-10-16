@@ -1,0 +1,750 @@
+Catchment Area,Facility Name,Type,Speciality,Distance (m),Day,6 AM,7 AM,8 AM,9 AM,10 AM,11 AM,12 PM,1 PM,2 PM,3 PM,4 PM,5 PM,6 PM,7 PM,8 PM,9 PM,10 PM,11 PM
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Monday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Tuesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Wednesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Thursday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Friday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Saturday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Dr Agarwals Eye Hospital Ltd,Hospital,General,52.9,Sunday,3,5,10,18,25,27,24,15,8,9,12,19,24,25,21,12,7,4
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, JP Nagar",Dr. Agarwal's Eye Hospital,Hospital,General,180.9,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, JP Nagar",Sri Sai Ram Hospital - Bangalore,Hospital,General,303.1,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Monday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Tuesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Wednesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Thursday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Friday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Saturday,0,0,15,51,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Disney Family Clinic,Clinic,General,430.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Monday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Tuesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Wednesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Thursday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Friday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Saturday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Marigold Hospital,Hospital,General,562.2,Sunday,3,5,10,18,25,27,24,15,8,9,12,19,24,25,21,12,7,4
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Monday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Tuesday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Wednesday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Thursday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Friday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Saturday,11,20,39,73,100,100,95,61,33,36,50,76,98,100,84,50,28,17
+"Docube Clinic, JP Nagar",Pothys Hospital,Hospital,General,610.8,Sunday,3,6,12,22,31,33,29,19,10,11,15,23,30,31,25,15,8,5
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Monday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Tuesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Wednesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Thursday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Friday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Saturday,0,0,17,55,97,100,83,39,0,0,39,72,100,100,83,28,0,0
+"Docube Clinic, JP Nagar",Bangalore Orthopaedic Clinic,Clinic,General,611.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Monday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Tuesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Wednesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Thursday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Friday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Saturday,0,0,14,48,84,91,72,33,0,0,33,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Reviva Dermaesthetic,Clinic,General,632.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Monday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Tuesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Wednesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Thursday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Friday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Saturday,0,0,13,43,76,82,65,30,0,0,30,56,82,82,65,22,0,0
+"Docube Clinic, JP Nagar",Shenoy's Children Clinic,Clinic,General,639.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, JP Nagar",Kids Care Clinic,Hospital,General,646.8,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, JP Nagar",Vinayaka Nethralaya,Clinic,General,655.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Monday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Tuesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Wednesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Thursday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Friday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Saturday,0,0,13,43,76,82,65,30,0,0,30,56,82,82,65,22,0,0
+"Docube Clinic, JP Nagar",Anugraha Clinic,Clinic,General,663.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Monday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Tuesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Wednesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Thursday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Friday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Saturday,0,0,18,62,100,100,92,43,0,0,43,80,100,100,92,31,0,0
+"Docube Clinic, JP Nagar",Urocare Urology Superspeciality Clinic,Clinic,General,673.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",Ashya Clinic,Clinic,General,683.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Monday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Tuesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Wednesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Thursday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Friday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Saturday,0,0,13,43,76,82,65,30,0,0,30,56,82,82,65,22,0,0
+"Docube Clinic, JP Nagar",Bharat Clinic,Clinic,General,700.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Monday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Tuesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Wednesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Thursday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Friday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Saturday,0,0,16,52,91,98,78,36,0,0,36,67,98,98,78,26,0,0
+"Docube Clinic, JP Nagar","Shekar Nethralaya, Bengaluru Urban",Clinic,General,720.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Monday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Tuesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Wednesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Thursday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Friday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Saturday,0,0,15,51,90,97,77,36,0,0,36,67,97,97,77,26,0,0
+"Docube Clinic, JP Nagar",Fertilite IVF,Clinic,General,745.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Monday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Tuesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Wednesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Thursday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Friday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Saturday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Sri Jayadeva Institute Of Cardiology,Hospital,General,749.5,Sunday,3,5,11,20,27,29,26,17,9,10,14,20,26,28,23,14,8,5
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",Chiranjeevi Specialist Center,Clinic,General,750.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, JP Nagar",Ortho Centre Clinic,Clinic,General,763.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Monday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Tuesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Wednesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Thursday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Friday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Saturday,11,19,38,70,97,100,92,59,32,35,49,74,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Vedam Ayurveda Multispeciality Hospital,Hospital,General,788.0,Sunday,3,6,12,21,30,32,28,18,10,11,15,22,29,30,25,15,8,5
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",Daivik Clinic,Clinic,General,788.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Monday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Tuesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Wednesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Thursday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Friday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Saturday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, JP Nagar",Chirag Global Hospital,Hospital,General,791.2,Sunday,3,5,10,18,25,27,24,15,8,9,13,19,25,26,21,13,7,4
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Monday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Tuesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Wednesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Thursday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Friday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Saturday,0,0,18,61,100,100,91,43,0,0,43,79,100,100,91,30,0,0
+"Docube Clinic, JP Nagar",Dr. Revathi Prasad,Doctors,General,807.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Monday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Tuesday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Wednesday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Thursday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Friday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Saturday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Ayesha Speciality Clinic,Clinic,General,807.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Monday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Tuesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Wednesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Thursday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Friday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Saturday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Divakars speciality Hospital,Hospital,General,808.3,Sunday,3,5,11,20,27,29,26,17,9,10,14,20,26,28,23,14,8,5
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Monday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Tuesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Wednesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Thursday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Friday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Saturday,9,16,31,58,80,87,75,49,27,28,40,60,78,81,66,40,22,13
+"Docube Clinic, JP Nagar",Sakhi Hospital (A Unit Of Prasad Healthcare Services),Hospital,General,818.5,Sunday,3,5,9,18,24,26,23,15,8,9,12,18,24,25,20,12,7,4
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Monday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Tuesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Wednesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Thursday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Friday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Saturday,0,0,18,62,100,100,92,43,0,0,43,80,100,100,92,31,0,0
+"Docube Clinic, JP Nagar",Smruthi ENT Clinic & Multispeciality Centre,Clinic,General,821.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Monday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Tuesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Wednesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Thursday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Friday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Saturday,0,0,16,53,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Nisa Multi Speciality Clinics,Clinic,General,826.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, JP Nagar","Shekhar Hospital, Jayanagar",Hospital,General,828.3,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Monday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Tuesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Wednesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Thursday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Friday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Saturday,0,0,18,60,100,100,91,42,0,0,42,78,100,100,91,30,0,0
+"Docube Clinic, JP Nagar",partha,Clinic,General,851.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, JP Nagar",Anurag Medical Centre,Hospital,General,856.7,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, JP Nagar",Center for Liver Disease Hospital,Hospital,General,876.0,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, JP Nagar",Chirag Hospital and Maternity Center,Hospital,General,908.7,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, JP Nagar",Rainbow Children's Hospital,Hospital,General,942.7,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, JP Nagar",Genea,Clinic,General,975.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, JP Nagar",Kareem ENT,Clinic,General,1027.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Monday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Tuesday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Wednesday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Thursday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Friday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Saturday,12,22,43,80,100,100,100,68,37,39,55,84,100,100,92,55,31,18
+"Docube Clinic, JP Nagar",Kareem E.N.T and Multispeciality Centre,Hospital,General,1035.6,Sunday,4,7,13,24,34,37,32,21,11,12,17,25,33,34,28,17,9,6
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Monday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Tuesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Wednesday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Thursday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Friday,8,14,28,51,71,77,67,43,24,25,36,54,70,73,59,36,20,12
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Saturday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, JP Nagar",Shree Vaishnavi Heart Centre and Multi Speciality,Hospital,General,1098.4,Sunday,3,5,10,18,25,27,24,15,8,9,12,19,24,25,21,12,7,4
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Monday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Tuesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Wednesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Thursday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Friday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Saturday,0,0,18,60,100,100,90,42,0,0,42,78,100,100,90,30,0,0
+"Docube Clinic, JP Nagar",Skanda Health Care,Clinic,General,1100.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, JP Nagar",R R Hospital & Trauma Centre,Hospital,General,1198.1,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Monday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Tuesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Wednesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Thursday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Friday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Saturday,12,21,41,76,100,100,100,65,35,38,53,80,100,100,88,53,29,18
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1214.1,Sunday,4,6,12,23,32,35,30,20,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Monday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Tuesday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Wednesday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Thursday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Friday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Saturday,9,17,33,61,85,92,80,52,28,30,42,64,83,87,71,42,24,14
+"Docube Clinic, JP Nagar",Jnana Sanjeevini,Hospital,General,1257.2,Sunday,3,5,10,19,26,28,24,16,9,9,13,20,25,26,22,13,7,4
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Monday,8,14,26,49,68,74,64,41,22,24,34,51,66,69,56,34,19,11
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Tuesday,8,14,26,49,68,74,64,41,22,24,34,51,66,69,56,34,19,11
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Wednesday,8,14,26,49,68,74,64,41,22,24,34,51,66,69,56,34,19,11
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Thursday,8,14,26,49,68,74,64,41,22,24,34,51,66,69,56,34,19,11
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Friday,8,14,26,49,68,74,64,41,22,24,34,51,66,69,56,34,19,11
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Saturday,9,16,30,56,78,85,73,47,26,28,39,59,76,79,65,39,22,13
+"Docube Clinic, JP Nagar",Parimala Speciality Hospital,Hospital,General,1264.7,Sunday,3,5,9,17,24,26,22,14,8,8,12,18,23,24,20,12,7,4
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Monday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Tuesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Wednesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Thursday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Friday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Saturday,12,21,41,76,100,100,100,65,35,38,53,80,100,100,88,53,29,18
+"Docube Clinic, JP Nagar",Parimala Health Care,Hospital,General,1282.2,Sunday,4,6,12,23,32,35,30,20,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, JP Nagar",Dr. Seema Sultana's Women's Clinic,Clinic,General,1299.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Monday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Tuesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Wednesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Thursday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Friday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Saturday,0,0,14,48,85,92,72,34,0,0,34,63,92,92,72,24,0,0
+"Docube Clinic, JP Nagar",Oncquest Laboratories,Clinic,General,1310.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Monday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Tuesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Wednesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Thursday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Friday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Saturday,0,0,16,53,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, JP Nagar",Dr. Santosh Clinic,Clinic,General,1310.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Monday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Tuesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Wednesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Thursday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Friday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Saturday,0,0,13,44,78,84,66,31,0,0,31,58,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Turning Point Therapists,Clinic,General,1315.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Monday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Tuesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Wednesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Thursday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Friday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Saturday,0,0,18,59,100,100,89,41,0,0,41,77,100,100,89,30,0,0
+"Docube Clinic, JP Nagar",Safa Health care,Clinic,General,1367.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Monday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Tuesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Wednesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Thursday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Friday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Saturday,0,0,17,56,99,100,85,39,0,0,39,73,100,100,85,28,0,0
+"Docube Clinic, JP Nagar",Amplifon,Clinic,General,1374.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Monday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Tuesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Wednesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Thursday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Friday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Saturday,0,0,14,47,82,88,70,33,0,0,33,61,88,88,70,23,0,0
+"Docube Clinic, JP Nagar",Bloom Women's Health,Doctors,General,1376.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Monday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Tuesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Wednesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Thursday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Friday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Saturday,0,0,18,60,100,100,90,42,0,0,42,78,100,100,90,30,0,0
+"Docube Clinic, JP Nagar",Amba Laser Clinic,Clinic,General,1426.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Monday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Tuesday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Wednesday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Thursday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Friday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Saturday,10,18,36,67,92,100,87,56,31,33,46,70,90,94,77,46,26,15
+"Docube Clinic, JP Nagar",BMTC Hospital,Hospital,General,1519.7,Sunday,3,6,11,20,28,31,26,17,9,10,14,21,27,29,23,14,8,5
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Monday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Tuesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Wednesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Thursday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Friday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Saturday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, JP Nagar",Cadabam's Hospitals,Hospital,General,1523.8,Sunday,3,6,11,21,29,32,28,18,10,10,15,22,29,30,24,15,8,5
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Monday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Tuesday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Wednesday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Thursday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Friday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Saturday,12,21,41,75,100,100,99,64,35,37,52,79,100,100,87,52,29,17
+"Docube Clinic, JP Nagar",Sri Venkateswara Hospital,Hospital,General,1526.0,Sunday,4,6,12,23,32,35,30,19,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Monday,10,19,37,68,94,100,89,58,32,34,47,71,92,97,79,47,26,16
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Tuesday,10,19,37,68,94,100,89,58,32,34,47,71,92,97,79,47,26,16
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Wednesday,10,19,37,68,94,100,89,58,32,34,47,71,92,97,79,47,26,16
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Thursday,10,19,37,68,94,100,89,58,32,34,47,71,92,97,79,47,26,16
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Friday,10,19,37,68,94,100,89,58,32,34,47,71,92,97,79,47,26,16
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Saturday,12,22,42,78,100,100,100,66,36,39,54,82,100,100,91,54,30,18
+"Docube Clinic, JP Nagar","Healing Hands Clinic - J.P Nagar, Bengaluru",Hospital,General,1526.5,Sunday,4,7,13,24,33,36,31,20,11,12,17,25,32,34,28,17,9,6
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Monday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Tuesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Wednesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Thursday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Friday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Saturday,0,0,15,49,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Shashi Clinic,Clinic,General,1552.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, JP Nagar",Akshara Eye Hospital,Clinic,General,1555.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Monday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Tuesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Wednesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Thursday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Friday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Saturday,0,0,16,52,91,98,78,36,0,0,36,67,98,98,78,26,0,0
+"Docube Clinic, JP Nagar",Dr. Satish skin & ENT clinic,Clinic,General,1585.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, JP Nagar",Aster RV Hospital,Hospital,General,1591.1,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, JP Nagar",Milann Fertility Center,Hospital,General,1595.4,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, JP Nagar",Gangothri Hospital,Hospital,General,1609.9,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Monday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Tuesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Wednesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Thursday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Friday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Saturday,0,0,17,55,97,100,83,39,0,0,39,72,100,100,83,28,0,0
+"Docube Clinic, JP Nagar",Usha Clinic,Clinic,General,1640.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Monday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Tuesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Wednesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Thursday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Friday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Saturday,0,0,13,44,78,84,66,31,0,0,31,58,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Dr Patil Fertility And Endoscopy Clinic,Clinic,General,1641.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, JP Nagar",Sunayana Eye Hospital,Hospital,General,1655.6,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, JP Nagar",Anand Clinic,Clinic,General,1656.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, JP Nagar",Cloud Nine Fertility,Hospital,General,1657.6,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, JP Nagar",Sri Jyoti Eye Clinic,Clinic,General,1659.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, JP Nagar",Apollo Cradle Maternity & Children's Hospital,Hospital,General,1664.3,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Monday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Tuesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Wednesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Thursday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Friday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Saturday,0,0,13,44,77,83,66,31,0,0,31,57,83,83,66,22,0,0
+"Docube Clinic, JP Nagar",Banashankari Poly Clinic,Clinic,General,1666.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Monday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Tuesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Wednesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Thursday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Friday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Saturday,9,17,33,61,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar","Apollo Bengaluru Cradle Limited, Jayanagar",Hospital,General,1668.3,Sunday,3,5,10,18,26,28,24,16,9,9,13,19,25,26,21,13,7,4
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,1676.0,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Monday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Tuesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Wednesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Thursday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Friday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Saturday,0,0,18,59,100,100,89,41,0,0,41,77,100,100,89,30,0,0
+"Docube Clinic, JP Nagar",J B S Nursing Home,Clinic,General,1681.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Monday,0,0,14,47,83,89,70,33,0,0,33,61,89,89,70,24,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Tuesday,0,0,14,47,83,89,70,33,0,0,33,61,89,89,70,24,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Wednesday,0,0,14,47,83,89,70,33,0,0,33,61,89,89,70,24,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Thursday,0,0,14,47,83,89,70,33,0,0,33,61,89,89,70,24,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Friday,0,0,14,47,83,89,70,33,0,0,33,61,89,89,70,24,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Saturday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, JP Nagar",Aster Labs,Clinic,General,1686.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Monday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Tuesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Wednesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Thursday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Friday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Saturday,0,0,15,49,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, JP Nagar",Baby Science IVF clinic,Clinic,General,1686.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Monday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Tuesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Wednesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Thursday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Friday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Saturday,10,17,33,62,86,94,81,52,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, JP Nagar",Shri Krishna Sevashrama Hospital,Hospital,General,1697.4,Sunday,3,5,10,19,26,28,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, JP Nagar",North Star Maternity and Nursing Home,Hospital,General,1698.3,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Monday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Tuesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Wednesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Thursday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Friday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Saturday,0,0,13,44,78,84,66,31,0,0,31,58,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Sunrise Diagnostics,Clinic,General,1700.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Monday,11,19,37,69,95,100,90,58,32,34,48,72,93,98,80,48,26,16
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Tuesday,11,19,37,69,95,100,90,58,32,34,48,72,93,98,80,48,26,16
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Wednesday,11,19,37,69,95,100,90,58,32,34,48,72,93,98,80,48,26,16
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Thursday,11,19,37,69,95,100,90,58,32,34,48,72,93,98,80,48,26,16
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Friday,11,19,37,69,95,100,90,58,32,34,48,72,93,98,80,48,26,16
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Saturday,12,22,43,79,100,100,100,67,37,39,55,83,100,100,91,55,30,18
+"Docube Clinic, JP Nagar",Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),Hospital,General,1700.3,Sunday,4,7,13,24,33,36,32,20,11,12,17,25,33,34,28,17,9,6
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Monday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Tuesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Wednesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Thursday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Friday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Saturday,0,0,17,57,100,100,86,40,0,0,40,75,100,100,86,29,0,0
+"Docube Clinic, JP Nagar",Saphire Heart Care,Clinic,General,1716.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Monday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Tuesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Wednesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Thursday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Friday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Saturday,0,0,19,63,100,100,94,44,0,0,44,81,100,100,94,31,0,0
+"Docube Clinic, JP Nagar",Sun Diagnostic Laboratory,Clinic,General,1721.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Monday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Tuesday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Wednesday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Thursday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Friday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Saturday,11,20,39,73,100,100,96,62,34,36,51,77,99,100,85,51,28,17
+"Docube Clinic, JP Nagar",M N Speciality Clinic,Hospital,General,1724.2,Sunday,3,6,12,22,31,34,29,19,10,11,15,23,30,32,26,15,9,5
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Monday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Tuesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Wednesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Thursday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Friday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Saturday,9,17,33,61,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, JP Nagar",Apollo Hospital,Hospital,General,1727.5,Sunday,3,5,10,18,26,28,24,16,9,9,13,19,25,26,21,13,7,4
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Monday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Tuesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Wednesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Thursday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Friday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Saturday,0,0,14,48,84,91,72,33,0,0,33,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1747.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Monday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Tuesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Wednesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Thursday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Friday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Saturday,0,0,13,44,78,84,66,31,0,0,31,58,84,84,66,22,0,0
+"Docube Clinic, JP Nagar",Parency Hospital,Clinic,General,1752.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",Vitiligo Clinic,Clinic,General,1758.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, JP Nagar",Prime Orthopedics,Doctors,General,1759.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, JP Nagar",Jayanagar General Hospital,Hospital,General,1770.7,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Monday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Tuesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Wednesday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Thursday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Friday,0,0,12,42,73,79,62,29,0,0,29,54,79,79,62,21,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Saturday,0,0,14,48,84,91,72,33,0,0,33,62,91,91,72,24,0,0
+"Docube Clinic, JP Nagar",Kubra Maternity And Nursing Home,Clinic,General,1772.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, JP Nagar",Sagar Hospitals,Hospital,General,1790.4,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Monday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Tuesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Wednesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Thursday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Friday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Saturday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Lavis Hospital,Hospital,General,1824.3,Sunday,3,5,11,20,27,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Monday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Tuesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Wednesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Thursday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Friday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Saturday,0,0,18,60,100,100,91,42,0,0,42,78,100,100,91,30,0,0
+"Docube Clinic, JP Nagar",JP Nagar Clinic,Clinic,General,1830.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1833.8,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, JP Nagar",Spurthy Hospital,Hospital,General,1842.0,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Monday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Tuesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Wednesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Thursday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Friday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Saturday,0,0,18,59,100,100,89,41,0,0,41,77,100,100,89,30,0,0
+"Docube Clinic, JP Nagar",Amar Ayurveda,Clinic,General,1843.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, JP Nagar",Srinivas Clinic,Hospital,General,1869.9,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, JP Nagar","Shanthi Nursing Home, Bengaluru Urban",Clinic,General,1875.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Monday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Tuesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Wednesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Thursday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Friday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Saturday,0,0,15,51,90,97,77,36,0,0,36,67,97,97,77,26,0,0
+"Docube Clinic, JP Nagar",Sri Balaji Speciality Clinic & Diagnostic Center,Clinic,General,1880.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Monday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Tuesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Wednesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Thursday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Friday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Saturday,0,0,19,63,100,100,94,44,0,0,44,81,100,100,94,31,0,0
+"Docube Clinic, JP Nagar",Pristyn Care,Clinic,General,1891.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Monday,8,14,27,49,68,74,65,42,23,24,34,52,67,70,57,34,19,11
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Tuesday,8,14,27,49,68,74,65,42,23,24,34,52,67,70,57,34,19,11
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Wednesday,8,14,27,49,68,74,65,42,23,24,34,52,67,70,57,34,19,11
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Thursday,8,14,27,49,68,74,65,42,23,24,34,52,67,70,57,34,19,11
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Friday,8,14,27,49,68,74,65,42,23,24,34,52,67,70,57,34,19,11
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Saturday,9,16,31,57,79,86,74,48,26,28,39,59,77,80,66,39,22,13
+"Docube Clinic, JP Nagar","Fortis Hospitals, Bannerghatta Road",Hospital,General,1899.6,Sunday,3,5,9,17,24,26,23,15,8,9,12,18,23,24,20,12,7,4
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Monday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Tuesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Wednesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Thursday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Friday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Saturday,10,19,36,67,93,100,88,57,31,33,47,70,91,95,78,47,26,16
+"Docube Clinic, JP Nagar",Tirumalai Eye Clinic,Hospital,General,1912.8,Sunday,3,6,11,20,28,31,27,17,9,10,14,21,28,29,24,14,8,5
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Monday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Tuesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Wednesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Thursday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Friday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Saturday,9,16,31,58,81,88,76,49,27,29,40,61,79,83,67,40,22,13
+"Docube Clinic, JP Nagar",Health India Hospital,Hospital,General,1927.8,Sunday,3,5,10,18,25,27,23,15,8,9,12,19,24,25,20,12,7,4
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Monday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Tuesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Wednesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Thursday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Friday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Saturday,0,0,14,45,80,86,68,32,0,0,32,59,86,86,68,23,0,0
+"Docube Clinic, JP Nagar",Medall Clumax Diagnostics,Clinic,General,1928.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, JP Nagar",Shanti Hospital,Hospital,General,1994.8,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Monday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Tuesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Wednesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Thursday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Friday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Saturday,0,0,13,44,77,83,66,31,0,0,31,57,83,83,66,22,0,0
+"Docube Clinic, JP Nagar",Sahasrara Neurosciences Clinic,Clinic,General,1999.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, JP Nagar",Life Care Hospital,Hospital,General,2003.1,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geospatial Hexagonal Continuous Mesh: Store Layer vs. Competitor Layer</title>
+  
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./geospatial_hex_data.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #0a0f1d;
+      --card-bg: #111827;
+      --border-color: #1f2937;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --brand-blue: #0284c7;
+      --comp-red: #f54428;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
+
+    /* Header */
+    header {
+      background: #0f172a;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .header-title h1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+    }
+    .badge-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .badge-yellow-red { background: rgba(245, 68, 40, 0.15); color: #febb57; border: 1px solid rgba(245, 68, 40, 0.3); }
+    .header-subtitle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    /* Timeline & View Switcher Bar */
+    .controls-bar {
+      background: #111827;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .view-mode-tabs {
+      display: flex;
+      background: #1f2937;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+    .view-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .view-tab:hover { color: #fff; }
+    .view-tab.active { background: #3b82f6; color: #fff; box-shadow: 0 2px 6px rgba(59,130,246,0.4); }
+
+    .day-selector {
+      display: flex;
+      background: #1f2937;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+    .day-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 5px 11px;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .day-btn:hover { color: #fff; }
+    .day-btn.active { background: #475569; color: #ffffff; }
+
+    .time-slider-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      max-width: 440px;
+    }
+    .play-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: #38bdf8;
+      color: #0b1120;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    .play-btn:hover { background: #7dd3fc; }
+
+    .slider-track { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+    .slider-info { display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; }
+    .time-text { color: #38bdf8; font-size: 13px; }
+
+    input[type=range] {
+      width: 100%;
+      height: 5px;
+      border-radius: 3px;
+      background: #374151;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #38bdf8;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+    }
+
+    .clinic-dropdown {
+      background: #1f2937;
+      border: 1px solid #374151;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Container for Maps */
+    .maps-stage {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 128px);
+      position: relative;
+    }
+    .map-pane {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-right: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    .map-pane:last-child { border-right: none; }
+    .map-pane.hidden-pane { display: none; }
+
+    .pane-header {
+      background: rgba(17, 24, 39, 0.96);
+      backdrop-filter: blur(8px);
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 500;
+    }
+    .pane-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .pane-map-container {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      background: #090e17;
+    }
+
+    /* Gradient Legends */
+    .legend-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 220px;
+    }
+    .legend-bar {
+      height: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    .legend-bar-blue {
+      background: linear-gradient(to right, #e0f2fe 0%, #38bdf8 33%, #0284c7 66%, #032b69 100%);
+    }
+    .legend-bar-yellow-red {
+      background: linear-gradient(to right, #fff0a9 0%, #febb57 33%, #f54428 66%, #980026 100%);
+    }
+    .legend-ticks {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Floating Metrics Overlay */
+    .metrics-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 10px 16px;
+      border-radius: 10px;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      display: flex;
+      gap: 16px;
+    }
+    .metric-item { display: flex; flex-direction: column; }
+    .metric-label { font-size: 10px; text-transform: uppercase; color: var(--text-muted); font-weight: 700; }
+    .metric-val { font-size: 18px; font-weight: 900; line-height: 1.2; margin-top: 2px; }
+
+    /* Tooltip */
+    .leaflet-tooltip {
+      background: rgba(15, 23, 42, 0.95) !important;
+      color: #f8fafc !important;
+      border: 1px solid #334155 !important;
+      border-radius: 8px !important;
+      padding: 10px 14px !important;
+      font-size: 12px !important;
+      line-height: 1.5 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="header-title">
+      <h1>
+        Geospatial Hexagonal Continuous Mesh
+        <span class="badge badge-blue">Store Layer: Blue</span>
+        <span class="badge badge-yellow-red">Competitor Layer: Yellow to Red</span>
+      </h1>
+      <div class="header-subtitle">
+        Both layers use identical 85m hexagonal cells across the 2.0 km catchment. No point markers.
+      </div>
+    </div>
+    
+    <div>
+      <select id="clinicSelect" class="clinic-dropdown">
+        <option value="koramangala">Docube Clinic, Koramangala (77 Competitors)</option>
+        <option value="whitefield">Docube Clinic, Whitefield (29 Competitors)</option>
+        <option value="jp_nagar">Docube Clinic, JP Nagar (107 Competitors)</option>
+        <option value="sarjapur_road">Docube Clinic, Sarjapur Road (14 Competitors)</option>
+        <option value="hrbr">Docube Clinic, HRBR (84 Competitors)</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Controls Bar -->
+  <div class="controls-bar">
+    <div class="view-mode-tabs" id="viewModeTabs">
+      <button class="view-tab active" data-mode="split">Split View (Both)</button>
+      <button class="view-tab" data-mode="store">Store Hex Layer Only</button>
+      <button class="view-tab" data-mode="competitor">Competitor Hex Layer Only</button>
+    </div>
+
+    <div class="day-selector" id="dayButtons">
+      <button class="day-btn active" data-day="0">Mon</button>
+      <button class="day-btn" data-day="1">Tue</button>
+      <button class="day-btn" data-day="2">Wed</button>
+      <button class="day-btn" data-day="3">Thu</button>
+      <button class="day-btn" data-day="4">Fri</button>
+      <button class="day-btn" data-day="5">Sat</button>
+      <button class="day-btn" data-day="6">Sun</button>
+    </div>
+
+    <div class="time-slider-wrapper">
+      <button id="playBtn" class="play-btn" title="Toggle Auto-Play">▶</button>
+      <div class="slider-track">
+        <div class="slider-info">
+          <span>Operating Hours: 06:00 to 23:00</span>
+          <span id="timeLabel" class="time-text">18:00 (Evening Peak)</span>
+        </div>
+        <input type="range" id="hourSlider" min="6" max="23" value="18" step="1">
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage: Maps -->
+  <div class="maps-stage">
+    
+    <!-- LEFT PANE: STORE FOOTFALL HEXAGON LAYER -->
+    <div class="map-pane" id="paneStore">
+      <div class="pane-header">
+        <div class="pane-title">
+          <span style="display:inline-block; width:12px; height:12px; border-radius:3px; background:#0284c7;"></span>
+          <span style="color:#e0f2fe;">1. Store Footfall Hexagon Layer (Blue Gradient)</span>
+        </div>
+        <div class="legend-box">
+          <div class="legend-bar legend-bar-blue"></div>
+          <div class="legend-ticks">
+            <span>Low (#e0f2fe)</span>
+            <span>Moderate (#38bdf8)</span>
+            <span>High (#0284c7)</span>
+            <span>Peak (#032b69)</span>
+          </div>
+        </div>
+      </div>
+      <div id="map-store" class="pane-map-container"></div>
+      
+      <div class="metrics-overlay">
+        <div class="metric-item">
+          <span class="metric-label">Store Peak Index</span>
+          <span class="metric-val" id="storePeak" style="color: #38bdf8;">95</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">High Activity Hexes</span>
+          <span class="metric-val" id="storeHot" style="color: #7dd3fc;">18</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Store OPD Load</span>
+          <span class="metric-val" id="storeOpd" style="color: #ffffff;">88%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANE: COMPETITOR FOOTFALL HEXAGON LAYER -->
+    <div class="map-pane" id="paneComp">
+      <div class="pane-header">
+        <div class="pane-title">
+          <span style="display:inline-block; width:12px; height:12px; border-radius:3px; background:#f54428;"></span>
+          <span style="color:#fee2e2;">2. Competitor Footfall Hexagon Layer (Yellow to Red)</span>
+        </div>
+        <div class="legend-box">
+          <div class="legend-bar legend-bar-yellow-red"></div>
+          <div class="legend-ticks">
+            <span>Low (#fff0a9)</span>
+            <span>Moderate (#febb57)</span>
+            <span>High (#f54428)</span>
+            <span>Peak (#980026)</span>
+          </div>
+        </div>
+      </div>
+      <div id="map-competitor" class="pane-map-container"></div>
+
+      <div class="metrics-overlay">
+        <div class="metric-item">
+          <span class="metric-label">Competitor Peak Index</span>
+          <span class="metric-val" id="compPeak" style="color: #f54428;">94</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Hot Cluster Hexes</span>
+          <span class="metric-val" id="compHot" style="color: #febb57;">28</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Competitor Facilities</span>
+          <span class="metric-val" id="compCount" style="color: #ffffff;">77</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Gradients
+    // 1. Store: Blue Gradient
+    const storePalette = ['#e0f2fe', '#38bdf8', '#0284c7', '#032b69'];
+    // 2. Competitor: Yellow-to-Red Gradient (Exact from image)
+    const competitorPalette = ['#fff0a9', '#febb57', '#f54428', '#980026'];
+
+    function getStoreColor(v) {
+      const idx = Math.min(storePalette.length - 1, Math.floor((Math.max(0, Math.min(99, v)) / 100) * storePalette.length));
+      return storePalette[idx];
+    }
+
+    function getCompetitorColor(v) {
+      const idx = Math.min(competitorPalette.length - 1, Math.floor((Math.max(0, Math.min(99, v)) / 100) * competitorPalette.length));
+      return competitorPalette[idx];
+    }
+
+    // State
+    let currentClinicId = 'koramangala';
+    let currentDay = 0; // Monday
+    let currentHour = 18; // 6 PM
+    let isPlaying = false;
+    let timer = null;
+
+    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    // Initialize Maps
+    const mapStore = L.map('map-store', { zoomControl: true, preferCanvas: false });
+    const mapComp = L.map('map-competitor', { zoomControl: true, preferCanvas: false });
+
+    const tileUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    const tileAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+    L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapStore);
+    L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapComp);
+
+    // Synchronize Pan & Zoom
+    let syncLock = false;
+    function syncMaps(source, target) {
+      source.on('move', () => {
+        if (!syncLock) {
+          syncLock = true;
+          target.setView(source.getCenter(), source.getZoom(), { animate: false });
+          syncLock = false;
+        }
+      });
+    }
+    syncMaps(mapStore, mapComp);
+    syncMaps(mapComp, mapStore);
+
+    const storeHexGroup = L.layerGroup().addTo(mapStore);
+    const compHexGroup = L.layerGroup().addTo(mapComp);
+
+    function updateView() {
+      const clinicData = window.GEOSPATIAL_HEX_DATA[currentClinicId];
+      if (!clinicData) return;
+
+      const cl = clinicData.clinic;
+      const cells = clinicData.cells;
+      const compPoints = clinicData.comp_points || [];
+      const center = [cl.lat, cl.lon];
+
+      const dayName = dayNames[currentDay];
+      const dayKey = dayName.toLowerCase();
+      const hourStr = `${currentHour > 12 ? currentHour - 12 : currentHour} ${currentHour >= 12 ? 'PM' : 'AM'}`;
+      
+      document.getElementById('timeLabel').innerText = `${String(currentHour).padStart(2, '0')}:00 (${hourStr})`;
+
+      const storeSchedule = cl.schedule[dayKey] || {};
+      const clinicHourDemand = storeSchedule[hourStr] || 50;
+      const dayMultiplier = [1, 0.94, 0.97, 1.01, 1.08, 1.15, 0.72][currentDay] || 1;
+
+      storeHexGroup.clearLayers();
+      compHexGroup.clearLayers();
+
+      // Catchment boundary circles
+      L.circle(center, { radius: 2000, color: '#0284c7', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(storeHexGroup);
+      L.circle(center, { radius: 2000, color: '#f54428', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(compHexGroup);
+
+      let storePeak = 0;
+      let storeHot = 0;
+      let compPeak = 0;
+      let compHot = 0;
+
+      // Render the identical continuous hex grid on BOTH layers
+      cells.forEach(cell => {
+        // 1. STORE FOOTFALL: Blue Gradient Hex Layer
+        const sVal = Math.min(100, Math.max(5, Math.round(clinicHourDemand * cell.store_weight * dayMultiplier)));
+        storePeak = Math.max(storePeak, sVal);
+        if (sVal >= 70) storeHot++;
+
+        L.polygon(cell.polygon, {
+          color: '#ffffff',
+          stroke: false,
+          fillColor: getStoreColor(sVal),
+          fillOpacity: 0.65,
+          smoothFactor: 1
+        }).bindTooltip(`
+          <div style="font-family:sans-serif;">
+            <b style="color:#38bdf8;">STORE FOOTFALL HEX LAYER</b><br>
+            <strong>${cl.name}</strong><br>
+            <strong>Time:</strong> ${dayName} ${hourStr}<br>
+            <hr style="margin:4px 0; border:none; border-top:1px solid #475569;">
+            <strong>Store Footfall Index:</strong> <span style="font-size:13px; font-weight:800; color:#38bdf8;">${sVal}/100</span><br>
+            <strong>Distance to Clinic:</strong> ${Math.round(cell.dist_meters)} m
+          </div>
+        `, { sticky: true }).addTo(storeHexGroup);
+
+        // 2. COMPETITOR FOOTFALL: Yellow-to-Red Hex Layer
+        // Density surface calculated from all nearby competitor clinics and hospitals
+        const cVal = Math.min(100, Math.max(4, Math.round(Math.pow(cell.comp_weight, 1.4) * 98 * dayMultiplier * (0.4 + (clinicHourDemand / 140)))));
+        compPeak = Math.max(compPeak, cVal);
+        if (cVal >= 70) compHot++;
+
+        const topCompsHtml = (cell.nearby_comps && cell.nearby_comps.length) ? `
+          <div style="margin-top:4px; font-size:11px; color:#cbd5e1;">
+            <b>Nearby Influencing Competitors:</b>
+            <ul style="margin-left:14px; margin-top:2px;">
+              ${cell.nearby_comps.map(c => `<li>${c.name} (${c.dist}m)</li>`).join('')}
+            </ul>
+          </div>
+        ` : '';
+
+        L.polygon(cell.polygon, {
+          color: '#ffffff',
+          stroke: false,
+          fillColor: getCompetitorColor(cVal),
+          fillOpacity: 0.65,
+          smoothFactor: 1
+        }).bindTooltip(`
+          <div style="font-family:sans-serif;">
+            <b style="color:#febb57;">COMPETITOR FOOTFALL HEX LAYER</b><br>
+            <strong>Catchment:</strong> ${cl.locality}<br>
+            <strong>Time:</strong> ${dayName} ${hourStr}<br>
+            <hr style="margin:4px 0; border:none; border-top:1px solid #475569;">
+            <strong>Competitor Footfall Density:</strong> <span style="font-size:13px; font-weight:800; color:#f54428;">${cVal}/100</span><br>
+            <strong>Distance to Docube:</strong> ${Math.round(cell.dist_meters)} m
+            ${topCompsHtml}
+          </div>
+        `, { sticky: true }).addTo(compHexGroup);
+      });
+
+      // HUD Metrics
+      document.getElementById('storePeak').innerText = storePeak;
+      document.getElementById('storeHot').innerText = storeHot;
+      document.getElementById('storeOpd').innerText = `${clinicHourDemand}%`;
+
+      document.getElementById('compPeak').innerText = compPeak;
+      document.getElementById('compHot').innerText = compHot;
+      document.getElementById('compCount').innerText = compPoints.length;
+    }
+
+    function setCenterAndBounds() {
+      const clinicData = window.GEOSPATIAL_HEX_DATA[currentClinicId];
+      if (!clinicData) return;
+      const center = [clinicData.clinic.lat, clinicData.clinic.lon];
+      mapStore.setView(center, 13.5, { animate: false });
+      mapComp.setView(center, 13.5, { animate: false });
+      updateView();
+    }
+
+    // View Tabs (Split vs Store Only vs Competitor Only)
+    document.querySelectorAll('#viewModeTabs .view-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#viewModeTabs .view-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const mode = tab.getAttribute('data-mode');
+        const pStore = document.getElementById('paneStore');
+        const pComp = document.getElementById('paneComp');
+
+        if (mode === 'split') {
+          pStore.classList.remove('hidden-pane');
+          pComp.classList.remove('hidden-pane');
+        } else if (mode === 'store') {
+          pStore.classList.remove('hidden-pane');
+          pComp.classList.add('hidden-pane');
+        } else if (mode === 'competitor') {
+          pStore.classList.add('hidden-pane');
+          pComp.classList.remove('hidden-pane');
+        }
+        setTimeout(() => {
+          mapStore.invalidateSize();
+          mapComp.invalidateSize();
+        }, 150);
+      });
+    });
+
+    // Dropdown & timeline handlers
+    document.getElementById('clinicSelect').addEventListener('change', (e) => {
+      currentClinicId = e.target.value;
+      setCenterAndBounds();
+    });
+
+    document.querySelectorAll('#dayButtons .day-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#dayButtons .day-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentDay = parseInt(btn.getAttribute('data-day'));
+        updateView();
+      });
+    });
+
+    const hourSlider = document.getElementById('hourSlider');
+    hourSlider.addEventListener('input', (e) => {
+      currentHour = parseInt(e.target.value);
+      updateView();
+    });
+
+    const playBtn = document.getElementById('playBtn');
+    playBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        playBtn.innerText = '⏸';
+        playBtn.style.background = '#f54428';
+        timer = setInterval(() => {
+          currentHour++;
+          if (currentHour > 23) currentHour = 6;
+          hourSlider.value = currentHour;
+          updateView();
+        }, 900);
+      } else {
+        playBtn.innerText = '▶';
+        playBtn.style.background = '#38bdf8';
+        clearInterval(timer);
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      setCenterAndBounds();
+      setTimeout(() => {
+        mapStore.invalidateSize();
+        mapComp.invalidateSize();
+      }, 300);
+    });
+  </script>
+</body>
+</html>

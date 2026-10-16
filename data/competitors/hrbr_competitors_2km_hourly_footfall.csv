@@ -1,0 +1,589 @@
+Catchment Area,Facility Name,Type,Speciality,Distance (m),Day,6 AM,7 AM,8 AM,9 AM,10 AM,11 AM,12 PM,1 PM,2 PM,3 PM,4 PM,5 PM,6 PM,7 PM,8 PM,9 PM,10 PM,11 PM
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Monday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Tuesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Wednesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Thursday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Friday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Saturday,0,0,16,52,91,98,78,36,0,0,36,67,98,98,78,26,0,0
+"Docube Clinic, HRBR",Kalyan Eye Clinic,Clinic,General,122.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, HRBR",Oliva Skin and Hair Clinic,Clinic,General,124.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Monday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Tuesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Wednesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Thursday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Friday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Saturday,0,0,18,62,100,100,92,43,0,0,43,80,100,100,92,31,0,0
+"Docube Clinic, HRBR",Tranquil Healthcare,Clinic,clinic,148.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Monday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Tuesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Wednesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Thursday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Friday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Saturday,12,21,41,76,100,100,100,65,35,38,53,80,100,100,88,53,29,18
+"Docube Clinic, HRBR",Herbocare Hospital Pvt,Hospital,General,199.0,Sunday,4,6,12,23,32,35,30,20,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Rajbal Skin Clinic,Hospital,General,206.3,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Monday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Tuesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Wednesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Thursday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Friday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Saturday,0,0,18,60,100,100,91,42,0,0,42,78,100,100,91,30,0,0
+"Docube Clinic, HRBR",Amrik Nethralaya,Clinic,General,303.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Monday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Tuesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Wednesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Thursday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Friday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Saturday,0,0,14,47,82,88,70,33,0,0,33,61,88,88,70,23,0,0
+"Docube Clinic, HRBR",Trinity Gastroenterology & Diagnostics,Clinic,General,391.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Monday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Tuesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Wednesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Thursday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Friday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Saturday,0,0,19,62,100,100,93,43,0,0,43,81,100,100,93,31,0,0
+"Docube Clinic, HRBR",Dr. Harsha's physiotherapy Clinic,Clinic,General,488.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Monday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Tuesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Wednesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Thursday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Friday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Saturday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",BOSH Physiotherapy,Clinic,clinic,495.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Monday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Tuesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Wednesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Thursday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Friday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Saturday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Bangalore Eye Hospital And Retina Centre,Hospital,General,506.7,Sunday,3,5,11,20,27,29,26,17,9,10,14,20,26,28,23,14,8,5
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Monday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Tuesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Wednesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Thursday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Friday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Saturday,12,21,41,76,100,100,100,65,35,38,53,80,100,100,88,53,29,18
+"Docube Clinic, HRBR",Bangalore Orthopeadic And Surgical Hospital,Hospital,hospital,527.4,Sunday,4,6,12,23,32,35,30,20,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Monday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Tuesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Wednesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Thursday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Friday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Saturday,0,0,14,47,82,88,70,33,0,0,33,61,88,88,70,23,0,0
+"Docube Clinic, HRBR",Twinkle Kids Child Care Speciality Clinic,Clinic,General,528.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Anjani Women's Day Care Hospital,Hospital,General,547.8,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Monday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Tuesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Wednesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Thursday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Friday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Saturday,0,0,14,48,85,92,72,34,0,0,34,63,92,92,72,24,0,0
+"Docube Clinic, HRBR","Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",Clinic,General,563.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,hospital,571.6,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, HRBR",Trilife Hospital,Hospital,General,572.6,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, HRBR",Lokhande S Hospital,Hospital,General,625.0,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Monday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Tuesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Wednesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Thursday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Friday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Saturday,0,0,17,57,100,100,86,40,0,0,40,75,100,100,86,29,0,0
+"Docube Clinic, HRBR",V Care Best Fertility IVF URO Kidney Centre,Clinic,General,655.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Monday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Tuesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Wednesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Thursday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Friday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Saturday,0,0,17,55,97,100,83,39,0,0,39,72,100,100,83,28,0,0
+"Docube Clinic, HRBR",Dr. Dinakar's Child Care,Clinic,General,668.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Monday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Tuesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Wednesday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Thursday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Friday,0,0,15,52,91,98,77,36,0,0,36,67,98,98,77,26,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Saturday,0,0,18,59,100,100,89,41,0,0,41,77,100,100,89,30,0,0
+"Docube Clinic, HRBR",Divine Medical Centre,Clinic,General,701.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Monday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Tuesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Wednesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Thursday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Friday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Saturday,0,0,15,51,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Contura Clinic,Clinic,General,705.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Monday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Tuesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Wednesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Thursday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Friday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Saturday,0,0,18,60,100,100,91,42,0,0,42,78,100,100,91,30,0,0
+"Docube Clinic, HRBR",Cloudnine Fertility,Clinic,General,743.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Monday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Tuesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Wednesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Thursday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Friday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Saturday,0,0,14,45,80,86,68,32,0,0,32,59,86,86,68,23,0,0
+"Docube Clinic, HRBR",Express Clinic,Clinic,General,796.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Monday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Tuesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Wednesday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Thursday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Friday,8,15,28,53,73,79,69,45,24,26,36,55,71,75,61,36,20,12
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Saturday,9,17,33,61,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Banasawadi Hospital,Hospital,General,834.1,Sunday,3,5,10,18,26,28,24,16,9,9,13,19,25,26,21,13,7,4
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, HRBR",Sathya Hospital,Hospital,General,854.3,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Monday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Tuesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Wednesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Thursday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Friday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Saturday,0,0,14,45,80,86,68,32,0,0,32,59,86,86,68,23,0,0
+"Docube Clinic, HRBR",Pratham Ent and Child Care Centre,Clinic,General,857.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Monday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Tuesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Wednesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Thursday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Friday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Saturday,10,17,33,62,86,94,81,52,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Procare Hospital,Hospital,General,868.7,Sunday,3,5,10,19,26,28,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Monday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Tuesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Wednesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Thursday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Friday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Saturday,11,19,38,70,97,100,92,59,32,35,49,74,95,99,81,49,27,16
+"Docube Clinic, HRBR",Motherhood,Hospital,hospital,909.5,Sunday,3,6,12,21,30,32,28,18,10,11,15,22,29,30,25,15,8,5
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Monday,10,17,34,62,86,94,82,53,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Tuesday,10,17,34,62,86,94,82,53,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Wednesday,10,17,34,62,86,94,82,53,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Thursday,10,17,34,62,86,94,82,53,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Friday,10,17,34,62,86,94,82,53,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Saturday,11,20,39,72,99,100,94,61,33,35,50,75,97,100,83,50,28,17
+"Docube Clinic, HRBR",Ovum Birthing Centre,Hospital,General,916.6,Sunday,3,6,12,22,30,33,29,18,10,11,15,23,30,31,25,15,8,5
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Monday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Tuesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Wednesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Thursday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Friday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Saturday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",Smile 365 Dental Clinic,Clinic,clinic,919.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Monday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Tuesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Wednesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Thursday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Friday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Saturday,0,0,17,56,99,100,85,39,0,0,39,73,100,100,85,28,0,0
+"Docube Clinic, HRBR",Krupa Homeopathic Clinic,Clinic,General,997.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Monday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Tuesday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Wednesday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Thursday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Friday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Saturday,0,0,17,56,98,100,84,39,0,0,39,73,100,100,84,28,0,0
+"Docube Clinic, HRBR",Synovium Physiotherapy Clinic,Clinic,General,1006.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Monday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Tuesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Wednesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Thursday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Friday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Saturday,0,0,13,45,79,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",J.H.Poly Clinic,Clinic,General,1057.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, HRBR",Endocrine Speciality Centre,Hospital,General,1081.1,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR","Vasan Eye Care Hospital, Banaswadi",Hospital,General,1094.9,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Monday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Tuesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Wednesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Thursday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Friday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Saturday,0,0,18,61,100,100,91,43,0,0,43,79,100,100,91,30,0,0
+"Docube Clinic, HRBR",Bangalore Spine Specialist Clinic,Clinic,General,1114.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Monday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Tuesday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Wednesday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Thursday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Friday,0,0,12,40,70,76,60,28,0,0,28,52,76,76,60,20,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Saturday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, HRBR",IMAX Clinic,Clinic,General,1115.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Monday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Tuesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Wednesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Thursday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Friday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Saturday,11,19,37,69,95,100,90,58,32,34,48,72,93,97,79,48,26,16
+"Docube Clinic, HRBR",Shishuka Children's Speciality Hospital,Hospital,General,1134.6,Sunday,3,6,11,21,29,32,27,18,10,10,14,22,28,30,24,14,8,5
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Monday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Tuesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Wednesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Thursday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Friday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Saturday,0,0,19,63,100,100,94,44,0,0,44,81,100,100,94,31,0,0
+"Docube Clinic, HRBR",Vasan Eye Care,Clinic,General,1141.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Monday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Tuesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Wednesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Thursday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Friday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Saturday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, HRBR",Doctor's diagnostics Centre,Hospital,General,1167.5,Sunday,3,5,10,18,25,27,24,15,8,9,13,19,25,26,21,13,7,4
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, HRBR",Cloudnine Hospital,Hospital,General,1171.0,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Monday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Tuesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Wednesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Thursday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Friday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Saturday,12,22,42,78,100,100,100,66,36,38,54,81,100,100,90,54,30,18
+"Docube Clinic, HRBR",Zion Hospital And Research Centre Pvt.Ltd.,Hospital,General,1173.4,Sunday,4,7,13,24,33,36,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Monday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Tuesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Wednesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Thursday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Friday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Saturday,12,22,42,78,100,100,100,66,36,38,54,81,100,100,90,54,30,18
+"Docube Clinic, HRBR",Srinivasa Eye Hospital,Hospital,General,1204.5,Sunday,4,7,13,24,33,36,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, HRBR",Vardhan Fertility,Clinic,General,1215.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Monday,0,0,13,42,75,81,64,30,0,0,30,55,81,81,64,21,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Tuesday,0,0,13,42,75,81,64,30,0,0,30,55,81,81,64,21,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Wednesday,0,0,13,42,75,81,64,30,0,0,30,55,81,81,64,21,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Thursday,0,0,13,42,75,81,64,30,0,0,30,55,81,81,64,21,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Friday,0,0,13,42,75,81,64,30,0,0,30,55,81,81,64,21,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Saturday,0,0,15,49,86,93,73,34,0,0,34,64,93,93,73,24,0,0
+"Docube Clinic, HRBR",Nainda Advanced Eye Care Centre,Clinic,General,1216.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Monday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Tuesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Wednesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Thursday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Friday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Saturday,0,0,15,51,90,97,77,36,0,0,36,67,97,97,77,26,0,0
+"Docube Clinic, HRBR",Poorna Heart and Women's Clinic,Clinic,General,1219.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Monday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Tuesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Wednesday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Thursday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Friday,0,0,13,44,77,84,66,31,0,0,31,57,84,84,66,22,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Saturday,0,0,15,51,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Roots Skin Clinic,Clinic,General,1225.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Monday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Tuesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Wednesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Thursday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Friday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Saturday,10,17,33,62,86,94,81,52,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, HRBR","R K Hospital, Bengaluru Urban",Hospital,General,1265.8,Sunday,3,5,10,19,26,28,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Monday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Tuesday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Wednesday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Thursday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Friday,9,16,31,58,80,87,76,49,27,28,40,61,78,82,67,40,22,13
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Saturday,10,18,36,67,92,100,87,56,31,33,46,70,90,94,77,46,26,15
+"Docube Clinic, HRBR",Dr.Zamindar Microsurgical Eye Centre,Hospital,General,1313.9,Sunday,3,6,11,20,28,31,26,17,9,10,14,21,27,29,23,14,8,5
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, HRBR",Milaan Hospital,Hospital,General,1323.1,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Monday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Tuesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Wednesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Thursday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Friday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Saturday,0,0,18,61,100,100,91,43,0,0,43,79,100,100,91,30,0,0
+"Docube Clinic, HRBR",TridENT Cares ENT Super Speciality Centre,Doctors,General,1338.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Dianova Diabetes Center and Hospital,Hospital,General,1350.0,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, HRBR",Health and hijama clinic,Clinic,General,1411.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, HRBR",Karunya Homoeopathy Centre,Hospital,General,1461.1,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Monday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Tuesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Wednesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Thursday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Friday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Saturday,0,0,18,61,100,100,91,43,0,0,43,79,100,100,91,30,0,0
+"Docube Clinic, HRBR",Dewans Maternity and Nursing Home,Clinic,General,1495.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Monday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Tuesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Wednesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Thursday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Friday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Saturday,0,0,14,47,82,88,70,33,0,0,33,61,88,88,70,23,0,0
+"Docube Clinic, HRBR",Maneet Poly Clinic,Clinic,General,1506.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Monday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Tuesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Wednesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Thursday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Friday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Saturday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",Feran Hospital,Hospital,General,1509.3,Sunday,3,5,11,20,27,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Monday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Tuesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Wednesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Thursday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Friday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Saturday,0,0,15,51,90,97,77,36,0,0,36,67,97,97,77,26,0,0
+"Docube Clinic, HRBR",Pranav Diabetes Centre,Clinic,General,1536.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Monday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Tuesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Wednesday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Thursday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Friday,0,0,16,53,93,100,80,37,0,0,37,69,100,100,80,26,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Saturday,0,0,18,61,100,100,91,43,0,0,43,79,100,100,91,30,0,0
+"Docube Clinic, HRBR",Premji Occupational Therapy & Rehabilitation Centre,Clinic,General,1563.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Monday,0,0,15,51,90,97,76,36,0,0,36,66,97,97,76,26,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Tuesday,0,0,15,51,90,97,76,36,0,0,36,66,97,97,76,26,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Wednesday,0,0,15,51,90,97,76,36,0,0,36,66,97,97,76,26,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Thursday,0,0,15,51,90,97,76,36,0,0,36,66,97,97,76,26,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Friday,0,0,15,51,90,97,76,36,0,0,36,66,97,97,76,26,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Saturday,0,0,18,59,100,100,88,41,0,0,41,76,100,100,88,29,0,0
+"Docube Clinic, HRBR",Motherhoodclinic,Clinic,General,1604.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, HRBR",Faran Health Care Centre,Clinic,General,1606.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Monday,0,0,14,48,84,90,71,33,0,0,33,62,90,90,71,24,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Tuesday,0,0,14,48,84,90,71,33,0,0,33,62,90,90,71,24,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Wednesday,0,0,14,48,84,90,71,33,0,0,33,62,90,90,71,24,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Thursday,0,0,14,48,84,90,71,33,0,0,33,62,90,90,71,24,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Friday,0,0,14,48,84,90,71,33,0,0,33,62,90,90,71,24,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Saturday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Reachh Homeopathy Clinic,Clinic,General,1609.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Monday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Tuesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Wednesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Thursday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Friday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Saturday,12,22,42,78,100,100,100,66,36,38,54,81,100,100,90,54,30,18
+"Docube Clinic, HRBR",Good Shepherd Hospital,Hospital,General,1618.7,Sunday,4,7,13,24,33,36,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Monday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Tuesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Wednesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Thursday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Friday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Saturday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, HRBR",Medicure Hospital,Hospital,General,1626.2,Sunday,3,6,11,21,29,32,28,18,10,10,15,22,29,30,24,15,8,5
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, HRBR",Stroke Treatment Paralysis,Hospital,General,1646.9,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, HRBR",Motherhood Women & Children Hospital,Hospital,General,1649.2,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Monday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Tuesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Wednesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Thursday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Friday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Saturday,0,0,15,49,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, HRBR",Women's Speciality Polyclinic,Clinic,General,1656.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Monday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Tuesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Wednesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Thursday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Friday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Saturday,0,0,17,57,100,100,86,40,0,0,40,75,100,100,86,29,0,0
+"Docube Clinic, HRBR",The Children's Clinic,Clinic,General,1661.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Monday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Tuesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Wednesday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Thursday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Friday,0,0,16,55,96,100,82,38,0,0,38,71,100,100,82,27,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Saturday,0,0,19,63,100,100,94,44,0,0,44,81,100,100,94,31,0,0
+"Docube Clinic, HRBR",Lifespan Diabetic Clinic,Clinic,General,1662.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Monday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Tuesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Wednesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Thursday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Friday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Saturday,0,0,17,57,100,100,86,40,0,0,40,75,100,100,86,29,0,0
+"Docube Clinic, HRBR",People's Clinic,Clinic,General,1672.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Monday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Tuesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Wednesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Thursday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Friday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Saturday,9,16,31,58,81,88,76,49,27,29,40,61,79,83,67,40,22,13
+"Docube Clinic, HRBR",Sri Vijayalakshmi Pragathi Hospital,Hospital,General,1694.4,Sunday,3,5,10,18,25,27,23,15,8,9,12,19,24,25,20,12,7,4
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Monday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Tuesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Wednesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Thursday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Friday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Saturday,10,19,36,67,93,100,88,57,31,33,47,70,91,95,78,47,26,16
+"Docube Clinic, HRBR",Shree Vijayalakshmi Hospital and Trauma Centre,Hospital,General,1715.5,Sunday,3,6,11,20,28,31,27,17,9,10,14,21,28,29,24,14,8,5
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Monday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Tuesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Wednesday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Thursday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Friday,9,16,30,57,78,85,74,48,26,28,39,59,77,80,65,39,22,13
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Saturday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, HRBR",CDEC Hospital,Hospital,General,1740.9,Sunday,3,5,11,20,27,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Monday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Tuesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Wednesday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Thursday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Friday,0,0,16,54,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Saturday,0,0,18,62,100,100,92,43,0,0,43,80,100,100,92,31,0,0
+"Docube Clinic, HRBR",Shubham Ayurvedic Clinic,Clinic,General,1761.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Monday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Tuesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Wednesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Thursday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Friday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Saturday,0,0,14,45,80,86,68,32,0,0,32,59,86,86,68,23,0,0
+"Docube Clinic, HRBR",Nava Chaithanya Clinic,Clinic,General,1828.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Monday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Tuesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Wednesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Thursday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Friday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Saturday,0,0,19,62,100,100,93,43,0,0,43,81,100,100,93,31,0,0
+"Docube Clinic, HRBR",Dr. Naeem Sadiq,Doctors,General,1844.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Monday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Tuesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Wednesday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Thursday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Friday,0,0,13,44,77,83,65,30,0,0,30,57,83,83,65,22,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Saturday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, HRBR",Arjun's Child Care Clinic,Clinic,General,1891.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Monday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Tuesday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Wednesday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Thursday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Friday,10,18,35,66,91,99,86,56,30,32,45,69,89,93,76,45,25,15
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Saturday,12,21,41,75,100,100,99,64,35,37,52,79,100,100,87,52,29,17
+"Docube Clinic, HRBR",Srivijaya Speciality Hospital,Hospital,General,1912.1,Sunday,4,6,12,23,32,35,30,19,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Monday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Tuesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Wednesday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Thursday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Friday,0,0,12,40,71,77,61,28,0,0,28,53,77,77,61,20,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Saturday,0,0,14,47,82,88,70,33,0,0,33,61,88,88,70,23,0,0
+"Docube Clinic, HRBR",Sakaria Healthcare Pvt. Ltd.,Clinic,General,1914.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, HRBR",Geriatric Hospitals,Hospital,General,1919.3,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Monday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Tuesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Wednesday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Thursday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Friday,0,0,12,38,68,73,58,27,0,0,27,50,73,73,58,19,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Saturday,0,0,13,44,78,84,66,31,0,0,31,58,84,84,66,22,0,0
+"Docube Clinic, HRBR",Raja Rama's Homeopathy & Ayurvedic Centre,Clinic,General,1922.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Monday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Tuesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Wednesday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Thursday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Friday,0,0,16,52,92,100,79,37,0,0,37,68,100,100,79,26,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Saturday,0,0,18,60,100,100,91,42,0,0,42,78,100,100,91,30,0,0
+"Docube Clinic, HRBR",Shanthi Women's Healthcare Centre,Clinic,General,1929.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Monday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Tuesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Wednesday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Thursday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Friday,9,17,33,61,85,92,80,52,28,30,42,64,83,86,70,42,24,14
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Saturday,11,19,38,70,97,100,92,59,32,35,49,74,95,99,81,49,27,16
+"Docube Clinic, HRBR",Super Specialty Eye Hospital,Hospital,General,1933.9,Sunday,3,6,12,21,30,32,28,18,10,11,15,22,29,30,25,15,8,5
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, HRBR",Sneha Clinic,Clinic,General,1996.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

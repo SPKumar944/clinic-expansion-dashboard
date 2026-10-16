@@ -1,0 +1,2731 @@
+{
+  "koramangala": [
+    {
+      "name": "Gunasheela Hospitals",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Sulochana Building, 1st Cross Rd, 3rd Block, Sarjapura Main Road, Koramangala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9250105,
+      "lon": 77.6278708,
+      "distance_meters": 0.9
+    },
+    {
+      "name": "CGHS Dispensary No.7",
+      "type": "clinic",
+      "speciality": "centre",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9251521,
+      "lon": 77.6245022,
+      "distance_meters": 366.1
+    },
+    {
+      "name": "Cherish Fertinity Clinic",
+      "type": "clinic",
+      "speciality": "fertility",
+      "operator": "",
+      "street": "7th Cross Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9296138,
+      "lon": 77.6316244,
+      "distance_meters": 652.9
+    },
+    {
+      "name": "Agarwal Eye Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9273417,
+      "lon": 77.6221301,
+      "distance_meters": 674.4
+    },
+    {
+      "name": "Shilpa Homeopathic Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9267313,
+      "lon": 77.6346384,
+      "distance_meters": 757.2
+    },
+    {
+      "name": "Prerana Dental Clinic",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9186845,
+      "lon": 77.630774,
+      "distance_meters": 770.9
+    },
+    {
+      "name": "Maithriye Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9195379,
+      "lon": 77.6328425,
+      "distance_meters": 812.8
+    },
+    {
+      "name": "Kamala Nethralaya",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9314314,
+      "lon": 77.6233582,
+      "distance_meters": 865.3
+    },
+    {
+      "name": "Devi Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9239445,
+      "lon": 77.6198634,
+      "distance_meters": 876.6
+    },
+    {
+      "name": "Sankeerthana Hospital and Fertility Center",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9256013,
+      "lon": 77.6359638,
+      "distance_meters": 878.8
+    },
+    {
+      "name": "Mamtha Health Center",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9180492,
+      "lon": 77.6318764,
+      "distance_meters": 887.7
+    },
+    {
+      "name": "Mhaskars Srishti Clinic",
+      "type": "doctors",
+      "speciality": "gynaecology",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.917678,
+      "lon": 77.6317772,
+      "distance_meters": 918.9
+    },
+    {
+      "name": "Sagar Dental Clinic",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9169725,
+      "lon": 77.6300572,
+      "distance_meters": 925.1
+    },
+    {
+      "name": "Vachani Vista",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9320032,
+      "lon": 77.6229997,
+      "distance_meters": 939.7
+    },
+    {
+      "name": "Kaveri Speciality Hospital",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9236768,
+      "lon": 77.6193111,
+      "distance_meters": 940.2
+    },
+    {
+      "name": "S.M.S. Nursing Home",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9208307,
+      "lon": 77.6201778,
+      "distance_meters": 955.4
+    },
+    {
+      "name": "Beams Hospitals Private Limited",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "640, 12Th Main, 80 Ft Road, 4Th Block, Koramangala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9342277,
+      "lon": 77.6296323,
+      "distance_meters": 1041.8
+    },
+    {
+      "name": "Bhagavathi Multi Speciality Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9160636,
+      "lon": 77.6308219,
+      "distance_meters": 1045.4
+    },
+    {
+      "name": "Bhagavathi Hospitals Private Limited",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "HSR Layout Sector 6",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9161259,
+      "lon": 77.6311505,
+      "distance_meters": 1050.3
+    },
+    {
+      "name": "Proteeth Dental",
+      "type": "hospital",
+      "speciality": "dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment",
+      "operator": "Dr Saranya, Dr Dipen",
+      "street": "5th cross, 4th block",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9346221,
+      "lon": 77.6284665,
+      "distance_meters": 1070.1
+    },
+    {
+      "name": "Proteeth Dental",
+      "type": "hospital",
+      "speciality": "dentistry;prosthodontist;pediatric_dentist",
+      "operator": "",
+      "street": "5th Cross Road, 4th block",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9346254,
+      "lon": 77.6284672,
+      "distance_meters": 1070.4
+    },
+    {
+      "name": "Fj Merrit Hydrotherapy And Wellness",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "KAY ARR CORNER STONE 2nd Floor 80 Feet Road 4th Block, Koramangala,Karnataka",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9344224,
+      "lon": 77.6299785,
+      "distance_meters": 1070.5
+    },
+    {
+      "name": "Skinsi",
+      "type": "clinic",
+      "speciality": "dermatology",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9333552,
+      "lon": 77.6224709,
+      "distance_meters": 1096.9
+    },
+    {
+      "name": "Chamundi Hi Tech Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9240924,
+      "lon": 77.6177848,
+      "distance_meters": 1098.6
+    },
+    {
+      "name": "Toothsi",
+      "type": "clinic",
+      "speciality": "dentist",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9333754,
+      "lon": 77.6224577,
+      "distance_meters": 1099.5
+    },
+    {
+      "name": "Murthy Health and Research Centre",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "Sarjapura Road, Jakkasandra Extension",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9247643,
+      "lon": 77.6382862,
+      "distance_meters": 1128.5
+    },
+    {
+      "name": "Magnus Diagnostic Lab",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9349187,
+      "lon": 77.6305022,
+      "distance_meters": 1137.3
+    },
+    {
+      "name": "HCG, Koramangala",
+      "type": "hospital",
+      "speciality": "Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9343279,
+      "lon": 77.6228848,
+      "distance_meters": 1168.3
+    },
+    {
+      "name": "Varalakshmi Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.924624,
+      "lon": 77.6170966,
+      "distance_meters": 1169.2
+    },
+    {
+      "name": "Surya Diagnostics and Health Services",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "Hosur Road, Madiwala, Venkateshwara Layout, Sadduguntepalya",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9242825,
+      "lon": 77.6170883,
+      "distance_meters": 1172.1
+    },
+    {
+      "name": "Venkateshwara Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Hosur road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9257842,
+      "lon": 77.6170828,
+      "distance_meters": 1173.0
+    },
+    {
+      "name": "St. Johns hospital Emergency ward",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9305937,
+      "lon": 77.6186159,
+      "distance_meters": 1179.9
+    },
+    {
+      "name": "Aswad Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Hosur road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9147871,
+      "lon": 77.6247622,
+      "distance_meters": 1186.4
+    },
+    {
+      "name": "West Mead Clinic",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9166014,
+      "lon": 77.6349717,
+      "distance_meters": 1211.1
+    },
+    {
+      "name": "Sri Venkateshwara Hospitals",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.926471,
+      "lon": 77.6167399,
+      "distance_meters": 1217.8
+    },
+    {
+      "name": "Epicorium Skin Hair Nail Clinic",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9150191,
+      "lon": 77.6325124,
+      "distance_meters": 1219.9
+    },
+    {
+      "name": "Greenview Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9191928,
+      "lon": 77.6381223,
+      "distance_meters": 1285.4
+    },
+    {
+      "name": "Apollo Spectra Hospitals",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9338175,
+      "lon": 77.6201615,
+      "distance_meters": 1287.2
+    },
+    {
+      "name": "Greenview Medical Center",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "14th Main Rd, opposite Agara Lake, Sector 5, 1st Sector, HSR Layout",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9191813,
+      "lon": 77.6381379,
+      "distance_meters": 1287.5
+    },
+    {
+      "name": "Nova Specialty Surgery Center, Koramangala",
+      "type": "hospital",
+      "speciality": "multi speciality",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9339097,
+      "lon": 77.620208,
+      "distance_meters": 1291.8
+    },
+    {
+      "name": "Shiva Vision Care",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9366526,
+      "lon": 77.6277125,
+      "distance_meters": 1294.1
+    },
+    {
+      "name": "Narayana Hrudayalaya Dental Clinic",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Outer Ring Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9155759,
+      "lon": 77.6349897,
+      "distance_meters": 1302.3
+    },
+    {
+      "name": "Global Ayurveda Multispeciality Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "HSR Ring Road, 5th Sector , HSR Layout, Jakkasandra, 1st Block Koramangala, HSR Layout, Karnataka",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9165795,
+      "lon": 77.6362187,
+      "distance_meters": 1302.8
+    },
+    {
+      "name": "Healing Earth Multispeciality Ayurveda Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "HSR Ring Road, 5th Sector , HSR Layout, Karnataka",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9165359,
+      "lon": 77.6361865,
+      "distance_meters": 1303.9
+    },
+    {
+      "name": "Nova IVI Fertility",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "4th Floor, 1st Cross, 5th Block, Koramangala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9338298,
+      "lon": 77.6199371,
+      "distance_meters": 1304.2
+    },
+    {
+      "name": "City Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9273667,
+      "lon": 77.6160046,
+      "distance_meters": 1313.0
+    },
+    {
+      "name": "Annayya Healthcare Pvt Ltd",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "14th Main, 5th Sector, HSR Layout",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9182603,
+      "lon": 77.6381293,
+      "distance_meters": 1341.2
+    },
+    {
+      "name": "Karanth Speciality Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9160081,
+      "lon": 77.6193573,
+      "distance_meters": 1362.3
+    },
+    {
+      "name": "Ismile Dental & Oral Health Care Centre",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "KAS Officers Colony, Stage 2, BTM 2nd Stage, Karnataka",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.915785,
+      "lon": 77.6194045,
+      "distance_meters": 1377.2
+    },
+    {
+      "name": "Acura Speciality Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "5th Block, 17th C Main Road, KHB Colony , Koramangala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9353208,
+      "lon": 77.6205504,
+      "distance_meters": 1394.1
+    },
+    {
+      "name": "Koramangala\u00a0Poly Clinic",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "17th E Main Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9366734,
+      "lon": 77.6228961,
+      "distance_meters": 1404.2
+    },
+    {
+      "name": "Devi Eye Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9162576,
+      "lon": 77.6374069,
+      "distance_meters": 1419.6
+    },
+    {
+      "name": "Apollo Diagnostics",
+      "type": "clinic",
+      "speciality": "laboratory",
+      "operator": "",
+      "street": "17th C main, 6th Block, Near Koramangala Club, Koramangala, 6th Block, Koramangala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.937327,
+      "lon": 77.6240168,
+      "distance_meters": 1431.4
+    },
+    {
+      "name": "Chandini Neuro Specialty Clinic",
+      "type": "doctors",
+      "speciality": "neurology",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.912655,
+      "lon": 77.6325493,
+      "distance_meters": 1464.8
+    },
+    {
+      "name": "Orange Health Labs",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9126004,
+      "lon": 77.6329359,
+      "distance_meters": 1485.4
+    },
+    {
+      "name": "Apollo Cradle",
+      "type": "hospital",
+      "speciality": "Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9368104,
+      "lon": 77.6206345,
+      "distance_meters": 1528.4
+    },
+    {
+      "name": "Apollo Clinic",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9138052,
+      "lon": 77.6366855,
+      "distance_meters": 1570.1
+    },
+    {
+      "name": "Life Care Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Maruthi Nagar Main Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9239736,
+      "lon": 77.6133232,
+      "distance_meters": 1581.6
+    },
+    {
+      "name": "Keva Ayurveda Health Care Pvt Ltd",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "7th Cross, 35th Main, BTM 2nd Stage,, Adjacent DSR Naveen Lake View Apartments, Karnataka",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9127062,
+      "lon": 77.6201668,
+      "distance_meters": 1603.7
+    },
+    {
+      "name": "Vasan Eye Care Hospital HSR Layout",
+      "type": "doctors",
+      "speciality": "ophthalmology",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9121673,
+      "lon": 77.6347685,
+      "distance_meters": 1612.2
+    },
+    {
+      "name": "The Apollo Clinic, Bengaluru Urban",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "1st Cross, 5th Block, Koramangala, Near Nagarjuna Hotel",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9339266,
+      "lon": 77.6161393,
+      "distance_meters": 1612.4
+    },
+    {
+      "name": "Vasan Eye Care",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "Hosur road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9102705,
+      "lon": 77.6265538,
+      "distance_meters": 1645.9
+    },
+    {
+      "name": "Vitiligo Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9172038,
+      "lon": 77.6149488,
+      "distance_meters": 1648.6
+    },
+    {
+      "name": "Roopena Agrahara Government Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9102142,
+      "lon": 77.6244654,
+      "distance_meters": 1686.9
+    },
+    {
+      "name": "Vasan Eye Care Hospital, Koramangala",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9402371,
+      "lon": 77.6253403,
+      "distance_meters": 1714.7
+    },
+    {
+      "name": "Aparna Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9362087,
+      "lon": 77.616947,
+      "distance_meters": 1718.2
+    },
+    {
+      "name": "Life Care Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Om Complex, 20th Main, Gangotri Circle, BTM Layout, Madiwala",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9194712,
+      "lon": 77.6130111,
+      "distance_meters": 1725.1
+    },
+    {
+      "name": "Pristine Health care",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9382768,
+      "lon": 77.6186753,
+      "distance_meters": 1780.1
+    },
+    {
+      "name": "Spurthy Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.923857,
+      "lon": 77.611355,
+      "distance_meters": 1795.3
+    },
+    {
+      "name": "Gangothri Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "Outer Ring Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9162878,
+      "lon": 77.6138218,
+      "distance_meters": 1806.2
+    },
+    {
+      "name": "Spurthy Hospital",
+      "type": "hospital",
+      "speciality": "hospital",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9239335,
+      "lon": 77.61116,
+      "distance_meters": 1815.7
+    },
+    {
+      "name": "Devi Eye Hospital",
+      "type": "hospital",
+      "speciality": "multi speciality",
+      "operator": "",
+      "street": "18th Main Road",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9412109,
+      "lon": 77.6238987,
+      "distance_meters": 1851.7
+    },
+    {
+      "name": "Sri Jyoti Eye Clinic",
+      "type": "clinic",
+      "speciality": "clinic",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9221202,
+      "lon": 77.610766,
+      "distance_meters": 1882.2
+    },
+    {
+      "name": "Shashi Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9140267,
+      "lon": 77.613838,
+      "distance_meters": 1951.5
+    },
+    {
+      "name": "Bhaanu Nursing Home",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9074596,
+      "lon": 77.6274445,
+      "distance_meters": 1952.7
+    },
+    {
+      "name": "Mahanth Hospital",
+      "type": "hospital",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9079615,
+      "lon": 77.6235715,
+      "distance_meters": 1952.9
+    },
+    {
+      "name": "Amba Laser Clinic",
+      "type": "clinic",
+      "speciality": "General",
+      "operator": "",
+      "street": "",
+      "opening_hours": "Regular Day Hours (8 AM - 8 PM)",
+      "lat": 12.9191848,
+      "lon": 77.6104644,
+      "distance_meters": 1995.4
+    }
+  ],
+  "whitefield": [
+    {
+      "name": "MS Clinic, Diagnostic & Scan Center",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9701393,
+      "lon": 77.7502477,
+      "distance_meters": 53.3
+    },
+    {
+      "name": "Dr. O'grady Health And Welfare Center",
+      "type": "Doctors",
+      "speciality": "doctor",
+      "lat": 12.9701362,
+      "lon": 77.7504747,
+      "distance_meters": 72.6
+    },
+    {
+      "name": "Sai Dental Clinic",
+      "type": "Clinic",
+      "speciality": "dentist",
+      "lat": 12.9690294,
+      "lon": 77.7500256,
+      "distance_meters": 86.8
+    },
+    {
+      "name": "Cure N Care Homoeopathic clinic",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9696677,
+      "lon": 77.7507305,
+      "distance_meters": 91.2
+    },
+    {
+      "name": "Pushpa Nursing Home",
+      "type": "Hospital",
+      "speciality": "gynaecology;internal;paediatrics;surgery",
+      "lat": 12.9689004,
+      "lon": 77.7494952,
+      "distance_meters": 109.2
+    },
+    {
+      "name": "Srinivasa Clinic",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9685348,
+      "lon": 77.7495183,
+      "distance_meters": 146.6
+    },
+    {
+      "name": "Vasan Eye Care",
+      "type": "Clinic",
+      "speciality": "ophthalmology",
+      "lat": 12.9685226,
+      "lon": 77.7494774,
+      "distance_meters": 149.2
+    },
+    {
+      "name": "D White Feather",
+      "type": "Doctors",
+      "speciality": "dermatology",
+      "lat": 12.9684904,
+      "lon": 77.7494957,
+      "distance_meters": 152.1
+    },
+    {
+      "name": "Dr. Agarwal's Eye Hospital",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 12.9678752,
+      "lon": 77.7500478,
+      "distance_meters": 214.6
+    },
+    {
+      "name": "Tata MD",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9727771,
+      "lon": 77.7506394,
+      "distance_meters": 340.6
+    },
+    {
+      "name": "Svastha Hospital",
+      "type": "Hospital",
+      "speciality": "neurology;dermatology;cardiology;pulmonology;plastic_surgery;physiatry;urology;fertility;internal;paediatrics;otolaryngology",
+      "lat": 12.9659169,
+      "lon": 77.749386,
+      "distance_meters": 435.4
+    },
+    {
+      "name": "Namma Clinic",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9645507,
+      "lon": 77.748775,
+      "distance_meters": 596.3
+    },
+    {
+      "name": "Whitefield Eye Clinic",
+      "type": "Doctors",
+      "speciality": "ophthalmology",
+      "lat": 12.9608198,
+      "lon": 77.7470624,
+      "distance_meters": 1044.8
+    },
+    {
+      "name": "Wellness Ever",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 12.9593576,
+      "lon": 77.7461682,
+      "distance_meters": 1229.5
+    },
+    {
+      "name": "Heart Clinic & Pharmacy",
+      "type": "Clinic",
+      "speciality": "cardiology",
+      "lat": 12.9592301,
+      "lon": 77.7462313,
+      "distance_meters": 1240.7
+    },
+    {
+      "name": "Dr Rai's Skin And Hair Clinic",
+      "type": "Doctors",
+      "speciality": "dermatology",
+      "lat": 12.9592241,
+      "lon": 77.7462486,
+      "distance_meters": 1240.8
+    },
+    {
+      "name": "Motherhood Whitefield",
+      "type": "Hospital",
+      "speciality": "maternity;gynaecology;paediatrics",
+      "lat": 12.9589657,
+      "lon": 77.7467194,
+      "distance_meters": 1253.0
+    },
+    {
+      "name": "Bhagwan Mahavir Jain Health Center",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 12.9814669,
+      "lon": 77.7523656,
+      "distance_meters": 1324.5
+    },
+    {
+      "name": "Manipal Hospitals",
+      "type": "Hospital",
+      "speciality": "general;paediatrics;emergency;gynaecology",
+      "lat": 12.9583372,
+      "lon": 77.7454453,
+      "distance_meters": 1362.9
+    },
+    {
+      "name": "Amrik Hospital",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 12.9828993,
+      "lon": 77.7478126,
+      "distance_meters": 1474.0
+    },
+    {
+      "name": "CosMediQ",
+      "type": "Doctors",
+      "speciality": "dermatology",
+      "lat": 12.9829517,
+      "lon": 77.7525129,
+      "distance_meters": 1489.6
+    },
+    {
+      "name": "Whitefield Clinic of Nephro-Urology",
+      "type": "Clinic",
+      "speciality": "urology",
+      "lat": 12.9833772,
+      "lon": 77.7519481,
+      "distance_meters": 1525.9
+    },
+    {
+      "name": "Hair Loss Treatment in Bangalore - Hairline International",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 12.9566858,
+      "lon": 77.7419283,
+      "distance_meters": 1694.9
+    },
+    {
+      "name": "Revive Aesthetic Clinic Skin Hair And Laser Center",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9567879,
+      "lon": 77.7413601,
+      "distance_meters": 1717.5
+    },
+    {
+      "name": "Cloud Nine",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 12.9566829,
+      "lon": 77.7414284,
+      "distance_meters": 1723.4
+    },
+    {
+      "name": "Niyamh Health",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 12.9568252,
+      "lon": 77.7408435,
+      "distance_meters": 1744.9
+    },
+    {
+      "name": "RK Multispeciality center",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 12.9568467,
+      "lon": 77.7402255,
+      "distance_meters": 1781.5
+    },
+    {
+      "name": "Aswitha Poly Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 12.969691,
+      "lon": 77.732559,
+      "distance_meters": 1879.1
+    },
+    {
+      "name": "Sai Medical",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 12.9630702,
+      "lon": 77.7338009,
+      "distance_meters": 1898.2
+    }
+  ],
+  "jp_nagar": [
+    {
+      "name": "Dr Agarwals Eye Hospital Ltd",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9122295,
+      "lon": 77.5994906,
+      "distance_m": 52.9
+    },
+    {
+      "name": "Dr. Agarwal's Eye Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9103586,
+      "lon": 77.600474,
+      "distance_m": 180.9
+    },
+    {
+      "name": "Sri Sai Ram Hospital - Bangalore",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9144587,
+      "lon": 77.6003156,
+      "distance_m": 303.1
+    },
+    {
+      "name": "Disney Family Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.913031,
+      "lon": 77.6034614,
+      "distance_m": 430.0
+    },
+    {
+      "name": "Marigold Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9136262,
+      "lon": 77.6045369,
+      "distance_m": 562.2
+    },
+    {
+      "name": "Pothys Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9159348,
+      "lon": 77.6034098,
+      "distance_m": 610.8
+    },
+    {
+      "name": "Bangalore Orthopaedic Clinic",
+      "type": "Clinic",
+      "healthcare": "orthopaedics",
+      "lat": 12.9134261,
+      "lon": 77.6050916,
+      "distance_m": 611.7
+    },
+    {
+      "name": "Reviva Dermaesthetic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9165942,
+      "lon": 77.5965621,
+      "distance_m": 632.3
+    },
+    {
+      "name": "Shenoy's Children Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.917402,
+      "lon": 77.6010132,
+      "distance_m": 639.0
+    },
+    {
+      "name": "Kids Care Clinic",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.914434,
+      "lon": 77.6050207,
+      "distance_m": 646.8
+    },
+    {
+      "name": "Vinayaka Nethralaya",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9164779,
+      "lon": 77.6033811,
+      "distance_m": 655.5
+    },
+    {
+      "name": "Anugraha Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.912832,
+      "lon": 77.605728,
+      "distance_m": 663.3
+    },
+    {
+      "name": "Urocare Urology Superspeciality Clinic",
+      "type": "Clinic",
+      "healthcare": "urology",
+      "lat": 12.9132656,
+      "lon": 77.6057264,
+      "distance_m": 673.2
+    },
+    {
+      "name": "Ashya Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.907377,
+      "lon": 77.6040762,
+      "distance_m": 683.3
+    },
+    {
+      "name": "Bharat Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9082942,
+      "lon": 77.6050646,
+      "distance_m": 700.0
+    },
+    {
+      "name": "Shekar Nethralaya, Bengaluru Urban",
+      "type": "Clinic",
+      "healthcare": "Ophthalmology; Pediatric Ophthalmology; Plastic Surgery",
+      "lat": 12.9064778,
+      "lon": 77.5959125,
+      "distance_m": 720.2
+    },
+    {
+      "name": "Fertilite IVF",
+      "type": "Clinic",
+      "healthcare": "fertility",
+      "lat": 12.9164448,
+      "lon": 77.6046546,
+      "distance_m": 745.1
+    },
+    {
+      "name": "Sri Jayadeva Institute Of Cardiology",
+      "type": "Hospital",
+      "healthcare": "cardiology",
+      "lat": 12.918526,
+      "lon": 77.599254,
+      "distance_m": 749.5
+    },
+    {
+      "name": "Chiranjeevi Specialist Center",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9179144,
+      "lon": 77.5967581,
+      "distance_m": 750.9
+    },
+    {
+      "name": "Ortho Centre Clinic",
+      "type": "Clinic",
+      "healthcare": "orthopaedics",
+      "lat": 12.9123595,
+      "lon": 77.6067215,
+      "distance_m": 763.6
+    },
+    {
+      "name": "Vedam Ayurveda Multispeciality Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9175511,
+      "lon": 77.6039486,
+      "distance_m": 788.0
+    },
+    {
+      "name": "Daivik Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9147481,
+      "lon": 77.6063204,
+      "distance_m": 788.9
+    },
+    {
+      "name": "Chirag Global Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9058817,
+      "lon": 77.6037517,
+      "distance_m": 791.2
+    },
+    {
+      "name": "Dr. Revathi Prasad",
+      "type": "Doctors",
+      "healthcare": "doctor",
+      "lat": 12.9053197,
+      "lon": 77.6030568,
+      "distance_m": 807.2
+    },
+    {
+      "name": "Ayesha Speciality Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.918036,
+      "lon": 77.603516,
+      "distance_m": 807.4
+    },
+    {
+      "name": "Divakars speciality Hospital",
+      "type": "Hospital",
+      "healthcare": "General Gynecology; Obstetrics; Prenatal Care; nulife clinic; Laboratory Testing and In-Office Surgery; Medical Spa for Women; Ophthalmology",
+      "lat": 12.9100629,
+      "lon": 77.5924585,
+      "distance_m": 808.3
+    },
+    {
+      "name": "Sakhi Hospital (A Unit Of Prasad Healthcare Services)",
+      "type": "Hospital",
+      "healthcare": "gynaecology",
+      "lat": 12.9052747,
+      "lon": 77.6031945,
+      "distance_m": 818.5
+    },
+    {
+      "name": "Smruthi ENT Clinic & Multispeciality Centre",
+      "type": "Clinic",
+      "healthcare": "otolaryngology",
+      "lat": 12.9136053,
+      "lon": 77.6070457,
+      "distance_m": 821.1
+    },
+    {
+      "name": "Nisa Multi Speciality Clinics",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9138294,
+      "lon": 77.6070373,
+      "distance_m": 826.6
+    },
+    {
+      "name": "Shekhar Hospital, Jayanagar",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.917589,
+      "lon": 77.5948906,
+      "distance_m": 828.3
+    },
+    {
+      "name": "partha",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9166445,
+      "lon": 77.5936147,
+      "distance_m": 851.6
+    },
+    {
+      "name": "Anurag Medical Centre",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9060641,
+      "lon": 77.6049776,
+      "distance_m": 856.7
+    },
+    {
+      "name": "Center for Liver Disease Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.916234,
+      "lon": 77.593019,
+      "distance_m": 876.0
+    },
+    {
+      "name": "Chirag Hospital and Maternity Center",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9126298,
+      "lon": 77.5913594,
+      "distance_m": 908.7
+    },
+    {
+      "name": "Rainbow Children's Hospital",
+      "type": "Hospital",
+      "healthcare": "paediatrics;gynaecology",
+      "lat": 12.9033828,
+      "lon": 77.6007409,
+      "distance_m": 942.7
+    },
+    {
+      "name": "Genea",
+      "type": "Clinic",
+      "healthcare": "fertility",
+      "lat": 12.9101317,
+      "lon": 77.5908631,
+      "distance_m": 975.6
+    },
+    {
+      "name": "Kareem ENT",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.918787,
+      "lon": 77.605897,
+      "distance_m": 1027.0
+    },
+    {
+      "name": "Kareem E.N.T and Multispeciality Centre",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9188948,
+      "lon": 77.6058905,
+      "distance_m": 1035.6
+    },
+    {
+      "name": "Shree Vaishnavi Heart Centre and Multi Speciality",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9121632,
+      "lon": 77.6098276,
+      "distance_m": 1098.4
+    },
+    {
+      "name": "Skanda Health Care",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9061026,
+      "lon": 77.5914037,
+      "distance_m": 1100.0
+    },
+    {
+      "name": "R R Hospital & Trauma Centre",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9059465,
+      "lon": 77.5904192,
+      "distance_m": 1198.1
+    },
+    {
+      "name": "Parimala Health Care",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9009278,
+      "lon": 77.5986641,
+      "distance_m": 1214.1
+    },
+    {
+      "name": "Jnana Sanjeevini",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9162232,
+      "lon": 77.5890247,
+      "distance_m": 1257.2
+    },
+    {
+      "name": "Parimala Speciality Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9004567,
+      "lon": 77.6005474,
+      "distance_m": 1264.7
+    },
+    {
+      "name": "Parimala Health Care",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9003193,
+      "lon": 77.6008061,
+      "distance_m": 1282.2
+    },
+    {
+      "name": "Dr. Seema Sultana's Women's Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9232355,
+      "lon": 77.6021539,
+      "distance_m": 1299.1
+    },
+    {
+      "name": "Oncquest Laboratories",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9218007,
+      "lon": 77.5933109,
+      "distance_m": 1310.0
+    },
+    {
+      "name": "Dr. Santosh Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9190762,
+      "lon": 77.6092154,
+      "distance_m": 1310.8
+    },
+    {
+      "name": "Turning Point Therapists",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.920554,
+      "lon": 77.5915324,
+      "distance_m": 1315.7
+    },
+    {
+      "name": "Safa Health care",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9238004,
+      "lon": 77.6024467,
+      "distance_m": 1367.2
+    },
+    {
+      "name": "Amplifon",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9226321,
+      "lon": 77.5935954,
+      "distance_m": 1374.2
+    },
+    {
+      "name": "Bloom Women's Health",
+      "type": "Doctors",
+      "healthcare": "gynaecology",
+      "lat": 12.9103298,
+      "lon": 77.587092,
+      "distance_m": 1376.2
+    },
+    {
+      "name": "Amba Laser Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9191848,
+      "lon": 77.6104644,
+      "distance_m": 1426.7
+    },
+    {
+      "name": "BMTC Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9234317,
+      "lon": 77.5923374,
+      "distance_m": 1519.7
+    },
+    {
+      "name": "Cadabam's Hospitals",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.906071,
+      "lon": 77.5869281,
+      "distance_m": 1523.8
+    },
+    {
+      "name": "Sri Venkateswara Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9056165,
+      "lon": 77.6122688,
+      "distance_m": 1526.0
+    },
+    {
+      "name": "Healing Hands Clinic - J.P Nagar, Bengaluru",
+      "type": "Hospital",
+      "healthcare": "proctology;hernia;piles;fissure;fistula;varicose_veins;pilonidal_sinus",
+      "lat": 12.9061361,
+      "lon": 77.5868707,
+      "distance_m": 1526.5
+    },
+    {
+      "name": "Shashi Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9140267,
+      "lon": 77.613838,
+      "distance_m": 1552.2
+    },
+    {
+      "name": "Akshara Eye Hospital",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.8990265,
+      "lon": 77.6055551,
+      "distance_m": 1555.7
+    },
+    {
+      "name": "Dr. Satish skin & ENT clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9219428,
+      "lon": 77.589423,
+      "distance_m": 1585.1
+    },
+    {
+      "name": "Aster RV Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9114199,
+      "lon": 77.5850249,
+      "distance_m": 1591.1
+    },
+    {
+      "name": "Milann Fertility Center",
+      "type": "Hospital",
+      "healthcare": "fertility",
+      "lat": 12.9159249,
+      "lon": 77.5856011,
+      "distance_m": 1595.4
+    },
+    {
+      "name": "Gangothri Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9162878,
+      "lon": 77.6138218,
+      "distance_m": 1609.9
+    },
+    {
+      "name": "Usha Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9264311,
+      "lon": 77.6016717,
+      "distance_m": 1640.9
+    },
+    {
+      "name": "Dr Patil Fertility And Endoscopy Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9265324,
+      "lon": 77.6006922,
+      "distance_m": 1641.7
+    },
+    {
+      "name": "Sunayana Eye Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9255233,
+      "lon": 77.5937748,
+      "distance_m": 1655.6
+    },
+    {
+      "name": "Anand Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.8981742,
+      "lon": 77.6058662,
+      "distance_m": 1656.0
+    },
+    {
+      "name": "Cloud Nine Fertility",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9055088,
+      "lon": 77.5858347,
+      "distance_m": 1657.6
+    },
+    {
+      "name": "Sri Jyoti Eye Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9221202,
+      "lon": 77.610766,
+      "distance_m": 1659.9
+    },
+    {
+      "name": "Apollo Cradle Maternity & Children's Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.916885,
+      "lon": 77.585258,
+      "distance_m": 1664.3
+    },
+    {
+      "name": "Banashankari Poly Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.915263,
+      "lon": 77.584736,
+      "distance_m": 1666.9
+    },
+    {
+      "name": "Apollo Bengaluru Cradle Limited, Jayanagar",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9168014,
+      "lon": 77.5851878,
+      "distance_m": 1668.3
+    },
+    {
+      "name": "Life Care Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9194712,
+      "lon": 77.6130111,
+      "distance_m": 1676.0
+    },
+    {
+      "name": "J B S Nursing Home",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9208019,
+      "lon": 77.5872302,
+      "distance_m": 1681.8
+    },
+    {
+      "name": "Aster Labs",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9106464,
+      "lon": 77.5841885,
+      "distance_m": 1686.1
+    },
+    {
+      "name": "Baby Science IVF clinic",
+      "type": "Clinic",
+      "healthcare": "fertility",
+      "lat": 12.9106464,
+      "lon": 77.5841885,
+      "distance_m": 1686.1
+    },
+    {
+      "name": "Shri Krishna Sevashrama Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9173301,
+      "lon": 77.5851028,
+      "distance_m": 1697.4
+    },
+    {
+      "name": "North Star Maternity and Nursing Home",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9067079,
+      "lon": 77.5849275,
+      "distance_m": 1698.3
+    },
+    {
+      "name": "Sunrise Diagnostics",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.926767,
+      "lon": 77.5965015,
+      "distance_m": 1700.0
+    },
+    {
+      "name": "Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd)",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9163994,
+      "lon": 77.5847384,
+      "distance_m": 1700.3
+    },
+    {
+      "name": "Saphire Heart Care",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9046774,
+      "lon": 77.5856497,
+      "distance_m": 1716.5
+    },
+    {
+      "name": "Sun Diagnostic Laboratory",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9207711,
+      "lon": 77.5867591,
+      "distance_m": 1721.1
+    },
+    {
+      "name": "M N Speciality Clinic",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9039905,
+      "lon": 77.5859569,
+      "distance_m": 1724.2
+    },
+    {
+      "name": "Apollo Hospital",
+      "type": "Hospital",
+      "healthcare": "multi speciality",
+      "lat": 12.89632,
+      "lon": 77.5983495,
+      "distance_m": 1727.5
+    },
+    {
+      "name": "Kubra Maternity And Nursing Home",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.927082,
+      "lon": 77.6034417,
+      "distance_m": 1747.0
+    },
+    {
+      "name": "Parency Hospital",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9172857,
+      "lon": 77.5845399,
+      "distance_m": 1752.7
+    },
+    {
+      "name": "Vitiligo Clinic",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9172038,
+      "lon": 77.6149488,
+      "distance_m": 1758.5
+    },
+    {
+      "name": "Prime Orthopedics",
+      "type": "Doctors",
+      "healthcare": "orthopaedics",
+      "lat": 12.9107148,
+      "lon": 77.583503,
+      "distance_m": 1759.6
+    },
+    {
+      "name": "Jayanagar General Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9261175,
+      "lon": 77.592549,
+      "distance_m": 1770.7
+    },
+    {
+      "name": "Kubra Maternity And Nursing Home",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.927672,
+      "lon": 77.6012024,
+      "distance_m": 1772.4
+    },
+    {
+      "name": "Sagar Hospitals",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9279005,
+      "lon": 77.5998446,
+      "distance_m": 1790.4
+    },
+    {
+      "name": "Lavis Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.925461,
+      "lon": 77.609021,
+      "distance_m": 1824.3
+    },
+    {
+      "name": "JP Nagar Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9006755,
+      "lon": 77.5872566,
+      "distance_m": 1830.1
+    },
+    {
+      "name": "Spurthy Hospital",
+      "type": "Hospital",
+      "healthcare": "hospital",
+      "lat": 12.9239335,
+      "lon": 77.61116,
+      "distance_m": 1833.8
+    },
+    {
+      "name": "Spurthy Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.923857,
+      "lon": 77.611355,
+      "distance_m": 1842.0
+    },
+    {
+      "name": "Amar Ayurveda",
+      "type": "Clinic",
+      "healthcare": "General",
+      "lat": 12.9194081,
+      "lon": 77.5845857,
+      "distance_m": 1843.7
+    },
+    {
+      "name": "Srinivas Clinic",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9073391,
+      "lon": 77.5830655,
+      "distance_m": 1869.9
+    },
+    {
+      "name": "Shanthi Nursing Home, Bengaluru Urban",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9230293,
+      "lon": 77.5867903,
+      "distance_m": 1875.3
+    },
+    {
+      "name": "Sri Balaji Speciality Clinic & Diagnostic Center",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.900671,
+      "lon": 77.5866393,
+      "distance_m": 1880.2
+    },
+    {
+      "name": "Pristyn Care",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9107901,
+      "lon": 77.5822781,
+      "distance_m": 1891.6
+    },
+    {
+      "name": "Fortis Hospitals, Bannerghatta Road",
+      "type": "Hospital",
+      "healthcare": "multi speciality",
+      "lat": 12.8947511,
+      "lon": 77.5985816,
+      "distance_m": 1899.6
+    },
+    {
+      "name": "Tirumalai Eye Clinic",
+      "type": "Hospital",
+      "healthcare": "ophthalmology",
+      "lat": 12.9194536,
+      "lon": 77.5838939,
+      "distance_m": 1912.8
+    },
+    {
+      "name": "Health India Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9265183,
+      "lon": 77.6090995,
+      "distance_m": 1927.8
+    },
+    {
+      "name": "Medall Clumax Diagnostics",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.9070993,
+      "lon": 77.5825707,
+      "distance_m": 1928.7
+    },
+    {
+      "name": "Shanti Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9235041,
+      "lon": 77.5857517,
+      "distance_m": 1994.8
+    },
+    {
+      "name": "Sahasrara Neurosciences Clinic",
+      "type": "Clinic",
+      "healthcare": "clinic",
+      "lat": 12.8998226,
+      "lon": 77.5859426,
+      "distance_m": 1999.3
+    },
+    {
+      "name": "Life Care Hospital",
+      "type": "Hospital",
+      "healthcare": "General",
+      "lat": 12.9239736,
+      "lon": 77.6133232,
+      "distance_m": 2003.1
+    }
+  ],
+  "sarjapur_road": [
+    {
+      "name": "Motherhood Hospital Sarjapur",
+      "type": "Hospital",
+      "speciality": "Maternity & Pediatric",
+      "distance_meters": 420.0,
+      "lat": 12.9095,
+      "lon": 77.6942
+    },
+    {
+      "name": "Apollo Clinic Doddakannalli",
+      "type": "Clinic",
+      "speciality": "Multi-Specialty & Diagnostics",
+      "distance_meters": 510.0,
+      "lat": 12.9052,
+      "lon": 77.6981
+    },
+    {
+      "name": "Columbia Asia / Manipal Hospital Sarjapur Road",
+      "type": "Hospital",
+      "speciality": "Super Specialty Tertiary Care",
+      "distance_meters": 950.0,
+      "lat": 12.9134,
+      "lon": 77.6892
+    },
+    {
+      "name": "Cloudnine Hospital - Sarjapur Road",
+      "type": "Hospital",
+      "speciality": "Maternity & Women Care",
+      "distance_meters": 1120.0,
+      "lat": 12.9145,
+      "lon": 77.6875
+    },
+    {
+      "name": "Rainbow Children's Hospital Sarjapur",
+      "type": "Hospital",
+      "speciality": "Pediatric & Gynecology",
+      "distance_meters": 1380.0,
+      "lat": 12.9172,
+      "lon": 77.6841
+    },
+    {
+      "name": "Parkmed Dental Clinic",
+      "type": "Clinic",
+      "speciality": "Dental",
+      "distance_meters": 350.0,
+      "lat": 12.9082,
+      "lon": 77.698
+    },
+    {
+      "name": "Dr. Sunny Medical Centre",
+      "type": "Clinic",
+      "speciality": "General Medicine",
+      "distance_meters": 620.0,
+      "lat": 12.9041,
+      "lon": 77.7005
+    },
+    {
+      "name": "Karunalayam Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "distance_meters": 780.0,
+      "lat": 12.9025,
+      "lon": 77.702
+    },
+    {
+      "name": "Dr Mohan Diabetes Specialities Centre",
+      "type": "Clinic",
+      "speciality": "Diabetology",
+      "distance_meters": 830.0,
+      "lat": 12.911,
+      "lon": 77.692
+    },
+    {
+      "name": "Naadi Ayurveda & Panchakarma Center",
+      "type": "Clinic",
+      "speciality": "Ayurveda",
+      "distance_meters": 890.0,
+      "lat": 12.9015,
+      "lon": 77.7035
+    },
+    {
+      "name": "The Family Doctor & Family Pharma",
+      "type": "Clinic",
+      "speciality": "Primary Care",
+      "distance_meters": 1050.0,
+      "lat": 12.9125,
+      "lon": 77.6905
+    },
+    {
+      "name": "Carewell Homoeo Clinic",
+      "type": "Clinic",
+      "speciality": "Homeopathy",
+      "distance_meters": 1150.0,
+      "lat": 12.9002,
+      "lon": 77.705
+    },
+    {
+      "name": "Aarogya Hastha Hospital Sarjapur Road",
+      "type": "Hospital",
+      "speciality": "Surgical Excellence",
+      "distance_meters": 1420.0,
+      "lat": 12.918,
+      "lon": 77.6825
+    },
+    {
+      "name": "Bellevue Multispeciality Hospital",
+      "type": "Hospital",
+      "speciality": "Multispeciality",
+      "distance_meters": 1650.0,
+      "lat": 12.9195,
+      "lon": 77.681
+    }
+  ],
+  "hrbr": [
+    {
+      "name": "Kalyan Eye Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0227961,
+      "lon": 77.6425472,
+      "distance_meters": 122.7
+    },
+    {
+      "name": "Oliva Skin and Hair Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0210072,
+      "lon": 77.6434284,
+      "distance_meters": 124.9
+    },
+    {
+      "name": "Tranquil Healthcare",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 13.020847,
+      "lon": 77.643086,
+      "distance_meters": 148.0
+    },
+    {
+      "name": "Herbocare Hospital Pvt",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0204424,
+      "lon": 77.6440607,
+      "distance_meters": 199.0
+    },
+    {
+      "name": "Rajbal Skin Clinic",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0206063,
+      "lon": 77.6445361,
+      "distance_meters": 206.3
+    },
+    {
+      "name": "Amrik Nethralaya",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0195531,
+      "lon": 77.6443814,
+      "distance_meters": 303.8
+    },
+    {
+      "name": "Trinity Gastroenterology & Diagnostics",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0225994,
+      "lon": 77.6398654,
+      "distance_meters": 391.8
+    },
+    {
+      "name": "Dr. Harsha's physiotherapy Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0244866,
+      "lon": 77.6396472,
+      "distance_meters": 488.3
+    },
+    {
+      "name": "BOSH Physiotherapy",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 13.022113,
+      "lon": 77.6388793,
+      "distance_meters": 495.2
+    },
+    {
+      "name": "Bangalore Eye Hospital And Retina Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0221036,
+      "lon": 77.6387729,
+      "distance_meters": 506.7
+    },
+    {
+      "name": "Bangalore Orthopeadic And Surgical Hospital",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 13.0219385,
+      "lon": 77.6385853,
+      "distance_meters": 527.4
+    },
+    {
+      "name": "Twinkle Kids Child Care Speciality Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0195123,
+      "lon": 77.6475205,
+      "distance_meters": 528.4
+    },
+    {
+      "name": "Anjani Women's Day Care Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0188119,
+      "lon": 77.647187,
+      "distance_meters": 547.8
+    },
+    {
+      "name": "Vivekananda Health Global - Ayurveda, Naturopathy & Yoga",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.017856,
+      "lon": 77.646249,
+      "distance_meters": 563.7
+    },
+    {
+      "name": "Trilife Hospital",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 13.0170153,
+      "lon": 77.6429262,
+      "distance_meters": 571.6
+    },
+    {
+      "name": "Trilife Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0169826,
+      "lon": 77.6432959,
+      "distance_meters": 572.6
+    },
+    {
+      "name": "Lokhande S Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0186045,
+      "lon": 77.6479433,
+      "distance_meters": 625.0
+    },
+    {
+      "name": "V Care Best Fertility IVF URO Kidney Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0227998,
+      "lon": 77.6374429,
+      "distance_meters": 655.0
+    },
+    {
+      "name": "Dr. Dinakar's Child Care",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0161535,
+      "lon": 77.6428067,
+      "distance_meters": 668.2
+    },
+    {
+      "name": "Divine Medical Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0241409,
+      "lon": 77.637316,
+      "distance_meters": 701.1
+    },
+    {
+      "name": "Contura Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.023088,
+      "lon": 77.637015,
+      "distance_meters": 705.2
+    },
+    {
+      "name": "Cloudnine Fertility",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0241668,
+      "lon": 77.6369165,
+      "distance_meters": 743.2
+    },
+    {
+      "name": "Express Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0151589,
+      "lon": 77.6451446,
+      "distance_meters": 796.6
+    },
+    {
+      "name": "Banasawadi Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0205082,
+      "lon": 77.6509675,
+      "distance_meters": 834.1
+    },
+    {
+      "name": "Sathya Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0185503,
+      "lon": 77.6364728,
+      "distance_meters": 854.3
+    },
+    {
+      "name": "Pratham Ent and Child Care Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0144467,
+      "lon": 77.6427305,
+      "distance_meters": 857.9
+    },
+    {
+      "name": "Procare Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0203944,
+      "lon": 77.6512682,
+      "distance_meters": 868.7
+    },
+    {
+      "name": "Motherhood",
+      "type": "Hospital",
+      "speciality": "hospital",
+      "lat": 13.0202419,
+      "lon": 77.6516186,
+      "distance_meters": 909.5
+    },
+    {
+      "name": "Ovum Birthing Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0201491,
+      "lon": 77.6516628,
+      "distance_meters": 916.6
+    },
+    {
+      "name": "Smile 365 Dental Clinic",
+      "type": "Clinic",
+      "speciality": "clinic",
+      "lat": 13.0139282,
+      "lon": 77.6423538,
+      "distance_meters": 919.7
+    },
+    {
+      "name": "Krupa Homeopathic Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.013776,
+      "lon": 77.646793,
+      "distance_meters": 997.0
+    },
+    {
+      "name": "Synovium Physiotherapy Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0242926,
+      "lon": 77.634427,
+      "distance_meters": 1006.6
+    },
+    {
+      "name": "J.H.Poly Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.019851,
+      "lon": 77.6339757,
+      "distance_meters": 1057.2
+    },
+    {
+      "name": "Endocrine Speciality Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.013761,
+      "lon": 77.648529,
+      "distance_meters": 1081.1
+    },
+    {
+      "name": "Vasan Eye Care Hospital, Banaswadi",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0241341,
+      "lon": 77.6335546,
+      "distance_meters": 1094.9
+    },
+    {
+      "name": "Bangalore Spine Specialist Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0239222,
+      "lon": 77.6333307,
+      "distance_meters": 1114.2
+    },
+    {
+      "name": "IMAX Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0187276,
+      "lon": 77.6531389,
+      "distance_meters": 1115.8
+    },
+    {
+      "name": "Shishuka Children's Speciality Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0193799,
+      "lon": 77.6535352,
+      "distance_meters": 1134.6
+    },
+    {
+      "name": "Vasan Eye Care",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0242614,
+      "lon": 77.6331389,
+      "distance_meters": 1141.9
+    },
+    {
+      "name": "Doctor's diagnostics Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.014746,
+      "lon": 77.6357881,
+      "distance_meters": 1167.5
+    },
+    {
+      "name": "Cloudnine Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.020084,
+      "lon": 77.654053,
+      "distance_meters": 1171.0
+    },
+    {
+      "name": "Zion Hospital And Research Centre Pvt.Ltd.",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0149675,
+      "lon": 77.6354957,
+      "distance_meters": 1173.4
+    },
+    {
+      "name": "Srinivasa Eye Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0147224,
+      "lon": 77.6515616,
+      "distance_meters": 1204.5
+    },
+    {
+      "name": "Vardhan Fertility",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.01213,
+      "lon": 77.647984,
+      "distance_meters": 1215.6
+    },
+    {
+      "name": "Nainda Advanced Eye Care Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0120265,
+      "lon": 77.6477552,
+      "distance_meters": 1216.4
+    },
+    {
+      "name": "Poorna Heart and Women's Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.012005,
+      "lon": 77.647777,
+      "distance_meters": 1219.5
+    },
+    {
+      "name": "Roots Skin Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0116786,
+      "lon": 77.6470294,
+      "distance_meters": 1225.1
+    },
+    {
+      "name": "R K Hospital, Bengaluru Urban",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0138123,
+      "lon": 77.6354731,
+      "distance_meters": 1265.8
+    },
+    {
+      "name": "Dr.Zamindar Microsurgical Eye Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0178594,
+      "lon": 77.6547577,
+      "distance_meters": 1313.9
+    },
+    {
+      "name": "Milaan Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0109537,
+      "lon": 77.6476418,
+      "distance_meters": 1323.1
+    },
+    {
+      "name": "TridENT Cares ENT Super Speciality Centre",
+      "type": "Doctors",
+      "speciality": "General",
+      "lat": 13.0313936,
+      "lon": 77.6355645,
+      "distance_meters": 1338.2
+    },
+    {
+      "name": "Dianova Diabetes Center and Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0147612,
+      "lon": 77.6335463,
+      "distance_meters": 1350.0
+    },
+    {
+      "name": "Health and hijama clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0103924,
+      "lon": 77.6484101,
+      "distance_meters": 1411.5
+    },
+    {
+      "name": "Karunya Homoeopathy Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0307899,
+      "lon": 77.653594,
+      "distance_meters": 1461.1
+    },
+    {
+      "name": "Dewans Maternity and Nursing Home",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0086882,
+      "lon": 77.6431717,
+      "distance_meters": 1495.0
+    },
+    {
+      "name": "Maneet Poly Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0209741,
+      "lon": 77.6573009,
+      "distance_meters": 1506.0
+    },
+    {
+      "name": "Feran Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0263661,
+      "lon": 77.6302142,
+      "distance_meters": 1509.3
+    },
+    {
+      "name": "Pranav Diabetes Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0148814,
+      "lon": 77.6555197,
+      "distance_meters": 1536.1
+    },
+    {
+      "name": "Premji Occupational Therapy & Rehabilitation Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0151401,
+      "lon": 77.6559684,
+      "distance_meters": 1563.1
+    },
+    {
+      "name": "Motherhoodclinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.022726,
+      "lon": 77.658252,
+      "distance_meters": 1604.9
+    },
+    {
+      "name": "Faran Health Care Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0278278,
+      "lon": 77.629825,
+      "distance_meters": 1606.3
+    },
+    {
+      "name": "Reachh Homeopathy Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.029482,
+      "lon": 77.630649,
+      "distance_meters": 1609.8
+    },
+    {
+      "name": "Good Shepherd Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0328036,
+      "lon": 77.633289,
+      "distance_meters": 1618.7
+    },
+    {
+      "name": "Medicure Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0283463,
+      "lon": 77.6298629,
+      "distance_meters": 1626.2
+    },
+    {
+      "name": "Stroke Treatment Paralysis",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0239995,
+      "lon": 77.6585299,
+      "distance_meters": 1646.9
+    },
+    {
+      "name": "Motherhood Women & Children Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0102697,
+      "lon": 77.6525909,
+      "distance_meters": 1649.2
+    },
+    {
+      "name": "Women's Speciality Polyclinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0236149,
+      "lon": 77.6586628,
+      "distance_meters": 1656.3
+    },
+    {
+      "name": "The Children's Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0236678,
+      "lon": 77.6587012,
+      "distance_meters": 1661.1
+    },
+    {
+      "name": "Lifespan Diabetic Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0234596,
+      "lon": 77.6587343,
+      "distance_meters": 1662.4
+    },
+    {
+      "name": "People's Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.024278,
+      "lon": 77.6587297,
+      "distance_meters": 1672.5
+    },
+    {
+      "name": "Sri Vijayalakshmi Pragathi Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0371728,
+      "lon": 77.6409543,
+      "distance_meters": 1694.4
+    },
+    {
+      "name": "Shree Vijayalakshmi Hospital and Trauma Centre",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0373572,
+      "lon": 77.6409059,
+      "distance_meters": 1715.5
+    },
+    {
+      "name": "CDEC Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.026989,
+      "lon": 77.6281742,
+      "distance_meters": 1740.9
+    },
+    {
+      "name": "Shubham Ayurvedic Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0219021,
+      "lon": 77.65971,
+      "distance_meters": 1761.7
+    },
+    {
+      "name": "Nava Chaithanya Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0255719,
+      "lon": 77.6599541,
+      "distance_meters": 1828.5
+    },
+    {
+      "name": "Dr. Naeem Sadiq",
+      "type": "Doctors",
+      "speciality": "General",
+      "lat": 13.0090467,
+      "lon": 77.653918,
+      "distance_meters": 1844.6
+    },
+    {
+      "name": "Arjun's Child Care Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0258249,
+      "lon": 77.6604922,
+      "distance_meters": 1891.4
+    },
+    {
+      "name": "Srivijaya Speciality Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0124345,
+      "lon": 77.6580271,
+      "distance_meters": 1912.1
+    },
+    {
+      "name": "Sakaria Healthcare Pvt. Ltd.",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.029607,
+      "lon": 77.6275328,
+      "distance_meters": 1914.3
+    },
+    {
+      "name": "Geriatric Hospitals",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0283977,
+      "lon": 77.6599575,
+      "distance_meters": 1919.3
+    },
+    {
+      "name": "Raja Rama's Homeopathy & Ayurvedic Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0096223,
+      "lon": 77.6556985,
+      "distance_meters": 1922.3
+    },
+    {
+      "name": "Shanthi Women's Healthcare Centre",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.0112923,
+      "lon": 77.6573558,
+      "distance_meters": 1929.2
+    },
+    {
+      "name": "Super Specialty Eye Hospital",
+      "type": "Hospital",
+      "speciality": "General",
+      "lat": 13.0166883,
+      "lon": 77.6604049,
+      "distance_meters": 1933.9
+    },
+    {
+      "name": "Sneha Clinic",
+      "type": "Clinic",
+      "speciality": "General",
+      "lat": 13.00975,
+      "lon": 77.6568,
+      "distance_meters": 1996.7
+    }
+  ]
+}

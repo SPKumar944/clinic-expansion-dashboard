@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Clinics & Footfall Analysis - Koramangala 2km Radius</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; }
+  .header { padding: 14px 24px; background: #1e293b; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { margin: 0; font-size: 19px; color: #38bdf8; font-weight: 700; }
+  .header .badge { background: #0284c7; color: white; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+  .container { display: flex; height: calc(100vh - 65px); }
+  #map { flex: 2; height: 100%; }
+  .sidebar { flex: 1.2; max-width: 480px; background: #1e293b; border-left: 1px solid #334155; overflow-y: auto; padding: 16px; box-sizing: border-box; }
+  .stat-card { background: #0f172a; border-radius: 8px; padding: 14px; margin-bottom: 14px; border: 1px solid #334155; }
+  .stat-card h3 { margin: 0 0 8px 0; font-size: 14px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-val { font-size: 26px; font-weight: 800; color: #f8fafc; }
+  .clinic-item { background: #0f172a; border-radius: 6px; padding: 10px 12px; margin-bottom: 8px; border: 1px solid #334155; cursor: pointer; transition: all 0.2s; }
+  .clinic-item:hover { border-color: #38bdf8; background: #1e293b; }
+  .clinic-title { font-weight: 600; font-size: 14px; color: #e2e8f0; }
+  .clinic-meta { font-size: 12px; color: #94a3b8; margin-top: 4px; display: flex; justify-content: space-between; }
+  .tag { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; }
+  .tag-hospital { background: #ef444422; color: #f87171; border: 1px solid #ef444444; }
+  .tag-clinic { background: #06b6d422; color: #22d3ee; border: 1px solid #06b6d444; }
+  .tag-doctors { background: #10b98122; color: #34d399; border: 1px solid #10b98144; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>Medical Clinics & Hospitals Near Coordinates</h1>
+    <div style="font-size: 12px; color: #94a3b8; margin-top: 2px;">Center: 12.925016, 77.627877 (Koramangala / Sarjapura Rd, Bengaluru) | Radius: 2.0 km</div>
+  </div>
+  <div class="badge">77 Medical Facilities Found</div>
+</div>
+<div class="container">
+  <div id="map"></div>
+  <div class="sidebar">
+    <div class="stat-card">
+      <h3>Footfall & Rush Hours Benchmark</h3>
+      <div style="font-size: 13px; color: #cbd5e1; line-height: 1.5;">
+        <b>Peak Hours (OPD / Consultation):</b> 09:30 AM – 01:00 PM & 05:30 PM – 08:30 PM<br>
+        <b>Slump / Low Footfall Hours:</b> 02:00 PM – 04:30 PM<br>
+        <b>Highest Volume Days:</b> Saturday & Monday
+      </div>
+      <div style="margin-top: 12px;">
+        <canvas id="footfallChart" height="120"></canvas>
+      </div>
+    </div>
+
+    <h3 style="font-size: 13px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin: 16px 0 8px 0;">All Facilities within 2km (Sorted by Distance)</h3>
+    <div id="clinicList"></div>
+  </div>
+</div>
+
+<script>
+const clinics = [{"name": "Gunasheela Hospitals", "type": "hospital", "speciality": "General", "operator": "", "street": "Sulochana Building, 1st Cross Rd, 3rd Block, Sarjapura Main Road, Koramangala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9250105, "lon": 77.6278708, "distance_meters": 0.9}, {"name": "CGHS Dispensary No.7", "type": "clinic", "speciality": "centre", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9251521, "lon": 77.6245022, "distance_meters": 366.1}, {"name": "Cherish Fertinity Clinic", "type": "clinic", "speciality": "fertility", "operator": "", "street": "7th Cross Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9296138, "lon": 77.6316244, "distance_meters": 652.9}, {"name": "Agarwal Eye Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9273417, "lon": 77.6221301, "distance_meters": 674.4}, {"name": "Shilpa Homeopathic Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9267313, "lon": 77.6346384, "distance_meters": 757.2}, {"name": "Prerana Dental Clinic", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9186845, "lon": 77.630774, "distance_meters": 770.9}, {"name": "Maithriye Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9195379, "lon": 77.6328425, "distance_meters": 812.8}, {"name": "Kamala Nethralaya", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9314314, "lon": 77.6233582, "distance_meters": 865.3}, {"name": "Devi Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9239445, "lon": 77.6198634, "distance_meters": 876.6}, {"name": "Sankeerthana Hospital and Fertility Center", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9256013, "lon": 77.6359638, "distance_meters": 878.8}, {"name": "Mamtha Health Center", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9180492, "lon": 77.6318764, "distance_meters": 887.7}, {"name": "Mhaskars Srishti Clinic", "type": "doctors", "speciality": "gynaecology", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.917678, "lon": 77.6317772, "distance_meters": 918.9}, {"name": "Sagar Dental Clinic", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9169725, "lon": 77.6300572, "distance_meters": 925.1}, {"name": "Vachani Vista", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9320032, "lon": 77.6229997, "distance_meters": 939.7}, {"name": "Kaveri Speciality Hospital", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9236768, "lon": 77.6193111, "distance_meters": 940.2}, {"name": "S.M.S. Nursing Home", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9208307, "lon": 77.6201778, "distance_meters": 955.4}, {"name": "Beams Hospitals Private Limited", "type": "hospital", "speciality": "hospital", "operator": "", "street": "640, 12Th Main, 80 Ft Road, 4Th Block, Koramangala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9342277, "lon": 77.6296323, "distance_meters": 1041.8}, {"name": "Bhagavathi Multi Speciality Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9160636, "lon": 77.6308219, "distance_meters": 1045.4}, {"name": "Bhagavathi Hospitals Private Limited", "type": "hospital", "speciality": "General", "operator": "", "street": "HSR Layout Sector 6", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9161259, "lon": 77.6311505, "distance_meters": 1050.3}, {"name": "Proteeth Dental", "type": "hospital", "speciality": "dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment", "operator": "Dr Saranya, Dr Dipen", "street": "5th cross, 4th block", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9346221, "lon": 77.6284665, "distance_meters": 1070.1}, {"name": "Proteeth Dental", "type": "hospital", "speciality": "dentistry;prosthodontist;pediatric_dentist", "operator": "", "street": "5th Cross Road, 4th block", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9346254, "lon": 77.6284672, "distance_meters": 1070.4}, {"name": "Fj Merrit Hydrotherapy And Wellness", "type": "hospital", "speciality": "hospital", "operator": "", "street": "KAY ARR CORNER STONE 2nd Floor 80 Feet Road 4th Block, Koramangala,Karnataka", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9344224, "lon": 77.6299785, "distance_meters": 1070.5}, {"name": "Skinsi", "type": "clinic", "speciality": "dermatology", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9333552, "lon": 77.6224709, "distance_meters": 1096.9}, {"name": "Chamundi Hi Tech Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9240924, "lon": 77.6177848, "distance_meters": 1098.6}, {"name": "Toothsi", "type": "clinic", "speciality": "dentist", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9333754, "lon": 77.6224577, "distance_meters": 1099.5}, {"name": "Murthy Health and Research Centre", "type": "clinic", "speciality": "General", "operator": "", "street": "Sarjapura Road, Jakkasandra Extension", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9247643, "lon": 77.6382862, "distance_meters": 1128.5}, {"name": "Magnus Diagnostic Lab", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9349187, "lon": 77.6305022, "distance_meters": 1137.3}, {"name": "HCG, Koramangala", "type": "hospital", "speciality": "Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9343279, "lon": 77.6228848, "distance_meters": 1168.3}, {"name": "Varalakshmi Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.924624, "lon": 77.6170966, "distance_meters": 1169.2}, {"name": "Surya Diagnostics and Health Services", "type": "hospital", "speciality": "hospital", "operator": "", "street": "Hosur Road, Madiwala, Venkateshwara Layout, Sadduguntepalya", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9242825, "lon": 77.6170883, "distance_meters": 1172.1}, {"name": "Venkateshwara Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "Hosur road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9257842, "lon": 77.6170828, "distance_meters": 1173.0}, {"name": "St. Johns hospital Emergency ward", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9305937, "lon": 77.6186159, "distance_meters": 1179.9}, {"name": "Aswad Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "Hosur road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9147871, "lon": 77.6247622, "distance_meters": 1186.4}, {"name": "West Mead Clinic", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9166014, "lon": 77.6349717, "distance_meters": 1211.1}, {"name": "Sri Venkateshwara Hospitals", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.926471, "lon": 77.6167399, "distance_meters": 1217.8}, {"name": "Epicorium Skin Hair Nail Clinic", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9150191, "lon": 77.6325124, "distance_meters": 1219.9}, {"name": "Greenview Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9191928, "lon": 77.6381223, "distance_meters": 1285.4}, {"name": "Apollo Spectra Hospitals", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9338175, "lon": 77.6201615, "distance_meters": 1287.2}, {"name": "Greenview Medical Center", "type": "hospital", "speciality": "hospital", "operator": "", "street": "14th Main Rd, opposite Agara Lake, Sector 5, 1st Sector, HSR Layout", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9191813, "lon": 77.6381379, "distance_meters": 1287.5}, {"name": "Nova Specialty Surgery Center, Koramangala", "type": "hospital", "speciality": "multi speciality", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9339097, "lon": 77.620208, "distance_meters": 1291.8}, {"name": "Shiva Vision Care", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9366526, "lon": 77.6277125, "distance_meters": 1294.1}, {"name": "Narayana Hrudayalaya Dental Clinic", "type": "hospital", "speciality": "General", "operator": "", "street": "Outer Ring Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9155759, "lon": 77.6349897, "distance_meters": 1302.3}, {"name": "Global Ayurveda Multispeciality Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "HSR Ring Road, 5th Sector , HSR Layout, Jakkasandra, 1st Block Koramangala, HSR Layout, Karnataka", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9165795, "lon": 77.6362187, "distance_meters": 1302.8}, {"name": "Healing Earth Multispeciality Ayurveda Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "HSR Ring Road, 5th Sector , HSR Layout, Karnataka", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9165359, "lon": 77.6361865, "distance_meters": 1303.9}, {"name": "Nova IVI Fertility", "type": "clinic", "speciality": "clinic", "operator": "", "street": "4th Floor, 1st Cross, 5th Block, Koramangala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9338298, "lon": 77.6199371, "distance_meters": 1304.2}, {"name": "City Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9273667, "lon": 77.6160046, "distance_meters": 1313.0}, {"name": "Annayya Healthcare Pvt Ltd", "type": "clinic", "speciality": "clinic", "operator": "", "street": "14th Main, 5th Sector, HSR Layout", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9182603, "lon": 77.6381293, "distance_meters": 1341.2}, {"name": "Karanth Speciality Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9160081, "lon": 77.6193573, "distance_meters": 1362.3}, {"name": "Ismile Dental & Oral Health Care Centre", "type": "clinic", "speciality": "General", "operator": "", "street": "KAS Officers Colony, Stage 2, BTM 2nd Stage, Karnataka", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.915785, "lon": 77.6194045, "distance_meters": 1377.2}, {"name": "Acura Speciality Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "5th Block, 17th C Main Road, KHB Colony , Koramangala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9353208, "lon": 77.6205504, "distance_meters": 1394.1}, {"name": "Koramangala\u00a0Poly Clinic", "type": "clinic", "speciality": "clinic", "operator": "", "street": "17th E Main Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9366734, "lon": 77.6228961, "distance_meters": 1404.2}, {"name": "Devi Eye Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9162576, "lon": 77.6374069, "distance_meters": 1419.6}, {"name": "Apollo Diagnostics", "type": "clinic", "speciality": "laboratory", "operator": "", "street": "17th C main, 6th Block, Near Koramangala Club, Koramangala, 6th Block, Koramangala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.937327, "lon": 77.6240168, "distance_meters": 1431.4}, {"name": "Chandini Neuro Specialty Clinic", "type": "doctors", "speciality": "neurology", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.912655, "lon": 77.6325493, "distance_meters": 1464.8}, {"name": "Orange Health Labs", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9126004, "lon": 77.6329359, "distance_meters": 1485.4}, {"name": "Apollo Cradle", "type": "hospital", "speciality": "Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9368104, "lon": 77.6206345, "distance_meters": 1528.4}, {"name": "Apollo Clinic", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9138052, "lon": 77.6366855, "distance_meters": 1570.1}, {"name": "Life Care Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "Maruthi Nagar Main Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9239736, "lon": 77.6133232, "distance_meters": 1581.6}, {"name": "Keva Ayurveda Health Care Pvt Ltd", "type": "hospital", "speciality": "General", "operator": "", "street": "7th Cross, 35th Main, BTM 2nd Stage,, Adjacent DSR Naveen Lake View Apartments, Karnataka", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9127062, "lon": 77.6201668, "distance_meters": 1603.7}, {"name": "Vasan Eye Care Hospital HSR Layout", "type": "doctors", "speciality": "ophthalmology", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9121673, "lon": 77.6347685, "distance_meters": 1612.2}, {"name": "The Apollo Clinic, Bengaluru Urban", "type": "clinic", "speciality": "clinic", "operator": "", "street": "1st Cross, 5th Block, Koramangala, Near Nagarjuna Hotel", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9339266, "lon": 77.6161393, "distance_meters": 1612.4}, {"name": "Vasan Eye Care", "type": "hospital", "speciality": "hospital", "operator": "", "street": "Hosur road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9102705, "lon": 77.6265538, "distance_meters": 1645.9}, {"name": "Vitiligo Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9172038, "lon": 77.6149488, "distance_meters": 1648.6}, {"name": "Roopena Agrahara Government Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9102142, "lon": 77.6244654, "distance_meters": 1686.9}, {"name": "Vasan Eye Care Hospital, Koramangala", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9402371, "lon": 77.6253403, "distance_meters": 1714.7}, {"name": "Aparna Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9362087, "lon": 77.616947, "distance_meters": 1718.2}, {"name": "Life Care Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "Om Complex, 20th Main, Gangotri Circle, BTM Layout, Madiwala", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9194712, "lon": 77.6130111, "distance_meters": 1725.1}, {"name": "Pristine Health care", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9382768, "lon": 77.6186753, "distance_meters": 1780.1}, {"name": "Spurthy Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.923857, "lon": 77.611355, "distance_meters": 1795.3}, {"name": "Gangothri Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "Outer Ring Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9162878, "lon": 77.6138218, "distance_meters": 1806.2}, {"name": "Spurthy Hospital", "type": "hospital", "speciality": "hospital", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9239335, "lon": 77.61116, "distance_meters": 1815.7}, {"name": "Devi Eye Hospital", "type": "hospital", "speciality": "multi speciality", "operator": "", "street": "18th Main Road", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9412109, "lon": 77.6238987, "distance_meters": 1851.7}, {"name": "Sri Jyoti Eye Clinic", "type": "clinic", "speciality": "clinic", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9221202, "lon": 77.610766, "distance_meters": 1882.2}, {"name": "Shashi Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9140267, "lon": 77.613838, "distance_meters": 1951.5}, {"name": "Bhaanu Nursing Home", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9074596, "lon": 77.6274445, "distance_meters": 1952.7}, {"name": "Mahanth Hospital", "type": "hospital", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9079615, "lon": 77.6235715, "distance_meters": 1952.9}, {"name": "Amba Laser Clinic", "type": "clinic", "speciality": "General", "operator": "", "street": "", "opening_hours": "Regular Day Hours (8 AM - 8 PM)", "lat": 12.9191848, "lon": 77.6104644, "distance_meters": 1995.4}];
+const center = [12.925016, 77.627877];
+
+const map = L.map('map').setView(center, 15);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap contributors, © CARTO',
+  maxZoom: 19
+}).addTo(map);
+
+// 2km Radius Circle
+L.circle(center, {
+  radius: 2000,
+  color: '#38bdf8',
+  weight: 2,
+  fillColor: '#38bdf8',
+  fillOpacity: 0.08
+}).addTo(map);
+
+// Center Marker
+L.circleMarker(center, {
+  radius: 8,
+  fillColor: '#ef4444',
+  color: '#fff',
+  weight: 3,
+  fillOpacity: 1
+}).bindPopup("<b>Target Search Center</b><br>12.925016, 77.627877<br>Sarjapura Rd / Koramangala").addTo(map);
+
+const markers = [];
+const listContainer = document.getElementById('clinicList');
+
+clinics.forEach((c, idx) => {
+  const isHospital = c.type === 'hospital';
+  const color = isHospital ? '#f43f5e' : (c.type === 'clinic' ? '#0ea5e9' : '#10b981');
+  
+  const m = L.circleMarker([c.lat, c.lon], {
+    radius: isHospital ? 7 : 5,
+    fillColor: color,
+    color: '#fff',
+    weight: 1.5,
+    fillOpacity: 0.9
+  }).addTo(map);
+
+  const popupContent = `
+    <div style="font-family: sans-serif; font-size: 13px; min-width: 200px;">
+      <b style="font-size: 14px; color: #0f172a;">${c.name}</b><br>
+      <span style="color: #64748b;">Type: <b>${c.type.toUpperCase()}</b></span><br>
+      <span style="color: #64748b;">Distance: <b>${c.distance_meters} m</b> from center</span><br>
+      <span style="color: #64748b;">Timing: ${c.opening_hours}</span>
+    </div>
+  `;
+  m.bindPopup(popupContent);
+  markers.push(m);
+
+  // Add to sidebar list
+  const div = document.createElement('div');
+  div.className = 'clinic-item';
+  div.innerHTML = `
+    <div class="clinic-title">${idx + 1}. ${c.name}</div>
+    <div class="clinic-meta">
+      <span class="tag tag-${c.type}">${c.type}</span>
+      <span>${c.distance_meters} m away</span>
+    </div>
+  `;
+  div.onclick = () => {
+    map.setView([c.lat, c.lon], 17);
+    m.openPopup();
+  };
+  listContainer.appendChild(div);
+});
+
+// Render Footfall chart
+const ctx = document.getElementById('footfallChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM', '9 PM'],
+    datasets: [
+      {
+        label: 'Weekday OPD Footfall (%)',
+        data: [15, 45, 85, 95, 80, 50, 20, 25, 40, 70, 90, 85, 55, 20],
+        borderColor: '#38bdf8',
+        backgroundColor: 'rgba(56, 189, 248, 0.15)',
+        fill: true,
+        tension: 0.4,
+        borderWidth: 2
+      },
+      {
+        label: 'Saturday Peak (%)',
+        data: [20, 60, 95, 100, 90, 65, 30, 30, 45, 75, 85, 70, 40, 15],
+        borderColor: '#f43f5e',
+        backgroundColor: 'rgba(244, 63, 94, 0.1)',
+        fill: true,
+        tension: 0.4,
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: { color: '#94a3b8', font: { size: 10 } }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#64748b', font: { size: 9 } }, grid: { display: false } },
+      y: { ticks: { color: '#64748b', font: { size: 9 } }, grid: { color: '#334155' }, max: 100 }
+    }
+  }
+});
+</script>
+</body>
+</html>

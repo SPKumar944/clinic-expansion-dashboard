@@ -1,0 +1,540 @@
+Catchment Area,Facility Name,Type,Speciality,Distance (m),Day,6 AM,7 AM,8 AM,9 AM,10 AM,11 AM,12 PM,1 PM,2 PM,3 PM,4 PM,5 PM,6 PM,7 PM,8 PM,9 PM,10 PM,11 PM
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Monday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Tuesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Wednesday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Thursday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Friday,10,18,36,66,92,100,87,56,31,33,46,69,90,94,76,46,26,15
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Saturday,12,21,41,76,100,100,100,65,35,38,53,80,100,100,88,53,29,18
+"Docube Clinic, Koramangala",Gunasheela Hospitals,Hospital,General,0.9,Sunday,4,6,12,23,32,35,30,20,11,11,16,24,31,33,27,16,9,5
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Monday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Tuesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Wednesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Thursday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Friday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Saturday,0,0,13,44,77,83,66,31,0,0,31,57,83,83,66,22,0,0
+"Docube Clinic, Koramangala",CGHS Dispensary No.7,Clinic,centre,366.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, Koramangala",Cherish Fertinity Clinic,Clinic,fertility,652.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Monday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Tuesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Wednesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Thursday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Friday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Saturday,10,19,36,67,93,100,88,57,31,33,47,70,91,95,78,47,26,16
+"Docube Clinic, Koramangala",Agarwal Eye Hospital,Hospital,hospital,674.4,Sunday,3,6,11,20,28,31,27,17,9,10,14,21,28,29,24,14,8,5
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Monday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Tuesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Wednesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Thursday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Friday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Saturday,0,0,15,49,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Shilpa Homeopathic Clinic,Clinic,General,757.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Monday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Tuesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Wednesday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Thursday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Friday,9,17,33,60,84,91,79,51,28,30,42,63,82,86,70,42,23,14
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Saturday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Prerana Dental Clinic,Hospital,General,770.9,Sunday,3,6,11,21,29,32,28,18,10,10,15,22,29,30,24,15,8,5
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Monday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Tuesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Wednesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Thursday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Friday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Saturday,0,0,17,56,99,100,85,39,0,0,39,73,100,100,85,28,0,0
+"Docube Clinic, Koramangala",Maithriye Clinic,Clinic,General,812.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Monday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Tuesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Wednesday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Thursday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Friday,0,0,14,48,84,91,72,34,0,0,34,62,91,91,72,24,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Saturday,0,0,17,55,97,100,83,39,0,0,39,72,100,100,83,28,0,0
+"Docube Clinic, Koramangala",Kamala Nethralaya,Clinic,clinic,865.3,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Monday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Tuesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Wednesday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Thursday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Friday,9,16,32,58,81,88,76,50,27,29,40,61,79,83,68,40,22,14
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Saturday,10,19,36,67,93,100,88,57,31,33,47,70,91,95,78,47,26,16
+"Docube Clinic, Koramangala",Devi Hospital,Hospital,hospital,876.6,Sunday,3,6,11,20,28,31,27,17,9,10,14,21,28,29,24,14,8,5
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Monday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Tuesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Wednesday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Thursday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Friday,8,14,27,51,70,76,66,43,23,25,35,53,69,72,58,35,20,12
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Saturday,9,16,31,58,81,88,76,49,27,29,40,61,79,83,67,40,22,13
+"Docube Clinic, Koramangala",Sankeerthana Hospital and Fertility Center,Hospital,hospital,878.8,Sunday,3,5,10,18,25,27,23,15,8,9,12,19,24,25,20,12,7,4
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, Koramangala",Mamtha Health Center,Hospital,General,887.7,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Monday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Tuesday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Wednesday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Thursday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Friday,0,0,15,48,85,92,73,34,0,0,34,63,92,92,73,24,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Saturday,0,0,17,56,98,100,84,39,0,0,39,73,100,100,84,28,0,0
+"Docube Clinic, Koramangala",Mhaskars Srishti Clinic,Doctors,gynaecology,918.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, Koramangala",Sagar Dental Clinic,Hospital,General,925.1,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Monday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Tuesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Wednesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Thursday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Friday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Saturday,0,0,16,53,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, Koramangala",Vachani Vista,Clinic,clinic,939.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Monday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Tuesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Wednesday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Thursday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Friday,0,0,14,46,82,88,70,33,0,0,33,60,88,88,70,23,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Saturday,0,0,16,53,94,100,80,37,0,0,37,70,100,100,80,27,0,0
+"Docube Clinic, Koramangala",Kaveri Speciality Hospital,Clinic,clinic,940.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Monday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Tuesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Wednesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Thursday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Friday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Saturday,0,0,13,45,79,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",S.M.S. Nursing Home,Clinic,General,955.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, Koramangala",Beams Hospitals Private Limited,Hospital,hospital,1041.8,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Monday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Tuesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Wednesday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Thursday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Friday,9,15,30,56,77,84,73,47,26,28,39,58,76,79,64,39,22,13
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Saturday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Bhagavathi Multi Speciality Hospital,Hospital,General,1045.4,Sunday,3,5,11,20,27,29,26,17,9,10,14,20,26,28,23,14,8,5
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, Koramangala",Bhagavathi Hospitals Private Limited,Hospital,General,1050.3,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist;implants;orthodontics;invisalign;root_canal_treatment,1070.1,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Monday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Tuesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Wednesday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Thursday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Friday,11,19,38,70,97,100,92,59,32,35,49,73,95,99,81,49,27,16
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Saturday,12,22,43,81,100,100,100,68,37,40,56,84,100,100,93,56,31,19
+"Docube Clinic, Koramangala",Proteeth Dental,Hospital,dentistry;prosthodontist;pediatric_dentist,1070.4,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,33,35,28,17,9,6
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Monday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Tuesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Wednesday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Thursday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Friday,10,19,36,68,94,100,88,57,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Saturday,12,22,42,78,100,100,100,66,36,38,54,81,100,100,90,54,30,18
+"Docube Clinic, Koramangala",Fj Merrit Hydrotherapy And Wellness,Hospital,hospital,1070.5,Sunday,4,7,13,24,33,36,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Monday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Tuesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Wednesday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Thursday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Friday,0,0,12,41,72,78,62,29,0,0,29,53,78,78,62,20,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Saturday,0,0,14,47,83,90,71,33,0,0,33,61,90,90,71,24,0,0
+"Docube Clinic, Koramangala",Skinsi,Clinic,dermatology,1096.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Monday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Tuesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Wednesday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Thursday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Friday,10,17,33,62,86,93,81,52,28,30,43,65,84,87,71,43,24,14
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Saturday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Chamundi Hi Tech Hospital,Hospital,hospital,1098.6,Sunday,3,6,12,22,30,33,28,18,10,11,15,23,29,31,25,15,8,5
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Monday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Tuesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Wednesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Thursday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Friday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Saturday,0,0,16,52,91,98,78,36,0,0,36,67,98,98,78,26,0,0
+"Docube Clinic, Koramangala",Toothsi,Clinic,dentist,1099.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Monday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Tuesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Wednesday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Thursday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Friday,0,0,15,50,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Saturday,0,0,17,57,100,100,85,40,0,0,40,74,100,100,85,28,0,0
+"Docube Clinic, Koramangala",Murthy Health and Research Centre,Clinic,General,1128.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, Koramangala",Magnus Diagnostic Lab,Hospital,hospital,1137.3,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, Koramangala","HCG, Koramangala",Hospital,Clinical Labs; Diagnosis; Medical Oncology; Radiation oncology; Surgical Oncology,1168.3,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Monday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Tuesday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Wednesday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Thursday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Friday,10,17,34,63,87,95,82,53,29,31,44,66,85,89,73,44,24,15
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Saturday,11,20,39,73,100,100,95,61,33,36,50,76,98,100,84,50,28,17
+"Docube Clinic, Koramangala",Varalakshmi Hospital,Hospital,General,1169.2,Sunday,3,6,12,22,31,33,29,19,10,11,15,23,30,31,25,15,8,5
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Monday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Tuesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Wednesday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Thursday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Friday,8,14,28,52,72,78,68,44,24,26,36,54,70,74,60,36,20,12
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Saturday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Surya Diagnostics and Health Services,Hospital,hospital,1172.1,Sunday,3,5,10,18,25,27,24,15,8,9,13,19,25,26,21,13,7,4
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Monday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Tuesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Wednesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Thursday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Friday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Saturday,11,19,37,69,95,100,90,58,32,34,48,72,93,97,79,48,26,16
+"Docube Clinic, Koramangala",Venkateshwara Hospital,Hospital,General,1173.0,Sunday,3,6,11,21,29,32,27,18,10,10,14,22,28,30,24,14,8,5
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, Koramangala",St. Johns hospital Emergency ward,Hospital,hospital,1179.9,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Monday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Tuesday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Wednesday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Thursday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Friday,11,19,37,70,96,100,91,59,32,34,48,73,94,98,80,48,27,16
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Saturday,12,22,43,80,100,100,100,68,37,39,55,84,100,100,92,55,31,18
+"Docube Clinic, Koramangala",Aswad Hospital,Hospital,General,1186.4,Sunday,4,7,13,24,34,37,32,21,11,12,17,25,33,34,28,17,9,6
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Monday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Tuesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Wednesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Thursday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Friday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Saturday,0,0,13,44,77,83,66,31,0,0,31,57,83,83,66,22,0,0
+"Docube Clinic, Koramangala",West Mead Clinic,Clinic,clinic,1211.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, Koramangala",Sri Venkateshwara Hospitals,Hospital,General,1217.8,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Monday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Tuesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Wednesday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Thursday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Friday,0,0,11,38,67,72,57,27,0,0,27,49,72,72,57,19,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Saturday,0,0,13,44,77,83,66,31,0,0,31,57,83,83,66,22,0,0
+"Docube Clinic, Koramangala",Epicorium Skin Hair Nail Clinic,Clinic,clinic,1219.9,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Monday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Tuesday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Wednesday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Thursday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Friday,10,18,34,64,88,96,83,54,29,31,44,67,86,90,74,44,24,15
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Saturday,11,20,39,73,100,100,96,62,34,36,51,77,99,100,85,51,28,17
+"Docube Clinic, Koramangala",Greenview Hospital,Hospital,hospital,1285.4,Sunday,3,6,12,22,31,34,29,19,10,11,15,23,30,32,26,15,9,5
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, Koramangala",Apollo Spectra Hospitals,Hospital,hospital,1287.2,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Monday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Tuesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Wednesday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Thursday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Friday,10,18,35,64,89,97,84,54,30,32,45,67,87,91,74,45,25,15
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Saturday,11,20,40,74,100,100,97,63,34,36,51,77,100,100,85,51,28,17
+"Docube Clinic, Koramangala",Greenview Medical Center,Hospital,hospital,1287.5,Sunday,3,6,12,23,31,34,29,19,10,11,16,24,30,32,26,16,9,5
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala","Nova Specialty Surgery Center, Koramangala",Hospital,multi speciality,1291.8,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Monday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Tuesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Wednesday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Thursday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Friday,9,17,32,60,83,90,78,51,28,29,41,63,81,85,69,41,23,14
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Saturday,11,19,37,69,95,100,90,58,32,34,48,72,93,97,79,48,26,16
+"Docube Clinic, Koramangala",Shiva Vision Care,Hospital,hospital,1294.1,Sunday,3,6,11,21,29,32,27,18,10,10,14,22,28,30,24,14,8,5
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, Koramangala",Narayana Hrudayalaya Dental Clinic,Hospital,General,1302.3,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, Koramangala",Global Ayurveda Multispeciality Hospital,Hospital,General,1302.8,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, Koramangala",Healing Earth Multispeciality Ayurveda Hospital,Hospital,General,1303.9,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Monday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Tuesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Wednesday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Thursday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Friday,0,0,16,54,95,100,81,38,0,0,38,70,100,100,81,27,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Saturday,0,0,19,62,100,100,93,43,0,0,43,81,100,100,93,31,0,0
+"Docube Clinic, Koramangala",Nova IVI Fertility,Clinic,clinic,1304.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Monday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Tuesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Wednesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Thursday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Friday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Saturday,0,0,13,43,76,82,65,30,0,0,30,56,82,82,65,22,0,0
+"Docube Clinic, Koramangala",City Clinic,Clinic,General,1313.0,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Monday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Tuesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Wednesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Thursday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Friday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Saturday,0,0,13,45,79,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Annayya Healthcare Pvt Ltd,Clinic,clinic,1341.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Monday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Tuesday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Wednesday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Thursday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Friday,8,15,29,53,74,80,70,45,25,26,37,56,72,75,62,37,20,12
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Saturday,9,17,33,61,85,92,80,52,28,30,42,64,83,87,71,42,24,14
+"Docube Clinic, Koramangala",Karanth Speciality Hospital,Hospital,hospital,1362.3,Sunday,3,5,10,19,26,28,24,16,9,9,13,20,25,26,22,13,7,4
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Monday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Tuesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Wednesday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Thursday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Friday,0,0,13,44,78,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Saturday,0,0,15,51,90,97,77,36,0,0,36,67,97,97,77,26,0,0
+"Docube Clinic, Koramangala",Ismile Dental & Oral Health Care Centre,Clinic,General,1377.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Monday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Tuesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Wednesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Thursday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Friday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Saturday,10,17,33,62,86,94,81,52,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, Koramangala",Acura Speciality Hospital,Hospital,General,1394.1,Sunday,3,5,10,19,26,28,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Monday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Tuesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Wednesday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Thursday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Friday,0,0,13,42,74,80,63,29,0,0,29,55,80,80,63,21,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Saturday,0,0,14,48,85,92,72,34,0,0,34,63,92,92,72,24,0,0
+"Docube Clinic, Koramangala",Koramangala Poly Clinic,Clinic,clinic,1404.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,General,1419.6,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Monday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Tuesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Wednesday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Thursday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Friday,0,0,12,40,70,75,59,28,0,0,28,51,75,75,59,20,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Saturday,0,0,14,45,80,86,68,32,0,0,32,59,86,86,68,23,0,0
+"Docube Clinic, Koramangala",Apollo Diagnostics,Clinic,laboratory,1431.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Monday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Tuesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Wednesday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Thursday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Friday,0,0,12,39,69,74,58,27,0,0,27,51,74,74,58,20,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Saturday,0,0,13,45,79,85,67,31,0,0,31,58,85,85,67,22,0,0
+"Docube Clinic, Koramangala",Chandini Neuro Specialty Clinic,Doctors,neurology,1464.8,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Monday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Tuesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Wednesday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Thursday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Friday,0,0,14,45,79,86,68,32,0,0,32,58,86,86,68,22,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Saturday,0,0,16,52,91,98,78,36,0,0,36,67,98,98,78,26,0,0
+"Docube Clinic, Koramangala",Orange Health Labs,Clinic,General,1485.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Monday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Tuesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Wednesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Thursday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Friday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Saturday,9,16,31,58,80,87,75,49,27,28,40,60,78,81,66,40,22,13
+"Docube Clinic, Koramangala",Apollo Cradle,Hospital,Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination,1528.4,Sunday,3,5,9,18,24,26,23,15,8,9,12,18,24,25,20,12,7,4
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Monday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Tuesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Wednesday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Thursday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Friday,0,0,11,38,66,71,56,26,0,0,26,49,71,71,56,19,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Saturday,0,0,13,43,76,82,65,30,0,0,30,56,82,82,65,22,0,0
+"Docube Clinic, Koramangala",Apollo Clinic,Clinic,clinic,1570.1,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1581.6,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Monday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Tuesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Wednesday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Thursday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Friday,8,14,27,50,69,75,65,42,23,25,35,52,68,71,58,35,19,12
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Saturday,9,16,31,58,80,87,75,49,27,28,40,60,78,81,66,40,22,13
+"Docube Clinic, Koramangala",Keva Ayurveda Health Care Pvt Ltd,Hospital,General,1603.7,Sunday,3,5,9,18,24,26,23,15,8,9,12,18,24,25,20,12,7,4
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care Hospital HSR Layout,Doctors,ophthalmology,1612.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Monday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Tuesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Wednesday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Thursday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Friday,0,0,15,50,88,95,75,35,0,0,35,65,95,95,75,25,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Saturday,0,0,17,57,100,100,86,40,0,0,40,75,100,100,86,29,0,0
+"Docube Clinic, Koramangala","The Apollo Clinic, Bengaluru Urban",Clinic,clinic,1612.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, Koramangala",Vasan Eye Care,Hospital,hospital,1645.9,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Monday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Tuesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Wednesday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Thursday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Friday,0,0,14,46,81,87,69,32,0,0,32,60,87,87,69,23,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Saturday,0,0,16,53,93,100,79,37,0,0,37,69,100,100,79,26,0,0
+"Docube Clinic, Koramangala",Vitiligo Clinic,Clinic,General,1648.6,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Monday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Tuesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Wednesday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Thursday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Friday,9,16,32,59,82,89,77,50,27,29,41,62,80,84,68,41,23,14
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Saturday,10,19,37,68,94,100,89,58,31,33,47,71,92,96,78,47,26,16
+"Docube Clinic, Koramangala",Roopena Agrahara Government Hospital,Hospital,General,1686.9,Sunday,3,6,11,21,29,31,27,18,10,10,14,22,28,29,24,14,8,5
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, Koramangala","Vasan Eye Care Hospital, Koramangala",Hospital,hospital,1714.7,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Monday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Tuesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Wednesday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Thursday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Friday,10,18,35,65,90,98,85,55,30,32,45,68,88,92,75,45,25,15
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Saturday,12,21,40,75,100,100,98,63,34,37,52,78,100,100,86,52,29,17
+"Docube Clinic, Koramangala",Aparna Hospital,Hospital,hospital,1718.2,Sunday,4,6,12,23,31,34,30,19,10,11,16,24,31,32,26,16,9,5
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Monday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Tuesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Wednesday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Thursday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Friday,10,19,36,67,93,100,88,57,31,33,46,70,91,95,77,46,26,15
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Saturday,12,21,41,77,100,100,100,65,36,38,53,81,100,100,89,53,30,18
+"Docube Clinic, Koramangala",Life Care Hospital,Hospital,General,1725.1,Sunday,4,6,13,23,32,35,31,20,11,12,16,25,32,33,27,16,9,5
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Monday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Tuesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Wednesday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Thursday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Friday,8,15,29,54,75,81,71,46,25,27,37,56,73,76,62,37,21,12
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Saturday,10,17,33,62,86,94,81,52,29,31,43,65,84,88,72,43,24,14
+"Docube Clinic, Koramangala",Pristine Health care,Hospital,hospital,1780.1,Sunday,3,5,10,19,26,28,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,General,1795.3,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Monday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Tuesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Wednesday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Thursday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Friday,8,15,29,55,76,82,71,46,25,27,38,57,74,77,63,38,21,13
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Saturday,10,17,34,63,87,95,82,53,29,31,43,66,85,89,72,43,24,14
+"Docube Clinic, Koramangala",Gangothri Hospital,Hospital,General,1806.2,Sunday,3,5,10,19,26,29,25,16,9,9,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Monday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Tuesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Wednesday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Thursday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Friday,9,16,31,57,79,86,75,48,26,28,40,60,77,81,66,40,22,13
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Saturday,10,18,35,66,91,99,86,56,30,32,46,69,89,93,76,46,25,15
+"Docube Clinic, Koramangala",Spurthy Hospital,Hospital,hospital,1815.7,Sunday,3,6,11,20,28,30,26,17,9,10,14,21,27,28,23,14,8,5
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Monday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Tuesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Wednesday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Thursday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Friday,8,15,30,55,76,83,72,47,26,27,38,58,75,78,64,38,21,13
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Saturday,10,18,34,64,88,96,83,54,29,31,44,66,86,90,73,44,24,15
+"Docube Clinic, Koramangala",Devi Eye Hospital,Hospital,multi speciality,1851.7,Sunday,3,5,10,19,27,29,25,16,9,10,13,20,26,27,22,13,7,4
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Monday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Tuesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Wednesday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Thursday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Friday,0,0,15,50,89,96,76,35,0,0,35,66,96,96,76,25,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Saturday,0,0,17,58,100,100,87,41,0,0,41,75,100,100,87,29,0,0
+"Docube Clinic, Koramangala",Sri Jyoti Eye Clinic,Clinic,clinic,1882.2,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Monday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Tuesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Wednesday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Thursday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Friday,0,0,13,43,76,82,64,30,0,0,30,56,82,82,64,22,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Saturday,0,0,15,49,87,94,74,35,0,0,35,64,94,94,74,25,0,0
+"Docube Clinic, Koramangala",Shashi Clinic,Clinic,General,1951.5,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Monday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Tuesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Wednesday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Thursday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Friday,0,0,15,49,86,93,74,34,0,0,34,64,93,93,74,24,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Saturday,0,0,17,56,99,100,85,39,0,0,39,73,100,100,85,28,0,0
+"Docube Clinic, Koramangala",Bhaanu Nursing Home,Clinic,General,1952.7,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Monday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Tuesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Wednesday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Thursday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Friday,11,20,38,71,98,100,93,60,33,35,49,74,96,100,82,49,27,16
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Saturday,13,23,44,81,100,100,100,69,38,40,56,85,100,100,94,56,31,19
+"Docube Clinic, Koramangala",Mahanth Hospital,Hospital,General,1952.9,Sunday,4,7,13,25,34,37,32,21,11,12,17,26,34,35,29,17,10,6
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Monday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Tuesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Wednesday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Thursday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Friday,0,0,16,52,92,99,78,36,0,0,36,68,99,99,78,26,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Saturday,0,0,18,60,100,100,90,42,0,0,42,78,100,100,90,30,0,0
+"Docube Clinic, Koramangala",Amba Laser Clinic,Clinic,General,1995.4,Sunday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
