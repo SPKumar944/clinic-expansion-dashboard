@@ -281,12 +281,13 @@
     </div>
     
     <div>
-      <select id="clinicSelect" class="clinic-dropdown">
-        <option value="koramangala">Docube Clinic, Koramangala (77 Competitors)</option>
-        <option value="whitefield">Docube Clinic, Whitefield (29 Competitors)</option>
-        <option value="jp_nagar">Docube Clinic, JP Nagar (107 Competitors)</option>
-        <option value="sarjapur_road">Docube Clinic, Sarjapur Road (14 Competitors)</option>
-        <option value="hrbr">Docube Clinic, HRBR (84 Competitors)</option>
+      <select id="clinicSelect" class="clinic-dropdown" onchange="onClinicChange(this.value)">
+        <option value="indiranagar" selected>Docube Clinic, Indiranagar 1st Stage (96 Competitors)</option>
+        <option value="koramangala">Docube Clinic, Koramangala (83 Competitors)</option>
+        <option value="whitefield">Docube Clinic, Whitefield (71 Competitors)</option>
+        <option value="jp_nagar">Docube Clinic, JP Nagar (94 Competitors)</option>
+        <option value="sarjapur_road">Docube Clinic, Sarjapur Road (65 Competitors)</option>
+        <option value="hrbr">Docube Clinic, HRBR Layout (88 Competitors)</option>
       </select>
     </div>
   </header>
@@ -414,7 +415,14 @@
     }
 
     // State
-    let currentClinicId = 'koramangala';
+    let currentClinicId = 'indiranagar';
+    const urlParams = new URLSearchParams(window.location.search);
+    const cParam = urlParams.get('clinic') || urlParams.get('cid');
+    if (cParam && window.GEOSPATIAL_HEX_DATA && window.GEOSPATIAL_HEX_DATA[cParam]) {
+      currentClinicId = cParam;
+      const cSel = document.getElementById('clinicSelect');
+      if (cSel) cSel.value = cParam;
+    }
     let currentDay = 0; // Monday
     let currentHour = 18; // 6 PM
     let isPlaying = false;
@@ -426,8 +434,8 @@
     const mapStore = L.map('map-store', { zoomControl: true, preferCanvas: false });
     const mapComp = L.map('map-competitor', { zoomControl: true, preferCanvas: false });
 
-    const tileUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-    const tileAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+    const tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tileAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
     L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapStore);
     L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapComp);
