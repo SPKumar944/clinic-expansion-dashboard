@@ -499,10 +499,9 @@
     }
 
     // State
-    let currentDomain = 'housing'; // 'housing' or 'footfall'
-    let currentClinicId = 'indiranagar';
-
     const urlParams = new URLSearchParams(window.location.search);
+    let currentDomain = urlParams.get('domain') || 'footfall'; // 'footfall' default
+    let currentClinicId = 'indiranagar';
     const cParam = urlParams.get('clinic') || urlParams.get('cid');
     if (cParam && window.GEOSPATIAL_HEX_DATA && window.GEOSPATIAL_HEX_DATA[cParam]) {
       currentClinicId = cParam;
@@ -899,6 +898,7 @@
     });
 
     window.addEventListener('DOMContentLoaded', () => {
+      switchDomain(currentDomain);
       setCenterAndBounds();
       setTimeout(() => {
         mapLeft.invalidateSize();

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Housing Economics & Healthcare Affluence: Geospatial Hexagonal Mesh</title>
+  
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./geospatial_hex_data.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #0a0f1d;
+      --card-bg: #111827;
+      --border-color: #1f2937;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --brand-blue: #0284c7;
+      --comp-red: #f54428;
+      --affluence-green: #10b981;
+      --affluence-gold: #f59e0b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
+
+    /* Header */
+    header {
+      background: #0f172a;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .header-title h1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+    }
+    .badge-emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-purple { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+    .header-subtitle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    /* Controls Bar */
+    .controls-bar {
+      background: #111827;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .domain-switcher {
+      display: flex;
+      background: #090d16;
+      border: 1px solid #374151;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+    .domain-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .domain-btn:hover { color: #fff; }
+    .domain-btn.active {
+      background: #059669;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(5,150,105,0.4);
+    }
+    .domain-btn.footfall-active {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(37,99,235,0.4);
+    }
+
+    .view-mode-tabs {
+      display: flex;
+      background: #1f2937;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+    .view-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .view-tab:hover { color: #fff; }
+    .view-tab.active { background: #374151; color: #fff; }
+
+    .clinic-dropdown {
+      background: #1f2937;
+      border: 1px solid #374151;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Footfall temporal bar (hidden by default) */
+    .footfall-controls {
+      display: none;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footfall-controls.show-controls { display: flex; }
+
+    .day-selector {
+      display: flex;
+      background: #1f2937;
+      padding: 3px;
+      border-radius: 8px;
+      gap: 2px;
+    }
+    .day-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 5px 11px;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .day-btn:hover { color: #fff; }
+    .day-btn.active { background: #475569; color: #ffffff; }
+
+    .time-slider-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 380px;
+    }
+    .play-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: #38bdf8;
+      color: #0b1120;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    .play-btn:hover { background: #7dd3fc; }
+
+    .slider-track { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+    .slider-info { display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; }
+    .time-text { color: #38bdf8; font-size: 13px; }
+
+    input[type=range] {
+      width: 100%;
+      height: 5px;
+      border-radius: 3px;
+      background: #374151;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #38bdf8;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+    }
+
+    /* Container for Maps */
+    .maps-stage {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 128px);
+      position: relative;
+    }
+    .map-pane {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-right: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    .map-pane:last-child { border-right: none; }
+    .map-pane.hidden-pane { display: none; }
+
+    .pane-header {
+      background: rgba(17, 24, 39, 0.96);
+      backdrop-filter: blur(8px);
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 500;
+    }
+    .pane-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .pane-map-container {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      background: #090e17;
+    }
+
+    /* Gradient Legends */
+    .legend-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 250px;
+    }
+    .legend-bar {
+      height: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    .legend-bar-emerald {
+      background: linear-gradient(to right, #bbf7d0 0%, #34d399 33%, #059669 66%, #064e3b 100%);
+    }
+    .legend-bar-purple {
+      background: linear-gradient(to right, #fef08a 0%, #f59e0b 33%, #dc2626 66%, #581c87 100%);
+    }
+    .legend-bar-blue {
+      background: linear-gradient(to right, #e0f2fe 0%, #38bdf8 33%, #0284c7 66%, #032b69 100%);
+    }
+    .legend-bar-yellow-red {
+      background: linear-gradient(to right, #fff0a9 0%, #febb57 33%, #f54428 66%, #980026 100%);
+    }
+    .legend-ticks {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Floating Metrics Overlay */
+    .metrics-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 10px 18px;
+      border-radius: 10px;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      display: flex;
+      gap: 18px;
+    }
+    .metric-item { display: flex; flex-direction: column; }
+    .metric-label { font-size: 10px; text-transform: uppercase; color: var(--text-muted); font-weight: 700; }
+    .metric-val { font-size: 18px; font-weight: 900; line-height: 1.2; margin-top: 2px; }
+
+    /* Tooltip */
+    .leaflet-tooltip {
+      background: rgba(15, 23, 42, 0.96) !important;
+      color: #f8fafc !important;
+      border: 1px solid #334155 !important;
+      border-radius: 8px !important;
+      padding: 12px 16px !important;
+      font-size: 12px !important;
+      line-height: 1.5 !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="header-title">
+      <h1>
+        Geospatial Hexagonal Continuous Mesh
+        <span id="badge1" class="badge badge-emerald">House Rents: Green</span>
+        <span id="badge2" class="badge badge-purple">Affluence Tiers: Gold to Purple</span>
+      </h1>
+      <div id="headerSubtitle" class="header-subtitle">
+        Customer Demographics & House Rents: 85m continuous hex cells across the 2.0 km catchment.
+      </div>
+    </div>
+    
+    <div>
+      <select id="clinicSelect" class="clinic-dropdown">
+        <option value="indiranagar" selected>Docube Clinic, Indiranagar 1st Stage (Catchment Pool: 44.9k HH)</option>
+        <option value="koramangala">Docube Clinic, Koramangala (Catchment Pool: 42.2k HH)</option>
+        <option value="whitefield">Docube Clinic, Whitefield (Catchment Pool: 47.6k HH)</option>
+        <option value="jp_nagar">Docube Clinic, JP Nagar (Catchment Pool: 39.5k HH)</option>
+        <option value="sarjapur_road">Docube Clinic, Sarjapur Road (Catchment Pool: 41.3k HH)</option>
+        <option value="hrbr">Docube Clinic, HRBR Layout (Catchment Pool: 38.6k HH)</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Controls Bar -->
+  <div class="controls-bar">
+    <!-- Domain Switcher -->
+    <div class="domain-switcher" id="domainSwitcher">
+      <button class="domain-btn active" id="btnDomainHousing" data-domain="housing">
+        <span>🏠</span> Customer House Rents & Economic Affluence
+      </button>
+      <button class="domain-btn" id="btnDomainFootfall" data-domain="footfall">
+        <span>🚶</span> Store & Competitor Footfall Dynamics
+      </button>
+    </div>
+
+    <!-- View Mode Tabs -->
+    <div class="view-mode-tabs" id="viewModeTabs">
+      <button class="view-tab active" data-mode="split">Split View (Both)</button>
+      <button class="view-tab" data-mode="left" id="tabLeft">House Rents Only</button>
+      <button class="view-tab" data-mode="right" id="tabRight">Affluence Tiers Only</button>
+    </div>
+
+    <!-- Footfall Controls (Hidden when in Housing Mode) -->
+    <div class="footfall-controls" id="footfallControls">
+      <div class="day-selector" id="dayButtons">
+        <button class="day-btn active" data-day="0">Mon</button>
+        <button class="day-btn" data-day="1">Tue</button>
+        <button class="day-btn" data-day="2">Wed</button>
+        <button class="day-btn" data-day="3">Thu</button>
+        <button class="day-btn" data-day="4">Fri</button>
+        <button class="day-btn" data-day="5">Sat</button>
+        <button class="day-btn" data-day="6">Sun</button>
+      </div>
+
+      <div class="time-slider-wrapper">
+        <button id="playBtn" class="play-btn" title="Toggle Auto-Play">▶</button>
+        <div class="slider-track">
+          <div class="slider-info">
+            <span>Operating Hours: 06:00 to 23:00</span>
+            <span id="timeLabel" class="time-text">18:00 (Evening Peak)</span>
+          </div>
+          <input type="range" id="hourSlider" min="6" max="23" value="18" step="1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage: Maps -->
+  <div class="maps-stage">
+    
+    <!-- LEFT PANE -->
+    <div class="map-pane" id="paneLeft">
+      <div class="pane-header">
+        <div class="pane-title" id="paneTitleLeft">
+          <span id="dotLeft" style="display:inline-block; width:12px; height:12px; border-radius:3px; background:#10b981;"></span>
+          <span id="textTitleLeft" style="color:#bbf7d0;">1. Customer Residential House Rent Layer (₹ / sq.ft / mo)</span>
+        </div>
+        <div class="legend-box" id="legendLeftBox">
+          <div class="legend-bar legend-bar-emerald" id="legendBarLeft"></div>
+          <div class="legend-ticks" id="legendTicksLeft">
+            <span>Budget (<₹25)</span>
+            <span>Moderate (₹25-₹35)</span>
+            <span>High (₹35-₹45)</span>
+            <span>Prime (>₹45/sq.ft)</span>
+          </div>
+        </div>
+      </div>
+      <div id="map-left" class="pane-map-container"></div>
+      
+      <div class="metrics-overlay" id="metricsLeft">
+        <div class="metric-item">
+          <span class="metric-label" id="lblL1">Avg 2 BHK Rent</span>
+          <span class="metric-val" id="valL1" style="color: #34d399;">₹52,000</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label" id="lblL2">Avg 3 BHK Rent</span>
+          <span class="metric-val" id="valL2" style="color: #a7f3d0;">₹95,000</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label" id="lblL3">Rent PSF Range</span>
+          <span class="metric-val" id="valL3" style="color: #ffffff;">₹28 - ₹50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANE -->
+    <div class="map-pane" id="paneRight">
+      <div class="pane-header">
+        <div class="pane-title" id="paneTitleRight">
+          <span id="dotRight" style="display:inline-block; width:12px; height:12px; border-radius:3px; background:#f59e0b;"></span>
+          <span id="textTitleRight" style="color:#fef08a;">2. Household Economic Affluence & Healthcare Purchasing Power</span>
+        </div>
+        <div class="legend-box" id="legendRightBox">
+          <div class="legend-bar legend-bar-purple" id="legendBarRight"></div>
+          <div class="legend-ticks" id="legendTicksRight">
+            <span>Mid-Income</span>
+            <span>Upper-Middle</span>
+            <span>High-Affluent</span>
+            <span>Ultra-Affluent (Top 2%)</span>
+          </div>
+        </div>
+      </div>
+      <div id="map-right" class="pane-map-container"></div>
+
+      <div class="metrics-overlay" id="metricsRight">
+        <div class="metric-item">
+          <span class="metric-label" id="lblR1">Affluence Tier</span>
+          <span class="metric-val" id="valR1" style="color: #facc15;">Ultra-Affluent</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label" id="lblR2">Paying Capacity Score</span>
+          <span class="metric-val" id="valR2" style="color: #c084fc;">96 / 100</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label" id="lblR3">Est. Monthly HH Income</span>
+          <span class="metric-val" id="valR3" style="color: #ffffff;">₹2.5L - ₹8.0L+</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Palettes
+    // 1. Housing Rent Palette: Emerald to Deep Forest Green
+    const rentPalette = ['#bbf7d0', '#4ade80', '#10b981', '#047857', '#064e3b'];
+    // 2. Affluence Palette: Warm Yellow -> Amber -> Coral Red -> Royal Purple
+    const affluencePalette = ['#fef08a', '#f59e0b', '#dc2626', '#7e22ce', '#3b0764'];
+    // 3. Store Footfall: Blue
+    const storePalette = ['#e0f2fe', '#38bdf8', '#0284c7', '#032b69'];
+    // 4. Competitor Footfall: Yellow to Red
+    const competitorPalette = ['#fff0a9', '#febb57', '#f54428', '#980026'];
+
+    function getRentColor(psf) {
+      if (psf <= 0) return 'transparent';
+      if (psf < 26) return rentPalette[0];
+      if (psf < 33) return rentPalette[1];
+      if (psf < 40) return rentPalette[2];
+      if (psf < 47) return rentPalette[3];
+      return rentPalette[4];
+    }
+
+    function getAffluenceColor(score) {
+      if (score <= 0) return 'transparent';
+      const idx = Math.min(affluencePalette.length - 1, Math.floor((Math.max(0, Math.min(99, score)) / 100) * affluencePalette.length));
+      return affluencePalette[idx];
+    }
+
+    function getStoreColor(v) {
+      const idx = Math.min(storePalette.length - 1, Math.floor((Math.max(0, Math.min(99, v)) / 100) * storePalette.length));
+      return storePalette[idx];
+    }
+
+    function getCompetitorColor(v) {
+      const idx = Math.min(competitorPalette.length - 1, Math.floor((Math.max(0, Math.min(99, v)) / 100) * competitorPalette.length));
+      return competitorPalette[idx];
+    }
+
+    // State
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentDomain = urlParams.get('domain') || 'housing'; // 'footfall' default
+    let currentClinicId = 'indiranagar';
+    const cParam = urlParams.get('clinic') || urlParams.get('cid');
+    if (cParam && window.GEOSPATIAL_HEX_DATA && window.GEOSPATIAL_HEX_DATA[cParam]) {
+      currentClinicId = cParam;
+      const cSel = document.getElementById('clinicSelect');
+      if (cSel) cSel.value = cParam;
+    }
+
+    let currentDay = 0; // Monday
+    let currentHour = 18; // 6 PM
+    let isPlaying = false;
+    let timer = null;
+    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    // Initialize Leaflet Maps
+    const mapLeft = L.map('map-left', { zoomControl: true, preferCanvas: false });
+    const mapRight = L.map('map-right', { zoomControl: true, preferCanvas: false });
+
+    const tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tileAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+    L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapLeft);
+    L.tileLayer(tileUrl, { maxZoom: 19, attribution: tileAttr }).addTo(mapRight);
+
+    // Synchronize Pan & Zoom
+    let syncLock = false;
+    function syncMaps(source, target) {
+      source.on('move', () => {
+        if (!syncLock) {
+          syncLock = true;
+          target.setView(source.getCenter(), source.getZoom(), { animate: false });
+          syncLock = false;
+        }
+      });
+    }
+    syncMaps(mapLeft, mapRight);
+    syncMaps(mapRight, mapLeft);
+
+    const leftHexGroup = L.layerGroup().addTo(mapLeft);
+    const rightHexGroup = L.layerGroup().addTo(mapRight);
+
+    // Render Function
+    function updateView() {
+      const clinicData = window.GEOSPATIAL_HEX_DATA[currentClinicId];
+      if (!clinicData) return;
+
+      const cl = clinicData.clinic;
+      const cells = clinicData.cells;
+      const compPoints = clinicData.comp_points || [];
+      const center = [cl.lat, cl.lon];
+
+      leftHexGroup.clearLayers();
+      rightHexGroup.clearLayers();
+
+      if (currentDomain === 'housing') {
+        // --- HOUSING & ECONOMIC AFFLUENCE VIEW ---
+        // Catchment circle
+        L.circle(center, { radius: 2000, color: '#10b981', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(leftHexGroup);
+        L.circle(center, { radius: 2000, color: '#f59e0b', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(rightHexGroup);
+
+        let totalPsf = 0, totalR2 = 0, totalR3 = 0, countHabitable = 0;
+        let maxSpendScore = 0;
+
+        cells.forEach(cell => {
+          if (cell.is_water) {
+            // Uninhabited lake
+            L.polygon(cell.polygon, {
+              stroke: false,
+              fillColor: '#0284c7',
+              fillOpacity: 0.15,
+              smoothFactor: 1
+            }).bindTooltip(`<b>${cell.pocket_name}</b><br><span style="color:#94a3b8;">Uninhabited Lake Reservoir</span>`, { sticky: true }).addTo(leftHexGroup);
+            return;
+          }
+
+          countHabitable++;
+          totalPsf += cell.res_psf;
+          totalR2 += cell.rent_2bhk;
+          totalR3 += cell.rent_3bhk;
+          maxSpendScore = Math.max(maxSpendScore, cell.spend_score);
+
+          // 1. LEFT MAP: Residential House Rents (₹/sq.ft & Monthly Rents)
+          L.polygon(cell.polygon, {
+            color: '#ffffff',
+            stroke: false,
+            fillColor: getRentColor(cell.res_psf),
+            fillOpacity: 0.68,
+            smoothFactor: 1
+          }).bindTooltip(`
+            <div style="font-family:sans-serif; min-width:220px;">
+              <div style="font-size:10px; text-transform:uppercase; font-weight:800; color:#34d399; margin-bottom:2px;">🏠 RESIDENTIAL CUSTOMER POCKET</div>
+              <div style="font-size:14px; font-weight:800; color:#ffffff;">${cell.pocket_name}</div>
+              <div style="font-size:11px; color:#94a3b8; margin-bottom:6px;">${cl.name} · ${Math.round(cell.dist_meters)}m from clinic</div>
+              <hr style="margin:5px 0; border:none; border-top:1px solid #334155;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Avg House Rent:</span>
+                <b style="color:#4ade80; font-size:13px;">₹${cell.res_psf} / sq.ft / mo</b>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Typical 2 BHK Rent:</span>
+                <b style="color:#ffffff;">₹${cell.rent_2bhk.toLocaleString('en-IN')} / mo</b>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Typical 3 BHK Rent:</span>
+                <b style="color:#ffffff;">₹${cell.rent_3bhk.toLocaleString('en-IN')} / mo</b>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Est. Household Income:</span>
+                <b style="color:#facc15;">${cell.hh_income}</b>
+              </div>
+              <div style="display:flex; justify-content:space-between;">
+                <span style="color:#cbd5e1;">Economic Affluence:</span>
+                <b style="color:#c084fc;">${cell.affluence_tier}</b>
+              </div>
+            </div>
+          `, { sticky: true }).addTo(leftHexGroup);
+
+          // 2. RIGHT MAP: Economic Affluence & Healthcare Purchasing Power
+          L.polygon(cell.polygon, {
+            color: '#ffffff',
+            stroke: false,
+            fillColor: getAffluenceColor(cell.spend_score),
+            fillOpacity: 0.68,
+            smoothFactor: 1
+          }).bindTooltip(`
+            <div style="font-family:sans-serif; min-width:220px;">
+              <div style="font-size:10px; text-transform:uppercase; font-weight:800; color:#f59e0b; margin-bottom:2px;">💰 CUSTOMER HEALTHCARE PAYING POWER</div>
+              <div style="font-size:14px; font-weight:800; color:#ffffff;">${cell.pocket_name}</div>
+              <div style="font-size:11px; color:#94a3b8; margin-bottom:6px;">Economic Tier: <b style="color:#fef08a;">${cell.affluence_tier}</b></div>
+              <hr style="margin:5px 0; border:none; border-top:1px solid #334155;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Healthcare Spend Score:</span>
+                <b style="color:#f59e0b; font-size:13px;">${cell.spend_score} / 100</b>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">Est. Monthly HH Income:</span>
+                <b style="color:#facc15;">${cell.hh_income}</b>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                <span style="color:#cbd5e1;">House Rent PSF:</span>
+                <b style="color:#ffffff;">₹${cell.res_psf} / sq.ft</b>
+              </div>
+              <hr style="margin:5px 0; border:none; border-top:1px solid #334155;">
+              <div style="font-size:11px; color:#38bdf8;">
+                <b>OPD Propensity:</b> ${cell.spend_score >= 80 ? 'High Propensity for Premium Outpatient & Diagnostics' : 'Standard Routine Care'}
+              </div>
+            </div>
+          `, { sticky: true }).addTo(rightHexGroup);
+        });
+
+        // Update Housing HUD Metrics
+        const avgR2 = countHabitable ? Math.round(totalR2 / countHabitable / 500) * 500 : 0;
+        const avgR3 = countHabitable ? Math.round(totalR3 / countHabitable / 1000) * 1000 : 0;
+        const avgPsf = countHabitable ? Math.round(totalPsf / countHabitable) : 0;
+
+        document.getElementById('lblL1').innerText = 'Catchment Avg 2 BHK';
+        document.getElementById('valL1').innerText = `₹${avgR2.toLocaleString('en-IN')}`;
+        document.getElementById('lblL2').innerText = 'Catchment Avg 3 BHK';
+        document.getElementById('valL2').innerText = `₹${avgR3.toLocaleString('en-IN')}`;
+        document.getElementById('lblL3').innerText = 'Avg House Rent PSF';
+        document.getElementById('valL3').innerText = `₹${avgPsf} / sq.ft`;
+
+        document.getElementById('lblR1').innerText = 'Affluence Tier';
+        document.getElementById('valR1').innerText = avgPsf >= 40 ? 'Ultra-Affluent' : (avgPsf >= 32 ? 'High-Affluent' : 'Upper-Middle');
+        document.getElementById('lblR2').innerText = 'Max Paying Score';
+        document.getElementById('valR2').innerText = `${maxSpendScore} / 100`;
+        document.getElementById('lblR3').innerText = 'Household Income';
+        document.getElementById('valR3').innerText = avgPsf >= 40 ? '₹2.5L - ₹8.0L+' : '₹1.8L - ₹5.5L';
+
+      } else {
+        // --- FOOTFALL & CLINIC DEMAND VIEW ---
+        L.circle(center, { radius: 2000, color: '#0284c7', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(leftHexGroup);
+        L.circle(center, { radius: 2000, color: '#f54428', weight: 2, dashArray: '6 6', fill: false, interactive: false }).addTo(rightHexGroup);
+
+        const dayName = dayNames[currentDay];
+        const dayKey = dayName.toLowerCase();
+        const hourStr = `${currentHour > 12 ? currentHour - 12 : currentHour} ${currentHour >= 12 ? 'PM' : 'AM'}`;
+        document.getElementById('timeLabel').innerText = `${String(currentHour).padStart(2, '0')}:00 (${hourStr})`;
+
+        const storeSchedule = cl.schedule[dayKey] || {};
+        const clinicHourDemand = storeSchedule[hourStr] || 50;
+        const dayMultiplier = [1, 0.94, 0.97, 1.01, 1.08, 1.15, 0.72][currentDay] || 1;
+
+        let storePeak = 0, storeHot = 0, compPeak = 0, compHot = 0;
+
+        cells.forEach(cell => {
+          const sVal = Math.min(100, Math.max(5, Math.round(clinicHourDemand * cell.store_weight * dayMultiplier)));
+          storePeak = Math.max(storePeak, sVal);
+          if (sVal >= 70) storeHot++;
+
+          L.polygon(cell.polygon, {
+            stroke: false,
+            fillColor: getStoreColor(sVal),
+            fillOpacity: 0.65,
+            smoothFactor: 1
+          }).bindTooltip(`
+            <b style="color:#38bdf8;">STORE FOOTFALL HEX LAYER</b><br>
+            <strong>${cl.name}</strong><br>
+            <strong>Time:</strong> ${dayName} ${hourStr}<br>
+            <strong>Store Footfall:</strong> <b>${sVal}/100</b>
+          `, { sticky: true }).addTo(leftHexGroup);
+
+          const cVal = Math.min(100, Math.max(4, Math.round(Math.pow(cell.comp_weight, 1.4) * 98 * dayMultiplier * (0.4 + (clinicHourDemand / 140)))));
+          compPeak = Math.max(compPeak, cVal);
+          if (cVal >= 70) compHot++;
+
+          L.polygon(cell.polygon, {
+            stroke: false,
+            fillColor: getCompetitorColor(cVal),
+            fillOpacity: 0.65,
+            smoothFactor: 1
+          }).bindTooltip(`
+            <b style="color:#febb57;">COMPETITOR FOOTFALL HEX LAYER</b><br>
+            <strong>Catchment:</strong> ${cl.locality}<br>
+            <strong>Time:</strong> ${dayName} ${hourStr}<br>
+            <strong>Competitor Footfall:</strong> <b>${cVal}/100</b>
+          `, { sticky: true }).addTo(rightHexGroup);
+        });
+
+        document.getElementById('lblL1').innerText = 'Store Peak Index';
+        document.getElementById('valL1').innerText = storePeak;
+        document.getElementById('lblL2').innerText = 'High Activity Hexes';
+        document.getElementById('valL2').innerText = storeHot;
+        document.getElementById('lblL3').innerText = 'Store OPD Load';
+        document.getElementById('valL3').innerText = `${clinicHourDemand}%`;
+
+        document.getElementById('lblR1').innerText = 'Competitor Peak';
+        document.getElementById('valR1').innerText = compPeak;
+        document.getElementById('lblR2').innerText = 'Hot Clusters';
+        document.getElementById('valR2').innerText = compHot;
+        document.getElementById('lblR3').innerText = 'Competitor Facilities';
+        document.getElementById('valR3').innerText = compPoints.length;
+      }
+    }
+
+    function switchDomain(domain) {
+      currentDomain = domain;
+      const btnH = document.getElementById('btnDomainHousing');
+      const btnF = document.getElementById('btnDomainFootfall');
+      const fc = document.getElementById('footfallControls');
+
+      const b1 = document.getElementById('badge1');
+      const b2 = document.getElementById('badge2');
+      const sub = document.getElementById('headerSubtitle');
+
+      const dotL = document.getElementById('dotLeft');
+      const titleL = document.getElementById('textTitleLeft');
+      const barL = document.getElementById('legendBarLeft');
+      const ticksL = document.getElementById('legendTicksLeft');
+
+      const dotR = document.getElementById('dotRight');
+      const titleR = document.getElementById('textTitleRight');
+      const barR = document.getElementById('legendBarRight');
+      const ticksR = document.getElementById('legendTicksRight');
+
+      const tabL = document.getElementById('tabLeft');
+      const tabR = document.getElementById('tabRight');
+
+      if (domain === 'housing') {
+        btnH.className = 'domain-btn active';
+        btnF.className = 'domain-btn';
+        fc.classList.remove('show-controls');
+
+        b1.className = 'badge badge-emerald';
+        b1.innerText = 'House Rents: Green';
+        b2.className = 'badge badge-purple';
+        b2.innerText = 'Affluence Tiers: Gold to Purple';
+        sub.innerText = 'Customer Demographics & House Rents: 85m continuous hex cells across the 2.0 km catchment.';
+
+        dotL.style.background = '#10b981';
+        titleL.style.color = '#bbf7d0';
+        titleL.innerText = '1. Customer Residential House Rent Layer (₹ / sq.ft / mo)';
+        barL.className = 'legend-bar legend-bar-emerald';
+        ticksL.innerHTML = '<span>Budget (<₹25)</span><span>Moderate (₹25-₹35)</span><span>High (₹35-₹45)</span><span>Prime (>₹45/sq.ft)</span>';
+
+        dotR.style.background = '#f59e0b';
+        titleR.style.color = '#fef08a';
+        titleR.innerText = '2. Household Economic Affluence & Healthcare Purchasing Power';
+        barR.className = 'legend-bar legend-bar-purple';
+        ticksR.innerHTML = '<span>Mid-Income</span><span>Upper-Middle</span><span>High-Affluent</span><span>Ultra-Affluent (Top 2%)</span>';
+
+        tabL.innerText = 'House Rents Only';
+        tabR.innerText = 'Affluence Tiers Only';
+
+      } else {
+        btnH.className = 'domain-btn';
+        btnF.className = 'domain-btn footfall-active';
+        fc.classList.add('show-controls');
+
+        b1.className = 'badge badge-blue';
+        b1.innerText = 'Store Layer: Blue';
+        b2.className = 'badge badge-yellow-red';
+        b2.innerText = 'Competitor Layer: Yellow to Red';
+        sub.innerText = 'Operating Hours Footfall Mesh: Identical 85m hexagonal continuous cells. No point markers.';
+
+        dotL.style.background = '#0284c7';
+        titleL.style.color = '#e0f2fe';
+        titleL.innerText = '1. Store Footfall Hexagon Layer (Blue Gradient)';
+        barL.className = 'legend-bar legend-bar-blue';
+        ticksL.innerHTML = '<span>Low (#e0f2fe)</span><span>Moderate (#38bdf8)</span><span>High (#0284c7)</span><span>Peak (#032b69)</span>';
+
+        dotR.style.background = '#f54428';
+        titleR.style.color = '#fee2e2';
+        titleR.innerText = '2. Competitor Footfall Hexagon Layer (Yellow to Red)';
+        barR.className = 'legend-bar legend-bar-yellow-red';
+        ticksR.innerHTML = '<span>Low (#fff0a9)</span><span>Moderate (#febb57)</span><span>High (#f54428)</span><span>Peak (#980026)</span>';
+
+        tabL.innerText = 'Store Hex Layer Only';
+        tabR.innerText = 'Competitor Hex Layer Only';
+      }
+
+      updateView();
+    }
+
+    function setCenterAndBounds() {
+      const clinicData = window.GEOSPATIAL_HEX_DATA[currentClinicId];
+      if (!clinicData) return;
+      const center = [clinicData.clinic.lat, clinicData.clinic.lon];
+      mapLeft.setView(center, 13.5, { animate: false });
+      mapRight.setView(center, 13.5, { animate: false });
+      updateView();
+    }
+
+    // Domain switcher buttons
+    document.getElementById('btnDomainHousing').addEventListener('click', () => switchDomain('housing'));
+    document.getElementById('btnDomainFootfall').addEventListener('click', () => switchDomain('footfall'));
+
+    // View Tabs (Split vs Left Only vs Right Only)
+    document.querySelectorAll('#viewModeTabs .view-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#viewModeTabs .view-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const mode = tab.getAttribute('data-mode');
+        const pLeft = document.getElementById('paneLeft');
+        const pRight = document.getElementById('paneRight');
+
+        if (mode === 'split') {
+          pLeft.classList.remove('hidden-pane');
+          pRight.classList.remove('hidden-pane');
+        } else if (mode === 'left') {
+          pLeft.classList.remove('hidden-pane');
+          pRight.classList.add('hidden-pane');
+        } else if (mode === 'right') {
+          pLeft.classList.add('hidden-pane');
+          pRight.classList.remove('hidden-pane');
+        }
+        setTimeout(() => {
+          mapLeft.invalidateSize();
+          mapRight.invalidateSize();
+        }, 150);
+      });
+    });
+
+    // Dropdown change
+    document.getElementById('clinicSelect').addEventListener('change', (e) => {
+      currentClinicId = e.target.value;
+      setCenterAndBounds();
+    });
+
+    // Footfall Day buttons
+    document.querySelectorAll('#dayButtons .day-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#dayButtons .day-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentDay = parseInt(btn.getAttribute('data-day'));
+        updateView();
+      });
+    });
+
+    // Hour slider
+    const hourSlider = document.getElementById('hourSlider');
+    hourSlider.addEventListener('input', (e) => {
+      currentHour = parseInt(e.target.value);
+      updateView();
+    });
+
+    // Play button
+    const playBtn = document.getElementById('playBtn');
+    playBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        playBtn.innerText = '⏸';
+        playBtn.style.background = '#f54428';
+        timer = setInterval(() => {
+          currentHour++;
+          if (currentHour > 23) currentHour = 6;
+          hourSlider.value = currentHour;
+          updateView();
+        }, 900);
+      } else {
+        playBtn.innerText = '▶';
+        playBtn.style.background = '#38bdf8';
+        clearInterval(timer);
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      switchDomain(currentDomain);
+      setCenterAndBounds();
+      setTimeout(() => {
+        mapLeft.invalidateSize();
+        mapRight.invalidateSize();
+      }, 300);
+    });
+  </script>
+</body>
+</html>

@@ -1279,22 +1279,24 @@
 <section class="w-full px-space-xl pt-space-xl max-w-[1720px] mx-auto"><div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm"><div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-space-lg mb-space-lg"><div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Synchronized Spatial Demand Surfaces</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Store Footfall vs. Competitor Footfall (Synchronized Dual Maps)</h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Side-by-side synchronized geospatial maps: zoom or pan either map to inspect store demand and competitor intensity simultaneously.</p></div><div class="flex flex-wrap items-center gap-space-lg text-label-sm text-on-surface-variant">
   <div id="dual-map-legend-left" class="flex items-center gap-2">
-    <span class="flex items-center gap-1.5 font-bold text-xs text-[#10b981]">🏠 House Rent PSF:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#bbf7d0"></i>Budget</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#4ade80"></i>Mod</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#10b981"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#064e3b"></i>Prime</span>
-    <span class="text-xs text-outline-variant">•</span>
-    <strong class="text-xs text-[#0284c7]">Store Hex:</strong>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#e0f2fe;border:1px solid #bfdbfe"></i>Low</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#38bdf8"></i>Mod</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#0284c7"></i>High</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#032b69"></i>Peak</span>
+    <span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]">
+      <i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#0284c7] shadow-sm inline-block"></i>
+      Store Footfall Hex:
+    </span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#e0f2fe;border:1px solid #bfdbfe"></i>Low (&lt;25)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#38bdf8"></i>Mod (25–50)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#0284c7"></i>High (50–75)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#032b69"></i>Peak (&gt;75)</span>
   </div>
   <div id="dual-map-legend-right" class="flex items-center gap-2">
-    <span class="flex items-center gap-1.5 font-bold text-xs text-[#f59e0b]">💰 Affluence Tier:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#fef08a"></i>Mid</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#f59e0b"></i>Upper</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#dc2626"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#581c87"></i>Ultra</span>
-    <span class="text-xs text-outline-variant">•</span>
-    <strong class="text-xs text-[#f54428]">Competitor Hex:</strong>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#fff0a9;border:1px solid #fef08a"></i>Low</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#febb57"></i>Mod</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#f54428"></i>High</span>
-    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#980026"></i>Peak</span>
+    <span class="flex items-center gap-1.5 font-bold text-xs text-[#f54428]">
+      <i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#f54428] shadow-sm inline-block"></i>
+      Competitor Density Hex:
+    </span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#fff0a9;border:1px solid #fef08a"></i>Low (&lt;25)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#febb57"></i>Mod (25–50)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#f54428"></i>High (50–75)</span>
+    <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#980026"></i>Peak (&gt;75)</span>
   </div>
 </div></div><!-- Unified Interactive Catchment Operating Hours & Heat Bar Controller -->
 <div class="mb-space-md bg-white rounded-2xl p-5 border border-slate-200/90 shadow-xs flex flex-col gap-4">
@@ -4596,8 +4598,6 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Indiranaga
     const maxSteps = Math.ceil(catchment / hexRadius) + 1;
 
     
-    const isHousingMode = document.getElementById('btn-map-mode-footfall') ? !document.getElementById('btn-map-mode-footfall').classList.contains('active') : true;
-
     for (let q = -maxSteps; q <= maxSteps; q++) {
       for (let r = -maxSteps; r <= maxSteps; r++) {
         const east = hexRadius * Math.sqrt(3) * (q + r / 2);
@@ -4612,95 +4612,40 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Indiranaga
           points.push(toLatLng(east + hexRadius * Math.cos(a), north + hexRadius * Math.sin(a)));
         }
 
-        if (isHousingMode) {
-          // --- HOUSING & ECONOMIC AFFLUENCE HEXAGONS ---
-          const hData = getResidentialHousingData(idx, east, north);
-          if (hData.isWater) {
-            L.polygon(points, {
-              stroke: false,
-              fillColor: '#0284c7',
-              fillOpacity: 0.15,
-              smoothFactor: 1
-            }).bindTooltip(`<strong>${hData.pocketName}</strong><br><span style="color:#94a3b8;">Uninhabited Lake Reservoir</span>`, { sticky: true })
-              .addTo(storeHexLayer);
-          } else {
-            // Left: House Rents
-            L.polygon(points, {
-              stroke: false,
-              fillColor: getRentColor(hData.resPsf),
-              fillOpacity: 0.65,
-              smoothFactor: 1
-            }).bindTooltip(`
-              <div style="font-family:sans-serif; min-width:210px;">
-                <b style="color:#10b981; font-size:11px; text-transform:uppercase;">🏠 RESIDENTIAL CUSTOMER POCKET</b><br>
-                <strong style="font-size:13px;">${hData.pocketName}</strong><br>
-                <hr style="margin:4px 0; border:none; border-top:1px solid #e2e8f0;">
-                Avg House Rent: <strong style="color:#047857;">₹${hData.resPsf} / sq.ft / mo</strong><br>
-                Typical 2 BHK Rent: <strong>₹${hData.rent2bhk.toLocaleString('en-IN')} / mo</strong><br>
-                Typical 3 BHK Rent: <strong>₹${hData.rent3bhk.toLocaleString('en-IN')} / mo</strong><br>
-                Est. Household Income: <strong style="color:#d97706;">${hData.income}</strong><br>
-                Catchment Affluence: <strong style="color:#7e22ce;">${hData.tier}</strong>
-              </div>
-            `, { sticky: true }).addTo(storeHexLayer);
+        // --- AUTHENTIC FOOTFALL & DEMAND HEXAGONS ---
+        const storeWeight = getStoreSpatialWeight(idx, east, north, distance);
+        const sVal = clamp(Math.round(storeWeight * 88 * dayFactor * (0.42 + 0.74 * hourly)), 5, 100);
+        storePeak = Math.max(storePeak, sVal);
 
-            // Right: Household Economic Affluence & Healthcare Purchasing Power
-            L.polygon(points, {
-              stroke: false,
-              fillColor: getAffluenceColor(hData.spendScore),
-              fillOpacity: 0.65,
-              smoothFactor: 1
-            }).bindTooltip(`
-              <div style="font-family:sans-serif; min-width:210px;">
-                <b style="color:#d97706; font-size:11px; text-transform:uppercase;">💰 CUSTOMER HEALTHCARE PAYING POWER</b><br>
-                <strong style="font-size:13px;">${hData.pocketName}</strong><br>
-                <hr style="margin:4px 0; border:none; border-top:1px solid #e2e8f0;">
-                Economic Affluence: <strong style="color:#d97706;">${hData.tier}</strong><br>
-                Healthcare Spend Score: <strong style="color:#7e22ce;">${hData.spendScore} / 100</strong><br>
-                Est. Household Income: <strong>${hData.income}</strong><br>
-                House Rent PSF: <strong>₹${hData.resPsf} / sq.ft</strong><br>
-                <div style="margin-top:4px; font-size:11px; color:#0284c7;">
-                  <b>OPD Propensity:</b> ${hData.spendScore >= 80 ? 'High Propensity for Premium Outpatient & Diagnostics' : 'Standard Routine Care'}
-                </div>
-              </div>
-            `, { sticky: true }).addTo(compHexLayer);
+        let compDensity = 0;
+        sites.forEach(st => {
+          const stEast = (Number(st.lon) - Number(pCenter[1])) * metersPerLon;
+          const stNorth = (Number(st.lat) - Number(pCenter[0])) * metersPerLat;
+          const d = Math.hypot(east - stEast, north - stNorth);
+          if (d < 500) {
+            const kern = Math.exp(-(d ** 2) / (2 * (180 ** 2)));
+            const act = (st.hourly || [])[Math.max(0, Math.min((st.hourly || []).length - 1, hour - 6))] || 35;
+            compDensity += kern * (act / 45);
           }
+        });
+        const cVal = clamp(Math.round(Math.min(1.0, compDensity / 4.8) * 98 * dayFactor * (0.35 + 0.65 * hourly)), 4, 100);
+        compPeak = Math.max(compPeak, cVal);
 
-        } else {
-          // --- FOOTFALL & DEMAND HEXAGONS ---
-          const storeWeight = getStoreSpatialWeight(idx, east, north, distance);
-          const sVal = clamp(Math.round(storeWeight * 88 * dayFactor * (0.42 + 0.74 * hourly)), 5, 100);
-          storePeak = Math.max(storePeak, sVal);
+        L.polygon(points, {
+          stroke: false,
+          fillColor: colorForStore(sVal),
+          fillOpacity: 0.55,
+          smoothFactor: 1
+        }).bindTooltip(`<strong>${name || 'Store Location'}</strong><br>Store Footfall: <strong>${sVal}/100</strong><br>Distance: ${Math.round(distance)} m`, { sticky: true })
+          .addTo(storeHexLayer);
 
-          let compDensity = 0;
-          sites.forEach(st => {
-            const stEast = (Number(st.lon) - Number(pCenter[1])) * metersPerLon;
-            const stNorth = (Number(st.lat) - Number(pCenter[0])) * metersPerLat;
-            const d = Math.hypot(east - stEast, north - stNorth);
-            if (d < 500) {
-              const kern = Math.exp(-(d ** 2) / (2 * (180 ** 2)));
-              const act = (st.hourly || [])[Math.max(0, Math.min((st.hourly || []).length - 1, hour - 6))] || 35;
-              compDensity += kern * (act / 45);
-            }
-          });
-          const cVal = clamp(Math.round(Math.min(1.0, compDensity / 4.8) * 98 * dayFactor * (0.35 + 0.65 * hourly)), 4, 100);
-          compPeak = Math.max(compPeak, cVal);
-
-          L.polygon(points, {
-            stroke: false,
-            fillColor: colorForStore(sVal),
-            fillOpacity: 0.55,
-            smoothFactor: 1
-          }).bindTooltip(`<strong>${name || 'Store Location'}</strong><br>Store Footfall: <strong>${sVal}/100</strong><br>Distance: ${Math.round(distance)} m`, { sticky: true })
-            .addTo(storeHexLayer);
-
-          L.polygon(points, {
-            stroke: false,
-            fillColor: colorForComp(cVal),
-            fillOpacity: 0.55,
-            smoothFactor: 1
-          }).bindTooltip(`<strong>Competitor Demand Hexagon</strong><br>Competitor Load: <strong style="color:#f54428;">${cVal}/100</strong><br>Distance to Docube: ${Math.round(distance)} m`, { sticky: true })
-            .addTo(compHexLayer);
-        }
+        L.polygon(points, {
+          stroke: false,
+          fillColor: colorForComp(cVal),
+          fillOpacity: 0.55,
+          smoothFactor: 1
+        }).bindTooltip(`<strong>Competitor Demand Hexagon</strong><br>Competitor Load: <strong style="color:#f54428;">${cVal}/100</strong><br>Distance to Docube: ${Math.round(distance)} m`, { sticky: true })
+          .addTo(compHexLayer);
       }
     }
 
@@ -5472,40 +5417,7 @@ selector.addEventListener('dashboard:visual',update); update(); setTimeout(() =>
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 
-  // Domain switcher listeners for dashboard
-  setTimeout(() => {
-    const btnHouse = document.getElementById('btn-map-mode-housing');
-    const btnFoot = document.getElementById('btn-map-mode-footfall');
-    if (btnHouse && btnFoot) {
-      btnHouse.addEventListener('click', () => {
-        btnHouse.className = 'px-4 py-2 text-xs font-bold rounded-lg border border-emerald-600 bg-emerald-600 text-white shadow-xs cursor-pointer flex items-center gap-1.5 active';
-        btnFoot.className = 'px-4 py-2 text-xs font-bold rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 cursor-pointer flex items-center gap-1.5';
-        const titleEl = document.getElementById('dual-map-main-title');
-        if (titleEl) titleEl.innerText = 'Customer Residential House Rents & Economic Affluence (Synchronized Dual Maps)';
-        const l1 = document.getElementById('dual-map-legend-left');
-        if (l1) l1.innerHTML = '<span class="flex items-center gap-1.5 font-bold text-xs text-[#10b981]">🏠 House Rent PSF:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#bbf7d0"></i>Budget</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#4ade80"></i>Mod</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#10b981"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#064e3b"></i>Prime</span>';
-        const l2 = document.getElementById('dual-map-legend-right');
-        if (l2) l2.innerHTML = '<span class="flex items-center gap-1.5 font-bold text-xs text-[#f59e0b]">💰 Affluence Tier:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#fef08a"></i>Mid</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#f59e0b"></i>Upper</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#dc2626"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#581c87"></i>Ultra</span>';
-        const sel = document.getElementById('location-selector');
-        const idx = sel ? sel.selectedIndex : 0;
-        renderFootfallMap(null, names[idx], idx);
-      });
 
-      btnFoot.addEventListener('click', () => {
-        btnFoot.className = 'px-4 py-2 text-xs font-bold rounded-lg border border-blue-600 bg-blue-600 text-white shadow-xs cursor-pointer flex items-center gap-1.5 active';
-        btnHouse.className = 'px-4 py-2 text-xs font-bold rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 cursor-pointer flex items-center gap-1.5';
-        const titleEl = document.getElementById('dual-map-main-title');
-        if (titleEl) titleEl.innerText = 'Store Footfall vs. Competitor Footfall (Synchronized Dual Maps)';
-        const l1 = document.getElementById('dual-map-legend-left');
-        if (l1) l1.innerHTML = '<span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]">Store Hex:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#e0f2fe"></i>Low</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#38bdf8"></i>Mod</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#0284c7"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#032b69"></i>Peak</span>';
-        const l2 = document.getElementById('dual-map-legend-right');
-        if (l2) l2.innerHTML = '<span class="flex items-center gap-1.5 font-bold text-xs text-[#f54428]">Competitor Hex:</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#fff0a9"></i>Low</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#febb57"></i>Mod</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#f54428"></i>High</span><span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-sm" style="background:#980026"></i>Peak</span>';
-        const sel = document.getElementById('location-selector');
-        const idx = sel ? sel.selectedIndex : 0;
-        renderFootfallMap(null, names[idx], idx);
-      });
-    }
-  }, 500);
 
 })();</script><script>document.addEventListener('DOMContentLoaded',()=>{const s=document.getElementById('location-selector'),f=[1.00,0.94,1.06,0.88,0.92,0.86];if(!s)return;const bars=[...document.querySelectorAll('[style*="width:"]')].filter(e=>/%/.test(e.style.width));bars.forEach(e=>e.dataset.baseWidth=parseFloat(e.style.width));const polys=[...document.querySelectorAll('svg polygon')].filter(e=>{const x=e.getAttribute('fill');return x&&x!=='none'});const rects=[...document.querySelectorAll('svg rect')].filter(e=>['#004357','#006059','#0d5c75'].includes((e.getAttribute('fill')||'').toLowerCase()));rects.forEach(e=>e.dataset.baseWidth=e.getAttribute('width')||'0');const update=()=>{const k=f[s.selectedIndex]||1;bars.forEach(e=>e.style.width=Math.max(4,Math.min(100,Number(e.dataset.baseWidth)*k))+'%');polys.forEach(e=>{e.style.transformBox='fill-box';e.style.transformOrigin='center';e.style.transition='transform .35s ease';e.style.transform='scale('+Math.max(.58,Math.min(1.18,k))+')'});rects.forEach(e=>{const w=Number(e.dataset.baseWidth);if(Number.isFinite(w))e.setAttribute('width',Math.max(2,w*k))})};s.addEventListener('change',update);s.addEventListener('dashboard:visual',update);update()});</script>
 </body></html>
