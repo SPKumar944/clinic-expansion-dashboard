@@ -1247,11 +1247,11 @@
         <div class="flex items-center gap-2">
           <span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]"><i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#0284c7] shadow-sm inline-block"></i> Clinic Anchor</span>
           <span class="text-xs text-outline-variant">•</span>
-          <strong class="text-xs text-[#0f172a]">Isochrone Tiers:</strong>
-          <span class="flex items-center gap-1 font-semibold text-xs"><i class="w-2.5 h-2.5 rounded-full bg-[#38bdf8] inline-block"></i> 5 min</span>
-          <span class="flex items-center gap-1 font-semibold text-xs text-emerald-700"><i class="w-2.5 h-2.5 rounded-full bg-[#10b981] inline-block"></i> 10 min (Core)</span>
-          <span class="flex items-center gap-1 font-semibold text-xs text-amber-700"><i class="w-2.5 h-2.5 rounded-full bg-[#f59e0b] inline-block"></i> 15 min</span>
-          <span class="flex items-center gap-1 font-semibold text-xs text-purple-700"><i class="w-2.5 h-2.5 rounded-full bg-[#8b5cf6] inline-block"></i> 20 min</span>
+          <strong class="text-xs text-slate-800">Isochrone Tiers (Thermal Scale):</strong>
+          <span class="flex items-center gap-1 font-bold text-xs text-rose-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ff0033] inline-block shadow-xs"></i> 5 min (Core)</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-orange-600"><i class="w-2.5 h-2.5 rounded-full bg-[#fb8500] inline-block shadow-xs"></i> 10 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-amber-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffb703] inline-block shadow-xs"></i> 15 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-yellow-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffd60a] inline-block shadow-xs"></i> 20 min (Max)</span>
         </div>
       </div>
     </div>
@@ -1280,21 +1280,21 @@
 
         <!-- Tier Checkboxes -->
         <div class="flex items-center gap-3 text-xs font-bold text-[#475569] pl-2 border-l border-slate-200">
-          <label class="flex items-center gap-1 cursor-pointer hover:text-[#0f172a]">
-            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#38bdf8] h-3.5 w-3.5">
-            <span>5m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-rose-600">
+            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ff0033] h-3.5 w-3.5">
+            <span class="text-rose-600 font-extrabold">5m (Core)</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-[#0f172a]">
-            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#10b981] h-3.5 w-3.5">
-            <span class="text-emerald-700">10m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-orange-600">
+            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#fb8500] h-3.5 w-3.5">
+            <span class="text-orange-600 font-extrabold">10m</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-[#0f172a]">
-            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#f59e0b] h-3.5 w-3.5">
-            <span class="text-amber-700">15m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-amber-600">
+            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffb703] h-3.5 w-3.5">
+            <span class="text-amber-600 font-extrabold">15m</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-[#0f172a]">
-            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#8b5cf6] h-3.5 w-3.5">
-            <span class="text-purple-700">20m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-yellow-600">
+            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffd60a] h-3.5 w-3.5">
+            <span class="text-yellow-600 font-extrabold">20m</span>
           </label>
         </div>
       </div>
@@ -1313,7 +1313,17 @@
             <span id="iso-traffic-strain-pill" class="px-2 py-0.5 rounded-md font-bold text-xs bg-rose-50 text-rose-700 border border-rose-200">+44% Delay</span>
           </div>
         </div>
-        <div aria-label="Dynamic travel-time isochrone map" id="isochrone-dynamic-map" role="img" style="height:440px;width:100%"></div>
+        <div class="relative w-full" style="height:440px;">
+          <div aria-label="Dynamic travel-time isochrone map" id="isochrone-dynamic-map" role="img" class="h-full w-full bg-[#121212]"></div>
+          <!-- Floating Bottom-Left Gradient Bar -->
+          <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex flex-col gap-1 text-[11px] font-bold text-slate-300 pointer-events-none">
+            <div class="flex items-center justify-between text-[9px] font-mono text-slate-300 font-bold">
+              <span class="text-rose-400">0 MIN (Core)</span>
+              <span class="text-amber-300">20 MIN</span>
+            </div>
+            <div class="h-2 w-44 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #ff0033 0%, #fb8500 35%, #ffb703 70%, #ffd60a 100%);"></div>
+          </div>
+        </div>
         <div class="bg-white/90 px-4 py-2 border-t border-[#bfdbfe] flex items-center justify-between text-xs text-[#475569]">
           <span>10-Min Core Area: <strong class="text-[#0284c7]" id="iso-10min-area">6.22 km²</strong></span>
           <span>Reachable Pool: <strong class="text-[#0284c7]" id="iso-pop-reach">~70,900 residents</strong></span>
@@ -1333,7 +1343,14 @@
             <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-xs bg-[#f59e0b]/40 inline-block"></i> Weekday Area</span>
           </div>
         </div>
-        <div aria-label="Sunday baseline benchmark and shrinkage map" id="isochrone-baseline-map" role="img" style="height:440px;width:100%"></div>
+        <div class="relative w-full" style="height:440px;">
+          <div aria-label="Sunday baseline benchmark and shrinkage map" id="isochrone-baseline-map" role="img" class="h-full w-full bg-[#121212]"></div>
+          <!-- Floating Benchmark Legend -->
+          <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex items-center gap-3 text-[10px] font-mono font-bold text-slate-300 pointer-events-none">
+            <span class="flex items-center gap-1.5 text-emerald-400"><i class="w-3 h-0.5 border-t-2 border-dashed border-emerald-400 inline-block"></i> Sunday Free-Flow Max</span>
+            <span class="flex items-center gap-1.5 text-orange-400"><i class="w-2.5 h-2.5 rounded-xs bg-[#fb8500]/70 inline-block"></i> Congested Catchment</span>
+          </div>
+        </div>
         <div class="bg-white/90 px-4 py-2 border-t border-[#a7f3d0] flex items-center justify-between text-xs text-[#475569]">
           <span>Sunday 15-Min Max: <strong class="text-emerald-700">29.61 km²</strong></span>
           <span>Traffic Shrinkage: <strong class="text-rose-600" id="iso-shrinkage-val">-51.7% Area Penalty</strong></span>
@@ -4538,18 +4555,30 @@ function renderFootfallMap(values, name, idx){
     const dLat = center[0] - indiraCenter[0];
     const dLon = center[1] - indiraCenter[1];
 
-    // 1. Initialize Dynamic Map (Left)
+    // 1. Initialize Dynamic Map (Left) with ESRI Dark Gray Canvas
     if (!isoDynamicMap) {
       isoDynamicMap = L.map(elDyn, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoDynamicMap);
-      L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(isoDynamicMap);
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(isoDynamicMap);
+      
+      isoDynamicMap.createPane('labelsPane');
+      isoDynamicMap.getPane('labelsPane').style.zIndex = 650;
+      isoDynamicMap.getPane('labelsPane').style.pointerEvents = 'none';
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labelsPane', maxZoom: 16 }).addTo(isoDynamicMap);
+
+      L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoDynamicMap);
     }
 
-    // 2. Initialize Baseline Map (Right)
+    // 2. Initialize Baseline Map (Right) with ESRI Dark Gray Canvas
     if (!isoBaselineMap) {
       isoBaselineMap = L.map(elBase, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoBaselineMap);
-      L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(isoBaselineMap);
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(isoBaselineMap);
+
+      isoBaselineMap.createPane('labelsPane');
+      isoBaselineMap.getPane('labelsPane').style.zIndex = 650;
+      isoBaselineMap.getPane('labelsPane').style.pointerEvents = 'none';
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labelsPane', maxZoom: 16 }).addTo(isoBaselineMap);
+
+      L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoBaselineMap);
 
       // Bidirectional sync
       isoDynamicMap.on('move', () => {
@@ -4577,11 +4606,20 @@ function renderFootfallMap(values, name, idx){
     if (isoDynPinLayer) isoDynPinLayer.clearLayers(); else isoDynPinLayer = L.layerGroup().addTo(isoDynamicMap);
     if (isoBasePinLayer) isoBasePinLayer.clearLayers(); else isoBasePinLayer = L.layerGroup().addTo(isoBaselineMap);
 
-    // Anchors
+    // Car Origin Marker (White circle with dark car icon matching reference)
+    const carPinHtml = `
+      <div style="position:relative;width:0;height:0;">
+        <div style="position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,59,48,0.7);animation:ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
+        <div style="position:absolute;left:-16px;top:-16px;width:32px;height:32px;border-radius:50%;background:#ffffff;box-shadow:0 0 16px rgba(255,42,42,0.85),0 4px 10px rgba(0,0,0,0.7);border:2.5px solid #0f172a;display:flex;align-items:center;justify-content:center;">
+          <span class="material-symbols-outlined" style="font-size:18px;color:#0f172a;font-variation-settings:'FILL' 1;">directions_car</span>
+        </div>
+      </div>
+    `;
+    const carIcon = L.divIcon({ className: 'car-pin-wrapper', html: carPinHtml, iconSize: [0, 0] });
+
     [isoDynPinLayer, isoBasePinLayer].forEach(layer => {
-      L.circleMarker(center, { radius: 10, color: '#ffffff', weight: 2.5, fillColor: '#0284c7', fillOpacity: 1 })
+      L.marker(center, { icon: carIcon, zIndexOffset: 1000 })
         .bindTooltip(`<strong>★ ${name || 'Store Location'}</strong><br>Travel-Time Origin Anchor`, { sticky: true }).addTo(layer);
-      L.circleMarker(center, { radius: 3.5, color: '#ffffff', weight: 1, fillColor: '#ffffff', fillOpacity: 1 }).addTo(layer);
     });
 
     // Render Days Ribbon Buttons
@@ -4594,7 +4632,7 @@ function renderFootfallMap(values, name, idx){
         const isActive = (d === isoCurrentDay);
         btn.className = `px-2.5 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${
           isActive 
-            ? 'bg-[#004357] text-white shadow-xs font-black' 
+            ? 'bg-[#ff9e00] text-black font-black shadow-md shadow-amber-500/20 ring-1 ring-amber-300' 
             : 'bg-white text-[#475569] hover:bg-slate-100 border border-slate-200'
         }`;
         let dot = '';
@@ -4610,11 +4648,12 @@ function renderFootfallMap(values, name, idx){
     const dayData = (window.dashboardIsochronesData.days[isoCurrentDay]?.[isoCurrentDaypart]?.tiers) || {};
     const sunData = (window.dashboardIsochronesData.days["Sunday"]?.["morning"]?.tiers) || {};
 
+    // High-Contrast Red to Yellow Thermal Palette
     const tierStyles = {
-      "20_min": { color: "#8b5cf6", fill: "#8b5cf6", opacity: 0.16, border: 1.5, dash: "4 4", label: "20 min (Regional)" },
-      "15_min": { color: "#f59e0b", fill: "#f59e0b", opacity: 0.22, border: 1.8, dash: "5 3", label: "15 min (Secondary)" },
-      "10_min": { color: "#10b981", fill: "#10b981", opacity: 0.32, border: 2.2, dash: null, label: "10 min (Core Catchment)" },
-      "5_min":  { color: "#38bdf8", fill: "#0284c7", opacity: 0.45, border: 2.5, dash: null, label: "5 min (Hyper-local)" }
+      "20_min": { color: "#ffd60a", fill: "#ffee32", opacity: 0.28, border: 1.6, dash: "4 4", label: "20 min (Max Reach - Bright Yellow)" },
+      "15_min": { color: "#ffb703", fill: "#ffb703", opacity: 0.45, border: 1.8, dash: null, label: "15 min (Secondary - Amber Gold)" },
+      "10_min": { color: "#ff6200", fill: "#fb8500", opacity: 0.65, border: 2.2, dash: null, label: "10 min (Primary - Radiant Orange)" },
+      "5_min":  { color: "#ff0033", fill: "#d90429", opacity: 0.88, border: 2.8, dash: null, label: "5 min (Core - Fiery Red)" }
     };
 
     const tierOrder = ["20_min", "15_min", "10_min", "5_min"];
@@ -4628,7 +4667,7 @@ function renderFootfallMap(values, name, idx){
       // Project coords if location differs from Indiranagar
       const polyCoords = tier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
 
-      // 1. Plot on Left Map (Current Dynamic Day)
+      // 1. Plot on Left Map (Dynamic Catchment - Red to Yellow)
       if (isVisible) {
         L.polygon(polyCoords, {
           color: style.color,
@@ -4637,7 +4676,7 @@ function renderFootfallMap(values, name, idx){
           fillColor: style.fill,
           fillOpacity: style.opacity,
           smoothFactor: 1
-        }).bindTooltip(`<strong>${tier.label}</strong><br>Catchment Area: <strong>${tier.area_km2} km²</strong><br>${isoCurrentDay} (${isoCurrentDaypart})`, { sticky: true })
+        }).bindTooltip(`<strong>${tier.label}</strong><br>Catchment Area: <strong>${tier.area_km2} km²</strong><br>${isoCurrentDay} (${isoCurrentDaypart === 'evening' ? '18:30 Rush' : '09:30 Peak'})`, { sticky: true })
           .addTo(isoDynLayer);
       }
 
@@ -4646,27 +4685,27 @@ function renderFootfallMap(values, name, idx){
       if (sunTier && sunTier.coordinates) {
         const sunCoords = sunTier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
         
-        // Sunday Max Outline (Dashed Green)
+        // Sunday Max Outline (Dashed Emerald Line)
         L.polygon(sunCoords, {
           color: '#10b981',
           weight: 2,
           dashArray: '5 5',
           fillColor: '#10b981',
-          fillOpacity: 0.06,
+          fillOpacity: 0.08,
           smoothFactor: 1
-        }).bindTooltip(`<strong>Sunday Max Reference (${sunTier.minutes} min)</strong><br>Free-Flow Area: ${sunTier.area_km2} km²`, { sticky: true })
+        }).bindTooltip(`<strong>Sunday Max Free-Flow (${sunTier.minutes} min)</strong><br>Free-Flow Area: ${sunTier.area_km2} km²`, { sticky: true })
           .addTo(isoBaseLayer);
       }
 
-      // Overlaid Current Day Area on Right Map
+      // Overlaid Current Day Area on Right Map (Glowing Fiery Orange / Red)
       if (isVisible) {
         L.polygon(polyCoords, {
-          color: '#f59e0b',
-          weight: 1.8,
-          fillColor: '#f59e0b',
-          fillOpacity: 0.22,
+          color: style.color,
+          weight: style.border,
+          fillColor: style.fill,
+          fillOpacity: style.opacity,
           smoothFactor: 1
-        }).bindTooltip(`<strong>${isoCurrentDay} (${tier.minutes} min)</strong><br>Congested Area: ${tier.area_km2} km²`, { sticky: true })
+        }).bindTooltip(`<strong>${isoCurrentDay} (${tier.minutes} min)</strong><br>Congested Catchment: ${tier.area_km2} km²`, { sticky: true })
           .addTo(isoBaseLayer);
       }
     });
