@@ -56,17 +56,28 @@
     }
 
     /* Continuous Heat Glow Filter */
-    .heat-continuous svg path {
+    .heat-continuous svg path:not(.sunday-max-boundary) {
       filter: drop-shadow(0 0 10px rgba(3, 43, 105, 0.5));
       transition: all 0.4s ease;
       stroke: none !important;
       stroke-width: 0 !important;
     }
-    .heat-quantized svg path {
+    .heat-continuous svg path:last-of-type:not(.sunday-max-boundary) {
+      filter: drop-shadow(0 0 16px rgba(212, 240, 56, 0.95));
+      stroke: none !important;
+      stroke-width: 0 !important;
+    }
+    .heat-quantized svg path:not(.sunday-max-boundary) {
       filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
       transition: all 0.3s ease;
       stroke: none !important;
       stroke-width: 0 !important;
+    }
+    path.sunday-max-boundary {
+      stroke: #000000 !important;
+      stroke-width: 2.8px !important;
+      stroke-dasharray: 6, 4 !important;
+      fill: none !important;
     }
 
     /* Tooltip styling */
@@ -84,9 +95,14 @@
     }
 
     /* Strictly remove all SVG path border lines */
-    path.leaflet-interactive {
+    path.leaflet-interactive:not(.sunday-max-boundary) {
       stroke: none !important;
       stroke-width: 0 !important;
+    }
+    path.sunday-max-boundary {
+      stroke: #000000 !important;
+      stroke-width: 2.5px !important;
+      stroke-dasharray: 6, 4 !important;
     }
     /* Custom scrollbars */
     ::-webkit-scrollbar { width: 5px; height: 5px; }
@@ -221,9 +237,9 @@
 
   <!-- Bottom-Right Floating Controls (Sunday Benchmark Toggle & Recenter) -->
   <div class="absolute bottom-6 right-6 z-20 flex items-center gap-2">
-    <button id="btn-sun-bench" onclick="toggleSundayBenchmark()" class="glass-hud px-3.5 py-2 rounded-xl text-xs font-bold text-slate-200 hover:text-white flex items-center gap-2 transition-all">
-      <span class="w-2.5 h-2.5 rounded-full border-2 border-emerald-400 bg-transparent"></span>
-      <span id="bench-label">Show Sunday Free-Flow Envelope</span>
+    <button id="btn-sun-bench" onclick="toggleSundayBenchmark()" class="glass-hud px-3.5 py-2 rounded-xl text-xs font-bold border border-black bg-white/20 text-slate-900 flex items-center gap-2 transition-all">
+      <span class="w-2.5 h-2.5 rounded-full border-2 border-black bg-white bg-transparent"></span>
+      <span id="bench-label">Hide Sunday Max Envelope</span>
     </button>
     <button onclick="recenterMap()" title="Recenter to Clinic Anchor" class="glass-hud p-2 rounded-xl text-slate-200 hover:text-white transition-all">
       <span class="material-symbols-outlined text-lg">my_location</span>
@@ -276,7 +292,7 @@
     let currentMaxMinutes = 20;
     let colorMode = 'continuous'; // 'continuous' or 'quantized'
     let isInspectorOn = true;
-    let showSundayBenchmark = false;
+    let showSundayBenchmark = true;
     let sampleResolution = 4; // 1 to 4 tiers
 
     // Red-Yellow Color Hierarchy
@@ -307,6 +323,8 @@
     }).addTo(map);
 
     // Layers
+    map.createPane('sundayMaxPane');
+    map.getPane('sundayMaxPane').style.zIndex = 550;
     const isochroneLayerGroup = L.layerGroup().addTo(map);
     const benchmarkLayerGroup = L.layerGroup().addTo(map);
 
@@ -426,7 +444,7 @@
         lbl.textContent = 'Hide Sunday Free-Flow Envelope';
       } else {
         btn.classList.remove('border-emerald-400', 'bg-emerald-500/20', 'text-emerald-300');
-        lbl.textContent = 'Show Sunday Free-Flow Envelope';
+        lbl.textContent = 'Show Sunday Max Envelope';
       }
       updateMapLayers();
     }
@@ -443,22 +461,22 @@
       const dayData = isochronesData.days[currentDay]?.[currentDaypart]?.tiers || {};
       const sunData = isochronesData.days["Sunday"]?.["morning"]?.tiers || {};
 
-      // Render Sunday Benchmark Envelope if enabled
+      // Render Sunday Max Envelope if enabled (Sunday Max alone gets the black border)
       if (showSundayBenchmark) {
-        const sunTiers = ["20_min", "15_min", "10_min", "5_min"];
-        sunTiers.forEach(tKey => {
-          const sTier = sunData[tKey];
-          if (sTier && sTier.coordinates && sTier.minutes <= currentMaxMinutes) {
-            L.polygon(sTier.coordinates, {
-              stroke: false,
-              weight: 0,
-              fillColor: '#10b981',
-              fillOpacity: 0.12,
-              smoothFactor: 1
-            }).bindTooltip(`<strong>Sunday Free-Flow Envelope (${sTier.minutes}m)</strong><br>Area: ${sTier.area_km2} km²`, { className: 'leaflet-tooltip-dark', sticky: true })
-              .addTo(benchmarkLayerGroup);
-          }
-        });
+        const sTier = sunData["20_min"];
+        if (sTier && sTier.coordinates) {
+          L.polygon(sTier.coordinates, {
+            color: '#000000',
+            weight: 2.8,
+            dashArray: '6 4',
+            fill: false,
+            fillOpacity: 0,
+            className: 'sunday-max-boundary',
+            pane: 'sundayMaxPane',
+            smoothFactor: 1
+          }).bindTooltip(`<strong>★ Sunday Max Free-Flow (20 min)</strong><br>Max Baseline Area: <strong>${sTier.area_km2} km²</strong>`, { className: 'leaflet-tooltip-dark', sticky: true })
+            .addTo(benchmarkLayerGroup);
+        }
       }
 
       // Dynamic Weekday Isochrone Tiers
