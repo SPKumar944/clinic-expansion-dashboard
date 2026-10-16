@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}  #isochrone-dynamic-map path, #isochrone-baseline-map path, #isochrone-map path {
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
   darkMode: "class",
   theme: {
     extend: {
@@ -99,7 +103,11 @@
       }
     }
   }
-}</script><title>Docube Health | Clinic Expansion Dashboard</title><style>html{scroll-behavior:smooth}.dashboard-section{scroll-margin-top:8rem}</style><style>@media print {
+}</script><title>Docube Health | Clinic Expansion Dashboard</title><style>html{scroll-behavior:smooth}.dashboard-section{scroll-margin-top:8rem}  #isochrone-dynamic-map path, #isochrone-baseline-map path, #isochrone-map path {
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+</style><style>@media print {
   @page { size: A3 landscape; margin: 9mm; }
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   html, body { background: #fff !important; overflow: visible !important; }
@@ -114,7 +122,19 @@
   canvas, svg, table { break-inside: avoid-page; }
   canvas { max-height: 280px !important; }
   a { color: inherit !important; text-decoration: none !important; }
-}</style><link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/><style>#regional-footfall-map .leaflet-control-zoom a{color:#004357}#regional-footfall-map .leaflet-control-attribution{font:10px Inter,sans-serif}#regional-footfall-map .leaflet-tooltip{border:0;border-radius:8px;box-shadow:0 4px 14px rgba(11,28,48,.18);font:12px Inter,sans-serif;color:#0b1c30}#regional-footfall-map .leaflet-pane.leaflet-overlay-pane svg{filter:drop-shadow(0 1px 1px rgba(11,28,48,.08))}</style><style>.grid-cols-18 { display: grid; grid-template-columns: repeat(18, minmax(0, 1fr)); }</style>
+}  #isochrone-dynamic-map path, #isochrone-baseline-map path, #isochrone-map path {
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+</style><link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/><style>#regional-footfall-map .leaflet-control-zoom a{color:#004357}#regional-footfall-map .leaflet-control-attribution{font:10px Inter,sans-serif}#regional-footfall-map .leaflet-tooltip{border:0;border-radius:8px;box-shadow:0 4px 14px rgba(11,28,48,.18);font:12px Inter,sans-serif;color:#0b1c30}#regional-footfall-map .leaflet-pane.leaflet-overlay-pane svg{filter:drop-shadow(0 1px 1px rgba(11,28,48,.08))}  #isochrone-dynamic-map path, #isochrone-baseline-map path, #isochrone-map path {
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+</style><style>.grid-cols-18 { display: grid; grid-template-columns: repeat(18, minmax(0, 1fr)); }  #isochrone-dynamic-map path, #isochrone-baseline-map path, #isochrone-map path {
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+</style>
 </head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]"><span data-excel-key="html_0001">vital_signs</span></span></div><div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block leading-none"><span data-excel-key="html_0002">Docube Health</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1 block"><span data-excel-key="html_0003">Clinical Intelligence</span></span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0">Indiranagar 1st Stage, BLR</option><option value="1">Koramangala 5th Block, BLR</option><option value="2">Whitefield Main Road, BLR</option><option value="3">Hitech City, Hyderabad</option><option value="4">Anna Nagar West, Chennai</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span data-excel-key="html_0008">3.7 </span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">74% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span data-excel-key="html_0012">44.9k </span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span data-excel-key="html_0013">HH</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary-container uppercase"><span data-excel-key="html_0014">Grade A Viability</span></span></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Dossier</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
 <div class="w-full px-space-xl py-space-xl max-w-[1720px] mx-auto space-y-space-xl">
 <!-- Candidate Micro-Asset Header Card -->
@@ -1248,10 +1268,10 @@
           <span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]"><i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#0284c7] shadow-sm inline-block"></i> Clinic Anchor</span>
           <span class="text-xs text-outline-variant">•</span>
           <strong class="text-xs text-slate-800">Isochrone Tiers (Thermal Scale):</strong>
-          <span class="flex items-center gap-1 font-bold text-xs text-rose-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ff0033] inline-block shadow-xs"></i> 5 min (Core)</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-orange-600"><i class="w-2.5 h-2.5 rounded-full bg-[#fb8500] inline-block shadow-xs"></i> 10 min</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-amber-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffb703] inline-block shadow-xs"></i> 15 min</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-yellow-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffd60a] inline-block shadow-xs"></i> 20 min (Max)</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-yellow-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffd60a] inline-block shadow-xs"></i> 5 min (Core)</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-amber-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffb703] inline-block shadow-xs"></i> 10 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-orange-600"><i class="w-2.5 h-2.5 rounded-full bg-[#fb8500] inline-block shadow-xs"></i> 15 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-rose-600"><i class="w-2.5 h-2.5 rounded-full bg-[#d90429] inline-block shadow-xs"></i> 20 min (Max)</span>
         </div>
       </div>
     </div>
@@ -1280,21 +1300,21 @@
 
         <!-- Tier Checkboxes -->
         <div class="flex items-center gap-3 text-xs font-bold text-[#475569] pl-2 border-l border-slate-200">
-          <label class="flex items-center gap-1 cursor-pointer hover:text-rose-600">
-            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ff0033] h-3.5 w-3.5">
-            <span class="text-rose-600 font-extrabold">5m (Core)</span>
-          </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-orange-600">
-            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#fb8500] h-3.5 w-3.5">
-            <span class="text-orange-600 font-extrabold">10m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-yellow-600">
+            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffd60a] h-3.5 w-3.5">
+            <span class="text-yellow-600 font-extrabold">5m (Core)</span>
           </label>
           <label class="flex items-center gap-1 cursor-pointer hover:text-amber-600">
-            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffb703] h-3.5 w-3.5">
-            <span class="text-amber-600 font-extrabold">15m</span>
+            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffb703] h-3.5 w-3.5">
+            <span class="text-amber-600 font-extrabold">10m</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-yellow-600">
-            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffd60a] h-3.5 w-3.5">
-            <span class="text-yellow-600 font-extrabold">20m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-orange-600">
+            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#fb8500] h-3.5 w-3.5">
+            <span class="text-orange-600 font-extrabold">15m</span>
+          </label>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-rose-600">
+            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#d90429] h-3.5 w-3.5">
+            <span class="text-rose-600 font-extrabold">20m</span>
           </label>
         </div>
       </div>
@@ -1318,10 +1338,10 @@
           <!-- Floating Bottom-Left Gradient Bar -->
           <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex flex-col gap-1 text-[11px] font-bold text-slate-300 pointer-events-none">
             <div class="flex items-center justify-between text-[9px] font-mono text-slate-300 font-bold">
-              <span class="text-rose-400">0 MIN (Core)</span>
-              <span class="text-amber-300">20 MIN</span>
+              <span class="text-yellow-300">0 MIN (Core)</span>
+              <span class="text-rose-400">20 MIN</span>
             </div>
-            <div class="h-2 w-44 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #ff0033 0%, #fb8500 35%, #ffb703 70%, #ffd60a 100%);"></div>
+            <div class="h-2 w-44 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #ffd60a 0%, #ffb703 33%, #fb8500 66%, #d90429 100%);"></div>
           </div>
         </div>
         <div class="bg-white/90 px-4 py-2 border-t border-[#bfdbfe] flex items-center justify-between text-xs text-[#475569]">
@@ -1338,17 +1358,17 @@
             <strong class="text-xs font-black text-[#0f172a] uppercase tracking-wide">2. Sunday Free-Flow Benchmark &amp; Shrinkage Overlay</strong>
           </div>
           <div class="flex items-center gap-1.5 text-[11px] text-[#64748b] font-semibold">
-            <span class="flex items-center gap-1"><i class="w-2.5 h-0.5 border-t-2 border-dashed border-[#10b981] inline-block"></i> Sunday Max</span>
+            <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-xs bg-[#10b981]/50 inline-block"></i> Sunday Max</span>
             <span class="text-slate-300">•</span>
-            <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-xs bg-[#f59e0b]/40 inline-block"></i> Weekday Area</span>
+            <span class="flex items-center gap-1"><i class="w-2.5 h-2.5 rounded-xs bg-[#ffd60a] inline-block"></i> Weekday Area</span>
           </div>
         </div>
         <div class="relative w-full" style="height:440px;">
           <div aria-label="Sunday baseline benchmark and shrinkage map" id="isochrone-baseline-map" role="img" class="h-full w-full bg-[#121212]"></div>
           <!-- Floating Benchmark Legend -->
           <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex items-center gap-3 text-[10px] font-mono font-bold text-slate-300 pointer-events-none">
-            <span class="flex items-center gap-1.5 text-emerald-400"><i class="w-3 h-0.5 border-t-2 border-dashed border-emerald-400 inline-block"></i> Sunday Free-Flow Max</span>
-            <span class="flex items-center gap-1.5 text-orange-400"><i class="w-2.5 h-2.5 rounded-xs bg-[#fb8500]/70 inline-block"></i> Congested Catchment</span>
+            <span class="flex items-center gap-1.5 text-emerald-400"><i class="w-2.5 h-2.5 rounded-xs bg-emerald-400/50 inline-block"></i> Sunday Free-Flow Max</span>
+            <span class="flex items-center gap-1.5 text-amber-300"><i class="w-2.5 h-2.5 rounded-xs bg-[#ffd60a] inline-block"></i> Congested Catchment</span>
           </div>
         </div>
         <div class="bg-white/90 px-4 py-2 border-t border-[#a7f3d0] flex items-center justify-between text-xs text-[#475569]">
@@ -4609,8 +4629,8 @@ function renderFootfallMap(values, name, idx){
     // Car Origin Marker (White circle with dark car icon matching reference)
     const carPinHtml = `
       <div style="position:relative;width:0;height:0;">
-        <div style="position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,59,48,0.7);animation:ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
-        <div style="position:absolute;left:-16px;top:-16px;width:32px;height:32px;border-radius:50%;background:#ffffff;box-shadow:0 0 16px rgba(255,42,42,0.85),0 4px 10px rgba(0,0,0,0.7);border:2.5px solid #0f172a;display:flex;align-items:center;justify-content:center;">
+        <div style="position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,214,10,0.85);animation:ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
+        <div style="position:absolute;left:-16px;top:-16px;width:32px;height:32px;border-radius:50%;background:#ffffff;box-shadow:0 0 16px rgba(255,214,10,0.9),0 4px 10px rgba(0,0,0,0.7);border:2.5px solid #0f172a;display:flex;align-items:center;justify-content:center;">
           <span class="material-symbols-outlined" style="font-size:18px;color:#0f172a;font-variation-settings:'FILL' 1;">directions_car</span>
         </div>
       </div>
@@ -4648,12 +4668,13 @@ function renderFootfallMap(values, name, idx){
     const dayData = (window.dashboardIsochronesData.days[isoCurrentDay]?.[isoCurrentDaypart]?.tiers) || {};
     const sunData = (window.dashboardIsochronesData.days["Sunday"]?.["morning"]?.tiers) || {};
 
-    // High-Contrast Red to Yellow Thermal Palette
+    // Reversed Gradient: 0 Min Core is Radiant Yellow, 20 Min Distant is Fiery Red
+    // Border lines removed (weight: 0, stroke: false)
     const tierStyles = {
-      "20_min": { color: "#ffd60a", fill: "#ffee32", opacity: 0.28, border: 1.6, dash: "4 4", label: "20 min (Max Reach - Bright Yellow)" },
-      "15_min": { color: "#ffb703", fill: "#ffb703", opacity: 0.45, border: 1.8, dash: null, label: "15 min (Secondary - Amber Gold)" },
-      "10_min": { color: "#ff6200", fill: "#fb8500", opacity: 0.65, border: 2.2, dash: null, label: "10 min (Primary - Radiant Orange)" },
-      "5_min":  { color: "#ff0033", fill: "#d90429", opacity: 0.88, border: 2.8, dash: null, label: "5 min (Core - Fiery Red)" }
+      "20_min": { color: "#d90429", fill: "#d90429", opacity: 0.50, label: "20 min (Max Reach - Fiery Red)" },
+      "15_min": { color: "#fb8500", fill: "#fb8500", opacity: 0.65, label: "15 min (Secondary - Radiant Orange)" },
+      "10_min": { color: "#ffb703", fill: "#ffb703", opacity: 0.80, label: "10 min (Primary - Golden Amber)" },
+      "5_min":  { color: "#ffd60a", fill: "#ffd60a", opacity: 0.95, label: "5 min (Core - Radiant Yellow)" }
     };
 
     const tierOrder = ["20_min", "15_min", "10_min", "5_min"];
@@ -4667,12 +4688,11 @@ function renderFootfallMap(values, name, idx){
       // Project coords if location differs from Indiranagar
       const polyCoords = tier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
 
-      // 1. Plot on Left Map (Dynamic Catchment - Red to Yellow)
+      // 1. Plot on Left Map (Dynamic Catchment - Yellow to Red, No Borders)
       if (isVisible) {
         L.polygon(polyCoords, {
-          color: style.color,
-          weight: style.border,
-          dashArray: style.dash,
+          stroke: false,
+          weight: 0,
           fillColor: style.fill,
           fillOpacity: style.opacity,
           smoothFactor: 1
@@ -4685,23 +4705,22 @@ function renderFootfallMap(values, name, idx){
       if (sunTier && sunTier.coordinates) {
         const sunCoords = sunTier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
         
-        // Sunday Max Outline (Dashed Emerald Line)
+        // Sunday Max Area (No border)
         L.polygon(sunCoords, {
-          color: '#10b981',
-          weight: 2,
-          dashArray: '5 5',
+          stroke: false,
+          weight: 0,
           fillColor: '#10b981',
-          fillOpacity: 0.08,
+          fillOpacity: 0.12,
           smoothFactor: 1
         }).bindTooltip(`<strong>Sunday Max Free-Flow (${sunTier.minutes} min)</strong><br>Free-Flow Area: ${sunTier.area_km2} km²`, { sticky: true })
           .addTo(isoBaseLayer);
       }
 
-      // Overlaid Current Day Area on Right Map (Glowing Fiery Orange / Red)
+      // Overlaid Current Day Area on Right Map (No border)
       if (isVisible) {
         L.polygon(polyCoords, {
-          color: style.color,
-          weight: style.border,
+          stroke: false,
+          weight: 0,
           fillColor: style.fill,
           fillOpacity: style.opacity,
           smoothFactor: 1
