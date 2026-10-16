@@ -1,0 +1,237 @@
+{
+  "location": "Indiranagar 1st Stage, Bengaluru",
+  "anchor_coordinates": [
+    12.97938,
+    77.64494
+  ],
+  "extracted_at": "2026-10-16T10:15:34.868572",
+  "data_source": "TomTom Traffic API (Flow Segment, Incidents, & Routing Services)",
+  "summary": {
+    "overall_congestion_index": "34.8% (Moderate Morning-Noon Load)",
+    "average_catchment_speed_kmh": 21.0,
+    "average_free_flow_speed_kmh": 27.2,
+    "active_incidents_count": 19,
+    "critical_bottleneck_corridor": "Nagavarapalya / Suranjandas Rd & CMH Road"
+  },
+  "key_corridors_flow": [
+    {
+      "corridor": "100 Feet Road (North - near CMH Road Metro)",
+      "road_class": "FRC4 (Primary Urban Arterial)",
+      "current_speed_kmh": 15,
+      "free_flow_speed_kmh": 23,
+      "delay_sec": 161,
+      "delay_pct": 53.3,
+      "congestion_level": "Moderate",
+      "congestion_pct": 34.8
+    },
+    {
+      "corridor": "100 Feet Road (Central - near 12th Main)",
+      "road_class": "FRC2 (Major Urban Connector)",
+      "current_speed_kmh": 19,
+      "free_flow_speed_kmh": 22,
+      "delay_sec": 67,
+      "delay_pct": 16.0,
+      "congestion_level": "Low",
+      "congestion_pct": 13.6
+    },
+    {
+      "corridor": "100 Feet Road (South - Domlur Flyover Approach)",
+      "road_class": "FRC2 (Major Urban Connector)",
+      "current_speed_kmh": 22,
+      "free_flow_speed_kmh": 27,
+      "delay_sec": 244,
+      "delay_pct": 22.7,
+      "congestion_level": "Moderate",
+      "congestion_pct": 18.5
+    },
+    {
+      "corridor": "CMH Road (West - towards Ulsoor / Metro line)",
+      "road_class": "FRC4 (Primary Urban Arterial)",
+      "current_speed_kmh": 15,
+      "free_flow_speed_kmh": 23,
+      "delay_sec": 161,
+      "delay_pct": 53.3,
+      "congestion_level": "Moderate",
+      "congestion_pct": 34.8
+    },
+    {
+      "corridor": "CMH Road (East - towards Binnamangala)",
+      "road_class": "FRC4 (Primary Urban Arterial)",
+      "current_speed_kmh": 31,
+      "free_flow_speed_kmh": 36,
+      "delay_sec": 62,
+      "delay_pct": 16.2,
+      "congestion_level": "Low",
+      "congestion_pct": 13.9
+    },
+    {
+      "corridor": "12th Main Road (Boutique & Retail Corridor)",
+      "road_class": "FRC2 (Secondary High-Street)",
+      "current_speed_kmh": 19,
+      "free_flow_speed_kmh": 22,
+      "delay_sec": 67,
+      "delay_pct": 16.0,
+      "congestion_level": "Low",
+      "congestion_pct": 13.6
+    },
+    {
+      "corridor": "Old Madras Road / SV Road (Northern Arterial)",
+      "road_class": "FRC2 (Multi-Lane Arterial)",
+      "current_speed_kmh": 23,
+      "free_flow_speed_kmh": 28,
+      "delay_sec": 271,
+      "delay_pct": 21.7,
+      "congestion_level": "Moderate",
+      "congestion_pct": 17.9
+    },
+    {
+      "corridor": "Suranjandas Road (Eastern Boundary to HAL)",
+      "road_class": "FRC4 (Sub-Arterial)",
+      "current_speed_kmh": 30,
+      "free_flow_speed_kmh": 39,
+      "delay_sec": 106,
+      "delay_pct": 30.0,
+      "congestion_level": "Moderate",
+      "congestion_pct": 23.1
+    },
+    {
+      "corridor": "Old Airport Road (Domlur Junction Corridor)",
+      "road_class": "FRC2 (Major Expressway Link)",
+      "current_speed_kmh": 35,
+      "free_flow_speed_kmh": 35,
+      "delay_sec": 0,
+      "delay_pct": 0.0,
+      "congestion_level": "Low (Flowing)",
+      "congestion_pct": 0.0
+    }
+  ],
+  "inbound_travel_times": [
+    {
+      "origin": "Domlur (South Catchment)",
+      "distance_km": 2.96,
+      "travel_time_min": 12.8,
+      "free_flow_time_min": 10.1,
+      "traffic_delay_min": 0.3,
+      "effective_speed_kmh": 13.9
+    },
+    {
+      "origin": "Ulsoor / Cambridge Layout (West Catchment)",
+      "distance_km": 3.04,
+      "travel_time_min": 11.8,
+      "free_flow_time_min": 8.5,
+      "traffic_delay_min": 0.0,
+      "effective_speed_kmh": 15.5
+    },
+    {
+      "origin": "HAL / Murugeshpalya (East Catchment)",
+      "distance_km": 4.42,
+      "travel_time_min": 13.3,
+      "free_flow_time_min": 10.5,
+      "traffic_delay_min": 0.0,
+      "effective_speed_kmh": 19.9
+    },
+    {
+      "origin": "CV Raman Nagar / DRDO (North-East Catchment)",
+      "distance_km": 3.65,
+      "travel_time_min": 18.6,
+      "free_flow_time_min": 9.9,
+      "traffic_delay_min": 6.9,
+      "effective_speed_kmh": 11.8
+    },
+    {
+      "origin": "MG Road / Central CBD (West Corridor)",
+      "distance_km": 4.91,
+      "travel_time_min": 21.3,
+      "free_flow_time_min": 14.5,
+      "traffic_delay_min": 1.6,
+      "effective_speed_kmh": 13.8
+    },
+    {
+      "origin": "Koramangala 1st/5th Block (South Corridor)",
+      "distance_km": 6.72,
+      "travel_time_min": 21.9,
+      "free_flow_time_min": 16.3,
+      "traffic_delay_min": 0.3,
+      "effective_speed_kmh": 18.4
+    }
+  ],
+  "active_traffic_incidents": [
+    {
+      "severity": "Major Delay",
+      "road": "Nagavarapalya Main Rd -> Suranjandas Rd",
+      "delay_sec": 612,
+      "length_m": 1369,
+      "type": "Stationary traffic"
+    },
+    {
+      "severity": "Moderate Delay",
+      "road": "CV Raman Nagar Rd -> Swami Vivekananda Rd",
+      "delay_sec": 267,
+      "length_m": 350,
+      "type": "Stationary traffic"
+    },
+    {
+      "severity": "Moderate Delay",
+      "road": "Old Madras Rd / Ulsoor Rd -> SV Rd / Cambridge Rd",
+      "delay_sec": 222,
+      "length_m": 210,
+      "type": "Stationary traffic"
+    },
+    {
+      "severity": "Moderate Delay",
+      "road": "Chinmaya Mission Hospital Rd -> Cambridge Rd",
+      "delay_sec": 185,
+      "length_m": 506,
+      "type": "Queuing traffic"
+    },
+    {
+      "severity": "Minor Delay",
+      "road": "1st Main Rd -> 100 Feet Rd",
+      "delay_sec": 170,
+      "length_m": 1546,
+      "type": "Slow traffic"
+    },
+    {
+      "severity": "Moderate Delay",
+      "road": "Swami Vivekananda Rd -> 4th Cross Rd",
+      "delay_sec": 161,
+      "length_m": 544,
+      "type": "Queuing traffic"
+    },
+    {
+      "severity": "Moderate Delay",
+      "road": "4th Cross Rd -> Swami Vivekananda Rd",
+      "delay_sec": 143,
+      "length_m": 253,
+      "type": "Stationary traffic"
+    },
+    {
+      "severity": "Minor Delay",
+      "road": "Swami Vivekananda Rd -> Thamarai Kannan Rd",
+      "delay_sec": 114,
+      "length_m": 263,
+      "type": "Stationary traffic"
+    },
+    {
+      "severity": "Closure",
+      "road": "80 Ft Road <-> 100 Feet Road",
+      "delay_sec": 0,
+      "length_m": 550,
+      "type": "Closed / Diversion"
+    },
+    {
+      "severity": "Closure",
+      "road": "7th Cross Road <-> 15th Cross Road",
+      "delay_sec": 0,
+      "length_m": 110,
+      "type": "Closed / Maintenance"
+    },
+    {
+      "severity": "Closure",
+      "road": "5th Main Road <-> 6th Main Road",
+      "delay_sec": 0,
+      "length_m": 40,
+      "type": "Closed"
+    }
+  ]
+}
