@@ -37,7 +37,7 @@
       position: absolute;
       inset: -12px;
       border-radius: 50%;
-      border: 2px solid rgba(255, 214, 10, 0.85);
+      border: 2px solid rgba(212, 240, 56, 0.85);
       animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
       pointer-events: none;
     }
@@ -45,7 +45,7 @@
       position: absolute;
       inset: -22px;
       border-radius: 50%;
-      border: 1.5px solid rgba(255, 183, 3, 0.5);
+      border: 1.5px solid rgba(34, 197, 94, 0.5);
       animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s infinite;
       pointer-events: none;
     }
@@ -57,13 +57,13 @@
 
     /* Continuous Heat Glow Filter */
     .heat-continuous svg path {
-      filter: drop-shadow(0 0 10px rgba(217, 4, 41, 0.45));
+      filter: drop-shadow(0 0 10px rgba(3, 43, 105, 0.5));
       transition: all 0.4s ease;
       stroke: none !important;
       stroke-width: 0 !important;
     }
     .heat-continuous svg path:last-of-type {
-      filter: drop-shadow(0 0 16px rgba(255, 214, 10, 0.95));
+      filter: drop-shadow(0 0 16px rgba(212, 240, 56, 0.95));
       stroke: none !important;
       stroke-width: 0 !important;
     }
@@ -181,11 +181,11 @@
     <!-- Live Catchment Statistics HUD Card -->
     <div id="inspector-card" class="bg-black/50 rounded-xl p-3 border border-white/10 flex flex-col gap-2 text-xs">
       <div class="flex items-center justify-between">
-        <span class="text-slate-400">10-Min Core Area (Yellow-Amber):</span>
+        <span class="text-slate-400">10-Min Core Area (Yellow-Green):</span>
         <strong class="text-amber-400 font-bold" id="stat-10m">6.22 km²</strong>
       </div>
       <div class="flex items-center justify-between">
-        <span class="text-slate-400">15-Min Reach Area (Orange-Red):</span>
+        <span class="text-slate-400">15-Min Reach Area (Teal-Blue):</span>
         <strong class="text-yellow-300 font-bold" id="stat-15m">20.84 km²</strong>
       </div>
       <div class="flex items-center justify-between">
@@ -212,15 +212,15 @@
   <!-- Bottom-Left Floating Gradient Legend Bar (Exact match to reference) -->
   <div class="absolute bottom-6 left-6 z-20 glass-hud px-4 py-2.5 rounded-2xl flex flex-col gap-1.5 text-xs pointer-events-auto shadow-2xl">
     <div class="flex items-center justify-between text-[10px] font-mono font-bold tracking-wider text-slate-300">
-      <span class="flex items-center gap-1"><i class="w-2 h-2 rounded-full bg-[#ffd60a] inline-block"></i> 0 MIN (Core)</span>
-      <span class="flex items-center gap-1"><i class="w-2 h-2 rounded-full bg-[#d90429] inline-block"></i> 20 MIN (Max)</span>
+      <span class="flex items-center gap-1"><i class="w-2 h-2 rounded-full bg-[#d4f038] inline-block border border-lime-300"></i> 0 MIN (Core)</span>
+      <span class="flex items-center gap-1"><i class="w-2 h-2 rounded-full bg-[#032b69] inline-block"></i> 20 MIN (Max)</span>
     </div>
-    <div class="w-56 h-3 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #ffd60a 0%, #ffb703 33%, #fb8500 66%, #d90429 100%);"></div>
+    <div class="w-56 h-3 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #d4f038 0%, #22c55e 33%, #0284c7 66%, #032b69 100%);"></div>
     <div class="flex items-center justify-between text-[9px] text-slate-400 font-mono">
-      <span class="text-yellow-300">5m</span>
-      <span class="text-amber-400">10m</span>
-      <span class="text-orange-400">15m</span>
-      <span class="text-rose-400">20m</span>
+      <span class="text-lime-300">5m</span>
+      <span class="text-emerald-400">10m</span>
+      <span class="text-sky-400">15m</span>
+      <span class="text-blue-400">20m</span>
     </div>
   </div>
 
@@ -286,10 +286,10 @@
 
     // Red-Yellow Color Hierarchy
     const tierStyles = {
-      "5_min":  { color: "#ffd60a", fill: "#ffd60a", opacity: 0.95, label: "5 Min (Core - Radiant Yellow)" },
-      "10_min": { color: "#ffb703", fill: "#ffb703", opacity: 0.80, label: "10 Min (Primary - Golden Amber)" },
-      "15_min": { color: "#fb8500", fill: "#fb8500", opacity: 0.65, label: "15 Min (Secondary - Vibrant Orange)" },
-      "20_min": { color: "#d90429", fill: "#d90429", opacity: 0.50, label: "20 Min (Distant - Fiery Red)" }
+      "5_min":  { color: "#d4f038", fill: "#d4f038", opacity: 0.95, label: "5 Min (Core - Lime Yellow)" },
+      "10_min": { color: "#22c55e", fill: "#22c55e", opacity: 0.85, label: "10 Min (Primary - Spring Green)" },
+      "15_min": { color: "#0284c7", fill: "#0284c7", opacity: 0.75, label: "15 Min (Secondary - Ocean Teal/Cyan)" },
+      "20_min": { color: "#032b69", fill: "#032b69", opacity: 0.65, label: "20 Min (Distant - Oceanic Deep Blue)" }
     };
 
     const anchor = isochronesData.anchor;
@@ -322,7 +322,7 @@
         <div style="position:relative; width:0; height:0;">
           <div class="anchor-pulse"></div>
           <div class="anchor-pulse-delayed"></div>
-          <div style="position:absolute; left:-18px; top:-18px; width:36px; height:36px; border-radius:50%; background:#ffffff; box-shadow:0 0 25px rgba(255,214,10,0.9), 0 4px 12px rgba(0,0,0,0.8); border:3px solid #1e293b; display:flex; align-items:center; justify-content:center;">
+          <div style="position:absolute; left:-18px; top:-18px; width:36px; height:36px; border-radius:50%; background:#ffffff; box-shadow:0 0 25px rgba(212, 240, 56, 0.95), 0 4px 12px rgba(0,0,0,0.8); border:3px solid #1e293b; display:flex; align-items:center; justify-content:center;">
             <span class="material-symbols-outlined" style="font-size:20px; color:#0f172a; font-variation-settings:'FILL' 1;">directions_car</span>
           </div>
         </div>
@@ -333,7 +333,7 @@
     L.marker(center, { icon: carAnchorIcon, zIndexOffset: 1000 })
       .bindTooltip(`
         <div style="font-family:sans-serif; padding:4px 6px;">
-          <strong style="color:#ffd60a; font-size:13px;">${anchor.name}</strong><br>
+          <strong style="color:#d4f038; font-size:13px;">${anchor.name}</strong><br>
           <span style="font-size:11px; color:#cbd5e1;">Origin Point (${anchor.lat}, ${anchor.lon})</span>
         </div>
       `, { className: 'leaflet-tooltip-dark', sticky: true })
@@ -454,7 +454,7 @@
         sunTiers.forEach(tKey => {
           const sTier = sunData[tKey];
           if (sTier && sTier.coordinates && sTier.minutes <= currentMaxMinutes) {
-            L.polygon(smoothIsochroneCoords(sTier.coordinates), {
+            L.polygon(sTier.coordinates, {
               stroke: false,
               weight: 0,
               fillColor: '#10b981',
@@ -485,7 +485,7 @@
         const style = tierStyles[tKey];
         const isCont = (colorMode === 'continuous');
 
-        L.polygon(smoothIsochroneCoords(tier.coordinates), {
+        L.polygon(tier.coordinates, {
           stroke: false,
           weight: 0,
           fillColor: style.fill,

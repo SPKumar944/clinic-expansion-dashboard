@@ -1268,10 +1268,10 @@
           <span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]"><i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#0284c7] shadow-sm inline-block"></i> Clinic Anchor</span>
           <span class="text-xs text-outline-variant">•</span>
           <strong class="text-xs text-slate-800">Isochrone Tiers (Thermal Scale):</strong>
-          <span class="flex items-center gap-1 font-bold text-xs text-yellow-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffd60a] inline-block shadow-xs"></i> 5 min (Core)</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-amber-600"><i class="w-2.5 h-2.5 rounded-full bg-[#ffb703] inline-block shadow-xs"></i> 10 min</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-orange-600"><i class="w-2.5 h-2.5 rounded-full bg-[#fb8500] inline-block shadow-xs"></i> 15 min</span>
-          <span class="flex items-center gap-1 font-bold text-xs text-rose-600"><i class="w-2.5 h-2.5 rounded-full bg-[#d90429] inline-block shadow-xs"></i> 20 min (Max)</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-lime-700"><i class="w-2.5 h-2.5 rounded-full bg-[#d4f038] inline-block shadow-xs border border-lime-400"></i> 5 min (Core)</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-emerald-600"><i class="w-2.5 h-2.5 rounded-full bg-[#22c55e] inline-block shadow-xs"></i> 10 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-sky-600"><i class="w-2.5 h-2.5 rounded-full bg-[#0284c7] inline-block shadow-xs"></i> 15 min</span>
+          <span class="flex items-center gap-1 font-bold text-xs text-blue-900"><i class="w-2.5 h-2.5 rounded-full bg-[#032b69] inline-block shadow-xs"></i> 20 min (Max)</span>
         </div>
       </div>
     </div>
@@ -1300,21 +1300,21 @@
 
         <!-- Tier Checkboxes -->
         <div class="flex items-center gap-3 text-xs font-bold text-[#475569] pl-2 border-l border-slate-200">
-          <label class="flex items-center gap-1 cursor-pointer hover:text-yellow-600">
-            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffd60a] h-3.5 w-3.5">
-            <span class="text-yellow-600 font-extrabold">5m (Core)</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-lime-700">
+            <input type="checkbox" id="iso-chk-5" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#a3e635] h-3.5 w-3.5">
+            <span class="text-lime-700 font-extrabold">5m (Core)</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-amber-600">
-            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#ffb703] h-3.5 w-3.5">
-            <span class="text-amber-600 font-extrabold">10m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-emerald-600">
+            <input type="checkbox" id="iso-chk-10" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#22c55e] h-3.5 w-3.5">
+            <span class="text-emerald-600 font-extrabold">10m</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-orange-600">
-            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#fb8500] h-3.5 w-3.5">
-            <span class="text-orange-600 font-extrabold">15m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-sky-600">
+            <input type="checkbox" id="iso-chk-15" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#0284c7] h-3.5 w-3.5">
+            <span class="text-sky-600 font-extrabold">15m</span>
           </label>
-          <label class="flex items-center gap-1 cursor-pointer hover:text-rose-600">
-            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#d90429] h-3.5 w-3.5">
-            <span class="text-rose-600 font-extrabold">20m</span>
+          <label class="flex items-center gap-1 cursor-pointer hover:text-blue-900">
+            <input type="checkbox" id="iso-chk-20" checked onchange="window.updateIsochroneMaps()" class="rounded accent-[#032b69] h-3.5 w-3.5">
+            <span class="text-[#032b69] font-extrabold">20m</span>
           </label>
         </div>
       </div>
@@ -1338,10 +1338,10 @@
           <!-- Floating Bottom-Left Gradient Bar -->
           <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex flex-col gap-1 text-[11px] font-bold text-slate-300 pointer-events-none">
             <div class="flex items-center justify-between text-[9px] font-mono text-slate-300 font-bold">
-              <span class="text-yellow-300">0 MIN (Core)</span>
-              <span class="text-rose-400">20 MIN</span>
+              <span class="text-lime-300">0 MIN (Core)</span>
+              <span class="text-sky-300">20 MIN</span>
             </div>
-            <div class="h-2 w-44 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #ffd60a 0%, #ffb703 33%, #fb8500 66%, #d90429 100%);"></div>
+            <div class="h-2 w-44 rounded-full shadow-inner border border-white/20" style="background: linear-gradient(to right, #d4f038 0%, #22c55e 33%, #0284c7 66%, #032b69 100%);"></div>
           </div>
         </div>
         <div class="bg-white/90 px-4 py-2 border-t border-[#bfdbfe] flex items-center justify-between text-xs text-[#475569]">
@@ -4654,8 +4654,8 @@ function renderFootfallMap(values, name, idx){
     // Car Origin Marker (White circle with dark car icon matching reference)
     const carPinHtml = `
       <div style="position:relative;width:0;height:0;">
-        <div style="position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,214,10,0.85);animation:ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
-        <div style="position:absolute;left:-16px;top:-16px;width:32px;height:32px;border-radius:50%;background:#ffffff;box-shadow:0 0 16px rgba(255,214,10,0.9),0 4px 10px rgba(0,0,0,0.7);border:2.5px solid #0f172a;display:flex;align-items:center;justify-content:center;">
+        <div style="position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(212, 240, 56, 0.85);animation:ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
+        <div style="position:absolute;left:-16px;top:-16px;width:32px;height:32px;border-radius:50%;background:#ffffff;box-shadow:0 0 16px rgba(212, 240, 56, 0.95),0 4px 10px rgba(0,0,0,0.7);border:2.5px solid #0f172a;display:flex;align-items:center;justify-content:center;">
           <span class="material-symbols-outlined" style="font-size:18px;color:#0f172a;font-variation-settings:'FILL' 1;">directions_car</span>
         </div>
       </div>
@@ -4696,10 +4696,10 @@ function renderFootfallMap(values, name, idx){
     // Reversed Gradient: 0 Min Core is Radiant Yellow, 20 Min Distant is Fiery Red
     // Border lines removed (weight: 0, stroke: false)
     const tierStyles = {
-      "20_min": { color: "#d90429", fill: "#d90429", opacity: 0.50, label: "20 min (Max Reach - Fiery Red)" },
-      "15_min": { color: "#fb8500", fill: "#fb8500", opacity: 0.65, label: "15 min (Secondary - Radiant Orange)" },
-      "10_min": { color: "#ffb703", fill: "#ffb703", opacity: 0.80, label: "10 min (Primary - Golden Amber)" },
-      "5_min":  { color: "#ffd60a", fill: "#ffd60a", opacity: 0.95, label: "5 min (Core - Radiant Yellow)" }
+      "20_min": { color: "#032b69", fill: "#032b69", opacity: 0.65, label: "20 min (Max Reach - Oceanic Deep Blue)" },
+      "15_min": { color: "#0284c7", fill: "#0284c7", opacity: 0.75, label: "15 min (Secondary - Ocean Teal/Cyan)" },
+      "10_min": { color: "#22c55e", fill: "#22c55e", opacity: 0.85, label: "10 min (Primary - Spring Green)" },
+      "5_min":  { color: "#d4f038", fill: "#d4f038", opacity: 0.95, label: "5 min (Core - Lime Yellow)" }
     };
 
     const tierOrder = ["20_min", "15_min", "10_min", "5_min"];
@@ -4715,7 +4715,7 @@ function renderFootfallMap(values, name, idx){
 
       // 1. Plot on Left Map (Dynamic Catchment - Yellow to Red, No Borders)
       if (isVisible) {
-        L.polygon(smoothIsochroneCoords(polyCoords), {
+        L.polygon(polyCoords, {
           stroke: false,
           weight: 0,
           fillColor: style.fill,
@@ -4731,7 +4731,7 @@ function renderFootfallMap(values, name, idx){
         const sunCoords = sunTier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
         
         // Sunday Max Area (No border)
-        L.polygon(smoothIsochroneCoords(sunCoords), {
+        L.polygon(sunCoords, {
           stroke: false,
           weight: 0,
           fillColor: '#10b981',
@@ -4743,7 +4743,7 @@ function renderFootfallMap(values, name, idx){
 
       // Overlaid Current Day Area on Right Map (No border)
       if (isVisible) {
-        L.polygon(smoothIsochroneCoords(polyCoords), {
+        L.polygon(polyCoords, {
           stroke: false,
           weight: 0,
           fillColor: style.fill,
