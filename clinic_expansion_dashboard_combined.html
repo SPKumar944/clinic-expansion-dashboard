@@ -1334,7 +1334,7 @@
           </div>
         </div>
         <div class="relative w-full" style="height:440px;">
-          <div aria-label="Dynamic travel-time isochrone map" id="isochrone-dynamic-map" role="img" class="h-full w-full bg-[#121212]"></div>
+          <div aria-label="Dynamic travel-time isochrone map" id="isochrone-dynamic-map" role="img" class="h-full w-full bg-slate-100"></div>
           <!-- Floating Bottom-Left Gradient Bar -->
           <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex flex-col gap-1 text-[11px] font-bold text-slate-300 pointer-events-none">
             <div class="flex items-center justify-between text-[9px] font-mono text-slate-300 font-bold">
@@ -1364,7 +1364,7 @@
           </div>
         </div>
         <div class="relative w-full" style="height:440px;">
-          <div aria-label="Sunday baseline benchmark and shrinkage map" id="isochrone-baseline-map" role="img" class="h-full w-full bg-[#121212]"></div>
+          <div aria-label="Sunday baseline benchmark and shrinkage map" id="isochrone-baseline-map" role="img" class="h-full w-full bg-slate-100"></div>
           <!-- Floating Benchmark Legend -->
           <div class="absolute bottom-3 left-3 z-[1000] bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/15 shadow-xl flex items-center gap-3 text-[10px] font-mono font-bold text-slate-300 pointer-events-none">
             <span class="flex items-center gap-1.5 text-emerald-400"><i class="w-2.5 h-2.5 rounded-xs bg-emerald-400/50 inline-block"></i> Sunday Free-Flow Max</span>
@@ -4564,6 +4564,43 @@ function renderFootfallMap(values, name, idx){
     if (lastMapScenario) renderIsochroneMaps(lastMapScenario.idx, lastMapScenario.name);
   };
 
+    // Smoothing Algorithm: 5-point moving average + Chaikin corner-rounding for organic fluid edges
+  function smoothIsochroneCoords(rawCoords) {
+    if (!rawCoords || rawCoords.length < 4) return rawCoords;
+    let pts = rawCoords.map(p => [p[0], p[1]]);
+    if (pts[0][0] === pts[pts.length - 1][0] && pts[0][1] === pts[pts.length - 1][1]) {
+      pts = pts.slice(0, -1);
+    }
+    const n = pts.length;
+    let softened = [];
+    const w = 2;
+    for (let i = 0; i < n; i++) {
+      let latSum = 0, lonSum = 0;
+      for (let j = -w; j <= w; j++) {
+        const idx = (i + j + n) % n;
+        latSum += pts[idx][0];
+        lonSum += pts[idx][1];
+      }
+      softened.push([latSum / 5.0, lonSum / 5.0]);
+    }
+    softened.push([softened[0][0], softened[0][1]]);
+
+    let cur = softened;
+    for (let it = 0; it < 2; it++) {
+      let next = [];
+      const len = cur.length - 1;
+      for (let i = 0; i < len; i++) {
+        const p0 = cur[i];
+        const p1 = cur[i + 1];
+        next.push([0.75 * p0[0] + 0.25 * p1[0], 0.75 * p0[1] + 0.25 * p1[1]]);
+        next.push([0.25 * p0[0] + 0.75 * p1[0], 0.25 * p0[1] + 0.75 * p1[1]]);
+      }
+      next.push([next[0][0], next[0][1]]);
+      cur = next;
+    }
+    return cur;
+  }
+
   window.renderIsochroneMaps = function renderIsochroneMaps(idx, name) {
     const elDyn = document.getElementById('isochrone-dynamic-map');
     const elBase = document.getElementById('isochrone-baseline-map');
@@ -4575,29 +4612,17 @@ function renderFootfallMap(values, name, idx){
     const dLat = center[0] - indiraCenter[0];
     const dLon = center[1] - indiraCenter[1];
 
-    // 1. Initialize Dynamic Map (Left) with ESRI Dark Gray Canvas
+    // 1. Initialize Dynamic Map (Left) with Footfall OpenStreetMap basemap
     if (!isoDynamicMap) {
       isoDynamicMap = L.map(elDyn, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(isoDynamicMap);
-      
-      isoDynamicMap.createPane('labelsPane');
-      isoDynamicMap.getPane('labelsPane').style.zIndex = 650;
-      isoDynamicMap.getPane('labelsPane').style.pointerEvents = 'none';
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labelsPane', maxZoom: 16 }).addTo(isoDynamicMap);
-
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoDynamicMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoDynamicMap);
     }
 
-    // 2. Initialize Baseline Map (Right) with ESRI Dark Gray Canvas
+    // 2. Initialize Baseline Map (Right) with Footfall OpenStreetMap basemap
     if (!isoBaselineMap) {
       isoBaselineMap = L.map(elBase, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(isoBaselineMap);
-
-      isoBaselineMap.createPane('labelsPane');
-      isoBaselineMap.getPane('labelsPane').style.zIndex = 650;
-      isoBaselineMap.getPane('labelsPane').style.pointerEvents = 'none';
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labelsPane', maxZoom: 16 }).addTo(isoBaselineMap);
-
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoBaselineMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoBaselineMap);
 
       // Bidirectional sync
@@ -4690,7 +4715,7 @@ function renderFootfallMap(values, name, idx){
 
       // 1. Plot on Left Map (Dynamic Catchment - Yellow to Red, No Borders)
       if (isVisible) {
-        L.polygon(polyCoords, {
+        L.polygon(smoothIsochroneCoords(polyCoords), {
           stroke: false,
           weight: 0,
           fillColor: style.fill,
@@ -4706,7 +4731,7 @@ function renderFootfallMap(values, name, idx){
         const sunCoords = sunTier.coordinates.map(([lat, lon]) => [lat + dLat, lon + dLon]);
         
         // Sunday Max Area (No border)
-        L.polygon(sunCoords, {
+        L.polygon(smoothIsochroneCoords(sunCoords), {
           stroke: false,
           weight: 0,
           fillColor: '#10b981',
@@ -4718,7 +4743,7 @@ function renderFootfallMap(values, name, idx){
 
       // Overlaid Current Day Area on Right Map (No border)
       if (isVisible) {
-        L.polygon(polyCoords, {
+        L.polygon(smoothIsochroneCoords(polyCoords), {
           stroke: false,
           weight: 0,
           fillColor: style.fill,
