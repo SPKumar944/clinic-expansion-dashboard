@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Madurai Bank Branch Site Selection — Method & Evaluation Report</title>
+  <style>
+        @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #17283b;
+      margin: 0;
+      padding: 0;
+      background: #eaedf1;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .report-container {
+      max-width: 210mm;
+      margin: 20px auto;
+    }
+    .page { page-break-inside: avoid; 
+      background: #ffffff;
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      padding: 16mm 18mm 14mm 18mm;
+      margin-bottom: 0;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+    @media print {
+      .gh-banner { display: none !important; }
+
+      body { background: #fff; }
+      .report-container { margin: 0; max-width: 100%; width: 210mm; }
+      .page { page-break-inside: avoid; 
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        max-height: 297mm;
+        padding: 16mm 18mm 14mm 18mm;
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+    }
+
+    /* Header & Footer */
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dce2e8;
+      padding-bottom: 8px;
+      margin-bottom: 0;
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+      letter-spacing: 0.3px;
+    }
+    .footer-bar {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 10px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10.5px;
+      color: #718096;
+    }
+
+    /* Headings */
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f233a;
+      line-height: 1.25;
+      margin: 0 0 20px 0;
+      letter-spacing: -0.4px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0b4f49;
+      margin: 22px 0 10px 0;
+      letter-spacing: -0.2px;
+    }
+
+    /* Metric Tiles Grid */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 16px 0 24px 0;
+    }
+    .metric-card {
+      background: #f4f7fa;
+      border-radius: 4px;
+      padding: 14px 12px;
+      border-left: 3px solid #0b4f49;
+    }
+    .metric-card.alt {
+      border-left-color: #e05e2b;
+    }
+    .metric-number {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f233a;
+      line-height: 1.1;
+      margin-bottom: 5px;
+    }
+    .metric-label {
+      font-size: 11px;
+      line-height: 1.35;
+      color: #526377;
+    }
+
+    /* Visual Hex / Schematic Graphic */
+    .schematic-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 18px;
+      margin: 16px 0 22px 0;
+    }
+    .site-pill-row {
+      display: flex;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .site-pill {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    .site-pill.winner {
+      border-color: #e05e2b;
+      background: #fff8f5;
+    }
+    .site-pill-header {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0b4f49;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .site-pill-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0f233a;
+      margin-bottom: 6px;
+    }
+    .site-pill-desc {
+      font-size: 11.5px;
+      color: #556677;
+      line-height: 1.4;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px 0;
+      font-size: 12px;
+    }
+    th {
+      text-align: left;
+      font-weight: 700;
+      color: #334155;
+      padding: 8px 10px;
+      border-bottom: 1.5px solid #cbd5e1;
+      font-size: 11.5px;
+      background: #f8fafc;
+    }
+    td {
+      padding: 9px 10px;
+      border-bottom: 1px solid #eef2f6;
+      vertical-align: top;
+      color: #1e293b;
+    }
+    tr:last-child td {
+      border-bottom: 1.5px solid #cbd5e1;
+    }
+    .col-weight {
+      text-align: right;
+      font-weight: 600;
+      color: #0f233a;
+      width: 65px;
+    }
+    .col-source {
+      color: #64748b;
+      font-size: 11px;
+    }
+
+    /* Progress bars / Category indicators */
+    .category-row {
+      margin: 14px 0;
+    }
+    .category-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 13.5px;
+      margin-bottom: 4px;
+    }
+    .category-bar-bg {
+      background: #e2e8f0;
+      height: 18px;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    .category-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
+    .cat-desc {
+      font-size: 11.5px;
+      color: #64748b;
+      margin-bottom: 14px;
+    }
+
+    /* Bar Charts */
+    .bar-chart {
+      margin: 16px 0;
+    }
+    .bar-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 12.5px;
+    }
+    .bar-label {
+      width: 170px;
+      font-weight: 600;
+      color: #1e293b;
+    }
+    .bar-track {
+      flex: 1;
+      background: #eef2f6;
+      height: 22px;
+      border-radius: 3px;
+      position: relative;
+      margin: 0 12px;
+    }
+    .bar-fill {
+      height: 100%;
+      background: #1976d2;
+      border-radius: 3px;
+    }
+    .bar-fill.accent {
+      background: #e05e2b;
+    }
+    .bar-val {
+      width: 70px;
+      font-weight: 700;
+      color: #0f233a;
+      text-align: right;
+    }
+
+    /* Bullet Points */
+    ul {
+      margin: 8px 0 16px 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+      color: #2c3e50;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+
+<div class="gh-banner" style="background: #0f233a; color: #fff; padding: 10px 20px; font-family: sans-serif; font-size: 13px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+  <div style="font-weight: 600;">🏛️ Madurai Bank Site Selection · Executive Report</div>
+  <div style="display: flex; gap: 12px;">
+    <a href="./madurai_bank_site_selection_report.pdf" target="_blank" style="background: #e05e2b; color: #fff; padding: 5px 12px; border-radius: 4px; text-decoration: none; font-weight: 600;">📄 Open PDF (7 Pages)</a>
+    <a href="./clinic_expansion_index.html" style="background: #1e3a5f; color: #cbd5e1; padding: 5px 12px; border-radius: 4px; text-decoration: none;">🏥 Clinic Dashboard</a>
+  </div>
+</div>
+
+
+<div class="report-container">
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>1,248 city blocks screened in two steps; two candidate bank corridors evaluated.</h1>
+
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-number">1,248</div>
+          <div class="metric-label">city blocks analyzed (H3 res-9)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">1,114</div>
+          <div class="metric-label">populated blocks rated</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">128</div>
+          <div class="metric-label">best-opportunity commercial blocks</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">14</div>
+          <div class="metric-label">key banking corridors mapped</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">2</div>
+          <div class="metric-label">candidate sites compared side-by-side</div>
+        </div>
+      </div>
+
+      <div class="schematic-box">
+        <div style="font-weight: 700; font-size: 13px; color: #0f233a; margin-bottom: 8px;">
+          Candidate Branch Locations Under Assessment:
+        </div>
+        <div class="site-pill-row">
+          <div class="site-pill">
+            <div class="site-pill-header">Candidate Site 1</div>
+            <div class="site-pill-title">Bethaniyapuram / Mettu St</div>
+            <div class="site-pill-desc">
+              Coordinates: 9.937781, 78.097472<br>
+              Corridor: Dindigul Highway – Arapalayam – Kochadai bypass<br>
+              Profile: Suburban residential hub, middle-income retail CASA & auto loans.
+            </div>
+          </div>
+          <div class="site-pill winner">
+            <div class="site-pill-header" style="color: #e05e2b;">Candidate Site 2 (First Preference)</div>
+            <div class="site-pill-title">Munichalai / Kamarajar Salai</div>
+            <div class="site-pill-desc">
+              Coordinates: 9.916797, 78.133287 (No. 220/1, Kamarajar Salai)<br>
+              Corridor: Central Madurai – Teppakulam – Anna Nagar arterial<br>
+              Profile: Dense commercial high street, intense cash turnover & trade finance.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Screening approach adapted for retail banking</h2>
+      <ul>
+        <li><strong>Study Frame:</strong> Madurai Corporation urban frame divided into 1,248 equal hexagonal blocks (H3 resolution 9, ~10.5 hectares each). 1,114 blocks with residential/commercial population are evaluated.</li>
+        <li><strong>Step 1, Format Fit (Commercial Match):</strong> Each block is ranked on six commercial vibrancy and business demand factors against all other blocks in Madurai; the factors carry equal weight (1 of 6 each).</li>
+        <li><strong>Step 2, Headroom (Room for a New Branch):</strong> Each block is ranked on six market gap and growth metrics, weighted 30%, 25%, 20%, 10%, 10%, and 5%.</li>
+        <li><strong>Thresholds:</strong> A block qualifies as <em>Best Opportunity</em> if its commercial match is in the top 25% of the city (fit &ge; 75) and its unserved banking headroom is in the top 30% (headroom &ge; 70).</li>
+      </ul>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>1</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Twelve factors rank every block: six for commercial match, six for banking headroom.</h1>
+
+      <h2>Step 1: Commercial & retail match, six factors of equal weight</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 110px;">Factor</th>
+            <th>What is measured for Banking Suitability</th>
+            <th style="width: 160px;">Source</th>
+            <th class="col-weight">Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Affluence</strong></td>
+            <td>Household wealth index within 1 km: car/asset ownership, computer access, literacy, and commercial transaction density.</td>
+            <td class="col-source">Census 2011; Meta RWI 2021; Premium Brands</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+          <tr>
+            <td><strong>Trade Cluster</strong></td>
+            <td>Wholesale merchants, textile houses, gold showrooms, and organized retail stores within 1 km.</td>
+            <td class="col-source">Google Places; OpenStreetMap</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+          <tr>
+            <td><strong>High Street Shops</strong></td>
+            <td>Active commercial shops, daily-needs retail, and eateries within a 5-minute walk polygon.</td>
+            <td class="col-source">OpenStreetMap</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+          <tr>
+            <td><strong>Street Activity</strong></td>
+            <td>Retail and commercial shop density lining the block's street network per kilometer of frontage.</td>
+            <td class="col-source">OpenStreetMap; Overture Maps</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+          <tr>
+            <td><strong>Offices & MSMEs</strong></td>
+            <td>Commercial and office built-up volume within 1 km (schools, hospitals, trade offices, logistics hubs).</td>
+            <td class="col-source">Google Open Buildings 2.5D; OSM</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+          <tr>
+            <td><strong>Arterial Access</strong></td>
+            <td>Distance to the nearest primary arterial or sub-arterial road; shorter distance provides higher visibility.</td>
+            <td class="col-source">OpenStreetMap Road Graph</td>
+            <td class="col-weight">1 of 6</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Step 2: Room for a new bank branch, six factors</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 110px;">Factor</th>
+            <th>What is measured for Banking Suitability</th>
+            <th style="width: 160px;">Source</th>
+            <th class="col-weight">Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Affluent Residents</strong></td>
+            <td>Deposit-generating residents within 2 km, weighted by neighbourhood affluence percentile.</td>
+            <td class="col-source">Census 2011 grown to 2026; GHS-POP</td>
+            <td class="col-weight">30%</td>
+          </tr>
+          <tr>
+            <td><strong>Banking Gap</strong></td>
+            <td>Resident population and commercial enterprises per active bank branch within 1.5 km against the city norm.</td>
+            <td class="col-source">Google Places; RBI Directory; OSM</td>
+            <td class="col-weight">25%</td>
+          </tr>
+          <tr>
+            <td><strong>Network Distance</strong></td>
+            <td>Road distance from your bank's own existing branch network to avoid territory cannibalization.</td>
+            <td class="col-source">Bank Branch Register; Road Graph</td>
+            <td class="col-weight">20%</td>
+          </tr>
+          <tr>
+            <td><strong>Commercial Anchors</strong></td>
+            <td>Major institutions (hospitals, colleges, wholesale markets, government offices) within a 10-minute drive.</td>
+            <td class="col-source">Google Places; OpenStreetMap</td>
+            <td class="col-weight">10%</td>
+          </tr>
+          <tr>
+            <td><strong>Corridor Growth</strong></td>
+            <td>Annual growth in commercial and residential building volume from 2016 to 2023.</td>
+            <td class="col-source">Google Open Buildings Temporal</td>
+            <td class="col-weight">10%</td>
+          </tr>
+          <tr>
+            <td><strong>ATM Saturation</strong></td>
+            <td>Stand-alone ATMs within 500 m; areas with high transaction traffic but low branch access score higher.</td>
+            <td class="col-source">Google Places; OSM</td>
+            <td class="col-weight">5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size: 11px; color: #64748b; font-style: italic;">
+        Every factor is normalized to a city rank from 0 to 100 within Madurai Corporation; weights represent proportional shares of the step score.
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>2</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 3 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Four map categories classify the city; 128 blocks form 14 prime banking opportunity areas.</h1>
+
+      <h2>City block classification</h2>
+
+      <div class="category-row">
+        <div class="category-header">
+          <span style="color: #e05e2b;">Best opportunity (e.g., Kamarajar Salai / Munichalai)</span>
+          <span>11% · 128 blocks</span>
+        </div>
+        <div class="category-bar-bg">
+          <div class="category-bar-fill" style="width: 11%; background: #e05e2b;"></div>
+        </div>
+        <div class="cat-desc">
+          High commercial activity and affluent population combined with substantial unmet deposit and lending demand.
+        </div>
+      </div>
+
+      <div class="category-row">
+        <div class="category-header">
+          <span style="color: #1976d2;">Strong but busy (e.g., West Veli St / Town Hall Rd)</span>
+          <span>17% · 190 blocks</span>
+        </div>
+        <div class="category-bar-bg">
+          <div class="category-bar-fill" style="width: 17%; background: #1976d2;"></div>
+        </div>
+        <div class="cat-desc">
+          Prime commercial and retail density, but already heavily saturated with PSU and private bank branches.
+        </div>
+      </div>
+
+      <div class="category-row">
+        <div class="category-header">
+          <span style="color: #2e7d32;">Room to grow (e.g., Bethaniyapuram / Kochadai)</span>
+          <span>22% · 245 blocks</span>
+        </div>
+        <div class="category-bar-bg">
+          <div class="category-bar-fill" style="width: 22%; background: #2e7d32;"></div>
+        </div>
+        <div class="cat-desc">
+          Under-banked residential population with fast growth, suitable for low-cost retail branches and asset origination.
+        </div>
+      </div>
+
+      <div class="category-row">
+        <div class="category-header">
+          <span style="color: #94a3b8;">Not a fit today (Peripheral / Industrial / Agricultural)</span>
+          <span>50% · 551 blocks</span>
+        </div>
+        <div class="category-bar-bg">
+          <div class="category-bar-fill" style="width: 50%; background: #cbd5e1;"></div>
+        </div>
+        <div class="cat-desc">
+          Lacks the footfall, business concentration, or deposit base required to justify bank branch capital expenditure.
+        </div>
+      </div>
+
+      <h2>How opportunity areas were formed in Madurai</h2>
+      <ol style="margin: 8px 0 16px 0; padding-left: 20px; line-height: 1.6; color: #2c3e50;">
+        <li><strong>Spatial Grouping:</strong> Contiguous "Best opportunity" blocks were merged into consolidated search zones.</li>
+        <li><strong>Exclusion of Water Buffers:</strong> Blocks bordering the Vaigai river flood corridor and irrigation tanks (Vandiyur, Teppakulam perimeter buffers) were excluded from commercial centroid formation.</li>
+        <li><strong>Network Proximity Checks:</strong> Blocks within a 2.5 km road radius of your bank's active branches were reviewed to ensure zero cannibalization.</li>
+        <li><strong>Ranking:</strong> Opportunity areas were sorted by their composite 1-to-5 suitability rating: <br>
+        <code>Rating = 1 + 4 &times; (0.5 &times; Fit Percentile + 0.5 &times; Headroom Percentile) / 100</code></li>
+      </ol>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>3</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 4 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Candidate Site 2 scores in the city’s top 15% for commercial banking match.</h1>
+
+      <div class="metric-grid">
+        <div class="metric-card alt">
+          <div class="metric-number">4.38</div>
+          <div class="metric-label">Overall Rating: Site 2 (Kamarajar Salai)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">3.12</div>
+          <div class="metric-label">Overall Rating: Site 1 (Bethaniyapuram)</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">3.2 L</div>
+          <div class="metric-label">People within 2 km of Site 2</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">1.4 L</div>
+          <div class="metric-label">People within 2 km of Site 1</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">88 / 100</div>
+          <div class="metric-label">Site 2 Commercial Fit city percentile</div>
+        </div>
+      </div>
+
+      <h2>Commercial match & banking headroom benchmark (City Percentiles)</h2>
+
+      <div class="bar-chart">
+        <div style="font-weight: 700; font-size: 13px; color: #0b4f49; margin-bottom: 8px;">Step 1: Format Fit (Commercial & Business Activity Match)</div>
+        
+        <div class="bar-row">
+          <div class="bar-label">Site 2: Kamarajar Salai</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width: 88%;"></div>
+          </div>
+          <div class="bar-val">88 / 100</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Site 1: Bethaniyapuram</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 44%;"></div>
+          </div>
+          <div class="bar-val">44 / 100</div>
+        </div>
+
+        <div style="font-weight: 700; font-size: 13px; color: #0b4f49; margin: 18px 0 8px 0;">Step 2: Headroom (Deposit Depth & Market Gap)</div>
+
+        <div class="bar-row">
+          <div class="bar-label">Site 2: Kamarajar Salai</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width: 81%;"></div>
+          </div>
+          <div class="bar-val">81 / 100</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Site 1: Bethaniyapuram</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 62%;"></div>
+          </div>
+          <div class="bar-val">62 / 100</div>
+        </div>
+      </div>
+
+      <h2>Key evaluative takeaways</h2>
+      <ul>
+        <li><strong>Commercial Gravity:</strong> Site 2 (Kamarajar Salai) sits on Madurai's premier commercial spine connecting Munichalai to Teppakulam, capturing intensive merchant cash deposits, textile/gold businesses, and high daily business footfall.</li>
+        <li><strong>Retail vs Commercial Trade:</strong> Site 1 (Bethaniyapuram) acts as a residential bedroom suburb along the Dindigul highway corridor. It has low commercial trading density, making it primarily a consumer retail banking node (savings accounts, home/auto loans) rather than a high-yield Current Account (CA) hub.</li>
+        <li><strong>Deposit Depth:</strong> Site 2's 2 km radius houses over 320,000 residents and more than 4,500 trading enterprises, generating over 2.4x the CASA deposit velocity of Site 1.</li>
+      </ul>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>4</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 5 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Eight practical-fit measures determine bank branch feasibility.</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 140px;">Measure</th>
+            <th>How it is evaluated for Bank Branches</th>
+            <th style="width: 130px;">Site 1 Verdict</th>
+            <th style="width: 130px;">Site 2 Verdict</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ground Floor Rent</strong></td>
+            <td>Advertised ground-floor commercial rent per sq ft. Bank branches require ground-floor presence for customer footfall and ATM lobby.</td>
+            <td><strong>₹35–₹55 / sq ft</strong><br><span style="color:#2e7d32; font-weight:600;">Cost Advantage</span></td>
+            <td><strong>₹85–₹145 / sq ft</strong><br><span style="color:#e05e2b; font-weight:600;">High Premium</span></td>
+          </tr>
+          <tr>
+            <td><strong>Floorplate Size</strong></td>
+            <td>Availability of contiguous 1,500 to 2,500 sq ft spaces suitable for banking halls, teller counters, and manager cabins.</td>
+            <td><strong>Good</strong><br>New buildings ready for long lease</td>
+            <td><strong>Tight</strong><br>Existing shops narrow (600–1,200 sq ft)</td>
+          </tr>
+          <tr>
+            <td><strong>24/7 ATM Frontage</strong></td>
+            <td>Minimum 12–15 ft clear street frontage with glass facade for on-street ATM e-lobby visibility.</td>
+            <td><strong>Moderate</strong><br>Interior on Mettu St</td>
+            <td><strong>Excellent</strong><br>Direct main road arterial view</td>
+          </tr>
+          <tr>
+            <td><strong>Cash-in-Transit (CIT)</strong></td>
+            <td>Curbside space and turning radius for armored cash replenishment vans during morning/evening hours.</td>
+            <td><strong>Favourable</strong><br>Low traffic congestion</td>
+            <td><strong>Critical Watchout</strong><br>Requires dedicated set-back</td>
+          </tr>
+          <tr>
+            <td><strong>Customer Parking</strong></td>
+            <td>Dedicated two-wheeler slots and customer drop-off without blocking moving traffic.</td>
+            <td><strong>Good</strong><br>Ample two-wheeler space</td>
+            <td><strong>Concern</strong><br>High pedestrian & 2W crowding</td>
+          </tr>
+          <tr>
+            <td><strong>Vault & Load-bearing</strong></td>
+            <td>Structural capacity for heavy cash safes, fireproof record rooms, and strong-room reinforcements.</td>
+            <td><strong>Feasible</strong><br>Easy to retrofit</td>
+            <td><strong>Feasible</strong><br>Commercial RCC buildings</td>
+          </tr>
+          <tr>
+            <td><strong>Busiest Street Hours</strong></td>
+            <td>Peak trading hours derived from Google Popular Times: commercial transaction windows.</td>
+            <td><strong>Daytime-led</strong><br>Peaks 10:00–13:00</td>
+            <td><strong>Day & Evening</strong><br>Intense 10:30–20:30</td>
+          </tr>
+          <tr>
+            <td><strong>Signage Visibility</strong></td>
+            <td>Unobstructed sightline along arterial approaches for brand acquisition.</td>
+            <td><strong>Limited</strong><br>Set back from highway</td>
+            <td><strong>Exceptional</strong><br>&gt;200 m clear sightline</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Operating feasibility summary</h2>
+      <ul>
+        <li><strong>Site 2 (Kamarajar Salai)</strong> is the superior revenue generator but carries strict property constraints: ground-floor rents exceed ₹85/sq ft, and the property team must negotiate dedicated curbside set-back for armored Cash-in-Transit vehicles.</li>
+        <li><strong>Site 1 (Bethaniyapuram)</strong> offers low operating expenditure and frictionless vehicle access, but because the pin is located on Mettu Street, the branch must secure high-visibility totem signage on the Dindigul highway.</li>
+      </ul>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>5</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 6 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Mature branches in comparable Madurai corridors deliver ₹65–110 Cr in CASA & advances.</h1>
+
+      <div class="bar-chart">
+        <div style="font-weight: 700; font-size: 13px; color: #0b4f49; margin-bottom: 8px;">
+          Estimated Total Branch Business Portfolio at Year 3 (CASA + Retail/SME Loans)
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Kamarajar Salai (Modelled)</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width: 88%;"></div>
+          </div>
+          <div class="bar-val">₹98.5 Cr</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Central Madurai Core (Benchmark)</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 95%;"></div>
+          </div>
+          <div class="bar-val">₹108.0 Cr</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Anna Nagar Hub (Benchmark)</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 82%;"></div>
+          </div>
+          <div class="bar-val">₹91.5 Cr</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">Bethaniyapuram (Modelled)</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 48%;"></div>
+          </div>
+          <div class="bar-val">₹54.0 Cr</div>
+        </div>
+      </div>
+
+      <h2>Comparative branch economic models (Year 3 Projections)</h2>
+
+      <div class="metric-grid">
+        <div class="metric-card alt">
+          <div class="metric-number">₹42 Cr</div>
+          <div class="metric-label">Current Account (CA) Float: Site 2</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">₹9 Cr</div>
+          <div class="metric-label">Current Account (CA) Float: Site 1</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">₹32 Cr</div>
+          <div class="metric-label">Gold & Trader Advances: Site 2</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">₹28 Cr</div>
+          <div class="metric-label">Mortgage / Auto Loans: Site 1</div>
+        </div>
+        <div class="metric-card alt">
+          <div class="metric-number">18 mo</div>
+          <div class="metric-label">Estimated Breakeven: Site 2</div>
+        </div>
+      </div>
+
+      <h2>Business mix distinction between candidate corridors</h2>
+      <ul>
+        <li><strong>Commercial & Merchant Model (Site 2):</strong> High float of low-cost Current Accounts (CASA ratio &gt; 46%) driven by daily cash credits from the surrounding wholesale textile, gold, and grocery merchants. High velocity of high-margin Gold Loans and merchant overdrafts.</li>
+        <li><strong>Consumer Retail Model (Site 1):</strong> Dominated by Savings Bank (SB) deposits from salaried families and small retirees. Loan portfolio is asset-backed consumer debt (home loans, two-wheeler/four-wheeler vehicle loans) with longer payback cycles (26–30 months).</li>
+      </ul>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>6</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PAGE 7 ==================== -->
+  <div class="page">
+    <div>
+      <div class="header-bar">
+        <span>Retail Banking Site Suitability · Madurai Urban Area</span>
+        <span>Method and Data Note</span>
+      </div>
+
+      <h1>Ten authoritative sources feed the Madurai banking site screening.</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 170px;">Source</th>
+            <th>What it provides for Banking Site Selection</th>
+            <th style="width: 110px;">Vintage / Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Census of India & PCA</strong></td>
+            <td>Ward-level population base, household counts, literacy rates, and household banking/banking asset penetration.</td>
+            <td>2011; grown to 2026</td>
+          </tr>
+          <tr>
+            <td><strong>GHS-POP Population Grid</strong></td>
+            <td>Multi-temporal satellite-derived urban population growth factor applied to calibrate 2026 ward control totals.</td>
+            <td>2015 to 2025 epoch</td>
+          </tr>
+          <tr>
+            <td><strong>Google Open Buildings 2.5D</strong></td>
+            <td>Spatial building heights, built-up footprints, and commercial floor volumes across all Madurai wards.</td>
+            <td>2016 to 2023 temporal</td>
+          </tr>
+          <tr>
+            <td><strong>OpenStreetMap (OSM)</strong></td>
+            <td>Road networks, arterial road hierarchy, retail street shop frontage, commercial land use, and bus stations.</td>
+            <td>October 2026 extract</td>
+          </tr>
+          <tr>
+            <td><strong>Google Places API (New)</strong></td>
+            <td>Comprehensive point-of-interest register of bank branches, ATMs, financial brokers, and commercial establishments.</td>
+            <td>October 2026 live sweep</td>
+          </tr>
+          <tr>
+            <td><strong>RBI Branch Banking Statistics</strong></td>
+            <td>District-level and center-level banking penetration, branch-to-population ratios, and credit-deposit (CD) benchmarks.</td>
+            <td>Q2 2026 release</td>
+          </tr>
+          <tr>
+            <td><strong>Meta Relative Wealth Index</strong></td>
+            <td>Micro-level wealth and economic asset composite calculated from satellite imagery and connectivity features.</td>
+            <td>2021 release</td>
+          </tr>
+          <tr>
+            <td><strong>Google Popular Times</strong></td>
+            <td>Crowd activity and hourly business distribution to differentiate daytime trading vs evening commercial traffic.</td>
+            <td>October 2026 collection</td>
+          </tr>
+          <tr>
+            <td><strong>Commercial Property Portals</strong></td>
+            <td>Asking rentals for ground-floor retail and commercial spaces along key Madurai arterial corridors (99acres, MagicBricks).</td>
+            <td>October 2026 survey</td>
+          </tr>
+          <tr>
+            <td><strong>TNSTC Madurai Bus Feeds</strong></td>
+            <td>Transit frequency and bus connectivity across major transit nodes (Periyar, Arapalayam, Mattuthavani terminals).</td>
+            <td>Operational routes 2026</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Data integrity and audit standards</h2>
+      <ul>
+        <li><strong>Zero Scraping Policy:</strong> Commercial rents and popular hours are collected through authorized APIs or manual surveys into structured templates.</li>
+        <li><strong>Mid-Rank Percentile Rule:</strong> All scores are standardized against other blocks within Madurai Corporation to avoid cross-city distortion.</li>
+        <li><strong>Single Source of Truth:</strong> The quantitative engine guarantees that figures displayed in summary tables, scorecards, and charts match without discrepancies.</li>
+      </ul>
+    </div>
+
+    <div class="footer-bar">
+      <span>Sources: Census 2011 & 2026 estimate; OpenStreetMap; Google Places Pro; RBI Branch Statistics; Property Listings Oct 2026</span>
+      <span>7</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
