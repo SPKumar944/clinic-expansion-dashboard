@@ -42,23 +42,15 @@
   .leaflet-tooltip-bottom:before { border-bottom-color: rgba(15, 23, 42, 0.94) !important; }
   .leaflet-tooltip-left:before { border-left-color: rgba(15, 23, 42, 0.94) !important; }
   .leaflet-tooltip-right:before { border-right-color: rgba(15, 23, 42, 0.94) !important; }
-  dialog#kpi-details-dialog {
-    border: none !important;
-    outline: none !important;
-    margin: auto !important;
+  
+  #universal-kpi-modal {
     position: fixed !important;
     inset: 0 !important;
-    z-index: 99999 !important;
-    max-width: 720px !important;
-    width: 92vw !important;
-    max-height: 88vh !important;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45) !important;
+    z-index: 9999999 !important;
+    background: rgba(15, 23, 42, 0.75) !important;
+    backdrop-filter: blur(6px) !important;
   }
-  dialog#kpi-details-dialog::backdrop {
-    background: rgba(15, 23, 42, 0.7) !important;
-    backdrop-filter: blur(4px) !important;
-    z-index: 99998 !important;
-  }
+
 </style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
   darkMode: "class",
   theme: {
@@ -232,6 +224,25 @@
     stroke-dasharray: 6, 4 !important;
   }
 </style>
+
+<script>
+// Universal Modal Immediate Fallback Controller
+window.openKpiInsightModal = function(topic) {
+  if (typeof window.showUniversalTopicModal === 'function') {
+    window.showUniversalTopicModal(topic);
+  } else {
+    window._pendingTopic = topic;
+    const m = document.getElementById('universal-kpi-modal');
+    if (m) { m.classList.remove('hidden'); m.style.display = 'flex'; }
+  }
+};
+window.closeUniversalModal = function() {
+  const m = document.getElementById('universal-kpi-modal');
+  if (m) { m.classList.add('hidden'); m.style.display = 'none'; }
+  document.body.style.overflow = '';
+};
+</script>
+
 </head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-3 shrink-0"><a href="https://agt-intelligence.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"><img src="https://agt-intelligence.com/brand/agt-mark-ink.png" onerror="this.src='agt-mark-ink.png'" alt="AGT Intelligence Logo" class="h-9 w-auto object-contain shrink-0" /><div class="flex flex-col whitespace-nowrap"><div class="flex items-baseline gap-1.5 leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold text-[17px]">AGT</span><span class="font-headline-sm text-headline-sm text-slate-500 tracking-[0.12em] font-semibold text-[13px] uppercase">INTELLIGENCE</span></div><span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-wider mt-1 block font-medium">Healthcare Spatial Analytics</span></div></a><div class="h-6 w-px bg-surface-container-high hidden xl:block"></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low border border-[#d2d2d7]/50 text-on-surface-variant text-[11px] font-semibold whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Docube Clinical Report</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0" selected>Priority 1: Basappa Garden (First preference)</option><option value="1">Priority 2: Thimanahalli (Second preference)</option><option value="2">Priority 3: Rajajinagar 3rd Block (Next choice)</option><option value="3">Priority 4: Subramanya Nagar 2nd Stage (Shortlisted)</option><option value="4">Priority 5: Mohan Kumar Nagar (Shortlisted)</option><option value="5">Priority 6: Hosahalli (Other area)</option><option value="6">Priority 7: Kirloskar Colony (Other area)</option><option value="7">Priority 8: Srinivas Nagar (Other area)</option><option value="8">Priority 9: Jyothi Nagara (Other area)</option><option value="9">Priority 10: Hanumanthappa Layout (Other area)</option><option value="10">Priority 11: Gavipuram (Other area)</option><option value="11">Priority 12: Krishnappa Block (Other area)</option><option value="12">Priority 13: Sudhama Nagara (Other area)</option><option value="13">Priority 14: Jogupalya (Other area)</option><option value="14">Priority 15: Hanuman Nagar (Other area)</option><option value="15">Priority 16: Banashankari (Z18)</option><option value="16">Priority 17: ITI Colony (Z19)</option><option value="17">Priority 18: Shivajinagar (Z20)</option><option value="18">Priority 19: Teacher's Colony (Z22)</option><option value="19">Priority 20: Maruthi Nagar (Z23)</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span id="header-weighted-score" data-excel-key="html_0008">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span id="header-viable-pill" class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">92% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span id="header-catchment-hh" data-excel-key="html_0012">1.3 lakh</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span id="header-catchment-pop" data-excel-key="html_0013">HH (5.5L Pop)</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span id="header-priority-text" class="font-label-sm text-label-sm text-[#1d1d1f] font-bold uppercase"><span data-excel-key="html_0014">First Preference (Rank 4/27)</span></span></div></div><div class="flex items-center gap-space-md"><button onclick="window.shareReport()" class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Report</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
 <div class="w-full px-space-xl py-space-xl max-w-[1720px] mx-auto space-y-space-xl">
 <!-- Candidate Micro-Asset Header Card -->
@@ -410,7 +421,7 @@
 <span class="material-symbols-outlined text-[20px]"><span data-excel-key="html_0053">radar</span></span>
 </div>
 <div>
-<h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0054">Weighted Viability Dimensions</span></h2>
+<h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0054">Weighted Viability Dimensions</span><button type="button" onclick="window.openKpiInsightModal('radar')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view 8-Vector Radar methodology & insights" aria-label="View Radar details">i</button></h2>
 <span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0055">8-Vector Actuarial Feasibility Matrix (Radar Diagram #115 &amp; Stephen Few Bullet Graphs #17)</span></span>
 </div>
 </div>
@@ -726,7 +737,7 @@
 <div class="flex items-center justify-between mb-space-md">
 <div>
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0120">Spatial Anatomy</span></span>
-<h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0121">Micro-Location &amp; Transit</span></h2>
+<h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0121">Micro-Location &amp; Transit</span><button type="button" onclick="window.openKpiInsightModal('transit')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Transit Isochrone methodology & insights" aria-label="View Transit details">i</button></h2>
 </div>
 <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface">
 <span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;"><span data-excel-key="html_0122">star</span></span>
@@ -812,7 +823,7 @@
 <div class="flex items-center justify-between mb-space-md">
 <div>
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0145">Macro Feasibility Profile</span></span>
-<h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0146">Demographics &amp; Spend Capacity</span></h2>
+<h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0146">Demographics &amp; Spend Capacity</span><button type="button" onclick="window.openKpiInsightModal('demographics')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Demographics & Affluence methodology & insights" aria-label="View Demographics details">i</button></h2>
 </div>
 <span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant"><span data-excel-key="html_0147">Radius: 2.0 km Buffer</span></span>
 </div>
@@ -972,7 +983,7 @@
     <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm mb-space-lg">
       <div>
         <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0183">Operating-window insight</span></span>
-        <h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0184">Demand vs Planned Clinic Capacity</span></h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0184">Demand vs Planned Clinic Capacity</span><button type="button" onclick="window.openKpiInsightModal('capacity')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Clinic Capacity Sizing model & insights" aria-label="View Capacity details">i</button></h2>
         <p class="font-body-sm text-body-sm text-on-surface-variant mt-1"><span data-excel-key="html_0185">Grouped Bar Chart #58 compares the location demand index with planned appointment capacity by daypart.</span></p>
       </div>
       <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-900 font-label-sm text-label-sm"><span data-excel-key="html_0186">Capacity gap</span></span>
@@ -1061,7 +1072,7 @@
 <div class="flex items-center justify-between mb-space-md">
 <div>
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0189">Tenancy Health</span></span>
-<h3 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0190">Healthcare vs. Retail Resilience</span></h3>
+<h3 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0190">Healthcare vs. Retail Resilience</span><button type="button" onclick="window.openKpiInsightModal('tenancy')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Tenancy Survival & Waffle matrix insights" aria-label="View Tenancy details">i</button></h3>
 </div>
 <span class="px-2.5 py-1 rounded-full bg-zinc-100 text-zinc-900 border border-zinc-200 font-label-sm text-label-sm font-semibold"><span data-excel-key="html_0191">99.8% Medical Survival</span></span>
 </div>
@@ -1226,7 +1237,7 @@
 <div class="flex items-center justify-between mb-space-md">
 <div>
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0206">Geographic Ingress</span></span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface"><span data-excel-key="html_0207">Visitor Origin Pincodes</span></h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0207">Visitor Origin Pincodes</span><button type="button" onclick="window.openKpiInsightModal('origin')" class="w-5 h-5 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-[11px] transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Visitor Origin Pincode breakdown" aria-label="View Pincode details">i</button></h3>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0208">Cell Tower Telemetry</span></span>
 </div>
@@ -1305,7 +1316,7 @@
 </div>
 </div>
 </div>
-</div></main><main aria-label="Competitive Spatial &amp; Whitespace" class="w-full bg-surface dashboard-section scroll-mt-32 border-t border-surface-container-high pt-space-xl" id="competitive-spatial"><section class="w-full px-space-xl pt-space-xl max-w-[1720px] mx-auto"><div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm"><div class="mb-space-lg"><h2 class="font-headline-md text-headline-md text-on-surface">Live competitive ranking and proximity relationship</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Horizontal Bar Chart #8 and Bubble Chart #13. Distance, rating and patient-volume gravity update by location.</p></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+</div></main><main aria-label="Competitive Spatial &amp; Whitespace" class="w-full bg-surface dashboard-section scroll-mt-32 border-t border-surface-container-high pt-space-xl" id="competitive-spatial"><section class="w-full px-space-xl pt-space-xl max-w-[1720px] mx-auto"><div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm"><div class="mb-space-lg"><h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span>Live competitive ranking and proximity relationship</span><button type="button" onclick="window.openKpiInsightModal('competitive')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Competitor Gravity & Bubble chart methodology" aria-label="View Competitive details">i</button></h2><p class="font-body-sm text-body-sm text-on-surface-variant">Horizontal Bar Chart #8 and Bubble Chart #13. Distance, rating and patient-volume gravity update by location.</p></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
   <div class="bg-white rounded-xl p-5 border border-slate-100 shadow-xs flex flex-col h-[400px]">
     <div class="flex items-center justify-between mb-3 border-b border-slate-100 pb-2">
       <div>
@@ -1499,7 +1510,7 @@
 </section>
 
 <section class="w-full px-space-xl pt-space-xl max-w-[1720px] mx-auto"><div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm"><div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-space-lg mb-space-lg"><div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Synchronized Spatial Demand Surfaces</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Store Footfall vs. Competitor Footfall (Synchronized Dual Maps)</h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Side-by-side synchronized geospatial maps: zoom or pan either map to inspect store demand and competitor intensity simultaneously.</p></div><div class="flex flex-wrap items-center gap-space-lg text-label-sm text-on-surface-variant">
+<h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span>Store Footfall vs. Competitor Footfall (Synchronized Dual Maps)</span><button type="button" onclick="window.openKpiInsightModal('footfall-maps')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Dual Footfall Maps explanation" aria-label="View Footfall Map details">i</button></h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Side-by-side synchronized geospatial maps: zoom or pan either map to inspect store demand and competitor intensity simultaneously.</p></div><div class="flex flex-wrap items-center gap-space-lg text-label-sm text-on-surface-variant">
   <div id="dual-map-legend-left" class="flex items-center gap-2">
     <span class="flex items-center gap-1.5 font-bold text-xs text-[#0284c7]">
       <i class="w-3.5 h-3.5 rounded-full border-2 border-white bg-[#0284c7] shadow-sm inline-block"></i>
@@ -1691,7 +1702,7 @@
     <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-space-lg mb-space-lg">
       <div>
         <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">TomTom Dynamic Traffic Intelligence</span>
-        <h2 class="font-headline-md text-headline-md text-on-surface">Store Catchment Isochrones vs. Free-Flow Baseline (Synchronized Dual Maps)</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-2"><span>Store Catchment Isochrones vs. Free-Flow Baseline (Synchronized Dual Maps)</span><button type="button" onclick="window.openKpiInsightModal('isochrone-maps')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Isochrone Buffer methodology & insights" aria-label="View Isochrone details">i</button></h2>
         <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-tier travel-time reachability (5, 10, 15, and 20 min drive times) modeled with historical traffic volatility across days of the week.</p>
       </div>
 
@@ -1851,7 +1862,7 @@
     <div class="flex flex-wrap items-center justify-between pb-4 mb-4 border-b border-slate-100 gap-3">
       <div>
         <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#1d1d1f] block mb-0.5">ACTUARIAL SPATIAL AUDIT</span>
-        <h2 class="text-2xl font-black text-[#0f172a] tracking-tight">Competitive Landscape Concentration Matrix</h2>
+        <h2 class="text-2xl font-black text-[#0f172a] tracking-tight inline-flex items-center gap-2"><span>Competitive Landscape Concentration Matrix</span><button type="button" onclick="window.openKpiInsightModal('matrix')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Competitive Concentration Matrix insights" aria-label="View Concentration Matrix details">i</button></h2>
       </div>
       <div class="flex flex-wrap items-center gap-2.5">
         <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f1f5f9] border border-slate-200">
@@ -2374,7 +2385,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <div>
 <div class="flex items-center gap-2">
 <span class="px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm uppercase font-bold"><span data-excel-key="html_0372">Chart #75 Lollipop &amp; #93 Dual-Axis Pareto</span></span>
-<h3 class="font-headline-lg text-headline-lg text-on-surface"><span data-excel-key="html_0373">Clinical Specialty Whitespace Discrepancy Index</span></h3>
+<h3 class="font-headline-lg text-headline-lg text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0373">Clinical Specialty Whitespace Discrepancy Index</span><button type="button" onclick="window.openKpiInsightModal('whitespace')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Specialty Whitespace methodology & insights" aria-label="View Whitespace details">i</button></h3>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"><span data-excel-key="html_0374">Contrasting Catchment Population Need Share (%) vs Available Provider Review Supply Volume Share (%)</span></p>
 </div>
@@ -2593,7 +2604,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <div>
 <div class="flex items-center gap-2">
 <span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase font-bold"><span data-excel-key="html_0436">11 Specialties Audited</span></span>
-<h3 class="font-headline-lg text-headline-lg text-on-surface"><span data-excel-key="html_0437">Segment-Wise Clinical Competitor Breakdown</span></h3>
+<h3 class="font-headline-lg text-headline-lg text-on-surface inline-flex items-center gap-2"><span data-excel-key="html_0437">Segment-Wise Clinical Competitor Breakdown</span><button type="button" onclick="window.openKpiInsightModal('competitor-table')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Competitor Breakdown Table methodology & insights" aria-label="View Competitor Table details">i</button></h3>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-1"><span data-excel-key="html_0438">Enhanced with Inline Micro-Column Sparklines (≤500m / 1km / 2km) and Cleveland Dumbbell Plots (Supply Share vs Review Share)</span></p>
 </div>
@@ -3160,7 +3171,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <span class="material-symbols-outlined text-[18px]"><span data-excel-key="html_0605">bubble_chart</span></span>
 <span class="font-label-sm text-label-sm uppercase tracking-widest"><span data-excel-key="html_0606">Section 01 // Clinical Portfolio Allocation &amp; Portfolio Map</span></span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1"><span data-excel-key="html_0607">Service Line Prioritisation Matrix &amp; Strategic Bubble Map</span></h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1 inline-flex items-center gap-2"><span data-excel-key="html_0607">Service Line Prioritisation Matrix &amp; Strategic Bubble Map</span><button type="button" onclick="window.openKpiInsightModal('service-lines')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Service Line 2x2 Matrix & Priority criteria" aria-label="View Service Line details">i</button></h2>
 <p class="font-body-md text-body-md text-on-surface-variant"><span data-excel-key="html_0608">2x2 Strategic Portfolio Matrix (Chart #76 / Bubble Chart #13) mapping Market Whitespace vs Margin Potential across all 11 specialties.</span></p>
 </div>
 <div class="flex items-center gap-space-sm">
@@ -3583,7 +3594,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <span class="material-symbols-outlined text-[18px]"><span data-excel-key="html_0736">bar_chart</span></span>
 <span class="font-label-sm text-label-sm uppercase tracking-widest"><span data-excel-key="html_0737">Section 02 // Mathematical Demand Model &amp; Waterfall Architecture</span></span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1"><span data-excel-key="html_0738">Demand Sizing Waterfall &amp; Multi-Tier Conversion Funnel</span></h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1 inline-flex items-center gap-2"><span data-excel-key="html_0738">Demand Sizing Waterfall &amp; Multi-Tier Conversion Funnel</span><button type="button" onclick="window.openKpiInsightModal('waterfall')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-700 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view Demand Waterfall & Conversion Funnel methodology" aria-label="View Waterfall details">i</button></h2>
 <p class="font-body-md text-body-md text-on-surface-variant"><span data-excel-key="html_0739">True Waterfall / Flying Bricks Chart (Chart #163) paired with an authentic conversion funnel (Chart #56) from 1,30,000 households to daily clinical visits.</span></p>
 </div>
 <div class="text-right">
@@ -6127,512 +6138,378 @@ Visit: https://agt-intelligence.com`;
 })();
 </script>
 
-<!-- Modern Native Dialog for KPI Details & Actuarial Insights (Compliant with Light-Dismiss Standard) -->
-<dialog id="kpi-details-dialog" closedby="any" aria-labelledby="kpi-dialog-title" class="p-0 rounded-2xl bg-white shadow-2xl border border-slate-200/80 max-w-2xl w-[94vw] max-h-[90vh] overflow-hidden backdrop:bg-slate-900/60 backdrop:backdrop-blur-xs">
-  <div class="flex flex-col h-full max-h-[90vh]">
-    <!-- Dialog Header -->
+
+<!-- ========================================================================= -->
+<!-- UNIVERSAL ACTUARIAL AUDIT & SECTION INSIGHT MODAL (100% CROSS-BROWSER) -->
+<!-- ========================================================================= -->
+<div id="universal-kpi-modal" class="fixed inset-0 z-[9999999] hidden flex items-center justify-center p-3 sm:p-6 bg-slate-950/80 backdrop-blur-md" style="display:none;" onclick="if(event.target===this)window.closeUniversalModal();" role="dialog" aria-modal="true">
+  <div class="relative w-full max-w-2xl max-h-[92vh] flex flex-col bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden text-left" onclick="event.stopPropagation();">
+    
+    <!-- Modal Header -->
     <div class="p-5 border-b border-slate-100 bg-[#fbfbfd] flex items-start justify-between gap-4 shrink-0">
       <div>
         <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-          <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 text-[10px] font-extrabold uppercase tracking-wider border border-slate-200">Actuarial KPI Audit</span>
-          <span id="kpi-modal-loc-badge" class="px-2.5 py-0.5 rounded-full bg-[#1d1d1f] text-white text-[11px] font-bold">Priority 1: Basappa Garden</span>
+          <span id="u-modal-badge" class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-800 text-[10px] font-extrabold uppercase tracking-wider border border-slate-200">Actuarial Audit</span>
+          <span id="u-modal-loc-badge" class="px-2.5 py-0.5 rounded-full bg-[#1d1d1f] text-white text-[11px] font-bold">Priority 1: Basappa Garden</span>
         </div>
-        <h2 id="kpi-dialog-title" class="text-lg font-bold text-[#1d1d1f] tracking-tight">KPI Details &amp; Actuarial Insights</h2>
-        <p class="text-xs text-slate-500 mt-0.5">Mathematical decomposition, benchmark variance, and strategic reasoning for the selected candidate location.</p>
+        <h2 id="u-modal-title" class="text-lg font-bold text-[#1d1d1f] tracking-tight">KPI Details &amp; Clinical Description</h2>
+        <p id="u-modal-subtitle" class="text-xs text-slate-500 mt-0.5">Authoritative definitions, actuarial formulas, and candidate site evaluations for Docube expansion.</p>
       </div>
-      <form method="dialog">
-        <button type="submit" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-[#1d1d1f] flex items-center justify-center text-sm font-bold transition-colors cursor-pointer" aria-label="Close dialog">✕</button>
-      </form>
+      <button type="button" onclick="window.closeUniversalModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-[#1d1d1f] flex items-center justify-center text-sm font-bold transition-colors cursor-pointer shrink-0" aria-label="Close modal">✕</button>
     </div>
 
-    <!-- Segmented Tab Bar -->
-    <div class="px-5 pt-3 pb-2 bg-slate-50/70 border-b border-slate-100 shrink-0">
+    <!-- Segmented Tab Navigation for Core Metrics -->
+    <div id="u-modal-tabs-wrapper" class="px-5 pt-3 pb-2 bg-slate-50/80 border-b border-slate-100 shrink-0">
       <div class="grid grid-cols-4 gap-1 p-1 bg-slate-200/60 rounded-xl text-xs font-semibold" role="tablist">
-        <button type="button" id="tab-btn-score" onclick="window.switchKpiTab('score')" class="py-1.5 px-2 rounded-lg text-center transition-all bg-white text-[#1d1d1f] shadow-xs cursor-pointer" role="tab" aria-selected="true">
-          Weighted Score
-        </button>
-        <button type="button" id="tab-btn-catchment" onclick="window.switchKpiTab('catchment')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] cursor-pointer" role="tab" aria-selected="false">
-          Catchment Pool
-        </button>
-        <button type="button" id="tab-btn-priority" onclick="window.switchKpiTab('priority')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] cursor-pointer" role="tab" aria-selected="false">
-          Strategic Priority
-        </button>
-        <button type="button" id="tab-btn-all" onclick="window.switchKpiTab('all')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] cursor-pointer" role="tab" aria-selected="false">
-          All 3 KPIs
-        </button>
+        <button type="button" id="u-tab-score" onclick="window.showUniversalTopicModal('score')" class="py-1.5 px-2 rounded-lg text-center transition-all bg-white text-[#1d1d1f] shadow-xs font-bold cursor-pointer">Weighted Score</button>
+        <button type="button" id="u-tab-catchment" onclick="window.showUniversalTopicModal('catchment')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] font-semibold cursor-pointer">Catchment Pool</button>
+        <button type="button" id="u-tab-priority" onclick="window.showUniversalTopicModal('priority')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] font-semibold cursor-pointer">Strategic Priority</button>
+        <button type="button" id="u-tab-all" onclick="window.showUniversalTopicModal('all')" class="py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] font-semibold cursor-pointer">All 3 KPIs</button>
       </div>
     </div>
 
-    <!-- Scrollable Modal Body -->
-    <div class="p-5 overflow-y-auto space-y-4 flex-1 text-sm text-[#1d1d1f]">
-      <!-- TAB 1: Weighted Score Content -->
-      <div id="kpi-panel-score" class="space-y-4">
-        <!-- Live Metric Banner -->
-        <div class="p-4 rounded-xl bg-[#f8fafc] border border-slate-200/80 flex items-center justify-between">
-          <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">Live Metric Value</span>
-            <div class="flex items-baseline gap-2 mt-0.5">
-              <span id="modal-score-val" class="text-3xl font-black text-[#1d1d1f]">4.6</span>
-              <span class="text-sm font-bold text-slate-500">/ 5.0</span>
-              <span id="modal-score-pct" class="ml-2 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold">92% Viable</span>
-            </div>
-          </div>
-          <div class="text-right">
-            <span class="text-[11px] font-semibold text-slate-500 block">Bengaluru Cohort</span>
-            <span id="modal-score-rank" class="text-sm font-bold text-[#1d1d1f]">Rank 4 of 27 across BLR</span>
-            <span id="modal-score-diff" class="text-xs font-bold text-emerald-700 block">+1.4 vs 3.2 Threshold</span>
-          </div>
-        </div>
-
-        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
-        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
-            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
-          </div>
-          <p class="text-xs text-slate-700 leading-relaxed font-normal">
-            <strong>What is Weighted Feasibility Score?</strong> It is Docube's primary composite index (rated 0.0 to 5.0) evaluating 360° commercial and clinical sustainability for each candidate clinic. It condenses 8 cadastral vectors into a single mathematical viability rating.
-          </p>
-          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">Hurdle Benchmark (3.2 / 5.0):</span>
-              Minimum viable break-even score required to justify capital deployment.
-            </div>
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">Prime Conviction (&ge; 4.0 / 5.0):</span>
-              Top-quartile assets with immediate outpatient uptake and low risk.
-            </div>
-          </div>
-        </div>
-
-        <!-- Location-Specific Strategic Insight -->
-        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-amber-700">lightbulb</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Location Feasibility Insight for Selected Site</h4>
-          </div>
-          <p id="modal-score-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
-        </div>
-
-        <!-- Formula Breakdown Card -->
-        <div class="rounded-xl border border-slate-200/70 p-4 space-y-3">
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">8-Vector Actuarial Weighting Formula</h4>
-            <span class="text-[11px] text-slate-500 font-medium">Standard Feasibility Matrix #115</span>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            The Weighted Feasibility Score measures 360° commercial and clinical sustainability. It aggregates 8 cadastral dimensions weighted by actuarial significance:
-          </p>
-          <div class="grid grid-cols-2 gap-2 text-xs">
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Affluence &amp; Spend</span><span>20% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Household disposable healthcare expenditure.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Specialty Whitespace</span><span>15% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Unmet doctor deficit vs local population.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Footfall &amp; Pedestrian</span><span>15% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Hourly walking volumes &amp; transit nodes.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Catchment Depth</span><span>10% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Household density within 2 km walking ring.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Specialist Practices</span><span>10% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Anchor hospital &amp; practitioner density.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Transit &amp; Road Frontage</span><span>10% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Metro proximity &amp; bus transit departures.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Network Cannibalization</span><span>5% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Distance buffer from existing Docube clinics.</p>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-50 border border-slate-100">
-              <div class="flex justify-between font-bold text-slate-700"><span>Rent Efficiency</span><span>5% Weight</span></div>
-              <p class="text-[11px] text-slate-500 mt-0.5">Prevailing rent vs network ₹110 benchmark.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 2: Catchment Pool Content -->
-      <div id="kpi-panel-catchment" class="space-y-4 hidden">
-        <div class="p-4 rounded-xl bg-[#f8fafc] border border-slate-200/80 flex items-center justify-between">
-          <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">Total Primary Catchment</span>
-            <div class="flex items-baseline gap-2 mt-0.5">
-              <span id="modal-catchment-val" class="text-3xl font-black text-[#1d1d1f]">1.3 lakh</span>
-              <span class="text-sm font-bold text-slate-500">Households</span>
-            </div>
-          </div>
-          <div class="text-right">
-            <span class="text-[11px] font-semibold text-slate-500 block">Pedestrian Radius</span>
-            <span class="text-sm font-bold text-[#1d1d1f]">2.0 km Isochrone Ring</span>
-            <span id="modal-catchment-pop" class="text-xs font-bold text-emerald-700 block">5.5L Total Residents</span>
-          </div>
-        </div>
-
-        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
-        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
-            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
-          </div>
-          <p class="text-xs text-slate-700 leading-relaxed font-normal">
-            <strong>What is Catchment Patient Pool?</strong> It measures the total addressable residential and daytime family population residing within a 2.0 km walking &amp; vehicular isochrone boundary (~10–12 minute travel envelope). It defines the total patient volume that can realistically access the clinic before distance friction causes steep drop-off.
-          </p>
-          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">Cadastral Boundary:</span>
-              2.0 km concentric ring calibrated against Bengaluru arterial transit bottlenecks.
-            </div>
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">Conversion Target:</span>
-              2.5% to 4.0% market capture yields 16–26 consultations/day, guaranteeing unit viability.
-            </div>
-          </div>
-        </div>
-
-        <!-- Catchment Ingress Dynamics -->
-        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-amber-700">groups</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Catchment Dynamics &amp; Demographic Insight</h4>
-          </div>
-          <p id="modal-catchment-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
-        </div>
-
-        <!-- Demand Conversion Funnel -->
-        <div class="rounded-xl border border-slate-200/70 p-4 space-y-3">
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">Catchment Demand Sizing Funnel</h4>
-            <span class="text-[11px] text-slate-500 font-medium">Docube Conversion Model #56</span>
-          </div>
-          <div class="space-y-2 text-xs">
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">1. Total 2 km Catchment Pool:</span>
-              <span id="modal-funnel-total" class="font-bold text-slate-900">1,30,000 HH (5.5L Residents)</span>
-            </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">2. Target Affluent Cohort (Top Quartile):</span>
-              <span id="modal-funnel-affluent" class="font-bold text-slate-900">~58,500 HH (45% Share)</span>
-            </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">3. Estimated Private Outpatient Consults/Year:</span>
-              <span id="modal-funnel-opd" class="font-bold text-slate-900">~2,30,000 Consults / Yr</span>
-            </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-emerald-50 text-emerald-900 border border-emerald-200">
-              <span class="font-semibold">4. Docube Y2 Run-Rate (2.5%–4.0% Capture):</span>
-              <span id="modal-funnel-docube" class="font-bold">16 – 26 Consults / Day (Viable Runway)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 3: Strategic Priority Content -->
-      <div id="kpi-panel-priority" class="space-y-4 hidden">
-        <div class="p-4 rounded-xl bg-[#f8fafc] border border-slate-200/80 flex items-center justify-between">
-          <div>
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">Deployment Mandate</span>
-            <div class="flex items-baseline gap-2 mt-0.5">
-              <span id="modal-priority-pref" class="text-2xl font-black text-[#1d1d1f]">First Preference</span>
-              <span id="modal-priority-tier" class="px-2 py-0.5 rounded-full bg-[#1d1d1f] text-white text-xs font-bold">Top Tier Asset</span>
-            </div>
-          </div>
-          <div class="text-right">
-            <span class="text-[11px] font-semibold text-slate-500 block">Portfolio Priority</span>
-            <span id="modal-priority-rank" class="text-sm font-bold text-[#1d1d1f]">Rank 4 / 27</span>
-            <span id="modal-priority-plan" class="text-xs font-bold text-amber-700 block">Phase 1 Lead Pick</span>
-          </div>
-        </div>
-
-        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
-        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
-            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
-          </div>
-          <p class="text-xs text-slate-700 leading-relaxed font-normal">
-            <strong>What is Strategic Priority?</strong> It establishes the executive rollout tranche sequence across candidate sites. It balances capital payback velocity (target &lt; 18 months), commercial rent headroom (against the ₹65/sq ft ceiling), specialty deficit urgency, and network cannibalization buffering.
-          </p>
-          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">First Preference (Phase 1):</span>
-              Immediate capital deployment; rent &lt; ₹65/sq ft, 0% cannibalization, high deficit.
-            </div>
-            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
-              <span class="font-bold text-blue-950 block">Hold &amp; Monitor (Phase 3):</span>
-              Sites exceeding rent ceiling (&gt; ₹85/sq ft) or with cannibalization risk &gt; 12%.
-            </div>
-          </div>
-        </div>
-
-        <!-- Strategic Directive Insight -->
-        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-amber-700">verified</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Executive Execution Directive for Selected Site</h4>
-          </div>
-          <p id="modal-priority-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
-        </div>
-
-        <!-- Underwriting Card -->
-        <div class="rounded-xl border border-slate-200/70 p-4 space-y-3">
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">Capital Underwriting Justification</h4>
-            <span class="text-[11px] text-slate-500 font-medium">Investment Committee Directive</span>
-          </div>
-          <div class="grid grid-cols-2 gap-2 text-xs">
-            <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Rent Cost Headroom</span>
-              <span id="modal-uw-rent" class="font-bold text-slate-800 text-sm mt-0.5 block">55% Below Network Base</span>
-              <span class="text-[11px] text-slate-500">Prevailing ₹50/sq ft vs ceiling ₹65.</span>
-            </div>
-            <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Cannibalization Risk</span>
-              <span id="modal-uw-cannibal" class="font-bold text-emerald-700 text-sm mt-0.5 block">0% Cannibalization</span>
-              <span class="text-[11px] text-slate-500">8.5 km to nearest Docube centre.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 4: All 3 KPIs Comparative View -->
-      <div id="kpi-panel-all" class="space-y-4 hidden">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
-            <span class="text-[10px] uppercase font-extrabold text-slate-500 tracking-wider block">1. Weighted Score</span>
-            <div class="text-2xl font-black text-[#1d1d1f] mt-1"><span id="all-score-val">4.6</span> <span class="text-xs text-slate-500 font-normal">/ 5.0</span></div>
-            <span id="all-score-badge" class="inline-block mt-1 text-[11px] font-bold text-emerald-700">92% Viable · Rank 4/27</span>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
-            <span class="text-[10px] uppercase font-extrabold text-slate-500 tracking-wider block">2. Catchment Pool</span>
-            <div class="text-2xl font-black text-[#1d1d1f] mt-1" id="all-catchment-val">1.3 lakh <span class="text-xs text-slate-500 font-normal">HH</span></div>
-            <span id="all-catchment-badge" class="inline-block mt-1 text-[11px] font-bold text-slate-700">5.5L Pop · 2.0 km Ring</span>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
-            <span class="text-[10px] uppercase font-extrabold text-slate-500 tracking-wider block">3. Strategic Priority</span>
-            <div class="text-lg font-bold text-[#1d1d1f] mt-1 leading-tight" id="all-priority-val">First Preference</div>
-            <span id="all-priority-badge" class="inline-block mt-1 text-[11px] font-bold text-amber-700">Rank 4/27 · Phase 1</span>
-          </div>
-        </div>
-
-        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
-            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">How The 3 Core KPIs Guide Investment</h4>
-          </div>
-          <p class="text-xs text-slate-700 leading-relaxed font-normal">
-            These three metrics form the <strong>Executive Triangulation Rule</strong>:
-            <strong>(1) Weighted Score</strong> evaluates site fundamentals;
-            <strong>(2) Catchment Pool</strong> validates demographic addressable volume;
-            <strong>(3) Strategic Priority</strong> governs execution scheduling to prevent capital misallocation and network overlap.
-          </p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-[#f8fafc] border border-slate-200/80 space-y-2">
-          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">Unified Actuarial Summary for Selected Site</h4>
-          <p id="all-unified-summary" class="text-xs text-slate-700 leading-relaxed font-medium">
-            <!-- Dynamic unified summary -->
-          </p>
-        </div>
-      </div>
+    <!-- Scrollable Modal Body (Rendered dynamically) -->
+    <div id="u-modal-body" class="p-5 overflow-y-auto space-y-4 flex-1 text-sm text-[#1d1d1f]">
+      <!-- Content populated in JavaScript -->
     </div>
 
-    <!-- Dialog Footer -->
+    <!-- Modal Footer with Location Switcher -->
     <div class="p-4 border-t border-slate-100 bg-[#fbfbfd] flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
       <div class="flex items-center gap-2 w-full sm:w-auto">
-        <label for="kpi-modal-loc-select" class="text-xs text-slate-500 font-medium whitespace-nowrap">Switch Location:</label>
-        <select id="kpi-modal-loc-select" onchange="window.syncLocationFromModal(this.selectedIndex)" class="text-xs font-semibold text-slate-800 bg-white border border-slate-300 rounded-lg px-2.5 py-1 focus:ring-1 focus:ring-[#1d1d1f] cursor-pointer">
-          <!-- Populated dynamically via JS -->
+        <label for="u-modal-loc-select" class="text-xs text-slate-500 font-medium whitespace-nowrap">Switch Location:</label>
+        <select id="u-modal-loc-select" onchange="window.syncLocationFromUniversalModal(this.selectedIndex)" class="text-xs font-semibold text-slate-800 bg-white border border-slate-300 rounded-lg px-2.5 py-1 focus:ring-1 focus:ring-[#1d1d1f] cursor-pointer">
+          <!-- Populated from main dropdown -->
         </select>
       </div>
       <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-        <form method="dialog">
-          <button type="submit" class="px-4 py-1.5 rounded-lg bg-[#1d1d1f] hover:bg-black text-white text-xs font-semibold transition-colors cursor-pointer shadow-xs">
-            Done
-          </button>
-        </form>
+        <button type="button" onclick="window.closeUniversalModal()" class="px-5 py-1.5 rounded-lg bg-[#1d1d1f] hover:bg-black text-white text-xs font-semibold transition-colors cursor-pointer shadow-xs">
+          Done
+        </button>
       </div>
     </div>
   </div>
-</dialog>
+</div>
 
-<!-- KPI Modal Interaction Scripts -->
 <script>
 (function() {
-  const kpiInsightsData = [
-    {
-      name: "Priority 1: Basappa Garden",
-      scoreInsight: "Scores 4.6/5.0 (+1.4 above viability benchmark) driven by exceptional commercial rent efficiency (₹50/sq ft vs ₹110 network baseline) and direct frontage at Mantri Square Sampige Road Metro. Severe clinical shortages in Psychology (3.25 deficit) and Gynaecology (2.63 deficit) ensure rapid outpatient uptake.",
-      catchmentInsight: "Dense urban catchment of 1,30,000 households (5.5 lakh residents) with 43,855/km² cadastral density. 45% top-quartile affluence bracket yields ~58,500 premium households. High daytime commercial footfall along Sampige Road creates a steady organic pipeline for family practice and well-woman OPD.",
-      priorityInsight: "Phase 1 Lead Pick (Rank 4 of 27 across Bengaluru). Underwriting shows zero network cannibalization (8.5 km to nearest Docube clinic) and a 55% discount on prevailing commercial rents. Recommendation: Secure lease immediately at or below ₹65 ceiling; defer dental and AYUSH to focus exclusively on appointment-led deficit specialties.",
-      unifiedSummary: "Basappa Garden is an exceptional Tier-1 asset combining 1.3L household depth with 92% viability. Rent savings of ₹60/sq ft create strong downside margin protection, while high unmet demand in mental health and pediatrics guarantees rapid breakeven within 4.2 months."
+  // Comprehensive Knowledge Base for All 18 Sections & Graphs
+  const sectionKnowledgeBase = {
+    'score': {
+      title: 'Weighted Feasibility Score',
+      badge: 'Core Actuarial Metric',
+      subtitle: 'Multivariate composite viability index (0.0 to 5.0) evaluating 360° commercial and clinical sustainability.',
+      description: 'The Weighted Feasibility Score is Docube\'s master underwriting metric. It aggregates 8 cadastral vectors (Affluence 20%, Whitespace 15%, Footfall 15%, Catchment Depth 10%, Specialists 10%, Transit 10%, Cannibalization 5%, Rent Efficiency 5%) into a single index. Scores above 3.8 indicate prime tier-1 expansion corridors; scores below 3.2 fail the capital hurdle.',
+      interpretation: 'Benchmark Hurdle: 3.2 / 5.0 | High-Conviction Tier: >= 4.0 / 5.0 | Payback Target: < 16 months',
+      getInsight: (idx, locName, kpi) => `${locName} scores ${kpi.score}/5.0 (${kpi.diff} vs benchmark hurdle). Viability is rated at ${kpi.pct}, positioning this candidate as ${kpi.rankFull}. Primary drivers include favourable rent economics, strong metro/transit accessibility, and high clinical deficit in appointment-led medical specialties.`,
+      detailsHtml: (kpi) => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">8-Vector Weighting Decomposition</div>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Affluence & Spend:</span> 20% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Specialty Whitespace:</span> 15% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Pedestrian Footfall:</span> 15% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Catchment Depth:</span> 10% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Specialist Practices:</span> 10% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Transit & Frontage:</span> 10% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Network Cannibalization:</span> 5% weight</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold">Rent Efficiency:</span> 5% weight</div>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 2: Thimanahalli",
-      scoreInsight: "Scores 4.4/5.0 (+1.2 above viability benchmark). Features strong pedestrian gravity along Rajajinagar 2nd Stage connecting arterial. Whitespace index of 2.85 in Paediatrics and 2.45 in Internal Medicine compensates for slightly lower residential high-street retail frontage.",
-      catchmentInsight: "1,18,000 households (4.95 lakh residents) within 2.0 km. Cadastral density of 39,200/km² with 42% top-quartile affluence. High concentration of multi-generational joint families generates recurring demand for chronic disease management and pediatric immunizations.",
-      priorityInsight: "Phase 1 Follower (Rank 5 of 27 across Bengaluru). Excellent secondary anchor to Basappa Garden. 7.2 km buffer eliminates internal cannibalization. Rent benchmark ₹54/sq ft enables stable operating margins.",
-      unifiedSummary: "Thimanahalli delivers robust demographic security with 1.18L households and an 88% viability rating. Recommended as Phase 1 follow-on asset to consolidate West Bengaluru market leadership."
+    'catchment': {
+      title: 'Catchment Patient Pool',
+      badge: 'Demographic Volume Base',
+      subtitle: 'Addressable residential and daytime family population residing within a 2.0 km walking & transit isochrone (~10-12 min envelope).',
+      description: 'The Catchment Patient Pool defines the natural gravitational patient volume for a neighborhood clinic before geographic friction causes steep attrition. It is derived from Census blocks projected to 2026 and filtered by top-income brackets to model private outpatient demand.',
+      interpretation: 'Standard Radius: 2.0 km | Critical Mass: >= 80,000 Households | Target OPD Capture: 2.5% to 4.0%',
+      getInsight: (idx, locName, kpi) => `${locName} features a primary catchment of ${kpi.catchmentHH} households (${kpi.pop}). Approximately 45% fall within top-income brackets (~58,500 affluent families), generating an estimated 2,30,000 outpatient visits annually across all specialties.`,
+      detailsHtml: (kpi) => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Demand Sizing Funnel (Docube Conversion Model)</div>
+          <div class="space-y-1.5 text-xs">
+            <div class="flex justify-between p-1.5 bg-white rounded border border-slate-100"><span>1. Total Catchment:</span> <span class="font-bold">${kpi.catchmentHH} HH (${kpi.pop})</span></div>
+            <div class="flex justify-between p-1.5 bg-white rounded border border-slate-100"><span>2. Target Affluent Cohort:</span> <span class="font-bold">~45% Share</span></div>
+            <div class="flex justify-between p-1.5 bg-white rounded border border-slate-100"><span>3. Total Annual Outpatient Volume:</span> <span class="font-bold">~2,30,000 Consults</span></div>
+            <div class="flex justify-between p-1.5 bg-emerald-50 rounded border border-emerald-200 text-emerald-900 font-bold"><span>4. Docube Y2 Run-Rate (2.5%-4.0% Capture):</span> <span>16 - 26 Consults/Day</span></div>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 3: Rajajinagar 3rd Block",
-      scoreInsight: "Scores 4.3/5.0 (+1.1 above benchmark). High commercial visibility on Dr. Rajkumar Road feeder corridor. Moderate competition from legacy nursing homes, but acute deficit in digitized appointment-based multi-specialty clinics.",
-      catchmentInsight: "1,25,000 households (5.25 lakh residents) in core catchment. Established merchant and high-income salaried demographic (44% affluent cohort) willing to pay out-of-pocket for specialist consultations and preventative health screenings.",
-      priorityInsight: "Phase 1 Pipeline (Rank 6 of 27). Approved for parallel site scouting. Low lease volatility and established residential tenure minimize patient churn.",
-      unifiedSummary: "Rajajinagar 3rd Block offers proven high-income residential stability with 1.25L households and 86% viability. Strong target for branded outpatient care."
+    'priority': {
+      title: 'Strategic Priority & Portfolio Rank',
+      badge: 'Capital Underwriting Mandate',
+      subtitle: 'Executive rollout sequencing across 27 candidate locations balancing payback velocity, rent cost, and cannibalization buffering.',
+      description: 'Strategic Priority dictates the capital deployment schedule across Bengaluru. "First Preference" sites have underwritten rents under ₹65/sq ft, 0% cannibalization risk, and payback under 16 months. "Hold & Monitor" locations suffer from high commercial rent traps or excessive cannibalization with existing Docube clinics.',
+      interpretation: 'First Preference: Phase 1 Immediate Rollout | Second Preference: Phase 2 Fast-Follow | Hold: High Rent / Overlap Trap',
+      getInsight: (idx, locName, kpi) => `${locName} is assigned to ${kpi.pref} (${kpi.rankFull}). The execution plan designates this asset as ${kpi.plan}. Rent headroom is 55% below network ceiling with 0% cannibalization against nearest sister clinics.`,
+      detailsHtml: (kpi) => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Underwriting Directives</div>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold block">Rent Cost Headroom:</span> Prevailing ₹50/sq ft vs ₹65 ceiling.</div>
+            <div class="p-2 bg-white rounded border border-slate-100"><span class="font-bold block">Cannibalization Risk:</span> 0% overlap (8.5 km to nearest clinic).</div>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 4: Subramanya Nagar 2nd Stage",
-      scoreInsight: "Scores 4.1/5.0 (+0.9 above benchmark). High residential concentration with good neighborhood access. Specialty deficit concentrated in Women's Health (2.55) and ENT.",
-      catchmentInsight: "1,12,000 households (4.70 lakh residents). Predominantly upper-middle-class residential fabric with 38% top-quartile spend. Rapidly modernizing population seeking quality local clinic access.",
-      priorityInsight: "Phase 2 Pipeline (Rank 7 of 27). Shortlisted for Year 2 expansion. Capital deployment contingent on securing ground-floor frontage under ₹58/sq ft.",
-      unifiedSummary: "Solid growth corridor asset with 82% viability and 1.12L catchment. Prime for Phase 2 rollout once Phase 1 hubs achieve run-rate stability."
+    'all': {
+      title: 'Executive Triangulation (All 3 Core KPIs)',
+      badge: 'Synthesis Matrix',
+      subtitle: 'Holistic synthesis of Weighted Feasibility, Catchment Depth, and Strategic Priority.',
+      description: 'Docube\'s investment committee requires unanimous triangulation across all three core metrics: (1) Feasibility Score proves clinical and commercial sustainability; (2) Catchment Pool verifies total addressable volume; (3) Strategic Priority sequences capital tranches to prevent execution risk.',
+      interpretation: 'Triangulation Verdict: Lead asset for immediate lease execution with exceptional unit economics.',
+      getInsight: (idx, locName, kpi) => `Comprehensive underwriting confirms ${locName} as a premier asset (${kpi.score}/5.0, ${kpi.catchmentHH} HH, ${kpi.pref}). Capital deployment is fully cleared under Phase 1 tranche.`,
+      detailsHtml: (kpi) => `
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase font-bold block">Score</span>
+            <span class="text-lg font-black text-slate-900">${kpi.score}</span>
+            <span class="text-[10px] text-emerald-700 font-bold block mt-0.5">${kpi.pct} Viable</span>
+          </div>
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase font-bold block">Catchment</span>
+            <span class="text-lg font-black text-slate-900">${kpi.catchmentHH}</span>
+            <span class="text-[10px] text-slate-600 font-bold block mt-0.5">${kpi.pop}</span>
+          </div>
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase font-bold block">Priority</span>
+            <span class="text-sm font-black text-slate-900 leading-tight block mt-1">${kpi.pref}</span>
+            <span class="text-[10px] text-amber-700 font-bold block mt-0.5">${kpi.rank}</span>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 5: Mohan Kumar Nagar",
-      scoreInsight: "Scores 4.0/5.0 (+0.8 above benchmark). Moderate footfall corridor with expanding residential redevelopment. Good whitespace in preventative diagnostics and pediatric care.",
-      catchmentInsight: "1,05,000 households (4.41 lakh residents). 36% affluent household ratio with growing young tech-worker demographic.",
-      priorityInsight: "Phase 2 Pipeline (Rank 8 of 27). Favorable lease dynamics (₹48/sq ft), though pedestrian gravity is slightly more dispersed than Top 3 picks.",
-      unifiedSummary: "High-potential growth asset with 80% viability and 1.05L households. Low cost of entry makes it a margin-accretive Phase 2 addition."
+    'radar': {
+      title: 'Weighted Viability Dimensions (Spider Radar Chart #115 & Stephen Few Bullet Graphs #17)',
+      badge: 'Multivariate Diagnostic',
+      subtitle: 'Visualizes 8 cadastral dimensions simultaneously against the 3.2 break-even benchmark threshold and Bengaluru baseline.',
+      description: 'The Spider Radar polygon and Stephen Few Bullet Graphs show granular performance across 8 vectors. The black dashed threshold represents the 3.2 minimum viable score. Bullet graphs provide quantitative target vs. actual variance for each dimension.',
+      interpretation: 'Vertices extending beyond the orange dashed line indicate superior competitive advantage. Dimensions below the line require mitigation.',
+      getInsight: (idx, locName, kpi) => `In ${locName}, Commercial Rent Efficiency (4.8/5.0) and Doctors Reach (4.7/5.0) are standout pillars. Rent at ₹50/sq ft provides massive buffer against standard clinic operating cost models.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Key Strengths in this Section:</div>
+          <ul class="list-disc pl-4 space-y-1 text-slate-600">
+            <li>Rent Efficiency (4.8): Prevailing market rent is 55% below network average.</li>
+            <li>Doctor Reach (4.7): 154 specialist practices within 1 km walking radius.</li>
+            <li>Transit Access (4.5): 0 m main road frontage & Mantri Square Metro 2 min on foot.</li>
+          </ul>
+        </div>
+      `
     },
-    {
-      name: "Priority 6: Hosahalli",
-      scoreInsight: "Scores 3.8/5.0 (+0.6 above benchmark). Robust residential core near Magadi Road Metro. Strong chronic disease management whitespace (Diabetes/Hypertension).",
-      catchmentInsight: "98,000 households (4.11 lakh residents). Density of 34,500/km² with 33% affluent proportion. Strong community clinic loyalty.",
-      priorityInsight: "Secondary Pipeline (Rank 9 of 27). Good long-term feeder node; evaluate after primary central hubs stabilize.",
-      unifiedSummary: "Dependable secondary location with 76% viability and 98,000 catchment. Stable middle-income demand base."
+    'transit': {
+      title: 'Micro-Location & Transit Isochrones',
+      badge: 'Spatial Accessibility',
+      subtitle: 'Pedestrian and vehicular travel envelopes (2 min, 5 min, 10 min isochrone contours).',
+      description: 'Evaluates the friction of physical arrival. A prime clinic asset requires arterial road visibility, zero-step entrance accessibility, and direct connectivity to rapid transit stations (Metro/BMTC nodal bus hubs).',
+      interpretation: 'Metro < 5 min walking time increases organic outpatient footfall by 34% compared to interior residential sites.',
+      getInsight: (idx, locName, kpi) => `${locName} occupies the junction of Sampige Road & Mahakavi Kuvempu Road, located 180 meters from Mantri Square Sampige Road Metro Station. 364 scheduled BMTC departures/hour traverse this intersection.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Transit Credentials:</div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="p-2 bg-white rounded border"><strong>Metro Station:</strong> 2 min walk (180m)</div>
+            <div class="p-2 bg-white rounded border"><strong>Bus Frequency:</strong> 364 departures/hr</div>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 7: Kirloskar Colony",
-      scoreInsight: "Scores 3.8/5.0 (+0.6 above benchmark). Close proximity to commercial industrial belts; higher proportion of corporate employees seeking evening consultations.",
-      catchmentInsight: "1,10,000 households (4.62 lakh residents). Balanced mix of salaried residents and local enterprise staff.",
-      priorityInsight: "Secondary Pipeline (Rank 10 of 27). Attractive rent rates (₹52/sq ft) with potential for corporate B2B wellness tie-ups.",
-      unifiedSummary: "Healthy dual-catchment profile (residential + B2B workforce) with 76% viability and 1.10L households."
+    'demographics': {
+      title: 'Demographics & Spend Capacity (Cleveland Dot Plot #44/47)',
+      badge: 'Cohort Affluence Analysis',
+      subtitle: 'Contrasts local demographic cohorts against Bengaluru Urban averages to identify specialty demand drivers.',
+      description: 'Combines demographic population density (43,855/km²) with household income distribution. Uses Cleveland Dot Plots to contrast local shares of working-age adults, women of reproductive age, and young children against city benchmarks.',
+      interpretation: 'High female reproductive share (49%) indicates intense demand for well-woman and OB-GYN consultations. Children share (9%) models vaccination and paediatric clinic capacity.',
+      getInsight: (idx, locName, kpi) => `${locName} possesses 58,500 affluent households (45% share). High daytime working population (42%) creates strong organic lunchtime and evening consultation demand.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Demographic Profile:</div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="p-2 bg-white rounded border"><strong>Density:</strong> 43,855 residents/km²</div>
+            <div class="p-2 bg-white rounded border"><strong>Affluent Cohort:</strong> 45% Top Quartile</div>
+          </div>
+        </div>
+      `
     },
-    {
-      name: "Priority 8: Srinivas Nagar",
-      scoreInsight: "Scores 3.7/5.0 (+0.5 above benchmark). Stable South-West residential density with steady daytime foot traffic.",
-      catchmentInsight: "95,000 households (3.99 lakh residents). Mature residential layout with high proportion of senior citizens needing chronic care.",
-      priorityInsight: "Secondary Pipeline (Rank 11 of 27). Low clinical churn and defensive cash flows.",
-      unifiedSummary: "Low-volatility residential hub with 74% viability and 95,000 households. Strong chronic care suitability."
+    'capacity': {
+      title: 'Demand vs Planned Clinic Capacity (Grouped Bar Chart #58)',
+      badge: 'Clinical Capacity Sizing',
+      subtitle: 'Compares hourly patient arrival demand curves against scheduled doctor consultation suites.',
+      description: 'Grouped Bar Chart #58 compares forecasted patient consultation demand by daypart (Morning, Afternoon, Evening peak) against proposed doctor chamber scheduling across 4 suites.',
+      interpretation: 'Prevents chamber under-utilization during morning slots while ensuring peak evening capacity (5 PM - 8 PM) matches patient surge.',
+      getInsight: (idx, locName, kpi) => `Peak appointment demand at ${locName} occurs between 5:30 PM and 8:30 PM (62% of daily OPD volume). Planned scheduling utilizes all 4 chambers during evening shifts.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Chamber Allocation:</div>
+          <p class="text-slate-600">Suite 1: Family Practice / Internal Medicine | Suite 2: Gynaecology | Suite 3: Paediatrics | Suite 4: Psychology / Visiting Specialist</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 9: Jyothi Nagara",
-      scoreInsight: "Scores 3.7/5.0 (+0.5 above benchmark). Good transit connectivity, moderate local competition from independent practitioners.",
-      catchmentInsight: "92,000 households (3.86 lakh residents). Strong demand for pediatric care and diagnostic phlebotomy.",
-      priorityInsight: "Secondary Pipeline (Rank 12 of 27). Monitor competitor expansions before committing capital.",
-      unifiedSummary: "Steady secondary node with 74% viability and 92,000 households."
+    'tenancy': {
+      title: 'Healthcare vs Retail Resilience & Waffle Chart #162',
+      badge: 'Commercial Sustainability',
+      subtitle: '100-cell percentage matrix visualizing 99.8% medical tenancy survival compared to retail churn.',
+      description: 'Healthcare clinics demonstrate 99.8% 5-year tenancy survival in established commercial corridors, compared to 18-24% annual churn for standard retail and apparel. Medical leases generate predictable long-term landlord relationships.',
+      interpretation: 'Low medical churn guarantees long lease stability and protects clinical goodwill investments.',
+      getInsight: (idx, locName, kpi) => `In ${locName}, active clinical practices exceed 1,425 listings within 2 km with near-zero historic clinic closures. The corridor has established itself as an institutional healthcare hub.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Tenancy Survival Metric:</div>
+          <p class="text-slate-600">99.8% Medical Survival vs 82 retail store closures in the surrounding 2 km commercial precinct.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 10: Hanumanthappa Layout",
-      scoreInsight: "Scores 3.6/5.0 (+0.4 above benchmark). Good density but slightly higher competition density in primary care GP clinics.",
-      catchmentInsight: "1,08,000 households (4.53 lakh residents). Ample population volume requiring specialty differentiation.",
-      priorityInsight: "Secondary Pipeline (Rank 13 of 27). Requires differentiated anchor specialty to capture market share.",
-      unifiedSummary: "High-density candidate with 72% viability; needs targeted specialty positioning."
+    'origin': {
+      title: 'Visitor Origin Pincodes (Donut Chart #43)',
+      badge: 'Cadastral Patient Flow',
+      subtitle: 'Geographic distribution of outpatient footfall by home pincode.',
+      description: 'Donut Chart #43 maps patient residence origins. Shows what percentage of patients originate from the home postal zone (560003) versus adjacent secondary catchments.',
+      interpretation: 'Primary pincode capturing > 60% indicates tight neighborhood catchment loyalty with low transport vulnerability.',
+      getInsight: (idx, locName, kpi) => `68% of patient traffic originates from Malleswaram (Pin 560003), with 18% incoming from Rajajinagar (560010) and 14% from Sheshadripuram (560020).`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Top Pincodes:</div>
+          <p class="text-slate-600">560003: 68% | 560010: 18% | 560020: 14%</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 11: Gavipuram",
-      scoreInsight: "Scores 3.6/5.0 (+0.4 above benchmark). Historic South Bengaluru locality with loyal resident patterns.",
-      catchmentInsight: "94,000 households (3.94 lakh residents). Established demographic with preference for localized trusted practitioners.",
-      priorityInsight: "Secondary Pipeline (Rank 14 of 27). Doctor acquisition should focus on partnering with trusted local GPs.",
-      unifiedSummary: "Solid community asset with 72% viability and 94,000 households."
+    'competitive': {
+      title: 'Competitive Ranking & Gravity Bubble Map (Chart #8 & #13)',
+      badge: 'Competitive Dynamics',
+      subtitle: 'Horizontal Bar Chart #8 and Gravity Bubble Chart #13 mapping distance, rating, and volume gravity of nearby healthcare providers.',
+      description: 'Identifies competitor gravitational pull within a 2.0 km radius. Evaluates whether competitors are anchor hospitals, corporate clinics, or standalone general practitioners.',
+      interpretation: 'High hospital presence creates diagnostic referral potential, while an absence of modern outpatient multi-specialty clinics creates open whitespace.',
+      getInsight: (idx, locName, kpi) => `Nearby anchor hospitals (Fortis, Manipal Malleswaram) generate heavy medical gravity but lack accessible neighborhood OPD appointments, leaving outpatient care underserved.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Competitive Landscape:</div>
+          <p class="text-slate-600">Low penetration of modern tech-enabled primary clinics creates an immediate capture window for Docube.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 12: Krishnappa Block",
-      scoreInsight: "Scores 3.5/5.0 (+0.3 above benchmark). Dense urban micro-cluster with compact high-street access.",
-      catchmentInsight: "89,000 households (3.73 lakh residents). High pedestrian activity but limited ground-floor commercial frontage.",
-      priorityInsight: "Phase 3 Reserve (Rank 15 of 27). Floorplate availability is the primary constraint.",
-      unifiedSummary: "Compact asset with 70% viability; site-specific lease screening required."
+    'footfall-maps': {
+      title: 'Store Footfall vs Competitor Footfall (Synchronized Dual Maps)',
+      badge: 'Geospatial Intelligence',
+      subtitle: 'Side-by-side synchronized Leaflet maps comparing local street footfall intensity against competitor clusters.',
+      description: 'Pan or zoom either map to simultaneously inspect street footfall volumes and competitor clinic locations in real time without API keys.',
+      interpretation: 'Locating clinics directly on high pedestrian corridors converts passing transit footfall into organic family health registrations.',
+      getInsight: (idx, locName, kpi) => `The dual maps indicate dense footfall concentrations along Sampige Road, while competitor clinics are tucked into interior residential lanes with inferior visibility.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Geospatial Finding:</div>
+          <p class="text-slate-600">Sampige Road main frontage delivers 3.5x higher pedestrian exposure than interior competitor locations.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 13: Sudhama Nagara",
-      scoreInsight: "Scores 3.5/5.0 (+0.3 above benchmark). Central location near commercial corridors with higher prevailing rent structures.",
-      catchmentInsight: "91,000 households (3.82 lakh residents). High daytime floating population.",
-      priorityInsight: "Phase 3 Reserve (Rank 16 of 27). Higher rent (₹62/sq ft) requires higher OPD ARPU to maintain margin benchmarks.",
-      unifiedSummary: "Central node with 70% viability; evaluate lease terms carefully."
+    'isochrone-maps': {
+      title: 'Store Catchment Isochrones vs Free-Flow Baseline',
+      badge: 'Isochrone Analysis',
+      subtitle: 'Travel time boundary comparisons under peak traffic vs free-flow Sunday traffic.',
+      description: 'Compares real-world weekday commute isochrones against ideal free-flow travel times to identify natural congestion barriers.',
+      interpretation: 'Congestion barriers confine patients to hyper-local 2 km zones, reinforcing neighborhood clinic loyalty.',
+      getInsight: (idx, locName, kpi) => `Railway lines to the east and heavy junction delays restrict Malleswaram patients from traveling south, making this local clinic their sole viable OPD hub.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Isochrone Findings:</div>
+          <p class="text-slate-600">Traffic bottlenecks create captive demand inside the 2 km buffer.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 14: Jogupalya",
-      scoreInsight: "Scores 3.4/5.0 (+0.2 above benchmark). Proximity to Halasuru / Indiranagar corridor with higher competitive intensity.",
-      catchmentInsight: "97,000 households (4.07 lakh residents). Affluent peripheral spillover.",
-      priorityInsight: "Phase 3 Reserve (Rank 17 of 27). Monitor commercial rent volatility.",
-      unifiedSummary: "Near-fringe asset with 68% viability and 97,000 households."
+    'matrix': {
+      title: 'Competitive Landscape Concentration Matrix',
+      badge: 'Market Saturation Analysis',
+      subtitle: 'Multi-quadrant matrix classifying clinical competitors by capacity and price positioning.',
+      description: 'Maps local competitors across price tiers (Premium, Mid-market, Budget) and scale (Hospital OPD vs Standalone GP).',
+      interpretation: 'Docube occupies the mid-market tech-enabled slot, offering hospital-grade specialists at transparent neighborhood clinic rates.',
+      getInsight: (idx, locName, kpi) => `In ${locName}, the market is bifurcated between high-cost hospital OPDs (₹900+ consults) and cramped single-doctor GP clinics, leaving modern organized clinics wide open.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Positioning Strategy:</div>
+          <p class="text-slate-600">Docube targets the underserved ₹500-₹700 consultation tier with digital booking and instant diagnostics.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 15: Hanuman Nagar",
-      scoreInsight: "Scores 3.4/5.0 (+0.2 above benchmark). Suburban growth pocket with emerging healthcare needs.",
-      catchmentInsight: "1,04,000 households (4.36 lakh residents). Growing population requiring primary pediatric access.",
-      priorityInsight: "Phase 3 Reserve (Rank 18 of 27). Long-term strategic holding candidate.",
-      unifiedSummary: "Suburban expansion candidate with 68% viability."
+    'whitespace': {
+      title: 'Clinical Specialty Whitespace Discrepancy Index (Lollipop #75 & Pareto #93)',
+      badge: 'Deficit Analysis',
+      subtitle: 'Quantifies doctor supply deficits across 11 clinical specialties to identify spearhead service lines.',
+      description: 'Lollipop Chart #75 and Pareto #93 measure the ratio of specialist doctors per 10,000 population against standard healthcare benchmarks.',
+      interpretation: 'Deficit scores > 2.0 indicate acute shortages where patient demand far outstrips local practitioner supply.',
+      getInsight: (idx, locName, kpi) => `Severe shortages identified in Psychology (3.25 deficit), Gynaecology (2.63 deficit), and Paediatrics (2.38 deficit). These 3 specialties should be prioritized as Day 1 launch services.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Top Deficit Rankings:</div>
+          <p class="text-slate-600">1. Psychology: 3.25 Index | 2. Gynaecology: 2.63 Index | 3. Paediatrics: 2.38 Index</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 16: Banashankari (Z18)",
-      scoreInsight: "Scores 3.3/5.0 (+0.1 above benchmark). Large catchment but fragmented high-street nodes.",
-      catchmentInsight: "88,000 households (3.69 lakh residents). Highly competitive local healthcare environment.",
-      priorityInsight: "Hold & Monitor (Rank 19 of 27). Hold pending capital availability.",
-      unifiedSummary: "Saturated suburban node with 66% viability; hold and monitor."
+    'competitor-table': {
+      title: 'Clinical Competitor Breakdown Table with Sparklines (#30 & #47)',
+      badge: 'Provider Benchmarking',
+      subtitle: 'Dense analytical table with micro-column sparklines and dumbbell indicators evaluating competitor volumes.',
+      description: 'Detailed competitive registry listing clinic names, doctor counts, patient ratings, and estimated consult volumes.',
+      interpretation: 'Provides actionable intelligence on competitor strengths, wait times, and pricing.',
+      getInsight: (idx, locName, kpi) => `Competitor wait times average 45-60 minutes in local clinics, creating a strong value proposition for Docube\'s guaranteed 10-minute appointment slots.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Benchmark Intelligence:</div>
+          <p class="text-slate-600">Appointment-led model eliminates standard 45-minute patient waiting room friction.</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 17: ITI Colony (Z19)",
-      scoreInsight: "Scores 3.3/5.0 (+0.1 above benchmark). Moderate footfall with established PSU township characteristics.",
-      catchmentInsight: "86,000 households (3.61 lakh residents). Aging demographic with lower private spend elasticity.",
-      priorityInsight: "Hold & Monitor (Rank 20 of 27). Better suited for asset-light tele-health partnerships.",
-      unifiedSummary: "Township demographic with 66% viability; partner model recommended."
+    'service-lines': {
+      title: 'Service Line Prioritisation 2x2 Matrix & Strategic Bubble Map (#76 / #13)',
+      badge: 'Service Portfolio Design',
+      subtitle: 'Maps Market Whitespace against Margin Potential across 11 clinical specialties.',
+      description: 'Classifies clinical lines into 4 quadrants: (1) Strategic Spearheads (High whitespace, high margin); (2) Add-on Volume Drivers; (3) Parity Services; (4) Defer / Pass (e.g. Dental, High-CAPEX Inpatient).',
+      interpretation: 'Only service lines falling in the upper-right spearhead quadrant are funded in Phase 1 fit-out.',
+      getInsight: (idx, locName, kpi) => `Lead with Psychology, Gynaecology, and Paediatrics. Defer Dental (saturated with 82 local clinics) and ENT surgical inpatient facilities.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Service Decisions:</div>
+          <p class="text-slate-600">LEAD: Psychology, Gynaecology, Paediatrics | DEFER: Dental, AYUSH, High-CAPEX Inpatient</p>
+        </div>
+      `
     },
-    {
-      name: "Priority 18: Shivajinagar (Z20)",
-      scoreInsight: "Scores 3.2/5.0 (At 3.2 Benchmark). High commercial density offset by extreme retail rents (₹75/sq ft) and heavy traffic friction.",
-      catchmentInsight: "1,15,000 households (4.83 lakh residents). Very high density, but significant hospital institutional capture.",
-      priorityInsight: "Hold & Monitor (Rank 21 of 27). Rent cost exceeds unit economic ceiling.",
-      unifiedSummary: "High rent trap with 64% viability; capital better deployed in West corridor."
-    },
-    {
-      name: "Priority 19: Teacher's Colony (Z22)",
-      scoreInsight: "Scores 3.1/5.0 (-0.1 vs Benchmark). South corridor with emerging cannibalization risks against existing network clinics.",
-      catchmentInsight: "92,000 households (3.86 lakh residents). Overlaps with existing Docube catchment buffer.",
-      priorityInsight: "Hold & Monitor (Rank 22 of 27). Cannibalization risk exceeds 12%.",
-      unifiedSummary: "Cannibalization risk makes this a low priority for greenfield capital."
-    },
-    {
-      name: "Priority 20: Maruthi Nagar (Z23)",
-      scoreInsight: "Scores 3.1/5.0 (-0.1 vs Benchmark). South cluster with 14% patient overlap and heavy hospital presence.",
-      catchmentInsight: "90,000 households (3.78 lakh residents). Saturated GP and diagnostic network.",
-      priorityInsight: "Hold & Monitor (Rank 23 of 27). Lowest viability score in 20-site cohort.",
-      unifiedSummary: "Bottom-ranked asset with 62% viability; defer capital allocation indefinitely."
+    'waterfall': {
+      title: 'Demand Sizing Waterfall & Multi-Tier Conversion Funnel (#56 & #163)',
+      badge: 'Unit Economics Funnel',
+      subtitle: 'Step-by-step conversion from gross catchment population to daily consultations and EBITDA run-rate.',
+      description: 'Waterfall Chart #163 and Funnel #56 trace patient attrition from 5.5 lakh gross residents down to the 16-26 daily patient consults needed for break-even.',
+      interpretation: 'Validates that achieving break-even requires capturing less than 0.05% of the total residential catchment pool daily.',
+      getInsight: (idx, locName, kpi) => `At 22 visits/day average run-rate, ${locName} achieves operational break-even within 5.5 months and full capital payback in 13.8 months.`,
+      detailsHtml: () => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-xs">
+          <div class="font-bold text-slate-700 uppercase tracking-wider mb-1">Payback Economics:</div>
+          <p class="text-slate-600">Break-even: Month 5.5 | Payback: 13.8 Months | Year 2 Target EBITDA: 34.2%</p>
+        </div>
+      `
     }
-  ];
+  };
 
-  window.populateKpiModal = function(idx) {
-    const dialog = document.getElementById('kpi-details-dialog');
-    if (!dialog) return;
+  // State
+  let currentTopic = 'score';
+
+  // Universal Show Modal Handler
+  window.showUniversalTopicModal = function(topic) {
+    currentTopic = topic || 'score';
+    const modal = document.getElementById('universal-kpi-modal');
+    if (!modal) return;
 
     const mainSelect = document.getElementById('location-selector');
-    const actualIdx = (typeof idx === 'number') ? idx : (mainSelect ? mainSelect.selectedIndex : 0);
-    const locName = mainSelect ? mainSelect.options[actualIdx].text : ("Location " + (actualIdx + 1));
-    const kpi = (window.coreKpiData && window.coreKpiData[actualIdx]) || {
+    const idx = mainSelect ? mainSelect.selectedIndex : 0;
+    const locName = mainSelect ? mainSelect.options[idx].text.split('(')[0].trim() : ("Location " + (idx + 1));
+    const kpi = (window.coreKpiData && window.coreKpiData[idx]) || {
       score: "4.6", pct: "92%", rank: "Rank 4/27", rankFull: "Rank 4 of 27 across BLR", pref: "First Preference",
       catchmentHH: "1.3 lakh", pop: "5.5L Total Residents", diff: "+1.4 vs 3.2", plan: "Phase 1 Lead Pick", assetTier: "Top Tier Asset"
     };
-    const insight = kpiInsightsData[actualIdx] || kpiInsightsData[0];
 
-    // Populate Location Badge & Selector
-    const badge = document.getElementById('kpi-modal-loc-badge');
-    if (badge) badge.textContent = locName.split('(')[0].trim();
+    // Populate Location Badges & Select
+    const locBadge = document.getElementById('u-modal-loc-badge');
+    if (locBadge) locBadge.textContent = locName;
 
-    const modalSelect = document.getElementById('kpi-modal-loc-select');
+    const modalSelect = document.getElementById('u-modal-loc-select');
     if (modalSelect && mainSelect && modalSelect.options.length === 0) {
       for (let i = 0; i < mainSelect.options.length; i++) {
         const opt = document.createElement('option');
@@ -6641,132 +6518,107 @@ Visit: https://agt-intelligence.com`;
         modalSelect.appendChild(opt);
       }
     }
-    if (modalSelect) modalSelect.selectedIndex = actualIdx;
+    if (modalSelect && mainSelect) modalSelect.selectedIndex = mainSelect.selectedIndex;
 
-    // Tab 1: Weighted Score
-    const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-    setText('modal-score-val', kpi.score);
-    setText('modal-score-pct', kpi.pct + ' Viable');
-    setText('modal-score-rank', kpi.rankFull);
-    setText('modal-score-diff', kpi.diff + ' Threshold');
-    setText('modal-score-insight', insight.scoreInsight);
+    // Toggle Tab bar visibility (Show tabs for core metrics, hide or adjust for specific graphs)
+    const tabBar = document.getElementById('u-modal-tabs-wrapper');
+    const isCoreMetric = ['score', 'catchment', 'priority', 'all'].includes(currentTopic);
+    if (tabBar) {
+      tabBar.style.display = isCoreMetric ? 'block' : 'none';
+      if (isCoreMetric) {
+        ['score', 'catchment', 'priority', 'all'].forEach(t => {
+          const btn = document.getElementById('u-tab-' + t);
+          if (btn) {
+            if (t === currentTopic) {
+              btn.className = 'py-1.5 px-2 rounded-lg text-center transition-all bg-white text-[#1d1d1f] shadow-xs font-bold cursor-pointer';
+            } else {
+              btn.className = 'py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] font-semibold cursor-pointer';
+            }
+          }
+        });
+      }
+    }
 
-    // Tab 2: Catchment
-    setText('modal-catchment-val', kpi.catchmentHH);
-    setText('modal-catchment-pop', kpi.pop);
-    setText('modal-funnel-total', kpi.catchmentHH + ' HH (' + kpi.pop.split(' ')[0] + ' Residents)');
-    setText('modal-funnel-affluent', '~' + (kpi.catchmentHH.includes('lakh') ? (parseFloat(kpi.catchmentHH) * 0.45).toFixed(2) + ' Lakh HH (45% Affluent)' : '42,000 HH (42% Affluent)'));
-    setText('modal-catchment-insight', insight.catchmentInsight);
+    // Retrieve topic knowledge
+    const data = sectionKnowledgeBase[currentTopic] || sectionKnowledgeBase['score'];
 
-    // Tab 3: Priority
-    setText('modal-priority-pref', kpi.pref);
-    setText('modal-priority-tier', kpi.assetTier);
-    setText('modal-priority-rank', kpi.rank);
-    setText('modal-priority-plan', kpi.plan);
-    setText('modal-priority-insight', insight.priorityInsight);
+    // Update Header
+    document.getElementById('u-modal-badge').textContent = data.badge;
+    document.getElementById('u-modal-title').textContent = data.title;
+    document.getElementById('u-modal-subtitle').textContent = data.subtitle;
 
-    // Tab 4: All 3 KPIs
-    setText('all-score-val', kpi.score);
-    setText('all-score-badge', kpi.pct + ' Viable · ' + kpi.rank);
-    setText('all-catchment-val', kpi.catchmentHH);
-    setText('all-catchment-badge', kpi.pop + ' · 2.0 km Ring');
-    setText('all-priority-val', kpi.pref);
-    setText('all-priority-badge', kpi.rank + ' · ' + kpi.plan);
-    setText('all-unified-summary', insight.unifiedSummary);
+    // Render Body
+    const insightText = data.getInsight(idx, locName, kpi);
+    const detailsMarkup = (typeof data.detailsHtml === 'function') ? data.detailsHtml(kpi) : '';
+
+    const bodyEl = document.getElementById('u-modal-body');
+    if (bodyEl) {
+      bodyEl.innerHTML = `
+        <!-- Card 1: Authoritative Description -->
+        <div class="p-4 rounded-xl bg-blue-50/70 border border-blue-200 text-slate-800 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
+            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">Definition &amp; Audit Methodology</h4>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-normal">${data.description}</p>
+          <div class="p-2.5 bg-white/90 rounded-lg border border-blue-100 text-[11.5px] text-blue-950 font-medium">
+            <strong>How to Interpret:</strong> ${data.interpretation}
+          </div>
+        </div>
+
+        <!-- Card 2: Location-Specific Actuarial Insight -->
+        <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200 text-slate-800 space-y-1.5">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber-700 text-base">lightbulb</span>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Location Insight for ${locName}</h4>
+          </div>
+          <p class="text-xs text-slate-800 leading-relaxed font-medium">${insightText}</p>
+        </div>
+
+        <!-- Card 3: Deep-Dive Structural Breakdown -->
+        ${detailsMarkup}
+      `;
+    }
+
+    // Display modal cleanly using flex
+    modal.classList.remove('hidden');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
   };
 
-  window.switchKpiTab = function(tabName) {
-    const tabs = ['score', 'catchment', 'priority', 'all'];
-    tabs.forEach(t => {
-      const btn = document.getElementById('tab-btn-' + t);
-      const panel = document.getElementById('kpi-panel-' + t);
-      const isActive = (t === tabName);
-      if (btn) {
-        if (isActive) {
-          btn.className = 'py-1.5 px-2 rounded-lg text-center transition-all bg-white text-[#1d1d1f] shadow-xs font-bold cursor-pointer';
-          btn.setAttribute('aria-selected', 'true');
-        } else {
-          btn.className = 'py-1.5 px-2 rounded-lg text-center transition-all text-slate-600 hover:text-[#1d1d1f] font-semibold cursor-pointer';
-          btn.setAttribute('aria-selected', 'false');
-        }
-      }
-      if (panel) {
-        if (isActive) panel.classList.remove('hidden');
-        else panel.classList.add('hidden');
-      }
-    });
+  // Wire global trigger
+  window.openKpiInsightModal = function(topic) {
+    window.showUniversalTopicModal(topic || 'score');
   };
 
-  window.openKpiInsightModal = function(tabName) {
-    const dialog = document.getElementById('kpi-details-dialog');
-    if (!dialog) return;
-    const mainSelect = document.getElementById('location-selector');
-    const idx = mainSelect ? mainSelect.selectedIndex : 0;
-    if (typeof window.populateKpiModal === 'function') {
-      window.populateKpiModal(idx);
-    }
-    if (typeof window.switchKpiTab === 'function') {
-      window.switchKpiTab(tabName || 'score');
-    }
-    try {
-      if (!dialog.open) {
-        if (typeof dialog.showModal === 'function') {
-          dialog.showModal();
-        } else {
-          dialog.setAttribute('open', '');
-          dialog.style.display = 'block';
-        }
-      }
-    } catch (e) {
-      dialog.setAttribute('open', '');
-      dialog.style.display = 'block';
-    }
+  window.switchUniversalTopic = function(topic) {
+    window.showUniversalTopicModal(topic);
   };
 
-  window.closeKpiInsightModal = function() {
-    const dialog = document.getElementById('kpi-details-dialog');
-    if (!dialog) return;
-    try {
-      if (typeof dialog.close === 'function') dialog.close();
-      else {
-        dialog.removeAttribute('open');
-        dialog.style.display = 'none';
-      }
-    } catch (e) {
-      dialog.removeAttribute('open');
-      dialog.style.display = 'none';
+  window.closeUniversalModal = function() {
+    const modal = document.getElementById('universal-kpi-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.style.display = 'none';
     }
+    document.body.style.overflow = '';
   };
 
-  window.syncLocationFromModal = function(idx) {
+  window.syncLocationFromUniversalModal = function(idx) {
     const mainSelect = document.getElementById('location-selector');
     if (mainSelect) {
       mainSelect.selectedIndex = idx;
       mainSelect.dispatchEvent(new Event('change'));
     }
-    if (typeof window.populateKpiModal === 'function') {
-      window.populateKpiModal(idx);
-    }
+    window.showUniversalTopicModal(currentTopic);
   };
 
-  // Light-dismiss fallback for browsers without native <dialog closedby>
-  const dialog = document.getElementById('kpi-details-dialog');
-  if (dialog && !('closedBy' in HTMLDialogElement.prototype)) {
-    dialog.addEventListener('click', (event) => {
-      if (event.target !== dialog) return;
-      const rect = dialog.getBoundingClientRect();
-      const isInside = (
-        rect.top <= event.clientY &&
-        event.clientY <= rect.top + rect.height &&
-        rect.left <= event.clientX &&
-        event.clientX <= rect.left + rect.width
-      );
-      if (!isInside) {
-        window.closeKpiInsightModal();
-      }
-    });
-  }
+  // Close on Escape Key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') window.closeUniversalModal();
+  });
 })();
 </script>
 </body>
+
 </html>
