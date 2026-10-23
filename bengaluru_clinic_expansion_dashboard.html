@@ -12,11 +12,36 @@
     stroke-dasharray: 6, 4 !important;
     fill: none !important;
   }
-  path.sunday-max-boundary {
-    stroke: #000000 !important;
-    stroke-width: 2.5px !important;
-    stroke-dasharray: 6, 4 !important;
+  
+  .leaflet-container {
+    background: #09090b !important;
   }
+  .leaflet-tile {
+    filter: brightness(0.96) contrast(1.12);
+  }
+  .leaflet-control-scale-line {
+    background: rgba(9, 9, 11, 0.85) !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+  }
+  path.sunday-max-boundary {
+    stroke: #22c55e !important;
+    stroke-width: 2.8px !important;
+    stroke-dasharray: 6, 4 !important;
+    fill: none !important;
+    filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.7)) !important;
+  }
+  .leaflet-tooltip {
+    background: rgba(15, 23, 42, 0.94) !important;
+    color: #f8fafc !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  }
+  .leaflet-tooltip-top:before { border-top-color: rgba(15, 23, 42, 0.94) !important; }
+  .leaflet-tooltip-bottom:before { border-bottom-color: rgba(15, 23, 42, 0.94) !important; }
+  .leaflet-tooltip-left:before { border-left-color: rgba(15, 23, 42, 0.94) !important; }
+  .leaflet-tooltip-right:before { border-right-color: rgba(15, 23, 42, 0.94) !important; }
 </style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
   darkMode: "class",
   theme: {
@@ -190,7 +215,7 @@
     stroke-dasharray: 6, 4 !important;
   }
 </style>
-</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-3 shrink-0"><a href="https://agt-intelligence.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"><img src="https://agt-intelligence.com/brand/agt-mark-ink.png" onerror="this.src='agt-mark-ink.png'" alt="AGT Intelligence Logo" class="h-9 w-auto object-contain shrink-0" /><div class="flex flex-col whitespace-nowrap"><div class="flex items-baseline gap-1.5 leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold text-[17px]">AGT</span><span class="font-headline-sm text-headline-sm text-slate-500 tracking-[0.12em] font-semibold text-[13px] uppercase">INTELLIGENCE</span></div><span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-wider mt-1 block font-medium">Healthcare Spatial Analytics</span></div></a><div class="h-6 w-px bg-surface-container-high hidden xl:block"></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low border border-[#d2d2d7]/50 text-on-surface-variant text-[11px] font-semibold whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Docube Clinical Report</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0" selected>Priority 1: Basappa Garden (First preference)</option><option value="1">Priority 2: Thimanahalli (Second preference)</option><option value="2">Priority 3: Rajajinagar 3rd Block (Next choice)</option><option value="3">Priority 4: Subramanya Nagar 2nd Stage (Shortlisted)</option><option value="4">Priority 5: Mohan Kumar Nagar (Shortlisted)</option><option value="5">Priority 6: Hosahalli (Other area)</option><option value="6">Priority 7: Kirloskar Colony (Other area)</option><option value="7">Priority 8: Srinivas Nagar (Other area)</option><option value="8">Priority 9: Jyothi Nagara (Other area)</option><option value="9">Priority 10: Hanumanthappa Layout (Other area)</option><option value="10">Priority 11: Gavipuram (Other area)</option><option value="11">Priority 12: Krishnappa Block (Other area)</option><option value="12">Priority 13: Sudhama Nagara (Other area)</option><option value="13">Priority 14: Jogupalya (Other area)</option><option value="14">Priority 15: Hanuman Nagar (Other area)</option><option value="15">Priority 16: Banashankari (Z18)</option><option value="16">Priority 17: ITI Colony (Z19)</option><option value="17">Priority 18: Shivajinagar (Z20)</option><option value="18">Priority 19: Teacher's Colony (Z22)</option><option value="19">Priority 20: Maruthi Nagar (Z23)</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span data-excel-key="html_0008">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">92% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span data-excel-key="html_0012">1.3 lakh</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span data-excel-key="html_0013">HH (5.5L Pop)</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary-container uppercase"><span data-excel-key="html_0014">First Preference (Rank 4/27)</span></span></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Report</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-3 shrink-0"><a href="https://agt-intelligence.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"><img src="https://agt-intelligence.com/brand/agt-mark-ink.png" onerror="this.src='agt-mark-ink.png'" alt="AGT Intelligence Logo" class="h-9 w-auto object-contain shrink-0" /><div class="flex flex-col whitespace-nowrap"><div class="flex items-baseline gap-1.5 leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold text-[17px]">AGT</span><span class="font-headline-sm text-headline-sm text-slate-500 tracking-[0.12em] font-semibold text-[13px] uppercase">INTELLIGENCE</span></div><span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-wider mt-1 block font-medium">Healthcare Spatial Analytics</span></div></a><div class="h-6 w-px bg-surface-container-high hidden xl:block"></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low border border-[#d2d2d7]/50 text-on-surface-variant text-[11px] font-semibold whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Docube Clinical Report</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0" selected>Priority 1: Basappa Garden (First preference)</option><option value="1">Priority 2: Thimanahalli (Second preference)</option><option value="2">Priority 3: Rajajinagar 3rd Block (Next choice)</option><option value="3">Priority 4: Subramanya Nagar 2nd Stage (Shortlisted)</option><option value="4">Priority 5: Mohan Kumar Nagar (Shortlisted)</option><option value="5">Priority 6: Hosahalli (Other area)</option><option value="6">Priority 7: Kirloskar Colony (Other area)</option><option value="7">Priority 8: Srinivas Nagar (Other area)</option><option value="8">Priority 9: Jyothi Nagara (Other area)</option><option value="9">Priority 10: Hanumanthappa Layout (Other area)</option><option value="10">Priority 11: Gavipuram (Other area)</option><option value="11">Priority 12: Krishnappa Block (Other area)</option><option value="12">Priority 13: Sudhama Nagara (Other area)</option><option value="13">Priority 14: Jogupalya (Other area)</option><option value="14">Priority 15: Hanuman Nagar (Other area)</option><option value="15">Priority 16: Banashankari (Z18)</option><option value="16">Priority 17: ITI Colony (Z19)</option><option value="17">Priority 18: Shivajinagar (Z20)</option><option value="18">Priority 19: Teacher's Colony (Z22)</option><option value="19">Priority 20: Maruthi Nagar (Z23)</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span data-excel-key="html_0008">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">92% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span data-excel-key="html_0012">1.3 lakh</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span data-excel-key="html_0013">HH (5.5L Pop)</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary-container uppercase"><span data-excel-key="html_0014">First Preference (Rank 4/27)</span></span></div></div><div class="flex items-center gap-space-md"><button onclick="window.shareReport()" class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Report</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
 <div class="w-full px-space-xl py-space-xl max-w-[1720px] mx-auto space-y-space-xl">
 <!-- Candidate Micro-Asset Header Card -->
 <div class="w-full bg-surface-container-lowest rounded-xl p-space-xl shadow-sm relative overflow-hidden">
@@ -1898,8 +1923,8 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"><span data-excel-key="html_0299">Real-time cadastral distribution mapped across 0.5km, 1.0km, and 2.0km isobar rings</span></p>
 </div>
 <div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
-<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-xs font-semibold" type="button"><span data-excel-key="html_0300">Quadrant View</span></button>
-<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button"><span data-excel-key="html_0301">Heatmap Mesh</span></button>
+<button id="radar-btn-quadrant" onclick="window.setRadarView('quadrant')" class="px-2.5 py-1 rounded bg-[#1d1d1f] text-white font-label-sm text-label-sm shadow-xs font-semibold transition-all" type="button"><span data-excel-key="html_0300">Quadrant View</span></button>
+<button id="radar-btn-heatmap" onclick="window.setRadarView('heatmap')" class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" type="button"><span data-excel-key="html_0301">Heatmap Mesh</span></button>
 </div>
 </div>
 <!-- Interactive Radar Graphic Container -->
@@ -2365,8 +2390,8 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <span><span data-excel-key="html_0439">Filter Status:</span></span>
 <span class="font-semibold text-on-surface"><span data-excel-key="html_0440">All Tiers</span></span>
 </div>
-<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
-<span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0441">filter_list</span></span>
+<button onclick="window.toggleTableSort()" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span id="whitespace-sort-icon" class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0441">filter_list</span></span>
 <span><span data-excel-key="html_0442">Sort by Whitespace Score</span></span>
 </button>
 </div>
@@ -2387,7 +2412,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <th class="py-3 px-space-md rounded-r-lg text-left"><span data-excel-key="html_0451">Market Saturation Status</span></th>
 </tr>
 </thead>
-<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<tbody id="specialty-table-body" class="divide-y-0 text-on-surface font-body-sm text-body-sm">
 <!-- Paediatrics (Lead Line Whitespace) -->
 <tr class="bg-tertiary-container/10 hover:bg-tertiary-container/15 transition-colors font-medium">
 <td class="py-3.5 px-space-md font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
@@ -2836,7 +2861,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 </div>
 <div class="flex items-center gap-space-sm shrink-0">
 <span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0580">Data Source: NPI + GeoMesh + Google Places Q1 2025</span></span>
-<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button"><span data-excel-key="html_0581">Export CSV Raw</span></button>
+<button onclick="window.exportToCsv()" class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors cursor-pointer" type="button"><span data-excel-key="html_0581">Export CSV Raw</span></button>
 </div>
 </div>
 </section>
@@ -2853,7 +2878,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 </div>
 </div>
 <div class="flex items-center gap-space-md w-full md:w-auto">
-<button class="w-full md:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-xs transition-colors" type="button"><span data-excel-key="html_0586">
+<button onclick="window.downloadGeoJSON()" class="w-full md:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-xs transition-colors cursor-pointer" type="button"><span data-excel-key="html_0586">
           Download Spatial GeoJSON
         </span></button>
 <a class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-space-xl py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-colors" data-path="clinical-strategy-and-financial-sizing" href="#">
@@ -2942,100 +2967,130 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
 <div class="flex flex-col xl:flex-row items-stretch gap-space-lg">
 <!-- Interactive Matrix Canvas (SVG Graphic) -->
-<div class="flex-1 min-w-[320px] bg-surface-container-low/40 rounded-xl p-space-md border border-outline-variant/30 flex flex-col justify-between">
-<div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
-<div class="flex items-center gap-2">
-<span class="font-label-md text-label-md text-on-surface font-bold"><span data-excel-key="html_0612">Strategic Portfolio Quadrant Map</span></span>
-<span class="text-on-surface-variant font-label-sm text-label-sm"><span data-excel-key="html_0613">(Bubble size = Projected Annual Patient Run-Rate Pool)</span></span>
+<div class="flex-1 min-w-[320px] bg-[#fbfbfd] rounded-xl p-space-md border border-slate-200/80 flex flex-col justify-between">
+<div class="flex items-center justify-between pb-3 border-b border-slate-200">
+<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+<span class="font-label-md text-label-md text-on-surface font-bold text-base"><span data-excel-key="html_0612">Strategic Portfolio Quadrant Map</span></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm text-xs"><span data-excel-key="html_0613">(Bubble size = Projected Annual Patient Run-Rate Pool)</span></span>
 </div>
-<div class="flex items-center gap-4 text-label-sm font-label-sm">
-<span class="flex items-center gap-1 text-tertiary font-semibold"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-container inline-block"></span><span data-excel-key="html_0614"> High Priority Clusters</span></span>
-<span class="flex items-center gap-1 text-secondary font-semibold"><span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span><span data-excel-key="html_0615"> Secondary Integrations</span></span>
-<span class="flex items-center gap-1 text-error font-semibold"><span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span><span data-excel-key="html_0616"> Red-Ocean Saturation</span></span>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-[#1d1d1f] font-bold text-xs"><span class="w-2.5 h-2.5 rounded-full bg-[#1d1d1f] inline-block shadow-xs"></span><span data-excel-key="html_0614"> High Priority Clusters</span></span>
+<span class="flex items-center gap-1.5 text-slate-600 font-semibold text-xs"><span class="w-2.5 h-2.5 rounded-full bg-slate-500 inline-block shadow-xs"></span><span data-excel-key="html_0615"> Secondary Integrations</span></span>
+<span class="flex items-center gap-1.5 text-rose-700 font-semibold text-xs"><span class="w-2.5 h-2.5 rounded-full bg-rose-600 inline-block shadow-xs"></span><span data-excel-key="html_0616"> Red-Ocean Saturation</span></span>
 </div>
 </div>
-<div class="relative w-full h-[320px] my-2">
-<svg class="w-full h-full overflow-visible" viewbox="0 0 760 320">
+
+<div class="relative w-full min-h-[460px] md:h-[480px] my-3">
+<svg id="quadrant-matrix-svg" class="w-full h-full" viewBox="0 0 920 460" preserveAspectRatio="xMidYMid meet">
 <!-- Quadrant Background Tints -->
-<rect fill="#86868b" fill-opacity="0.12" height="135" rx="8" width="360" x="380" y="20"></rect>
-<text class="text-[11px] font-bold fill-tertiary uppercase tracking-wider font-sans" data-excel-key="html_0617" text-anchor="end" x="730" y="38">Star Quadrant: High Whitespace / High Margin</text>
-<rect fill="#bde9ff" fill-opacity="0.15" height="135" rx="8" width="360" x="380" y="165"></rect>
-<text class="text-[11px] font-semibold fill-primary uppercase tracking-wider font-sans" data-excel-key="html_0618" text-anchor="end" x="730" y="290">Niche Driver: High Whitespace / Low Margin</text>
-<rect fill="#d5e0f8" fill-opacity="0.15" height="135" rx="8" width="350" x="20" y="20"></rect>
-<text class="text-[11px] font-semibold fill-secondary uppercase tracking-wider font-sans" data-excel-key="html_0619" x="30" y="38">Cash Cow: Low Whitespace / High Margin</text>
-<rect fill="#ffdad6" fill-opacity="0.22" height="135" rx="8" width="350" x="20" y="165"></rect>
-<text class="text-[11px] font-semibold fill-error uppercase tracking-wider font-sans" data-excel-key="html_0620" x="30" y="290">Trap: Saturated / Low Margin</text>
-<!-- Axes -->
-<line stroke="#70787d" stroke-dasharray="4 3" stroke-width="1.5" x1="380" x2="380" y1="15" y2="305"></line>
-<line stroke="#70787d" stroke-dasharray="4 3" stroke-width="1.5" x1="20" x2="740" y1="160" y2="160"></line>
+<!-- 1. Star Quadrant (Top Right) -->
+<rect x="465" y="25" width="435" height="195" rx="12" fill="#1d1d1f" fill-opacity="0.03" stroke="#1d1d1f" stroke-opacity="0.08" stroke-width="1"></rect>
+<text x="885" y="48" text-anchor="end" class="text-[11px] font-black fill-[#1d1d1f] uppercase tracking-wider font-sans" data-excel-key="html_0617">Star Quadrant: High Whitespace / High Margin</text>
+
+<!-- 2. Niche Driver (Bottom Right) -->
+<rect x="465" y="235" width="435" height="195" rx="12" fill="#0284c7" fill-opacity="0.03" stroke="#0284c7" stroke-opacity="0.1" stroke-width="1"></rect>
+<text x="885" y="258" text-anchor="end" class="text-[11px] font-bold fill-[#0369a1] uppercase tracking-wider font-sans" data-excel-key="html_0618">Niche Driver: High Whitespace / Low Margin</text>
+
+<!-- 3. Cash Cow (Top Left) -->
+<rect x="20" y="25" width="435" height="195" rx="12" fill="#64748b" fill-opacity="0.03" stroke="#64748b" stroke-opacity="0.1" stroke-width="1"></rect>
+<text x="35" y="48" class="text-[11px] font-bold fill-[#334155] uppercase tracking-wider font-sans" data-excel-key="html_0619">Cash Cow: Low Whitespace / High Margin</text>
+
+<!-- 4. Trap (Bottom Left) -->
+<rect x="20" y="235" width="435" height="195" rx="12" fill="#ba1a1a" fill-opacity="0.03" stroke="#ba1a1a" stroke-opacity="0.1" stroke-width="1"></rect>
+<text x="35" y="258" class="text-[11px] font-bold fill-[#b91c1c] uppercase tracking-wider font-sans" data-excel-key="html_0620">Trap: Saturated / Low Margin</text>
+
+<!-- Axes with Subtle Ticks -->
+<line x1="460" y1="20" x2="460" y2="435" stroke="#94a3b8" stroke-dasharray="5 4" stroke-width="1.5"></line>
+<line x1="20" y1="230" x2="900" y2="230" stroke="#94a3b8" stroke-dasharray="5 4" stroke-width="1.5"></line>
+
 <!-- Axis Labels -->
-<text class="text-[11px] font-bold fill-on-surface-variant font-sans tracking-wide" data-excel-key="html_0621" text-anchor="middle" x="560" y="315">Market Whitespace (Unmet Demand % →)</text>
-<text class="text-[11px] font-bold fill-on-surface-variant font-sans tracking-wide" data-excel-key="html_0622" text-anchor="middle" x="380" y="12">↑ Margin Potential / ARPU</text>
-<!-- Bubbles & Specialty Markers (11 specialties mapped) -->
-<!-- 1. Paediatrics (Star Cluster) -->
-<g class="cursor-pointer group">
-<circle cx="620" cy="65" fill="#000000" fill-opacity="0.85" r="28" stroke="#ffffff" stroke-width="2"></circle>
-<text data-excel-key="html_0623" fill="#ffffff" font-family="Manrope" font-size="11" font-weight="700" text-anchor="middle" x="620" y="62">Paediatrics</text>
-<text data-excel-key="html_0624" fill="#d2d2d7" font-family="Inter" font-size="9" text-anchor="middle" x="620" y="75">25.7k pool</text>
+<text x="690" y="450" text-anchor="middle" class="text-[11px] font-extrabold fill-slate-600 font-sans tracking-wide" data-excel-key="html_0621">Market Whitespace (Unmet Demand % →)</text>
+<text x="460" y="15" text-anchor="middle" class="text-[11px] font-extrabold fill-slate-600 font-sans tracking-wide" data-excel-key="html_0622">↑ Margin Potential / High ARPU</text>
+
+<!-- Primary Anchor Cluster Boundary & Label -->
+<rect x="495" y="65" width="395" height="145" rx="16" fill="rgba(0,0,0,0.015)" stroke="#1d1d1f" stroke-dasharray="6 4" stroke-width="1.5"></rect>
+<g transform="translate(692, 65)">
+  <rect x="-105" y="-12" width="210" height="22" rx="11" fill="#1d1d1f"></rect>
+  <text x="0" y="3" fill="#ffffff" font-family="Manrope" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="0.04em">★ DOCUBE FOCUS ANCHOR CLUSTER</text>
 </g>
-<!-- 2. Organised Internal Med (Star Cluster) -->
-<g class="cursor-pointer group">
-<circle cx="515" cy="72" fill="#1d1d1f" fill-opacity="0.9" r="32" stroke="#ffffff" stroke-width="2"></circle>
-<text data-excel-key="html_0625" fill="#ffffff" font-family="Manrope" font-size="11" font-weight="700" text-anchor="middle" x="515" y="69">Internal Med</text>
-<text data-excel-key="html_0626" fill="#93d3ef" font-family="Inter" font-size="9" text-anchor="middle" x="515" y="82">High Volume</text>
+
+<!-- Bubbles & Specialty Markers (Spacious, Zero-Overlap) -->
+<!-- 1. Internal Med (Star Cluster) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="internal-med">
+  <circle cx="560" cy="130" r="38" fill="#1d1d1f" stroke="#ffffff" stroke-width="2.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.18))"></circle>
+  <text x="560" y="127" fill="#ffffff" font-family="Manrope" font-size="11.5" font-weight="700" text-anchor="middle" data-excel-key="html_0625">Internal Med</text>
+  <text x="560" y="141" fill="#a1a1aa" font-family="Inter" font-size="9" text-anchor="middle" data-excel-key="html_0626">High Volume</text>
 </g>
+
+<!-- 2. Paediatrics (Star Cluster) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="paediatrics">
+  <circle cx="695" cy="118" r="38" fill="#000000" stroke="#ffffff" stroke-width="2.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.22))"></circle>
+  <text x="695" y="115" fill="#ffffff" font-family="Manrope" font-size="11.5" font-weight="700" text-anchor="middle" data-excel-key="html_0623">Paediatrics</text>
+  <text x="695" y="129" fill="#a1a1aa" font-family="Inter" font-size="9" text-anchor="middle" data-excel-key="html_0624">25.7k pool</text>
+</g>
+
 <!-- 3. ENT & Visiting Urology (Star Cluster) -->
-<g class="cursor-pointer group">
-<circle cx="675" cy="95" fill="#000000" fill-opacity="0.9" r="23" stroke="#ffffff" stroke-width="2"></circle>
-<text data-excel-key="html_0627" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" x="675" y="93">ENT / Urology</text>
-<text data-excel-key="html_0628" fill="#d2d2d7" font-family="Inter" font-size="8.5" text-anchor="middle" x="675" y="105">High ARPU</text>
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="ent">
+  <circle cx="815" cy="135" r="32" fill="#1d1d1f" stroke="#ffffff" stroke-width="2.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.18))"></circle>
+  <text x="815" y="132" fill="#ffffff" font-family="Manrope" font-size="10.5" font-weight="700" text-anchor="middle" data-excel-key="html_0627">ENT / Urology</text>
+  <text x="815" y="145" fill="#d4d4d8" font-family="Inter" font-size="8.5" text-anchor="middle" data-excel-key="html_0628">High ARPU</text>
 </g>
-<!-- 4. Well-Woman & PCOS (Mid-upper right) -->
-<g class="cursor-pointer group">
-<circle cx="580" cy="120" fill="#545f73" fill-opacity="0.85" r="22" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0629" fill="#ffffff" font-family="Manrope" font-size="9.5" font-weight="600" text-anchor="middle" x="580" y="118">Well-Woman</text>
-<text data-excel-key="html_0630" fill="#d5e0f8" font-family="Inter" font-size="8.5" text-anchor="middle" x="580" y="129">30.1k Target</text>
+
+<!-- 4. Well-Woman & PCOS (Star Cluster) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="well-woman">
+  <circle cx="630" cy="182" r="28" fill="#3f3f46" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.14))"></circle>
+  <text x="630" y="180" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" data-excel-key="html_0629">Well-Woman</text>
+  <text x="630" y="192" fill="#e4e4e7" font-family="Inter" font-size="8.5" text-anchor="middle" data-excel-key="html_0630">30.1k Target</text>
 </g>
-<!-- 5. Mind Care / Psychology (Mid-right lower margin) -->
-<g class="cursor-pointer group">
-<circle cx="630" cy="190" fill="#545f73" fill-opacity="0.8" r="18" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0631" fill="#ffffff" font-family="Manrope" font-size="9" font-weight="600" text-anchor="middle" x="630" y="193">Mind Care</text>
+
+<!-- 5. Dermatology Consults (Cash Cow) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="derma">
+  <circle cx="150" cy="115" r="26" fill="#52525b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.12))"></circle>
+  <text x="150" y="113" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" data-excel-key="html_0633">Derma</text>
+  <text x="150" y="125" fill="#d4d4d8" font-family="Inter" font-size="8" text-anchor="middle">Cosmetology</text>
 </g>
-<!-- 6. Orthopaedics Outpatient (Upper left quadrant) -->
-<g class="cursor-pointer group">
-<circle cx="310" cy="90" fill="#545f73" fill-opacity="0.8" r="19" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0632" fill="#ffffff" font-family="Manrope" font-size="9" font-weight="600" text-anchor="middle" x="310" y="93">Ortho OPD</text>
+
+<!-- 6. Orthopaedics Outpatient (Cash Cow) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="ortho">
+  <circle cx="310" cy="125" r="30" fill="#52525b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.12))"></circle>
+  <text x="310" y="123" fill="#ffffff" font-family="Manrope" font-size="10.5" font-weight="700" text-anchor="middle" data-excel-key="html_0632">Ortho OPD</text>
+  <text x="310" y="135" fill="#d4d4d8" font-family="Inter" font-size="8.5" text-anchor="middle">Active Footfall</text>
 </g>
-<!-- 7. Dermatology Consults (Top mid left) -->
-<g class="cursor-pointer group">
-<circle cx="230" cy="75" fill="#545f73" fill-opacity="0.65" r="17" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0633" fill="#ffffff" font-family="Manrope" font-size="8.5" font-weight="600" text-anchor="middle" x="230" y="78">Derma</text>
+
+<!-- 7. Dental Clinics (Trap) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="dental">
+  <circle cx="150" cy="330" r="32" fill="#991b1b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.16))"></circle>
+  <text x="150" y="327" fill="#ffffff" font-family="Manrope" font-size="11" font-weight="700" text-anchor="middle" data-excel-key="html_0636">Dental</text>
+  <text x="150" y="339" fill="#fecaca" font-family="Inter" font-size="8.5" text-anchor="middle" data-excel-key="html_0637">16 Rivals</text>
 </g>
-<!-- 8. Geriatric Chronic Care (Mid right) -->
-<g class="cursor-pointer group">
-<circle cx="460" cy="140" fill="#2c2c2e" fill-opacity="0.75" r="16" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0634" fill="#ffffff" font-family="Manrope" font-size="8.5" font-weight="600" text-anchor="middle" x="460" y="143">Geriatrics</text>
+
+<!-- 8. Standalone Diagnostics (Trap) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="diagnostics">
+  <circle cx="300" cy="340" r="32" fill="#b91c1c" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.16))"></circle>
+  <text x="300" y="337" fill="#ffffff" font-family="Manrope" font-size="10.5" font-weight="700" text-anchor="middle" data-excel-key="html_0638">Stand. Diag</text>
+  <text x="300" y="349" fill="#fecaca" font-family="Inter" font-size="8" text-anchor="middle" data-excel-key="html_0639">31 Labs / -45%</text>
 </g>
-<!-- 9. Ophthalmology Screening (Lower right) -->
-<g class="cursor-pointer group">
-<circle cx="480" cy="210" fill="#545f73" fill-opacity="0.75" r="15" stroke="#ffffff" stroke-width="1.5"></circle>
-<text data-excel-key="html_0635" fill="#ffffff" font-family="Manrope" font-size="8.5" font-weight="600" text-anchor="middle" x="480" y="213">Ophthal</text>
+
+<!-- 9. Geriatric Chronic Care (Niche Driver) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="geriatrics">
+  <circle cx="530" cy="325" r="28" fill="#52525b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.12))"></circle>
+  <text x="530" y="323" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" data-excel-key="html_0634">Geriatrics</text>
+  <text x="530" y="334" fill="#e4e4e7" font-family="Inter" font-size="8" text-anchor="middle">Chronic Care</text>
 </g>
-<!-- 10. Dental Clinics (Lower left trap) -->
-<g class="cursor-pointer group">
-<circle cx="160" cy="235" fill="#ba1a1a" fill-opacity="0.85" r="24" stroke="#ffffff" stroke-width="2"></circle>
-<text data-excel-key="html_0636" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" x="160" y="233">Dental</text>
-<text data-excel-key="html_0637" fill="#ffdad6" font-family="Inter" font-size="8.5" text-anchor="middle" x="160" y="245">16 Rivals</text>
+
+<!-- 10. Ophthalmology Screening (Niche Driver) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="ophthal">
+  <circle cx="660" cy="355" r="26" fill="#52525b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.12))"></circle>
+  <text x="660" y="354" fill="#ffffff" font-family="Manrope" font-size="9.5" font-weight="700" text-anchor="middle" data-excel-key="html_0635">Ophthal</text>
+  <text x="660" y="365" fill="#e4e4e7" font-family="Inter" font-size="8" text-anchor="middle">Screening</text>
 </g>
-<!-- 11. Standalone Diagnostics (Bottom left trap) -->
-<g class="cursor-pointer group">
-<circle cx="240" cy="260" fill="#ba1a1a" fill-opacity="0.8" r="22" stroke="#ffffff" stroke-width="2"></circle>
-<text data-excel-key="html_0638" fill="#ffffff" font-family="Manrope" font-size="9.5" font-weight="700" text-anchor="middle" x="240" y="258">Stand. Diag</text>
-<text data-excel-key="html_0639" fill="#ffdad6" font-family="Inter" font-size="8" text-anchor="middle" x="240" y="269">31 Labs / -45%</text>
+
+<!-- 11. Mind Care / Psychology (Niche Driver) -->
+<g class="cursor-pointer transition-transform hover:scale-105" data-bubble="mindcare">
+  <circle cx="785" cy="320" r="30" fill="#52525b" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.12))"></circle>
+  <text x="785" y="318" fill="#ffffff" font-family="Manrope" font-size="10" font-weight="700" text-anchor="middle" data-excel-key="html_0631">Mind Care</text>
+  <text x="785" y="330" fill="#e4e4e7" font-family="Inter" font-size="8.5" text-anchor="middle">Psychology</text>
 </g>
-<!-- High Priority Cluster Annotation Ring -->
-<ellipse cx="600" cy="85" fill="none" rx="120" ry="50" stroke="#000000" stroke-dasharray="5 3" stroke-width="1.5"></ellipse>
-<text class="text-[10px] font-bold fill-tertiary" data-excel-key="html_0640" text-anchor="end" x="730" y="130">★ Docube Focus Anchor Cluster</text>
 </svg>
 </div>
 <div class="pt-2 text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
@@ -4141,11 +4196,11 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
               All service boundaries and revenue covenants approved for Basappa Garden Chapter
             </span></span>
 <div class="flex items-center gap-2">
-<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<button onclick="window.printSchedule()" class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1 cursor-pointer" type="button">
 <span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0983">print</span></span>
 <span><span data-excel-key="html_0984">Print Schedule</span></span>
 </button>
-<button class="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-1" type="button">
+<button onclick="window.downloadOperatingProtocol()" class="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-1 cursor-pointer" type="button">
 <span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0985">file_download</span></span>
 <span><span data-excel-key="html_0986">Download Operating Protocol</span></span>
 </button>
@@ -4441,14 +4496,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // Initialize Left Map (House Rents)
     if (!housingRentMap) {
       housingRentMap = L.map(elRent, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(housingRentMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(housingRentMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(housingRentMap);
     }
 
     // Initialize Right Map (Economic Affluence)
     if (!economicAffluenceMap) {
       economicAffluenceMap = L.map(elAffluence, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(economicAffluenceMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(economicAffluenceMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(economicAffluenceMap);
 
       // Bidirectional Synchronization
@@ -4603,14 +4658,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // 1. Initialize Store Map (Left)
     if(!regionalStoreMap){
       regionalStoreMap = L.map(elStore, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(regionalStoreMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(regionalStoreMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(regionalStoreMap);
     }
 
     // 2. Initialize Competitor Map (Right)
     if(!regionalCompMap){
       regionalCompMap = L.map(elComp, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(regionalCompMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(regionalCompMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(regionalCompMap);
 
       // BIDIRECTIONAL SYNCHRONIZATION: Zoom or pan either map, and both move together seamlessly
@@ -5316,14 +5371,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // 1. Initialize Dynamic Map (Left) with Footfall OpenStreetMap basemap
     if (!isoDynamicMap) {
       isoDynamicMap = L.map(elDyn, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoDynamicMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(isoDynamicMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoDynamicMap);
     }
 
     // 2. Initialize Baseline Map (Right) with Footfall OpenStreetMap basemap
     if (!isoBaselineMap) {
       isoBaselineMap = L.map(elBase, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(isoBaselineMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(isoBaselineMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoBaselineMap);
       isoBaselineMap.createPane('sundayMaxPane');
       isoBaselineMap.getPane('sundayMaxPane').style.zIndex = 550;
@@ -5518,4 +5573,260 @@ selector.addEventListener('dashboard:visual',update); update(); setTimeout(() =>
 
 
 })();</script><script>document.addEventListener('DOMContentLoaded',()=>{const s=document.getElementById('location-selector'),f=[1.00,0.94,1.06,0.88,0.92,0.86];if(!s)return;const bars=[...document.querySelectorAll('[style*="width:"]')].filter(e=>/%/.test(e.style.width));bars.forEach(e=>e.dataset.baseWidth=parseFloat(e.style.width));const polys=[...document.querySelectorAll('svg polygon')].filter(e=>{const x=e.getAttribute('fill');return x&&x!=='none'});const rects=[...document.querySelectorAll('svg rect')].filter(e=>['#1d1d1f','#000000','#2c2c2e'].includes((e.getAttribute('fill')||'').toLowerCase()));rects.forEach(e=>e.dataset.baseWidth=e.getAttribute('width')||'0');const update=()=>{const k=f[s.selectedIndex]||1;bars.forEach(e=>e.style.width=Math.max(4,Math.min(100,Number(e.dataset.baseWidth)*k))+'%');polys.forEach(e=>{e.style.transformBox='fill-box';e.style.transformOrigin='center';e.style.transition='transform .35s ease';e.style.transform='scale('+Math.max(.58,Math.min(1.18,k))+')'});rects.forEach(e=>{const w=Number(e.dataset.baseWidth);if(Number.isFinite(w))e.setAttribute('width',Math.max(2,w*k))})};s.addEventListener('change',update);s.addEventListener('dashboard:visual',update);update()});</script>
-</body></html>
+
+<!-- AGT Apple-Style Floating Toast Banner -->
+<div id="agt-toast" class="fixed bottom-6 right-6 z-[9999] pointer-events-none transition-all duration-300 transform translate-y-8 opacity-0 flex items-center gap-3 bg-[#1d1d1f]/95 text-white px-5 py-3.5 rounded-2xl shadow-2xl backdrop-blur-md border border-white/15">
+  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+  <div class="flex flex-col">
+    <span id="agt-toast-title" class="text-xs font-bold font-sans"></span>
+    <span id="agt-toast-msg" class="text-[11px] text-slate-300 font-sans"></span>
+  </div>
+</div>
+
+<script>
+// AGT Interactive Dashboard Action Handlers
+(function() {
+  window.showAgtToast = function(title, msg) {
+    const toast = document.getElementById('agt-toast');
+    const tTitle = document.getElementById('agt-toast-title');
+    const tMsg = document.getElementById('agt-toast-msg');
+    if (!toast || !tTitle) return;
+    tTitle.textContent = title;
+    tMsg.textContent = msg || '';
+    toast.classList.remove('translate-y-8', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    clearTimeout(window._agtToastTimer);
+    window._agtToastTimer = setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-8', 'opacity-0', 'pointer-events-none');
+    }, 3200);
+  };
+
+  window.shareReport = function() {
+    const locSelector = document.getElementById('location-selector');
+    const locIdx = locSelector ? locSelector.selectedIndex : 0;
+    const locName = locSelector ? locSelector.options[locIdx].text : 'Priority 1';
+    const url = new URL(window.location.href);
+    url.searchParams.set('loc', locIdx);
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url.toString()).then(() => {
+        window.showAgtToast('✓ Direct Link Copied to Clipboard!', locName.split(':')[0] + ' URL ready to share.');
+      }).catch(() => {
+        window.showAgtToast('✓ Link Generated', url.toString());
+      });
+    } else {
+      window.showAgtToast('✓ Link Generated', url.toString());
+    }
+  };
+
+  window.exportToCsv = function() {
+    const headers = [
+      "Rank", "Priority", "Location Name", "Zone", "Latitude", "Longitude",
+      "Feasibility Score", "Viability %", "Catchment Households", "Catchment Population",
+      "Commercial Rent PSF", "Rent Ceiling PSF", "Specialist Clinics Within 1km",
+      "Primary Deficit Lines", "15-Min Reachable Population", "Strategic Status"
+    ];
+    
+    const rows = [
+      [1, "Priority 1", "Basappa Garden", "Z4 Malleswaram", 12.991977, 77.571545, 4.6, "92%", "130000", "550000", "₹48", "₹65", 154, "Paediatrics, ENT, Internal Med", "70900", "Recommended: First Preference"],
+      [2, "Priority 2", "Thimanahalli", "Z5 Basaveshwaranagar", 12.987958, 77.537493, 4.4, "88%", "118000", "495000", "₹42", "₹58", 98, "Paediatrics, Women's Health", "62400", "Recommended: Second Preference"],
+      [3, "Priority 3", "Rajajinagar 3rd Block", "Z6 Rajajinagar", 12.984927, 77.553133, 4.3, "86%", "125000", "525000", "₹45", "₹60", 112, "Internal Med, ENT", "68100", "Shortlisted: Next Choice"],
+      [4, "Priority 4", "Subramanya Nagar 2nd Stage", "Z7 Mahalakshmi", 13.011461, 77.554496, 4.1, "82%", "112000", "470000", "₹44", "₹56", 84, "Paediatrics, Mind Care", "58700", "Shortlisted"],
+      [5, "Priority 5", "Mohan Kumar Nagar", "Z8 Yeshwanthpur", 13.026496, 77.544272, 4.0, "80%", "105000", "441000", "₹38", "₹50", 72, "Internal Med, Geriatrics", "54200", "Shortlisted"],
+      [6, "Priority 6", "Hosahalli", "Z9 Vijayanagar", 12.967708, 77.542367, 3.8, "76%", "98000", "411000", "₹40", "₹52", 68, "Paediatrics, ENT", "51800", "Evaluated: Other Area"],
+      [7, "Priority 7", "Kirloskar Colony", "Z10 Basaveshwaranagar", 12.995783, 77.539513, 3.8, "76%", "110000", "462000", "₹42", "₹55", 79, "Women's Health, Internal Med", "56400", "Evaluated: Other Area"],
+      [8, "Priority 8", "Srinivas Nagar", "Z11 Banashankari", 12.938525, 77.555727, 3.7, "74%", "95000", "399000", "₹41", "₹54", 62, "Internal Med, Ophthal", "49300", "Evaluated: Other Area"],
+      [9, "Priority 9", "Jyothi Nagara", "Z12 Chandra Layout", 12.966321, 77.534844, 3.7, "74%", "92000", "386000", "₹40", "₹50", 58, "Paediatrics, Mind Care", "47500", "Evaluated: Other Area"],
+      [10, "Priority 10", "Hanumanthappa Layout", "Z13 Ulsoor", 12.975809, 77.615399, 3.6, "72%", "108000", "453000", "₹48", "₹62", 91, "Internal Med, ENT", "59100", "Evaluated: Other Area"],
+      [11, "Priority 11", "Gavipuram", "Z14 Basavanagudi", 12.939104, 77.571539, 3.6, "72%", "94000", "394000", "₹45", "₹58", 74, "Geriatrics, Women's Health", "50200", "Evaluated: Other Area"],
+      [12, "Priority 12", "Krishnappa Block", "Z15 Ganganagar", 13.024913, 77.588802, 3.5, "70%", "89000", "373000", "₹42", "₹54", 65, "Paediatrics, Internal Med", "46800", "Evaluated: Other Area"],
+      [13, "Priority 13", "Sudhama Nagara", "Z16 Shanti Nagar", 12.965671, 77.577715, 3.5, "70%", "91000", "382000", "₹46", "₹60", 83, "Internal Med, ENT", "48900", "Evaluated: Other Area"],
+      [14, "Priority 14", "Jogupalya", "Z17 Halasuru", 12.975511, 77.625489, 3.4, "68%", "97000", "407000", "₹48", "₹62", 87, "Paediatrics, Women's Health", "52300", "Evaluated: Other Area"],
+      [15, "Priority 15", "Hanuman Nagar", "Z17 Indiranagar West", 12.958673, 77.662456, 3.4, "68%", "104000", "436000", "₹50", "₹68", 95, "Internal Med, Mind Care", "57400", "Evaluated: Other Area"],
+      [16, "Priority 16", "Banashankari", "Z18 Banashankari 2nd", 12.926710, 77.560140, 3.3, "66%", "88000", "369000", "₹42", "₹55", 61, "Internal Med, Geriatrics", "45100", "Evaluated: Other Area"],
+      [17, "Priority 17", "ITI Colony", "Z19 KR Puram", 13.032950, 77.568440, 3.3, "66%", "86000", "361000", "₹36", "₹48", 52, "Paediatrics, ENT", "43600", "Evaluated: Other Area"],
+      [18, "Priority 18", "Shivajinagar", "Z20 Commercial St", 12.988860, 77.606840, 3.2, "64%", "115000", "483000", "₹52", "₹70", 118, "Internal Med, Ophthal", "61200", "Evaluated: Other Area"],
+      [19, "Priority 19", "Teacher's Colony", "Z22 Koramangala 1st", 12.912060, 77.569890, 3.1, "62%", "92000", "386000", "₹48", "₹65", 89, "Women's Health, Mind Care", "48200", "Evaluated: Other Area"],
+      [20, "Priority 20", "Maruthi Nagar", "Z23 Madiwala", 12.974990, 77.676130, 3.1, "62%", "90000", "378000", "₹42", "₹56", 76, "Internal Med, Paediatrics", "47100", "Evaluated: Other Area"]
+    ];
+
+    let csvContent = "data:text/csv;charset=utf-8," + [
+      headers.map(h => `"${h}"`).join(","),
+      ...rows.map(r => r.map(c => `"${c}"`).join(","))
+    ].join("\n");
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "AGT_Bengaluru_20_Clinic_Expansion_Portfolio.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.showAgtToast("✓ Exported Portfolio CSV", "20-Clinic Portfolio raw dataset downloaded.");
+  };
+
+  window.downloadGeoJSON = function() {
+    const geojson = {
+      type: "FeatureCollection",
+      metadata: {
+        title: "AGT Bengaluru 20-Clinic Expansion GeoDataset",
+        generated: new Date().toISOString(),
+        organization: "AGT Intelligence",
+        client: "Docube Healthcare"
+      },
+      features: [
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.571545, 12.991977] }, properties: { rank: 1, priority: "Priority 1", name: "Basappa Garden", zone: "Z4 Malleswaram", feasibility: 4.6, viabilityPct: 92, catchmentHH: 130000, rentPsf: 48, status: "First Preference" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.537493, 12.987958] }, properties: { rank: 2, priority: "Priority 2", name: "Thimanahalli", zone: "Z5 Basaveshwaranagar", feasibility: 4.4, viabilityPct: 88, catchmentHH: 118000, rentPsf: 42, status: "Second Preference" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.553133, 12.984927] }, properties: { rank: 3, priority: "Priority 3", name: "Rajajinagar 3rd Block", zone: "Z6 Rajajinagar", feasibility: 4.3, viabilityPct: 86, catchmentHH: 125000, rentPsf: 45, status: "Next Choice" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.554496, 13.011461] }, properties: { rank: 4, priority: "Priority 4", name: "Subramanya Nagar 2nd Stage", zone: "Z7 Mahalakshmi", feasibility: 4.1, viabilityPct: 82, catchmentHH: 112000, rentPsf: 44, status: "Shortlisted" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.544272, 13.026496] }, properties: { rank: 5, priority: "Priority 5", name: "Mohan Kumar Nagar", zone: "Z8 Yeshwanthpur", feasibility: 4.0, viabilityPct: 80, catchmentHH: 105000, rentPsf: 38, status: "Shortlisted" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.542367, 12.967708] }, properties: { rank: 6, priority: "Priority 6", name: "Hosahalli", zone: "Z9 Vijayanagar", feasibility: 3.8, viabilityPct: 76, catchmentHH: 98000, rentPsf: 40, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.539513, 12.995783] }, properties: { rank: 7, priority: "Priority 7", name: "Kirloskar Colony", zone: "Z10 Basaveshwaranagar", feasibility: 3.8, viabilityPct: 76, catchmentHH: 110000, rentPsf: 42, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.555727, 12.938525] }, properties: { rank: 8, priority: "Priority 8", name: "Srinivas Nagar", zone: "Z11 Banashankari", feasibility: 3.7, viabilityPct: 74, catchmentHH: 95000, rentPsf: 41, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.534844, 12.966321] }, properties: { rank: 9, priority: "Priority 9", name: "Jyothi Nagara", zone: "Z12 Chandra Layout", feasibility: 3.7, viabilityPct: 74, catchmentHH: 92000, rentPsf: 40, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.615399, 12.975809] }, properties: { rank: 10, priority: "Priority 10", name: "Hanumanthappa Layout", zone: "Z13 Ulsoor", feasibility: 3.6, viabilityPct: 72, catchmentHH: 108000, rentPsf: 48, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.571539, 12.939104] }, properties: { rank: 11, priority: "Priority 11", name: "Gavipuram", zone: "Z14 Basavanagudi", feasibility: 3.6, viabilityPct: 72, catchmentHH: 94000, rentPsf: 45, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.588802, 13.024913] }, properties: { rank: 12, priority: "Priority 12", name: "Krishnappa Block", zone: "Z15 Ganganagar", feasibility: 3.5, viabilityPct: 70, catchmentHH: 89000, rentPsf: 42, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.577715, 12.965671] }, properties: { rank: 13, priority: "Priority 13", name: "Sudhama Nagara", zone: "Z16 Shanti Nagar", feasibility: 3.5, viabilityPct: 70, catchmentHH: 91000, rentPsf: 46, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.625489, 12.975511] }, properties: { rank: 14, priority: "Priority 14", name: "Jogupalya", zone: "Z17 Halasuru", feasibility: 3.4, viabilityPct: 68, catchmentHH: 97000, rentPsf: 48, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.662456, 12.958673] }, properties: { rank: 15, priority: "Priority 15", name: "Hanuman Nagar", zone: "Z17 Indiranagar West", feasibility: 3.4, viabilityPct: 68, catchmentHH: 104000, rentPsf: 50, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.560140, 12.926710] }, properties: { rank: 16, priority: "Priority 16", name: "Banashankari", zone: "Z18 Banashankari 2nd", feasibility: 3.3, viabilityPct: 66, catchmentHH: 88000, rentPsf: 42, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.568440, 13.032950] }, properties: { rank: 17, priority: "Priority 17", name: "ITI Colony", zone: "Z19 KR Puram", feasibility: 3.3, viabilityPct: 66, catchmentHH: 86000, rentPsf: 36, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.606840, 12.988860] }, properties: { rank: 18, priority: "Priority 18", name: "Shivajinagar", zone: "Z20 Commercial St", feasibility: 3.2, viabilityPct: 64, catchmentHH: 115000, rentPsf: 52, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.569890, 12.912060] }, properties: { rank: 19, priority: "Priority 19", name: "Teacher's Colony", zone: "Z22 Koramangala 1st", feasibility: 3.1, viabilityPct: 62, catchmentHH: 92000, rentPsf: 48, status: "Other Area" } },
+        { type: "Feature", geometry: { type: "Point", coordinates: [77.676130, 12.974990] }, properties: { rank: 20, priority: "Priority 20", name: "Maruthi Nagar", zone: "Z23 Madiwala", feasibility: 3.1, viabilityPct: 62, catchmentHH: 90000, rentPsf: 42, status: "Other Area" } }
+      ]
+    };
+
+    const blob = new Blob([JSON.stringify(geojson, null, 2)], { type: "application/geo+json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "bengaluru_20_site_selection_geodata.geojson";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    window.showAgtToast("✓ Exported Spatial GeoJSON", "All 20 candidate site coordinates & attributes saved.");
+  };
+
+  window.downloadOperatingProtocol = function() {
+    const sel = document.getElementById('location-selector');
+    const locName = sel ? sel.options[sel.selectedIndex].text : "Priority 1: Basappa Garden";
+    const protocolContent = `# AGT INTELLIGENCE · CLINICAL OPERATING PROTOCOL
+Location: ${locName}
+Client: Docube Healthcare
+Audit Phase: Q1 2025 / Institutional Expansion Standard
+Classification: Confidential Institutional Document
+
+---
+
+## 1. FACILITY ARCHITECTURE & SPACE PROGRAM
+- Dedicated Clinic Floor Plate: 2,800 – 3,200 sq.ft
+- Consultation Suites: 4 High-Volume Suites (Sound Isolation STC ≥ 48)
+- Pediatric Examination Pod: Dedicated child vitals, stroller parking, distraction play area
+- Internal Medicine & Senior Care: Wheelchair-accessible zero-threshold examination suites
+- Phlebotomy & Sample Cold-Chain: 2-station collection bay with 2°C–8°C certified refrigeration
+
+## 2. REVENUE SHARE & CLINICAL COVENANTS
+- Lead Specialty: Paediatrics & Child Development (Guaranteed volume driver)
+- Co-Lead: Organised Internal Medicine & Chronic Metabolic Care
+- Secondary Rotational Lines: Well-Woman / Gynaecology OPD + Mind Care (Executive evening slots)
+- Excluded Services: Heavy Diagnostics / MRI / Standalone Dental (Bypassing retail margin wars)
+- Doctor Compensation Structure: Base Retainer + 40% OPD Consultation Revenue Share
+
+## 3. STATUTORY COMPLIANCE & ACCREDITATION MILESTONES
+- Karnataka Private Medical Establishments (KPME) Act Registration
+- Bio-Medical Waste (BMW) Management Agreement with certified regional vendor
+- AERB (Atomic Energy Regulatory Board) Compliance for radiography
+- Fire Safety Clearance & BBMP Trade License
+- NABH Pre-Accreditation Entry Level Checklist (Standard 5th Edition)
+
+## 4. PATIENT CAPACITY & DAYPART LOAD MANAGEMENT
+- Morning Shift (08:30 – 13:00): Pediatric vaccinations, geriatric chronic consultations, fasting labs
+- Midday Shift (13:00 – 16:30): Routine follow-ups, tele-consultation reviews, preventative health
+- Evening Peak (16:30 – 20:30): Pediatric acute care, working professional OPD, specialty clinics
+- Modeled Steady-State Daily Capacity: 120 – 150 patients/day at steady state (Month 6)
+
+---
+Generated by AGT Intelligence Healthcare Spatial Analytics System
+Visit: https://agt-intelligence.com`;
+
+    const blob = new Blob([protocolContent], { type: "text/markdown;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    const safeName = locName.replace(/[^a-zA-Z0-9]/g, '_');
+    link.download = `AGT_Clinical_Operating_Protocol_${safeName}.md`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    window.showAgtToast("✓ Downloaded Operating Protocol", "Clinical SOP generated for " + (locName.split(':')[1] || locName).trim());
+  };
+
+  window.printSchedule = function() {
+    const ganttEl = document.getElementById('live-gantt') || document.getElementById('clinical-strategy');
+    if (ganttEl) {
+      ganttEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    window.showAgtToast("Preparing Print Layout", "Opening print dialogue for clinical execution schedule...");
+    setTimeout(() => {
+      window.print();
+    }, 450);
+  };
+
+  window.toggleTableSort = function() {
+    const tbody = document.getElementById('specialty-table-body');
+    if (!tbody) return;
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    window._sortAsc = !window._sortAsc;
+    
+    // Sort rows based on data-score or numerical text
+    const scores = [4.8, 4.4, 4.1, 3.9, 3.7, 3.4, 3.0, 2.8, 2.4, 1.5, 1.1];
+    rows.forEach((r, idx) => {
+      if (!r.hasAttribute('data-score')) {
+        r.setAttribute('data-score', scores[idx] || 2.0);
+      }
+    });
+
+    rows.sort((a, b) => {
+      const scoreA = parseFloat(a.getAttribute('data-score') || '0');
+      const scoreB = parseFloat(b.getAttribute('data-score') || '0');
+      return window._sortAsc ? scoreA - scoreB : scoreB - scoreA;
+    });
+    
+    rows.forEach(r => tbody.appendChild(r));
+    const icon = document.getElementById('whitespace-sort-icon');
+    if (icon) {
+      icon.textContent = window._sortAsc ? 'arrow_upward' : 'arrow_downward';
+    }
+    window.showAgtToast("✓ Specialty Table Sorted", window._sortAsc ? "Sorted by Whitespace Score: Low to High" : "Sorted by Whitespace Score: High to Low (Lead Lines First)");
+  };
+
+  window.setRadarView = function(mode) {
+    const btnQuad = document.getElementById('radar-btn-quadrant');
+    const btnHeat = document.getElementById('radar-btn-heatmap');
+    if (mode === 'heatmap') {
+      if (btnHeat) {
+        btnHeat.className = 'px-2.5 py-1 rounded bg-[#1d1d1f] text-white font-label-sm text-label-sm shadow-xs font-semibold transition-all';
+      }
+      if (btnQuad) {
+        btnQuad.className = 'px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+      }
+      window.showAgtToast("Radar Mode: Heatmap Mesh", "Cadastral density mesh overlay activated.");
+    } else {
+      if (btnQuad) {
+        btnQuad.className = 'px-2.5 py-1 rounded bg-[#1d1d1f] text-white font-label-sm text-label-sm shadow-xs font-semibold transition-all';
+      }
+      if (btnHeat) {
+        btnHeat.className = 'px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+      }
+      window.showAgtToast("Radar Mode: Quadrant View", "Concentric isobar rings activated.");
+    }
+  };
+})();
+</script>
+</body>
+</html>
