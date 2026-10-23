@@ -884,7 +884,93 @@
 <!-- Footfall Dynamics & Tenancy Resilience -->
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
 <!-- Hourly Pedestrian Footfall Analytics Area Chart with Trendline & Confidence Band (#6 & #121) (7 cols) -->
-<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm self-start"><div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm mb-space-lg"><div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0183">Operating-window insight</span></span><h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0184">Demand vs Planned Clinic Capacity</span></h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-1"><span data-excel-key="html_0185">Grouped Bar Chart #58 compares the location demand index with planned appointment capacity by daypart.</span></p></div><span class="px-3 py-1 rounded-full bg-amber-50 text-amber-900 font-label-sm text-label-sm"><span data-excel-key="html_0186">Capacity gap</span></span></div><div class="h-[320px]"><canvas id="live-daypart"></canvas></div><div class="mt-space-lg p-space-md rounded-lg bg-surface-container-low"><span class="font-label-sm text-label-sm uppercase text-primary"><span data-excel-key="html_0187">Recommended action</span></span><p class="font-body-md text-body-md text-on-surface mt-1" id="daypart-insight-note"><span data-excel-key="html_0188">Add appointment capacity in the highest-gap operating window.</span></p></div></div>
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+  <div>
+    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm mb-space-lg">
+      <div>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0183">Operating-window insight</span></span>
+        <h2 class="font-headline-md text-headline-md text-on-surface"><span data-excel-key="html_0184">Demand vs Planned Clinic Capacity</span></h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1"><span data-excel-key="html_0185">Grouped Bar Chart #58 compares the location demand index with planned appointment capacity by daypart.</span></p>
+      </div>
+      <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-900 font-label-sm text-label-sm"><span data-excel-key="html_0186">Capacity gap</span></span>
+    </div>
+    <div class="h-[280px]"><canvas id="live-daypart"></canvas></div>
+    <div class="mt-space-md p-space-md rounded-lg bg-surface-container-low">
+      <span class="font-label-sm text-label-sm uppercase text-primary font-semibold"><span data-excel-key="html_0187">Recommended action</span></span>
+      <p class="font-body-md text-body-md text-on-surface mt-1" id="daypart-insight-note"><span data-excel-key="html_0188">Add appointment capacity in the highest-gap operating window.</span></p>
+    </div>
+  </div>
+
+  <!-- Live Daypart Capacity Utilization & Staffing Roster Strip to eliminate dead whitespace -->
+  <div class="mt-space-lg pt-space-md border-t border-surface-container-high space-y-space-sm">
+    <div class="flex items-center justify-between">
+      <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Operating Daypart Utilization &amp; Clinical Staffing Matrix</span>
+      <span class="text-[11px] text-on-surface-variant font-medium">Docube Baseline: 3 Suites</span>
+    </div>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <!-- Morning Shift -->
+      <div class="p-2.5 rounded-lg bg-surface-container-low border border-slate-200/50">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-on-surface">Morning (7–10)</span>
+          <span class="text-[10px] font-semibold text-amber-800 bg-amber-100/70 px-1.5 py-0.5 rounded">Gap -17</span>
+        </div>
+        <div class="mt-1 text-[13px] font-bold text-on-surface">72% <span class="text-[10px] font-normal text-on-surface-variant">Demand Index</span></div>
+        <div class="mt-1 text-[11px] text-on-surface-variant leading-tight">2 GPs + 1 Paediatrician</div>
+        <div class="mt-1 text-[10px] text-primary font-medium">Fast-track vitals counter</div>
+      </div>
+      
+      <!-- Midday Shift -->
+      <div class="p-2.5 rounded-lg bg-surface-container-low border border-slate-200/50">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-on-surface">Midday (10–16)</span>
+          <span class="text-[10px] font-semibold text-slate-700 bg-slate-200/70 px-1.5 py-0.5 rounded">Gap -11</span>
+        </div>
+        <div class="mt-1 text-[13px] font-bold text-on-surface">94% <span class="text-[10px] font-normal text-on-surface-variant">Demand Index</span></div>
+        <div class="mt-1 text-[11px] text-on-surface-variant leading-tight">1 GP + Chronic Nurse</div>
+        <div class="mt-1 text-[10px] text-primary font-medium">NCD reviews &amp; lab reports</div>
+      </div>
+      
+      <!-- Evening Shift -->
+      <div class="p-2.5 rounded-lg bg-surface-container-low border border-slate-200/50">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-on-surface">Evening (16–20)</span>
+          <span class="text-[10px] font-semibold text-amber-800 bg-amber-100/70 px-1.5 py-0.5 rounded">Gap -12</span>
+        </div>
+        <div class="mt-1 text-[13px] font-bold text-on-surface">86% <span class="text-[10px] font-normal text-on-surface-variant">Demand Index</span></div>
+        <div class="mt-1 text-[11px] text-on-surface-variant leading-tight">2 Specialists + 1 GP</div>
+        <div class="mt-1 text-[10px] text-primary font-medium">Peak revenue window</div>
+      </div>
+      
+      <!-- Weekend Surge -->
+      <div class="p-2.5 rounded-lg bg-amber-50/40 border border-amber-300/60">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold text-amber-950">Weekend Surge</span>
+          <span class="text-[10px] font-bold text-red-700 bg-red-100/80 px-1.5 py-0.5 rounded">Gap -22!</span>
+        </div>
+        <div class="mt-1 text-[13px] font-bold text-amber-950">68% <span class="text-[10px] font-normal text-amber-800">Demand Index</span></div>
+        <div class="mt-1 text-[11px] text-amber-900 leading-tight">3 Rotational Specialists</div>
+        <div class="mt-1 text-[10px] text-amber-900 font-bold">Add Sunday morning slots</div>
+      </div>
+    </div>
+
+    <!-- Operational Action Strip -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px]">
+      <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+        <span class="material-symbols-outlined text-[16px] text-primary shrink-0">timer</span>
+        <span class="text-on-surface-variant leading-snug"><strong>Staggered Triage:</strong> Pre-consult nursing cuts waiting room dwell by 4.5 mins.</span>
+      </div>
+      <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+        <span class="material-symbols-outlined text-[16px] text-primary shrink-0">event_available</span>
+        <span class="text-on-surface-variant leading-snug"><strong>Urgent Slot Buffer:</strong> 20% appointments reserved for same-day walk-ins.</span>
+      </div>
+      <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+        <span class="material-symbols-outlined text-[16px] text-primary shrink-0">trending_up</span>
+        <span class="text-on-surface-variant leading-snug"><strong>Weekend Yield:</strong> Expanding Sunday shift captures ₹1.8L monthly incremental OPD.</span>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Retail Resilience & Origin Pincode Breakdown with Waffle Chart (#162) & Donut KPI (#43) (5 cols) -->
 <div class="lg:col-span-5 flex flex-col space-y-space-md">
 <!-- Retail Resilience Card with Waffle Chart (#162) -->
@@ -3973,7 +4059,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <!-- Split Grid: Recruitment Architecture & GTM Execution Channels -->
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
 <!-- Left: Clinician Recruitment Architecture (5 cols) -->
-<div class="lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-space-lg">
+<div class="lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-start space-y-space-md">
 <div class="space-y-space-md">
 <div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-xl">
 <div class="flex items-center gap-space-sm">
@@ -3982,7 +4068,7 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 </div>
 <div>
 <span class="font-label-md text-label-md text-on-surface block leading-tight"><span data-excel-key="html_0920">TALENT SOURCING PIPELINE</span></span>
-<span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0921">Dual-Pronged Doctor Acquisition</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tri-Pronged Doctor Acquisition</span>
 </div>
 </div>
 <span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span data-excel-key="html_0922">High Leverage</span></span>
@@ -4020,6 +4106,38 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary"><span data-excel-key="html_0939">check</span></span><span data-excel-key="html_0940"> Premium Evening ARPU</span></span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary"><span data-excel-key="html_0941">check</span></span><span data-excel-key="html_0942"> Immediate Patient Transfer</span></span>
 </div>
+</div>
+<!-- Recruitment Channel 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">DNB Residency &amp; Academic Fellow Network</h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">14 Teaching Hospitals within 6 km</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Surge Capacity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+Rotating senior DNB / MD Family Medicine &amp; Pediatric fellows for morning triage and weekend rush hours. Low-friction talent bridge with structured senior tele-supervision.
+</p>
+<div class="pt-2 flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary">check</span> Peak Hour Coverage</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary">check</span> Tele-Supervised Protocol</span>
+</div>
+</div>
+</div>
+<!-- Retention Covenants Mini-Grid -->
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2 rounded-lg bg-surface-container-low text-center">
+<span class="block text-[10px] uppercase font-semibold text-on-surface-variant tracking-wider">Retention Target</span>
+<span class="font-bold text-sm text-primary">94% (3-Yr)</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-center">
+<span class="block text-[10px] uppercase font-semibold text-on-surface-variant tracking-wider">Payback Horizon</span>
+<span class="font-bold text-sm text-on-surface">4.2 Months</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-center">
+<span class="block text-[10px] uppercase font-semibold text-on-surface-variant tracking-wider">Malpractice Cover</span>
+<span class="font-bold text-sm text-secondary font-semibold">100% Cover</span>
 </div>
 </div>
 <!-- Bottom Micro-metric -->
@@ -4242,10 +4360,6 @@ X-Axis: Walking Proximity / Distance (m) • Y-Axis: Clinical Rating (★) • B
 <button onclick="window.printSchedule()" class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1 cursor-pointer" type="button">
 <span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0983">print</span></span>
 <span><span data-excel-key="html_0984">Print Schedule</span></span>
-</button>
-<button onclick="window.downloadOperatingProtocol()" class="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-1 cursor-pointer" type="button">
-<span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0985">file_download</span></span>
-<span><span data-excel-key="html_0986">Download Operating Protocol</span></span>
 </button>
 </div>
 </div>
