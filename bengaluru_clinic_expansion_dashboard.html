@@ -6173,19 +6173,16 @@ Visit: https://agt-intelligence.com`;
       <!-- Content populated in JavaScript -->
     </div>
 
-    <!-- Modal Footer with Location Switcher -->
-    <div class="p-4 border-t border-slate-100 bg-[#fbfbfd] flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
-      <div class="flex items-center gap-2 w-full sm:w-auto">
-        <label for="u-modal-loc-select" class="text-xs text-slate-500 font-medium whitespace-nowrap">Switch Location:</label>
-        <select id="u-modal-loc-select" onchange="window.syncLocationFromUniversalModal(this.selectedIndex)" class="text-xs font-semibold text-slate-800 bg-white border border-slate-300 rounded-lg px-2.5 py-1 focus:ring-1 focus:ring-[#1d1d1f] cursor-pointer">
-          <!-- Populated from main dropdown -->
-        </select>
+    <!-- Modal Footer -->
+    <div class="p-4 border-t border-slate-100 bg-[#fbfbfd] flex items-center justify-between gap-3 shrink-0">
+      <div class="flex items-center gap-2 text-xs text-slate-500">
+        <span class="material-symbols-outlined text-sm text-slate-400">location_on</span>
+        <span>Active Location:</span>
+        <span id="u-modal-loc-name" class="font-bold text-slate-900">Priority 1: Basappa Garden</span>
       </div>
-      <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-        <button type="button" onclick="window.closeUniversalModal()" class="px-5 py-1.5 rounded-lg bg-[#1d1d1f] hover:bg-black text-white text-xs font-semibold transition-colors cursor-pointer shadow-xs">
-          Done
-        </button>
-      </div>
+      <button type="button" onclick="window.closeUniversalModal()" class="px-6 py-2 rounded-xl bg-[#1d1d1f] hover:bg-black text-white text-xs font-semibold transition-all cursor-pointer shadow-sm">
+        Done
+      </button>
     </div>
   </div>
 </div>
@@ -6505,20 +6502,11 @@ Visit: https://agt-intelligence.com`;
       catchmentHH: "1.3 lakh", pop: "5.5L Total Residents", diff: "+1.4 vs 3.2", plan: "Phase 1 Lead Pick", assetTier: "Top Tier Asset"
     };
 
-    // Populate Location Badges & Select
+    // Populate Location Badges & Active Location Label
     const locBadge = document.getElementById('u-modal-loc-badge');
     if (locBadge) locBadge.textContent = locName;
-
-    const modalSelect = document.getElementById('u-modal-loc-select');
-    if (modalSelect && mainSelect && modalSelect.options.length === 0) {
-      for (let i = 0; i < mainSelect.options.length; i++) {
-        const opt = document.createElement('option');
-        opt.value = mainSelect.options[i].value;
-        opt.textContent = mainSelect.options[i].textContent;
-        modalSelect.appendChild(opt);
-      }
-    }
-    if (modalSelect && mainSelect) modalSelect.selectedIndex = mainSelect.selectedIndex;
+    const locNameEl = document.getElementById('u-modal-loc-name');
+    if (locNameEl) locNameEl.textContent = locName;
 
     // Toggle Tab bar visibility (Show tabs for core metrics, hide or adjust for specific graphs)
     const tabBar = document.getElementById('u-modal-tabs-wrapper');
@@ -6604,14 +6592,6 @@ Visit: https://agt-intelligence.com`;
     document.body.style.overflow = '';
   };
 
-  window.syncLocationFromUniversalModal = function(idx) {
-    const mainSelect = document.getElementById('location-selector');
-    if (mainSelect) {
-      mainSelect.selectedIndex = idx;
-      mainSelect.dispatchEvent(new Event('change'));
-    }
-    window.showUniversalTopicModal(currentTopic);
-  };
 
   // Close on Escape Key
   document.addEventListener('keydown', (e) => {
