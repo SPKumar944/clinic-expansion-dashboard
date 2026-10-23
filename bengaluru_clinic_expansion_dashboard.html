@@ -45,10 +45,19 @@
   dialog#kpi-details-dialog {
     border: none !important;
     outline: none !important;
+    margin: auto !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99999 !important;
+    max-width: 720px !important;
+    width: 92vw !important;
+    max-height: 88vh !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45) !important;
   }
   dialog#kpi-details-dialog::backdrop {
-    background: rgba(15, 23, 42, 0.65) !important;
+    background: rgba(15, 23, 42, 0.7) !important;
     backdrop-filter: blur(4px) !important;
+    z-index: 99998 !important;
   }
 </style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
   darkMode: "class",
@@ -260,7 +269,22 @@
       </div>
       <div class="flex items-center gap-1.5 shrink-0">
         <span id="kpi-viable-badge" class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold text-[10.5px] whitespace-nowrap">92% Viable</span>
-        <button type="button" onclick="window.openKpiInsightModal('score')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to inspect Weighted Score formula &amp; live insights" aria-label="View Weighted Score details">i</button>
+        <div class="relative group">
+          <button type="button" onclick="window.openKpiInsightModal('score')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view full Weighted Score description &amp; formula" aria-label="View Weighted Score details">i</button>
+          <div class="opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none transition-all duration-200 absolute right-0 top-8 w-64 p-3 bg-[#1d1d1f] text-white rounded-xl shadow-xl z-50 text-left border border-white/10">
+            <div class="flex items-center justify-between text-[10.5px] font-bold text-emerald-400 mb-1">
+              <span>Weighted Feasibility Score</span>
+              <span>Hurdle 3.2</span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              360° viability index (0–5.0) combining 8 spatial vectors. Scores &ge; 4.0 represent prime expansion assets.
+            </p>
+            <div class="mt-2 pt-1 border-t border-white/10 text-[10px] text-emerald-300 font-semibold flex items-center justify-between">
+              <span>Current: 4.6 (92% Viable)</span>
+              <span class="underline">Click for full audit →</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="flex items-baseline gap-1 my-2">
@@ -285,7 +309,22 @@
       </div>
       <div class="flex items-center gap-1.5 shrink-0">
         <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold text-[10.5px] whitespace-nowrap">2.0 km Ring</span>
-        <button type="button" onclick="window.openKpiInsightModal('catchment')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to inspect Catchment Pool methodology &amp; live insights" aria-label="View Catchment Pool details">i</button>
+        <div class="relative group">
+          <button type="button" onclick="window.openKpiInsightModal('catchment')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view full Catchment Pool description &amp; demand sizing" aria-label="View Catchment Pool details">i</button>
+          <div class="opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none transition-all duration-200 absolute right-0 top-8 w-64 p-3 bg-[#1d1d1f] text-white rounded-xl shadow-xl z-50 text-left border border-white/10">
+            <div class="flex items-center justify-between text-[10.5px] font-bold text-emerald-400 mb-1">
+              <span>Catchment Patient Pool</span>
+              <span>2.0 km Ring</span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Total addressable residential &amp; daytime family population within a 2.0 km walking &amp; transit isochrone.
+            </p>
+            <div class="mt-2 pt-1 border-t border-white/10 text-[10px] text-emerald-300 font-semibold flex items-center justify-between">
+              <span>Current: 1.3L HH (5.5L Pop)</span>
+              <span class="underline">Click for full audit →</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="flex items-baseline gap-1 my-2">
@@ -310,7 +349,22 @@
       </div>
       <div class="flex items-center gap-1.5 shrink-0">
         <span id="kpi-rank-pill" class="px-2 py-0.5 rounded-full bg-[#1d1d1f] text-white font-bold text-[10.5px] whitespace-nowrap shadow-2xs">Rank 4/27</span>
-        <button type="button" onclick="window.openKpiInsightModal('priority')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to inspect Strategic Priority covenants &amp; live insights" aria-label="View Strategic Priority details">i</button>
+        <div class="relative group">
+          <button type="button" onclick="window.openKpiInsightModal('priority')" class="w-6 h-6 rounded-full bg-white hover:bg-[#1d1d1f] text-slate-800 hover:text-white border border-slate-300 hover:border-[#1d1d1f] inline-flex items-center justify-center font-serif italic font-black text-xs transition-all cursor-pointer shadow-xs hover:scale-110 active:scale-95" title="Click to view full Strategic Priority description &amp; covenants" aria-label="View Strategic Priority details">i</button>
+          <div class="opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none transition-all duration-200 absolute right-0 top-8 w-64 p-3 bg-[#1d1d1f] text-white rounded-xl shadow-xl z-50 text-left border border-white/10">
+            <div class="flex items-center justify-between text-[10.5px] font-bold text-amber-400 mb-1">
+              <span>Strategic Priority Rank</span>
+              <span>Rank 4 / 27</span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Executive deployment sequencing based on payback tenure, rent cost headroom, and network cannibalization buffering.
+            </p>
+            <div class="mt-2 pt-1 border-t border-white/10 text-[10px] text-amber-300 font-semibold flex items-center justify-between">
+              <span>Status: First Preference</span>
+              <span class="underline">Click for full audit →</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="my-2">
@@ -6130,6 +6184,38 @@ Visit: https://agt-intelligence.com`;
           </div>
         </div>
 
+        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
+        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
+            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-normal">
+            <strong>What is Weighted Feasibility Score?</strong> It is Docube's primary composite index (rated 0.0 to 5.0) evaluating 360° commercial and clinical sustainability for each candidate clinic. It condenses 8 cadastral vectors into a single mathematical viability rating.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">Hurdle Benchmark (3.2 / 5.0):</span>
+              Minimum viable break-even score required to justify capital deployment.
+            </div>
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">Prime Conviction (&ge; 4.0 / 5.0):</span>
+              Top-quartile assets with immediate outpatient uptake and low risk.
+            </div>
+          </div>
+        </div>
+
+        <!-- Location-Specific Strategic Insight -->
+        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="material-symbols-outlined text-base text-amber-700">lightbulb</span>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Location Feasibility Insight for Selected Site</h4>
+          </div>
+          <p id="modal-score-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
+            <!-- Dynamic text injected by JS -->
+          </p>
+        </div>
+
         <!-- Formula Breakdown Card -->
         <div class="rounded-xl border border-slate-200/70 p-4 space-y-3">
           <div class="flex items-center justify-between">
@@ -6174,17 +6260,6 @@ Visit: https://agt-intelligence.com`;
             </div>
           </div>
         </div>
-
-        <!-- Location-Specific Strategic Insight -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-primary">lightbulb</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800">Location Feasibility Insight</h4>
-          </div>
-          <p id="modal-score-insight" class="text-xs text-slate-700 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
-        </div>
       </div>
 
       <!-- TAB 2: Catchment Pool Content -->
@@ -6202,6 +6277,38 @@ Visit: https://agt-intelligence.com`;
             <span class="text-sm font-bold text-[#1d1d1f]">2.0 km Isochrone Ring</span>
             <span id="modal-catchment-pop" class="text-xs font-bold text-emerald-700 block">5.5L Total Residents</span>
           </div>
+        </div>
+
+        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
+        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
+            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-normal">
+            <strong>What is Catchment Patient Pool?</strong> It measures the total addressable residential and daytime family population residing within a 2.0 km walking &amp; vehicular isochrone boundary (~10–12 minute travel envelope). It defines the total patient volume that can realistically access the clinic before distance friction causes steep drop-off.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">Cadastral Boundary:</span>
+              2.0 km concentric ring calibrated against Bengaluru arterial transit bottlenecks.
+            </div>
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">Conversion Target:</span>
+              2.5% to 4.0% market capture yields 16–26 consultations/day, guaranteeing unit viability.
+            </div>
+          </div>
+        </div>
+
+        <!-- Catchment Ingress Dynamics -->
+        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="material-symbols-outlined text-base text-amber-700">groups</span>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Catchment Dynamics &amp; Demographic Insight</h4>
+          </div>
+          <p id="modal-catchment-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
+            <!-- Dynamic text injected by JS -->
+          </p>
         </div>
 
         <!-- Demand Conversion Funnel -->
@@ -6229,17 +6336,6 @@ Visit: https://agt-intelligence.com`;
             </div>
           </div>
         </div>
-
-        <!-- Catchment Ingress Dynamics -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-primary">groups</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800">Catchment Dynamics &amp; Demographic Insight</h4>
-          </div>
-          <p id="modal-catchment-insight" class="text-xs text-slate-700 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
-        </div>
       </div>
 
       <!-- TAB 3: Strategic Priority Content -->
@@ -6257,6 +6353,38 @@ Visit: https://agt-intelligence.com`;
             <span id="modal-priority-rank" class="text-sm font-bold text-[#1d1d1f]">Rank 4 / 27</span>
             <span id="modal-priority-plan" class="text-xs font-bold text-amber-700 block">Phase 1 Lead Pick</span>
           </div>
+        </div>
+
+        <!-- KPI DESCRIPTION (PROMINENT AT TOP) -->
+        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
+            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">KPI Description &amp; Audit Purpose</h4>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-normal">
+            <strong>What is Strategic Priority?</strong> It establishes the executive rollout tranche sequence across candidate sites. It balances capital payback velocity (target &lt; 18 months), commercial rent headroom (against the ₹65/sq ft ceiling), specialty deficit urgency, and network cannibalization buffering.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600">
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">First Preference (Phase 1):</span>
+              Immediate capital deployment; rent &lt; ₹65/sq ft, 0% cannibalization, high deficit.
+            </div>
+            <div class="bg-white/90 p-2 rounded-lg border border-blue-100">
+              <span class="font-bold text-blue-950 block">Hold &amp; Monitor (Phase 3):</span>
+              Sites exceeding rent ceiling (&gt; ₹85/sq ft) or with cannibalization risk &gt; 12%.
+            </div>
+          </div>
+        </div>
+
+        <!-- Strategic Directive Insight -->
+        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="material-symbols-outlined text-base text-amber-700">verified</span>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-amber-900">Executive Execution Directive for Selected Site</h4>
+          </div>
+          <p id="modal-priority-insight" class="text-xs text-slate-800 leading-relaxed font-medium">
+            <!-- Dynamic text injected by JS -->
+          </p>
         </div>
 
         <!-- Underwriting Card -->
@@ -6277,17 +6405,6 @@ Visit: https://agt-intelligence.com`;
               <span class="text-[11px] text-slate-500">8.5 km to nearest Docube centre.</span>
             </div>
           </div>
-        </div>
-
-        <!-- Strategic Directive Insight -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="material-symbols-outlined text-base text-primary">verified</span>
-            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800">Executive Execution Directive</h4>
-          </div>
-          <p id="modal-priority-insight" class="text-xs text-slate-700 leading-relaxed font-medium">
-            <!-- Dynamic text injected by JS -->
-          </p>
         </div>
       </div>
 
@@ -6311,8 +6428,21 @@ Visit: https://agt-intelligence.com`;
           </div>
         </div>
 
+        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-slate-800 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-blue-700 text-lg">menu_book</span>
+            <h4 class="font-extrabold text-xs uppercase tracking-wider text-blue-900">How The 3 Core KPIs Guide Investment</h4>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-normal">
+            These three metrics form the <strong>Executive Triangulation Rule</strong>:
+            <strong>(1) Weighted Score</strong> evaluates site fundamentals;
+            <strong>(2) Catchment Pool</strong> validates demographic addressable volume;
+            <strong>(3) Strategic Priority</strong> governs execution scheduling to prevent capital misallocation and network overlap.
+          </p>
+        </div>
+
         <div class="p-4 rounded-xl bg-[#f8fafc] border border-slate-200/80 space-y-2">
-          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">Unified Actuarial Summary</h4>
+          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600">Unified Actuarial Summary for Selected Site</h4>
           <p id="all-unified-summary" class="text-xs text-slate-700 leading-relaxed font-medium">
             <!-- Dynamic unified summary -->
           </p>
@@ -6572,9 +6702,40 @@ Visit: https://agt-intelligence.com`;
     if (!dialog) return;
     const mainSelect = document.getElementById('location-selector');
     const idx = mainSelect ? mainSelect.selectedIndex : 0;
-    window.populateKpiModal(idx);
-    window.switchKpiTab(tabName || 'score');
-    dialog.showModal();
+    if (typeof window.populateKpiModal === 'function') {
+      window.populateKpiModal(idx);
+    }
+    if (typeof window.switchKpiTab === 'function') {
+      window.switchKpiTab(tabName || 'score');
+    }
+    try {
+      if (!dialog.open) {
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute('open', '');
+          dialog.style.display = 'block';
+        }
+      }
+    } catch (e) {
+      dialog.setAttribute('open', '');
+      dialog.style.display = 'block';
+    }
+  };
+
+  window.closeKpiInsightModal = function() {
+    const dialog = document.getElementById('kpi-details-dialog');
+    if (!dialog) return;
+    try {
+      if (typeof dialog.close === 'function') dialog.close();
+      else {
+        dialog.removeAttribute('open');
+        dialog.style.display = 'none';
+      }
+    } catch (e) {
+      dialog.removeAttribute('open');
+      dialog.style.display = 'none';
+    }
   };
 
   window.syncLocationFromModal = function(idx) {
@@ -6583,7 +6744,9 @@ Visit: https://agt-intelligence.com`;
       mainSelect.selectedIndex = idx;
       mainSelect.dispatchEvent(new Event('change'));
     }
-    window.populateKpiModal(idx);
+    if (typeof window.populateKpiModal === 'function') {
+      window.populateKpiModal(idx);
+    }
   };
 
   // Light-dismiss fallback for browsers without native <dialog closedby>
@@ -6598,7 +6761,9 @@ Visit: https://agt-intelligence.com`;
         rect.left <= event.clientX &&
         event.clientX <= rect.left + rect.width
       );
-      if (!isInside) dialog.close();
+      if (!isInside) {
+        window.closeKpiInsightModal();
+      }
     });
   }
 })();
