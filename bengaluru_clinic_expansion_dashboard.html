@@ -17,7 +17,7 @@
     background: #09090b !important;
   }
   .leaflet-tile {
-    filter: brightness(0.96) contrast(1.12);
+    filter: grayscale(100%) invert(100%) contrast(1.25) brightness(0.75) !important;
   }
   .leaflet-control-scale-line {
     background: rgba(9, 9, 11, 0.85) !important;
@@ -215,7 +215,7 @@
     stroke-dasharray: 6, 4 !important;
   }
 </style>
-</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-3 shrink-0"><a href="https://agt-intelligence.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"><img src="https://agt-intelligence.com/brand/agt-mark-ink.png" onerror="this.src='agt-mark-ink.png'" alt="AGT Intelligence Logo" class="h-9 w-auto object-contain shrink-0" /><div class="flex flex-col whitespace-nowrap"><div class="flex items-baseline gap-1.5 leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold text-[17px]">AGT</span><span class="font-headline-sm text-headline-sm text-slate-500 tracking-[0.12em] font-semibold text-[13px] uppercase">INTELLIGENCE</span></div><span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-wider mt-1 block font-medium">Healthcare Spatial Analytics</span></div></a><div class="h-6 w-px bg-surface-container-high hidden xl:block"></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low border border-[#d2d2d7]/50 text-on-surface-variant text-[11px] font-semibold whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Docube Clinical Report</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0" selected>Priority 1: Basappa Garden (First preference)</option><option value="1">Priority 2: Thimanahalli (Second preference)</option><option value="2">Priority 3: Rajajinagar 3rd Block (Next choice)</option><option value="3">Priority 4: Subramanya Nagar 2nd Stage (Shortlisted)</option><option value="4">Priority 5: Mohan Kumar Nagar (Shortlisted)</option><option value="5">Priority 6: Hosahalli (Other area)</option><option value="6">Priority 7: Kirloskar Colony (Other area)</option><option value="7">Priority 8: Srinivas Nagar (Other area)</option><option value="8">Priority 9: Jyothi Nagara (Other area)</option><option value="9">Priority 10: Hanumanthappa Layout (Other area)</option><option value="10">Priority 11: Gavipuram (Other area)</option><option value="11">Priority 12: Krishnappa Block (Other area)</option><option value="12">Priority 13: Sudhama Nagara (Other area)</option><option value="13">Priority 14: Jogupalya (Other area)</option><option value="14">Priority 15: Hanuman Nagar (Other area)</option><option value="15">Priority 16: Banashankari (Z18)</option><option value="16">Priority 17: ITI Colony (Z19)</option><option value="17">Priority 18: Shivajinagar (Z20)</option><option value="18">Priority 19: Teacher's Colony (Z22)</option><option value="19">Priority 20: Maruthi Nagar (Z23)</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span data-excel-key="html_0008">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">92% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span data-excel-key="html_0012">1.3 lakh</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span data-excel-key="html_0013">HH (5.5L Pop)</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary-container uppercase"><span data-excel-key="html_0014">First Preference (Rank 4/27)</span></span></div></div><div class="flex items-center gap-space-md"><button onclick="window.shareReport()" class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Report</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-28 w-full px-space-xl flex flex-col justify-between pt-space-sm pb-0"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-3 shrink-0"><a href="https://agt-intelligence.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"><img src="https://agt-intelligence.com/brand/agt-mark-ink.png" onerror="this.src='agt-mark-ink.png'" alt="AGT Intelligence Logo" class="h-9 w-auto object-contain shrink-0" /><div class="flex flex-col whitespace-nowrap"><div class="flex items-baseline gap-1.5 leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold text-[17px]">AGT</span><span class="font-headline-sm text-headline-sm text-slate-500 tracking-[0.12em] font-semibold text-[13px] uppercase">INTELLIGENCE</span></div><span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-wider mt-1 block font-medium">Healthcare Spatial Analytics</span></div></a><div class="h-6 w-px bg-surface-container-high hidden xl:block"></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low border border-[#d2d2d7]/50 text-on-surface-variant text-[11px] font-semibold whitespace-nowrap"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span>Docube Clinical Report</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-primary text-[18px]"><span data-excel-key="html_0004">location_on</span></span><select class="font-label-md text-label-md text-on-surface bg-transparent border-0 pr-8 py-0 focus:ring-0 cursor-pointer" id="location-selector"><option value="0" selected>Priority 1: Basappa Garden (First preference)</option><option value="1">Priority 2: Thimanahalli (Second preference)</option><option value="2">Priority 3: Rajajinagar 3rd Block (Next choice)</option><option value="3">Priority 4: Subramanya Nagar 2nd Stage (Shortlisted)</option><option value="4">Priority 5: Mohan Kumar Nagar (Shortlisted)</option><option value="5">Priority 6: Hosahalli (Other area)</option><option value="6">Priority 7: Kirloskar Colony (Other area)</option><option value="7">Priority 8: Srinivas Nagar (Other area)</option><option value="8">Priority 9: Jyothi Nagara (Other area)</option><option value="9">Priority 10: Hanumanthappa Layout (Other area)</option><option value="10">Priority 11: Gavipuram (Other area)</option><option value="11">Priority 12: Krishnappa Block (Other area)</option><option value="12">Priority 13: Sudhama Nagara (Other area)</option><option value="13">Priority 14: Jogupalya (Other area)</option><option value="14">Priority 15: Hanuman Nagar (Other area)</option><option value="15">Priority 16: Banashankari (Z18)</option><option value="16">Priority 17: ITI Colony (Z19)</option><option value="17">Priority 18: Shivajinagar (Z20)</option><option value="18">Priority 19: Teacher's Colony (Z22)</option><option value="19">Priority 20: Maruthi Nagar (Z23)</option></select></div></div><div class="hidden xl:flex items-center gap-space-xl px-space-lg py-1.5 rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0007">Weighted Score</span></span><span class="font-headline-sm text-headline-sm text-primary"><span id="header-weighted-score" data-excel-key="html_0008">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant"><span data-excel-key="html_0009">/ 5.0</span></span></span><span id="header-viable-pill" class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span data-excel-key="html_0010">92% Viable</span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase"><span data-excel-key="html_0011">Catchment Pool</span></span><span class="font-headline-sm text-headline-sm text-on-surface"><span id="header-catchment-hh" data-excel-key="html_0012">1.3 lakh</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal"><span id="header-catchment-pop" data-excel-key="html_0013">HH (5.5L Pop)</span></span></span></div><div class="h-4 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span id="header-priority-text" class="font-label-sm text-label-sm text-[#1d1d1f] font-bold uppercase"><span data-excel-key="html_0014">First Preference (Rank 4/27)</span></span></div></div><div class="flex items-center gap-space-md"><button onclick="window.shareReport()" class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0015">ios_share</span></span><span><span data-excel-key="html_0016">Share</span></span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="export-pdf-button" onclick="window.print()" title="Print or save the complete dashboard as PDF" type="button"><span class="material-symbols-outlined text-[16px]"><span data-excel-key="html_0017">description</span></span><span><span data-excel-key="html_0018">Export Report</span></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]"><span data-excel-key="html_0019">person</span></span></div></div></div><nav class="flex items-center gap-space-md -mb-px" data-active-classes="text-primary font-bold border-b-2 border-primary bg-surface-container-low/50"><a aria-label="Scroll to Executive Scorecard &amp; Catchment" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center border-b-2" data-path="executive-scorecard" href="#executive-scorecard"><span data-excel-key="html_0020">Executive Scorecard &amp; Catchment</span></a><a aria-label="Scroll to Competitive Spatial &amp; Whitespace" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="competitive-spatial" href="#competitive-spatial"><span data-excel-key="html_0021">Competitive Spatial &amp; Whitespace</span></a><a aria-label="Scroll to Clinical Strategy &amp; Financial Sizing" class="px-space-lg py-2.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-t-lg flex items-center" data-path="clinical-strategy" href="#clinical-strategy"><span data-excel-key="html_0022">Clinical Strategy &amp; Financial Sizing</span></a></nav></div></header><main aria-label="Executive Scorecard &amp; Catchment" class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)] dashboard-section scroll-mt-32" id="executive-scorecard"><div class="flex flex-col w-full">
 <div class="w-full px-space-xl py-space-xl max-w-[1720px] mx-auto space-y-space-xl">
 <!-- Candidate Micro-Asset Header Card -->
 <div class="w-full bg-surface-container-lowest rounded-xl p-space-xl shadow-sm relative overflow-hidden">
@@ -241,32 +241,75 @@
 <span class="font-label-md text-label-md text-secondary"><span data-excel-key="html_0034">Pin 560003</span></span>
 </div>
 </div>
-<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-lg">
-<div class="flex flex-col justify-center px-space-xl py-space-md rounded-xl bg-surface-container-low min-w-[210px]">
-<div class="flex items-center justify-between gap-space-sm">
-<span class="font-label-sm text-label-sm uppercase text-on-surface-variant"><span data-excel-key="html_0035">Feasibility Score</span></span>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary"><span data-excel-key="html_0036">Benchmark ≥ 3.2</span></span>
-</div>
-<div class="flex items-baseline gap-space-xs mt-1">
-<span class="font-display-lg text-display-lg text-primary leading-none"><span data-excel-key="html_0037">4.6</span></span>
-<span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal"><span data-excel-key="html_0038">/ 5.0</span></span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2 overflow-hidden">
-<div class="bg-primary h-full rounded-full" style="width: 74%;"></div>
-</div>
-<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mt-1">
-<span><span data-excel-key="html_0039">92% Viable Index (Rank 4 of 27 across Bengaluru)</span></span>
-<span class="text-primary font-semibold"><span data-excel-key="html_0040">+1.4 vs 3.2 Benchmark</span></span>
-</div>
-</div>
-<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low min-w-[260px]">
-<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span data-excel-key="html_0041">Investment Verdict</span></div>
-<div class="mt-1 flex items-center gap-2">
-<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 font-label-md text-label-md shadow-xs">
-<span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span><span data-excel-key="html_0042">Recommended: First Preference</span></span>
-</div>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-2"><span data-excel-key="html_0043">Specialist Hub · High Daytime Footfall · Unmatched Transit Access</span></span>
-</div>
+<!-- 3 CORE ACTUARIAL KPI CARDS (Header Micro-Asset Screen) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full xl:w-auto shrink-0">
+  <!-- Core KPI 1: Weighted Feasibility Score -->
+  <div class="flex flex-col justify-between p-4 rounded-xl bg-surface-container-low border border-slate-200/70 shadow-xs min-w-[200px]">
+    <div class="flex items-center justify-between gap-1 pb-1.5 border-b border-slate-200/50">
+      <span class="font-label-sm text-[11px] uppercase font-extrabold tracking-wider text-[#1d1d1f] flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-[#1d1d1f]">speed</span>
+        Weighted Score
+      </span>
+      <span id="kpi-viable-badge" class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold text-[10px] whitespace-nowrap">92% Viable</span>
+    </div>
+    <div class="flex items-baseline gap-1 my-2">
+      <span id="kpi-score-val" class="font-display-lg text-3xl font-extrabold text-[#1d1d1f] tracking-tight leading-none">4.6</span>
+      <span class="font-headline-sm text-sm text-slate-500 font-semibold">/ 5.0</span>
+    </div>
+    <div class="w-full bg-slate-200 rounded-full h-1.5 overflow-hidden">
+      <div id="kpi-score-bar" class="bg-[#1d1d1f] h-full rounded-full transition-all duration-300" style="width: 92%;"></div>
+    </div>
+    <div class="flex items-center justify-between text-[10.5px] font-medium text-slate-600 mt-2 pt-1 border-t border-slate-100">
+      <span id="kpi-rank-label">Rank 4/27 across BLR</span>
+      <span id="kpi-diff-label" class="font-bold text-emerald-700">+1.4 vs 3.2</span>
+    </div>
+  </div>
+
+  <!-- Core KPI 2: Catchment Patient Pool -->
+  <div class="flex flex-col justify-between p-4 rounded-xl bg-surface-container-low border border-slate-200/70 shadow-xs min-w-[200px]">
+    <div class="flex items-center justify-between gap-1 pb-1.5 border-b border-slate-200/50">
+      <span class="font-label-sm text-[11px] uppercase font-extrabold tracking-wider text-[#1d1d1f] flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-[#1d1d1f]">groups</span>
+        Catchment Pool
+      </span>
+      <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold text-[10px] whitespace-nowrap">2.0 km Ring</span>
+    </div>
+    <div class="flex items-baseline gap-1 my-2">
+      <span id="kpi-catchment-hh" class="font-display-lg text-3xl font-extrabold text-[#1d1d1f] tracking-tight leading-none">1.3 lakh</span>
+      <span class="font-headline-sm text-xs text-slate-500 font-bold uppercase">HH</span>
+    </div>
+    <div class="w-full bg-slate-200 rounded-full h-1.5 overflow-hidden">
+      <div id="kpi-catchment-bar" class="bg-emerald-600 h-full rounded-full transition-all duration-300" style="width: 86%;"></div>
+    </div>
+    <div class="flex items-center justify-between text-[10.5px] font-medium text-slate-600 mt-2 pt-1 border-t border-slate-100">
+      <span id="kpi-pop-label">5.5L Total Residents</span>
+      <span class="font-bold text-emerald-700">43.8k / km²</span>
+    </div>
+  </div>
+
+  <!-- Core KPI 3: Strategic Priority & Rank -->
+  <div class="flex flex-col justify-between p-4 rounded-xl bg-surface-container-low border border-slate-200/70 shadow-xs min-w-[220px]">
+    <div class="flex items-center justify-between gap-1 pb-1.5 border-b border-slate-200/50">
+      <span class="font-label-sm text-[11px] uppercase font-extrabold tracking-wider text-[#1d1d1f] flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-[#1d1d1f]">verified</span>
+        Strategic Priority
+      </span>
+      <span id="kpi-rank-pill" class="px-2 py-0.5 rounded-full bg-[#1d1d1f] text-white font-bold text-[10px] whitespace-nowrap shadow-2xs">Rank 4/27</span>
+    </div>
+    <div class="my-2">
+      <span id="kpi-pref-badge" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200 font-bold text-xs shadow-2xs">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        <span id="kpi-pref-text">First Preference</span>
+      </span>
+    </div>
+    <div class="w-full bg-slate-200 rounded-full h-1.5 overflow-hidden">
+      <div id="kpi-priority-bar" class="bg-amber-500 h-full rounded-full transition-all duration-300" style="width: 95%;"></div>
+    </div>
+    <div class="flex items-center justify-between text-[10.5px] font-medium text-slate-600 mt-2 pt-1 border-t border-slate-100">
+      <span id="kpi-plan-label">Phase 1 Lead Pick</span>
+      <span class="font-bold text-[#1d1d1f]">Top Tier Asset</span>
+    </div>
+  </div>
 </div>
 </div>
 <div class="mt-space-lg pt-space-lg bg-surface-container-low/70 rounded-xl p-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
@@ -4496,14 +4539,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // Initialize Left Map (House Rents)
     if (!housingRentMap) {
       housingRentMap = L.map(elRent, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(housingRentMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(housingRentMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(housingRentMap);
     }
 
     // Initialize Right Map (Economic Affluence)
     if (!economicAffluenceMap) {
       economicAffluenceMap = L.map(elAffluence, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(economicAffluenceMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(economicAffluenceMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(economicAffluenceMap);
 
       // Bidirectional Synchronization
@@ -4658,14 +4701,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // 1. Initialize Store Map (Left)
     if(!regionalStoreMap){
       regionalStoreMap = L.map(elStore, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(regionalStoreMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(regionalStoreMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(regionalStoreMap);
     }
 
     // 2. Initialize Competitor Map (Right)
     if(!regionalCompMap){
       regionalCompMap = L.map(elComp, { zoomControl: true, scrollWheelZoom: true, attributionControl: false, preferCanvas: false }).setView(center, 13.5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(regionalCompMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(regionalCompMap);
       L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(regionalCompMap);
 
       // BIDIRECTIONAL SYNCHRONIZATION: Zoom or pan either map, and both move together seamlessly
@@ -5171,6 +5214,63 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
 
   window.render = function render(idx){
     updateMatrixWidget(idx);
+    if (window.updateTopKpiCards) window.updateTopKpiCards(idx);
+
+  // Dynamic 3 Core KPI Cards Profile Sync
+  const coreKpiData = [
+    { score: "4.6", pct: "92%", rank: "Rank 4/27", rankFull: "Rank 4 of 27 across BLR", pref: "First Preference", catchmentHH: "1.3 lakh", pop: "5.5L Total Residents", diff: "+1.4 vs 3.2", plan: "Phase 1 Lead Pick", assetTier: "Top Tier Asset", barScore: 92, barCatch: 86, barPref: 95 },
+    { score: "4.4", pct: "88%", rank: "Rank 5/27", rankFull: "Rank 5 of 27 across BLR", pref: "Second Preference", catchmentHH: "1.18 lakh", pop: "4.95L Residents", diff: "+1.2 vs 3.2", plan: "Phase 1 Follower", assetTier: "High Potential", barScore: 88, barCatch: 80, barPref: 88 },
+    { score: "4.3", pct: "86%", rank: "Rank 6/27", rankFull: "Rank 6 of 27 across BLR", pref: "Next Choice", catchmentHH: "1.25 lakh", pop: "5.25L Residents", diff: "+1.1 vs 3.2", plan: "Phase 1 Pipeline", assetTier: "High Potential", barScore: 86, barCatch: 83, barPref: 82 },
+    { score: "4.1", pct: "82%", rank: "Rank 7/27", rankFull: "Rank 7 of 27 across BLR", pref: "Shortlisted", catchmentHH: "1.12 lakh", pop: "4.70L Residents", diff: "+0.9 vs 3.2", plan: "Phase 2 Pipeline", assetTier: "Growth Corridor", barScore: 82, barCatch: 76, barPref: 75 },
+    { score: "4.0", pct: "80%", rank: "Rank 8/27", rankFull: "Rank 8 of 27 across BLR", pref: "Shortlisted", catchmentHH: "1.05 lakh", pop: "4.41L Residents", diff: "+0.8 vs 3.2", plan: "Phase 2 Pipeline", assetTier: "Growth Corridor", barScore: 80, barCatch: 72, barPref: 70 },
+    { score: "3.8", pct: "76%", rank: "Rank 9/27", rankFull: "Rank 9 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "98,000", pop: "4.11L Residents", diff: "+0.6 vs 3.2", plan: "Secondary Pipeline", assetTier: "Stable Base", barScore: 76, barCatch: 68, barPref: 65 },
+    { score: "3.8", pct: "76%", rank: "Rank 10/27", rankFull: "Rank 10 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "1.10 lakh", pop: "4.62L Residents", diff: "+0.6 vs 3.2", plan: "Secondary Pipeline", assetTier: "Stable Base", barScore: 76, barCatch: 74, barPref: 65 },
+    { score: "3.7", pct: "74%", rank: "Rank 11/27", rankFull: "Rank 11 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "95,000", pop: "3.99L Residents", diff: "+0.5 vs 3.2", plan: "Secondary Pipeline", assetTier: "Moderate Yield", barScore: 74, barCatch: 66, barPref: 60 },
+    { score: "3.7", pct: "74%", rank: "Rank 12/27", rankFull: "Rank 12 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "92,000", pop: "3.86L Residents", diff: "+0.5 vs 3.2", plan: "Secondary Pipeline", assetTier: "Moderate Yield", barScore: 74, barCatch: 64, barPref: 60 },
+    { score: "3.6", pct: "72%", rank: "Rank 13/27", rankFull: "Rank 13 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "1.08 lakh", pop: "4.53L Residents", diff: "+0.4 vs 3.2", plan: "Secondary Pipeline", assetTier: "Moderate Yield", barScore: 72, barCatch: 72, barPref: 55 },
+    { score: "3.6", pct: "72%", rank: "Rank 14/27", rankFull: "Rank 14 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "94,000", pop: "3.94L Residents", diff: "+0.4 vs 3.2", plan: "Secondary Pipeline", assetTier: "Moderate Yield", barScore: 72, barCatch: 65, barPref: 55 },
+    { score: "3.5", pct: "70%", rank: "Rank 15/27", rankFull: "Rank 15 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "89,000", pop: "3.73L Residents", diff: "+0.3 vs 3.2", plan: "Phase 3 Reserve", assetTier: "Defensive Play", barScore: 70, barCatch: 62, barPref: 50 },
+    { score: "3.5", pct: "70%", rank: "Rank 16/27", rankFull: "Rank 16 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "91,000", pop: "3.82L Residents", diff: "+0.3 vs 3.2", plan: "Phase 3 Reserve", assetTier: "Defensive Play", barScore: 70, barCatch: 63, barPref: 50 },
+    { score: "3.4", pct: "68%", rank: "Rank 17/27", rankFull: "Rank 17 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "97,000", pop: "4.07L Residents", diff: "+0.2 vs 3.2", plan: "Phase 3 Reserve", assetTier: "Defensive Play", barScore: 68, barCatch: 67, barPref: 45 },
+    { score: "3.4", pct: "68%", rank: "Rank 18/27", rankFull: "Rank 18 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "1.04 lakh", pop: "4.36L Residents", diff: "+0.2 vs 3.2", plan: "Phase 3 Reserve", assetTier: "Defensive Play", barScore: 68, barCatch: 70, barPref: 45 },
+    { score: "3.3", pct: "66%", rank: "Rank 19/27", rankFull: "Rank 19 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "88,000", pop: "3.69L Residents", diff: "+0.1 vs 3.2", plan: "Hold & Monitor", assetTier: "Saturated Suburb", barScore: 66, barCatch: 60, barPref: 40 },
+    { score: "3.3", pct: "66%", rank: "Rank 20/27", rankFull: "Rank 20 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "86,000", pop: "3.61L Residents", diff: "+0.1 vs 3.2", plan: "Hold & Monitor", assetTier: "Saturated Suburb", barScore: 66, barCatch: 58, barPref: 40 },
+    { score: "3.2", pct: "64%", rank: "Rank 21/27", rankFull: "Rank 21 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "1.15 lakh", pop: "4.83L Residents", diff: "At Benchmark 3.2", plan: "Hold & Monitor", assetTier: "High Rent Trap", barScore: 64, barCatch: 78, barPref: 35 },
+    { score: "3.1", pct: "62%", rank: "Rank 22/27", rankFull: "Rank 22 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "92,000", pop: "3.86L Residents", diff: "-0.1 vs Benchmark", plan: "Hold & Monitor", assetTier: "Cannibalization Risk", barScore: 62, barCatch: 64, barPref: 30 },
+    { score: "3.1", pct: "62%", rank: "Rank 23/27", rankFull: "Rank 23 of 27 across BLR", pref: "Evaluated Area", catchmentHH: "90,000", pop: "3.78L Residents", diff: "-0.1 vs Benchmark", plan: "Hold & Monitor", assetTier: "Cannibalization Risk", barScore: 62, barCatch: 62, barPref: 30 }
+  ];
+
+  window.updateTopKpiCards = function(idx) {
+    const k = coreKpiData[idx] || coreKpiData[0];
+    const setText = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = val; };
+    const setW = (id, pct) => { const el = document.getElementById(id); if (el) el.style.width = pct + '%'; };
+
+    // 1. Core Card 1: Score
+    setText('kpi-viable-badge', k.pct + ' Viable');
+    setText('kpi-score-val', k.score);
+    setW('kpi-score-bar', k.barScore);
+    setText('kpi-rank-label', k.rankFull);
+    setText('kpi-diff-label', k.diff);
+
+    // 2. Core Card 2: Catchment
+    setText('kpi-catchment-hh', k.catchmentHH);
+    setText('kpi-pop-label', k.pop);
+    setW('kpi-catchment-bar', k.barCatch);
+
+    // 3. Core Card 3: Priority & Rank
+    setText('kpi-rank-pill', k.rank);
+    setText('kpi-pref-text', k.pref);
+    setW('kpi-priority-bar', k.barPref);
+    setText('kpi-plan-label', k.plan);
+
+    // Also sync Header Bar (Screenshot 2)
+    setText('header-weighted-score', k.score);
+    setText('header-viable-pill', k.pct + ' Viable');
+    setText('header-catchment-hh', k.catchmentHH);
+    setText('header-catchment-pop', 'HH (' + k.pop.split(' ')[0] + ' Pop)');
+    setText('header-priority-text', k.pref + ' (' + k.rank + ')');
+  };
+
     const d=(window.dashboardChartScenarios&&window.dashboardChartScenarios[idx])||defaults[idx]||defaults[0];
     replace('live-ranking',{type:'bar',data:{labels:['Apollo Clinic','Cloudnine','Manipal OPD','Aster Clinic','Local Polyclinic','Independent GP'],datasets:[{label:'Competitive gravity index',data:d.competitors,backgroundColor:[colors.red,colors.red,colors.amber,colors.amber,colors.blue,colors.teal],borderRadius:4}]},options:{...common,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,max:120},y:{grid:{display:false}}}}});
     replace('live-scatter', {
@@ -5371,14 +5471,14 @@ window.dashboardIsochronesData = {"anchor": {"name": "Docube Clinic - Basappa Ga
     // 1. Initialize Dynamic Map (Left) with Footfall OpenStreetMap basemap
     if (!isoDynamicMap) {
       isoDynamicMap = L.map(elDyn, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(isoDynamicMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(isoDynamicMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoDynamicMap);
     }
 
     // 2. Initialize Baseline Map (Right) with Footfall OpenStreetMap basemap
     if (!isoBaselineMap) {
       isoBaselineMap = L.map(elBase, { zoomControl: true, scrollWheelZoom: true, attributionControl: false }).setView(center, 13);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>' }).addTo(isoBaselineMap);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(isoBaselineMap);
       L.control.scale({ imperial: false, position: 'bottomright' }).addTo(isoBaselineMap);
       isoBaselineMap.createPane('sundayMaxPane');
       isoBaselineMap.getPane('sundayMaxPane').style.zIndex = 550;
